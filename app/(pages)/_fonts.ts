@@ -12,5 +12,4 @@ const fahkwang = Fahkwang({
   weight: ['200', '300', '400', '500', '600', '700'],
 });
 
-
 export { dmSans, fahkwang };
