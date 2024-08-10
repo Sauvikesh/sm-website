@@ -1,5 +1,7 @@
+'use client';
 import Link from 'next/link';
 import Image from 'next/image';
+import AboutLink from './AboutLink';
 
 export default function Navbar() {
   return (
@@ -19,15 +21,7 @@ export default function Navbar() {
       </ul>
 
       <ul className="flex">
-        <li className="p-5">
-          <Link
-            href="/about"
-            className="text-white font-dm-sans text-xl leading-none"
-          >
-            About
-          </Link>
-        </li>
-
+        <AboutLink />
         <li className="p-5">
           <Link
             href="https://drive.google.com/file/d/1JaJ5ppcmlcFHTJpduY-MQ9OY-nYny3V5/view"
