@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import '../.././globals.css';
+import Navbar from '../_components/Navbar/Navbar';
+import { DM_Sans } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-dmSans',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${dmSans.className} bg-black`}>
+        <Navbar />
+        {children}
+        {/* <Footer /> */}
+      </body>
     </html>
   );
 }
