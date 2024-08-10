@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+// NOTE: maybe I should refactor this to use grid instead of flex boxes ???
 export default function Footer() {
   return (
     <footer className="flex justify-between m-53 mt-0 mb-17">
