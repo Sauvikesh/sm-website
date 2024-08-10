@@ -4,7 +4,7 @@ import Image from 'next/image';
 // NOTE: maybe I should refactor this to use grid instead of flex boxes ???
 export default function Footer() {
   return (
-    <footer className="flex justify-between m-53 mt-0 mb-17">
+    <footer className="flex justify-between m-[15%] mt-0 mb-17">
       <div className="flex flex-col gap-10">
         <h1 className="text-white font-f-w text-2xl">
           Thanks for visiting! Let's stay in touch.
