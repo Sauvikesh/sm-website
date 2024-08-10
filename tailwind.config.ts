@@ -20,6 +20,9 @@ const config: Config = {
       margin: {
         '53': '13.5rem',
       },
+      colors: {
+        'dark-b-bg': 'rgb(0,13,28)',
+      },
     },
   },
   plugins: [],
