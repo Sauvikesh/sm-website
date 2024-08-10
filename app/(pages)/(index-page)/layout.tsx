@@ -1,12 +1,8 @@
 import type { Metadata } from 'next';
 import '../.././globals.css';
 import Navbar from '../_components/Navbar/Navbar';
-import { DM_Sans } from 'next/font/google';
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  variable: '--font-dmSans',
-});
+import Footer from '../_components/Footer/Footer';
+import { fahkwang, dmSans } from '../_fonts';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,10 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} bg-black`}>
+      <body className={`${fahkwang.variable} ${dmSans.variable} bg-black`}>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

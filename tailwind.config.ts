@@ -15,6 +15,10 @@ const config: Config = {
       },
       fontFamily: {
         'dm-sans': ['var(--font-dmSans)', 'sans-serif'],
+        'f-w': ['var(--font-fw)', 'sans-serif'],
+      },
+      margin: {
+        '53': '13.5rem',
       },
     },
   },
