@@ -8,11 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       fontFamily: {
         'dm-sans': ['var(--font-dmSans)', 'sans-serif'],
         'f-w': ['var(--font-fw)', 'sans-serif'],
@@ -23,6 +18,26 @@ const config: Config = {
       },
       colors: {
         'dark-b-bg': 'rgb(0,13,28)',
+      },
+      keyframes: {
+        'slide-header-down': {
+          '0%': { transform: 'translateY(-200px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        'slide-header-down-delay': {
+          '0%': { transform: 'translateY(-230px)', opacity: '0' },
+          '80%': { transform: 'translateY(-50px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        'slide-line-down': {
+          from: { transform: 'translateY(-7px)' },
+          to: { transform: 'translateY(7px)' },
+        },
+      },
+      animation: {
+        'slide-header-down': 'slide-header-down 0.5s ease-in',
+        'slide-header-down-delayed': 'slide-header-down-delay 1s ease-in-out',
+        'slide-line-down': 'slide-line-down 2s linear infinite',
       },
     },
   },
