@@ -1,6 +1,6 @@
 export default function Journey() {
   return (
-    <div className="flex flex-col m-40 mt-0 mb-36">
+    <div className="flex flex-col m-53 mt-0 mb-36">
       <h2 className="text-white font-dm-sans text-4xl w-fit mb-2 font-semibold leading-[54px]">
         My Journey
       </h2>

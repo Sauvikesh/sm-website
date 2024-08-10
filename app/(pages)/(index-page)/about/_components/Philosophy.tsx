@@ -1,6 +1,6 @@
 export default function Philosophy() {
   return (
-    <div className="flex flex-col m-40 mt-0 mb-0">
+    <div className="flex flex-col m-53 mt-0 mb-0">
       <h2 className="text-white font-dm-sans text-4xl w-fit mb-9 font-semibold leading-[54px]">
         My design philosophy
       </h2>
