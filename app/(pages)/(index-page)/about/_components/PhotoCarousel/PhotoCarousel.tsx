@@ -30,7 +30,6 @@ const applyScrollListener = (
 
       if (offsetTop <= start && offsetTop >= end) {
         const opacity = 1 - (-1 * (offsetTop - start)) / (-1 * (end - start));
-        console.log('OP1', opacity, offsetTop);
         setTextOpacity(opacity);
       } else if (offsetTop > start) {
         setTextOpacity(1); // Fully visible before start
@@ -50,9 +49,9 @@ export default function PhotoCarousel() {
   const objectRef = useRef(null);
 
   const images: Array<CarouselImageProps> = [
-    { src: '/samPolaroid.png', alt: 'Sam polaroid Image' },
-    { src: '/carImg2.jpg', alt: 'Carousel Image 2' },
-    { src: '/carImg3.jpg', alt: 'Carousel Image 3' },
+    { src: '/carouselImages/samPolaroid.png', alt: 'Sam polaroid Image' },
+    { src: '/carouselImages/carImg2.jpg', alt: 'Carousel Image 2' },
+    { src: '/carouselImages/carImg3.jpg', alt: 'Carousel Image 3' },
   ];
 
   const resizeHandler = () => {
