@@ -2,7 +2,7 @@
 
 import Journey from './_components/Journey';
 import Philosophy from './_components/Philosophy';
-import PhotoCarousel from './_components/PhotoCarousel';
+import PhotoCarousel from './_components/PhotoCarousel/PhotoCarousel';
 
 export default function About() {
   return (

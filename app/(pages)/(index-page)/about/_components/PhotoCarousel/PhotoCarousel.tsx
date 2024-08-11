@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
+import CarouselImage from './CarouselImage';
 
 const calcDynamicHeight = (objectWidth: number) => {
   const vw = window.innerWidth;
@@ -87,29 +87,11 @@ export default function PhotoCarousel() {
                   insatiable curiosity to learn from others
                 </p>
               </div>
-              <Image
-                src="/samPolaroid.png"
-                alt="Sam polaroid Image"
-                height={1000}
-                width={1000}
-                className="w-auto h-[550px] shrink-0 items-end"
-              ></Image>
 
-              <Image
-                src="/carImg2.jpg"
-                alt="Sam polaroid Image"
-                height={1000}
-                width={1000}
-                className="w-auto h-[550px] shrink-0"
-              ></Image>
+              <CarouselImage src="/samPolaroid.png" alt="Sam polaroid Image" />
+              <CarouselImage src="/carImg2.jpg" alt="Car Image 2" />
+              <CarouselImage src="/carImg3.jpg" alt="Car Image 3" />
 
-              <Image
-                src="/carImg3.jpg"
-                alt="Sam polaroid Image"
-                height={1000}
-                width={1000}
-                className="w-auto h-[550px] shrink-0"
-              ></Image>
               <h1 className="text-white w-[500px] h-[300px] shrink-0 border">
                 box here?
               </h1>
