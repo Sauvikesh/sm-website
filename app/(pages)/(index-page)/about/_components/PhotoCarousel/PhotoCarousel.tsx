@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import CarouselImage from './CarouselImage';
+import CarouselImage, { CarouselImageProps } from './CarouselImage';
 
 const calcDynamicHeight = (objectWidth: number) => {
   const vw = window.innerWidth;
@@ -49,6 +49,12 @@ export default function PhotoCarousel() {
   const containerRef = useRef(null);
   const objectRef = useRef(null);
 
+  const images: Array<CarouselImageProps> = [
+    { src: '/samPolaroid.png', alt: 'Sam polaroid Image' },
+    { src: '/carImg2.jpg', alt: 'Carousel Image 2' },
+    { src: '/carImg3.jpg', alt: 'Carousel Image 3' },
+  ];
+
   const resizeHandler = () => {
     handleDynamicHeight(objectRef, setDynamicHeight);
   };
@@ -88,13 +94,13 @@ export default function PhotoCarousel() {
                 </p>
               </div>
 
-              <CarouselImage src="/samPolaroid.png" alt="Sam polaroid Image" />
-              <CarouselImage src="/carImg2.jpg" alt="Car Image 2" />
-              <CarouselImage src="/carImg3.jpg" alt="Car Image 3" />
+              {images.map((img, index) => (
+                <CarouselImage src={img.src} alt={img.alt} key={index} />
+              ))}
 
-              <h1 className="text-white w-[500px] h-[300px] shrink-0 border">
+              <div className="text-white w-[500px] h-[300px] shrink-0 border">
                 box here?
-              </h1>
+              </div>
             </div>
           </div>
         </div>

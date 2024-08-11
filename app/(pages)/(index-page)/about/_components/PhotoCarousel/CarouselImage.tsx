@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-type CarouselImageProps = {
+export type CarouselImageProps = {
   src: string;
   alt: string;
 };
