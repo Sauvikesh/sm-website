@@ -62,7 +62,6 @@ export default function PhotoCarousel() {
     handleDynamicHeight(objectRef, setDynamicHeight);
     window.addEventListener('resize', resizeHandler);
     applyScrollListener(containerRef, setTranslateX, setTextOpacity);
-    console.log('x', translateX);
   }, [translateX]);
 
   return (
