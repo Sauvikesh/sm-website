@@ -19,15 +19,14 @@ const handler = NextAuth({
         console.log(credentials);
         const response =
           await sql`SELECT * FROM page_passwords WHERE hashed_password=${credentials?.password}`;
-        
-        
+
         if (1 === response.rowCount) {
           return {
             id: response.rows[0].id,
             password: response.rows[0].hashed_password,
           };
         }
-          return null;
+        return null;
       },
     }),
   ],
