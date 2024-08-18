@@ -1,11 +1,12 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import CarouselImage from './PhotoCarousel/CarouselImage';
+import CarouselImage from '../PhotoCarousel/CarouselImage';
+import CurrentStatus from './CurrentStatus';
 
 export default function Bio() {
   const textStartingTranslation = 15;
 
-  const [isVisible, setIsVisible] = useState(0);
+  const [visibilityPercentage, setVisibilityPercentage] = useState(0);
   const [translateX, setTranslateX] = useState<number>(15);
   const containerRef = useRef(null);
 
@@ -20,7 +21,7 @@ export default function Bio() {
 
         if (entry.intersectionRatio < transitionStart) {
           setTranslateX(textStartingTranslation);
-          setIsVisible(0);
+          setVisibilityPercentage(0);
         } else if (
           entry.intersectionRatio >= transitionStart &&
           entry.intersectionRatio <= transitionEnd
@@ -31,10 +32,10 @@ export default function Bio() {
           const visiblePercentProgress = 1 - percentProgress; // since opacitity needs to increase as you scroll, reverse the percent value
 
           setTranslateX(percentProgress * textStartingTranslation);
-          setIsVisible(visiblePercentProgress);
+          setVisibilityPercentage(visiblePercentProgress);
         } else if (entry.intersectionRatio > transitionEnd) {
           setTranslateX(0);
-          setIsVisible(1);
+          setVisibilityPercentage(1);
         }
       },
       {
@@ -57,14 +58,20 @@ export default function Bio() {
   }, []);
 
   return (
-    <div className="flex flex-col m-53 mt-0 mb-0 h-[85vh]" ref={containerRef}>
+    <section
+      className="flex flex-col m-53 mt-0 mb-0 h-[85vh]"
+      ref={containerRef}
+    >
       <h1
         className="text-white font-dm-sans text-[5em] w-max mb-9 font-semibold leading-[54px] self-end duration-75 ease-out"
-        style={{ transform: `translateX(${translateX}%)`, opacity: isVisible }}
+        style={{
+          transform: `translateX(${translateX}%)`,
+          opacity: visibilityPercentage,
+        }}
       >
         Nice to meet you, I'm Sam
       </h1>
-      <div className="flex gap-3">
+      <article className="flex gap-3">
         <div className="flex flex-col gap-14 mt-7">
           <div>
             <h2 className="text-4xl font-semibold text-white font-dm-sans">
@@ -75,27 +82,21 @@ export default function Bio() {
               curiosity to learn from others
             </p>
           </div>
-          <div>
-            <h3 className="text-base text-gray-500 font-dm-sans">CURRENTLY</h3>
-            <p className="text-lg text-white font-dm-sans">
-              On my way towards earning an undergraduate degree in Design at UC
-              Davis
-            </p>
-          </div>
-          <div>
-            <h3 className="text-base text-gray-500 font-dm-sans">PROBABLY</h3>
-            <p className="text-lg text-white font-dm-sans">
-              Drinking a matcha, listening to 70s soul, and solving the daily
-              newspaper Sudoku
-            </p>
-          </div>
+          <CurrentStatus
+            header="CURRENTLY"
+            paragraph="On my way towards earning an undergraduate degree in Design at UC Davis"
+          />
+          <CurrentStatus
+            header="PROBABLY"
+            paragraph="Drinking a matcha, listening to 70s soul, and solving the daily newspaper Sudoku"
+          />
         </div>
 
         <CarouselImage
           src="/carouselImages/samPolaroid.png"
           alt="Sam Polaroid"
         />
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }
