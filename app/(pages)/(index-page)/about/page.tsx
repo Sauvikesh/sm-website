@@ -1,6 +1,4 @@
-// import Image from 'next/image';
-
-import Bio from './_components/Bio';
+import Bio from './_components/Bio/Bio';
 import Journey from './_components/Journey';
 import Philosophy from './_components/Philosophy';
 import PhotoCarousel from './_components/PhotoCarousel/PhotoCarousel';
