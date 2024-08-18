@@ -4,14 +4,14 @@ import { usePathname } from 'next/navigation';
 
 export default function AboutLink() {
   const pathname = usePathname();
+  const boldAboutText = pathname === '/about' ? 'font-bold' : 'font-normal';
 
-  const getLinkClass = (path: string) =>
-    pathname === path
-      ? 'font-bold text-white font-dm-sans text-xl leading-none'
-      : 'font-normal text-white font-dm-sans text-xl leading-none';
   return (
-    <li className="p-5">
-      <Link href="/about" className={getLinkClass('/about')}>
+    <li>
+      <Link
+        href="/about"
+        className={`${boldAboutText} text-white font-dm-sans text-xl leading-none`}
+      >
         About
       </Link>
     </li>
