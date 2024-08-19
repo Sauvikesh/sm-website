@@ -1,4 +1,4 @@
-import Landing from './Landing';
+import Landing from './_components/Landing/Landing';
 import { Providers } from '@/app/_providers';
 export default function Sage() {
   return (
