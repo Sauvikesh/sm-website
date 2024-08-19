@@ -16,7 +16,6 @@ const handler = NextAuth({
         password: { label: 'Password', type: 'password' },
       },
       async authorize(credentials) {
-        console.log(credentials);
         const response =
           await sql`SELECT * FROM page_passwords WHERE hashed_password=${credentials?.password}`;
 
@@ -25,8 +24,9 @@ const handler = NextAuth({
             id: response.rows[0].id,
             password: response.rows[0].hashed_password,
           };
+        } else {
+          return null;
         }
-        return null;
       },
     }),
   ],
