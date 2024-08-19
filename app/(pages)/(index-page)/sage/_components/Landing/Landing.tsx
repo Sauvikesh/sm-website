@@ -5,17 +5,17 @@ import ParallaxImage, { ParallaxImageProps } from './ParallaxImage';
 export default function Landing() {
   const parallaxImages: ParallaxImageProps[] = [
     {
-      speed: -2,
+      speed: 6,
       src: '/sageImages/appImage1.png',
       alt: 'app image 1',
     },
     {
-      speed: -10,
+      speed: 1,
       src: '/sageImages/appImage2.png',
       alt: 'app image 2',
     },
     {
-      speed: 3,
+      speed: 9,
       src: '/sageImages/appImage3.png',
       alt: 'app image 3',
     },
