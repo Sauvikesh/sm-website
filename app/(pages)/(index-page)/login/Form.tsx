@@ -11,7 +11,7 @@ export default function Form() {
     const formData = new FormData(e.currentTarget);
     const response = await signIn('credentials', {
       password: formData.get('password'),
-      redirect: false,
+      redirect: true,
     });
 
     console.log({ response });
