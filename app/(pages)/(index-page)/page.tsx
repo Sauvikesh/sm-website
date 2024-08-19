@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import CaseStudy, { CaseStudyProps } from './_components/CaseStudy';
 import Landing from './_components/Landing';
 
@@ -23,17 +24,20 @@ export default function Home() {
     },
   ];
 
+  const caseStudyLinks: string[] = ['/paramount', '/sage', '/hackdavis'];
+
   return (
     <main>
       <Landing />
       {caseStudyInformation.map((study, index) => (
-        <CaseStudy
-          key={index}
-          title={study.title}
-          desc={study.desc}
-          src={study.src}
-          alt={study.alt}
-        />
+        <Link key={index} href={caseStudyLinks[index]}>
+          <CaseStudy
+            title={study.title}
+            desc={study.desc}
+            src={study.src}
+            alt={study.alt}
+          />
+        </Link>
       ))}
     </main>
   );
