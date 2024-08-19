@@ -6,7 +6,7 @@ export default function Landing() {
   const parallaxImages: ParallaxImageProps[] = [
     {
       speed: -2,
-      src: '/sageImages/appImage2.png',
+      src: '/sageImages/appImage1.png',
       alt: 'app image 1',
     },
     {
@@ -16,7 +16,7 @@ export default function Landing() {
     },
     {
       speed: 3,
-      src: '/sageImages/appImage2.png',
+      src: '/sageImages/appImage3.png',
       alt: 'app image 3',
     },
   ];
