@@ -86,14 +86,14 @@ export default function PhotoCarousel() {
                 <h1 className="text-white font-dm-sans text-4xl leading-[54px] font-medium mb-4">
                   Nice to meet you, I'm Sam
                 </h1>
-                <p className="text-white font-dm-sans text-lg leading-8 font-light">
+                <p className="text-lg font-light leading-8 text-white font-dm-sans">
                   A visionary designer with an adventurous spirit and an
                   insatiable curiosity to learn from others
                 </p>
               </div>
 
               {images.map((img, index) => (
-                <CarouselImage src={img.src} alt={img.alt} key={index} />
+                <CarouselImage {...img} key={index} />
               ))}
 
               <div className="text-white w-[500px] h-[300px] shrink-0 border">

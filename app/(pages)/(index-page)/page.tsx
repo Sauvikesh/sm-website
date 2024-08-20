@@ -31,12 +31,7 @@ export default function Home() {
       <Landing />
       {caseStudyInformation.map((study, index) => (
         <Link key={index} href={caseStudyLinks[index]}>
-          <CaseStudy
-            title={study.title}
-            desc={study.desc}
-            src={study.src}
-            alt={study.alt}
-          />
+          <CaseStudy {...study} />
         </Link>
       ))}
     </main>
