@@ -27,7 +27,7 @@ export default function Home() {
   const caseStudyLinks: string[] = ['/paramount', '/sage', '/hackdavis'];
 
   return (
-    <main>
+    <main className="bg-dark-b-bg">
       <Landing />
       {caseStudyInformation.map((study, index) => (
         <Link key={index} href={caseStudyLinks[index]}>
