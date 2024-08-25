@@ -16,6 +16,10 @@ const config: Config = {
         '53': '13.5rem',
         '17': '4.5rem',
       },
+      padding: {
+        '53': '13.5rem',
+        '17': '4.5rem',
+      },
       colors: {
         'dark-b-bg': 'rgb(0,13,28)',
       },
