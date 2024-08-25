@@ -1,5 +1,6 @@
 import Demo from './_components/Demo/Demo';
 import Landing from './_components/Landing/Landing';
+import Summary from './_components/Summary/Summary';
 import { Providers } from '@/app/_providers';
 export default function Sage() {
   return (
@@ -7,6 +8,7 @@ export default function Sage() {
       <Providers>
         <Landing />
       </Providers>
+      <Summary />
       <Demo />
     </main>
   );
