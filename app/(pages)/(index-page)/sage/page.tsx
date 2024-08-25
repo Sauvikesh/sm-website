@@ -1,4 +1,4 @@
-import Demo from './_components/Demo/Demo';
+// import Demo from './_components/Demo/Demo';
 import Landing from './_components/Landing/Landing';
 import Summary from './_components/Summary/Summary';
 import Problem from './_components/Problem/Problem';
