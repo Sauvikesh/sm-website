@@ -1,3 +1,8 @@
+import Header from './Header';
 export default function Research() {
-  return <div>Research goes here :o</div>;
+  return (
+    <div className="bg-white">
+      <Header />
+    </div>
+  );
 }
