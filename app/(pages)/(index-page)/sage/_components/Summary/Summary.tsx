@@ -2,7 +2,7 @@
 
 export default function Summary() {
   return (
-    <div className="bg-white h-[100vh] flex flex-col justify-around items-center border font-dm-sans">
+    <div className="bg-white h-[100vh] flex flex-col justify-around items-center font-dm-sans">
       <div className="grid w-full grid-cols-3 grid-rows-2 gap-4 pt-0 pb-0 p-53">
         <div className="col-span-2 row-span-1 p-4">
           <h1 className="text-base font-bold leading-[44px]">OVERVIEW</h1>
