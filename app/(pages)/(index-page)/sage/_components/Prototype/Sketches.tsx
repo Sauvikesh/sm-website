@@ -28,25 +28,30 @@ export default function Sketches() {
         <div className="col-span-1 row-span-1">
           <h1 className="text-2xl leading-[44px]">Flexible goal setting</h1>
           <p className="text-[18px] leading-8">
-          ‍↳ Users can create realistic goals that align with their schedules
+            ‍↳ Users can create realistic goals that align with their schedules
           </p>
         </div>
         <div className="col-span-1 row-span-1">
-          <h1 className="text-2xl leading-[44px">Increased filter + sort abilities</h1>
+          <h1 className="text-2xl leading-[44px">
+            Increased filter + sort abilities
+          </h1>
           <p className="text-[18px] leading-8">
-          ‍↳ Users feel less overwhelmed which encourages searching for new practices
+            ‍↳ Users feel less overwhelmed which encourages searching for new
+            practices
           </p>
         </div>
         <div className="col-span-1 row-span-1">
           <h1 className="text-2xl leading-[44px">Gamified reward system</h1>
           <p className="text-[18px] leading-8">
-          ‍↳ Users can receive extrinsic motivation which encourages consistency
+            ‍↳ Users can receive extrinsic motivation which encourages
+            consistency
           </p>
         </div>
         <div className="col-span-1 row-span-1">
           <h1 className="text-2xl leading-[44px">Flexible goal setting</h1>
           <p className="text-[18px] leading-8">
-          ‍↳ Users find comfort in familiar practices that they curated themself
+            ‍↳ Users find comfort in familiar practices that they curated
+            themself
           </p>
         </div>
       </div>

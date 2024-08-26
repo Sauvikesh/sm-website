@@ -1,4 +1,5 @@
 import Description from './Description';
+import Feedback from './Feedback';
 import Sketches from './Sketches';
 
 export default function Prototype() {
@@ -6,6 +7,7 @@ export default function Prototype() {
     <div>
       <Sketches />
       <Description />
+      <Feedback />
     </div>
   );
 }
