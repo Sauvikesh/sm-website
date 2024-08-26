@@ -1,5 +1,3 @@
-// TODO: refactor the css to not reuse the same classes over and over
-
 import GridContentBlock, { GridContentBlockProps } from './GridContentBlock';
 
 export default function Summary() {

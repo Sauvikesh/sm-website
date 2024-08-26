@@ -1,3 +1,5 @@
+import Heading from '../Headings/Heading';
+
 export default function Description() {
   const testerProfiles = [
     '7 full-time undergraduate students',
@@ -14,10 +16,10 @@ export default function Description() {
 
   return (
     <div className="flex flex-col justify-center pt-0 pb-12 bg-white font-dm-sans g-3 p-53">
-      <h1 className="text-base font-bold leading-[44px]">PROTOTYPE & TEST</h1>
-      <p className="text-4xl leading-[54px] font-bold">
-        Conducting usability testing to inform iterations
-      </p>
+      <Heading
+        h1="PROTOTYPE & TEST"
+        p="Conducting usability testing to inform iterations"
+      />
       <div className="flex justify-between gap-12 pt-10 pl-4">
         <div className="flex flex-col w-[40%]">
           <h2 className="text-2xl leading-[30px] mb-4">Tester Profile</h2>

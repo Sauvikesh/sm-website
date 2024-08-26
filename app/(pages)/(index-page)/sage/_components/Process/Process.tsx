@@ -1,12 +1,12 @@
 import Image from 'next/image';
+import Heading from '../Headings/Heading';
 
 // TODO: double check how the widths are being used here?? rn the percentage values are for the width of the flex container
 // ^^ is this the best way I can assign the widths? doesn't look simple to change
 export default function Process() {
   return (
     <div className="flex flex-col pt-0 pb-0 bg-gray-200 font-dm-sans p-53 justify-center g-3 h-[60vh]">
-      <h1 className="text-base font-bold leading-[44px]">THE PROCESS</h1>
-      <p className="text-4xl leading-[54px] font-bold">Project Goals</p>
+      <Heading h1="THE PROCESS" p="Project Goals" />
       <div className="flex">
         <Image
           src="/sageImages/process/process1.png"

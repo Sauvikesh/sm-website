@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import Heading from '../Headings/Heading';
 
 export default function Ideation() {
   const sectionRef = useRef(null);
@@ -51,12 +52,7 @@ export default function Ideation() {
 
   return (
     <div className="flex flex-col items-center justify-center pt-12 font-dm-sans">
-      <h1 className="leading-[44px] text-base font-semibold">
-        IDEATION & SYNTHESIS
-      </h1>
-      <h2 className="leading-[54px] text-4xl font-semibold">
-        Identifying key insights
-      </h2>
+      <Heading h1="IDEATION & SYNTHESIS" p="Identifying key insights" />
       <Image
         src="/sageImages/ideation/manyNotes.png"
         alt="many notes image"
