@@ -1,4 +1,4 @@
-import Demo from './_components/Demo/Demo';
+// import Demo from './_components/Demo/Demo';
 import Landing from './_components/Landing/Landing';
 import Summary from './_components/Summary/Summary';
 import Problem from './_components/Problem/Problem';
@@ -10,6 +10,7 @@ import Process from './_components/Process/Process';
 import Research from './_components/Research/Research';
 import Ideation from './_components/Ideation/Ideation';
 import Prototype from './_components/Prototype/Prototype';
+
 import { Providers } from '@/app/_providers';
 
 export default function Sage() {
@@ -21,7 +22,7 @@ export default function Sage() {
       <Summary />
       <Problem />
       <Solution />
-      <Demo />
+      {/* <Demo /> */}
       <Process />
       <Research />
       <Ideation />
