@@ -1,3 +1,5 @@
+import Heading from '../Headings/Heading';
+
 export type VideoTextCardProps = {
   pageName: string;
   heading: string;
@@ -16,8 +18,7 @@ export default function VideoTextCard(props: VideoTextCardProps) {
       className={`flex m-[17vw] mt-0 mb-7 h-[100vh] gap-7 justify-around items-center ${rowReverse}`}
     >
       <div className="flex flex-col justify-center text-black w-[50%] gap-6">
-        <h2 className="text-base font-semibold font-dm-sans">{pageName}</h2>
-        <h1 className="text-4xl font-bold font-dm-sans">{heading}</h1>
+        <Heading h1={pageName} p={heading} />
         <ul className="pl-5 list-disc">
           {bulletPoints.map((bullet, index) => (
             <li className="text-lg font-dm-sans" key={index}>
