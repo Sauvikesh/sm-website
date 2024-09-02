@@ -37,11 +37,16 @@ const config: Config = {
           from: { transform: 'translateY(-7px)' },
           to: { transform: 'translateY(7px)' },
         },
+        'load-rotate': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
         'slide-header-down': 'slide-header-down 0.5s ease-in',
         'slide-header-down-delayed': 'slide-header-down-delay 1s ease-in-out',
         'slide-line-down': 'slide-line-down 2s linear infinite',
+        'load-rotate-full': 'load-rotate 1400ms cubic-bezier(0.4, 0, 0.2, 1)',
       },
     },
   },
