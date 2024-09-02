@@ -13,7 +13,9 @@ export default function Navbar() {
 
   const navTextColor = pathname === '/sage' ? 'text-black' : 'text-white';
 
-  return (
+  const invisible = pathname === '/login';
+
+  return !invisible ? (
     <header>
       <nav
         className={`${navBackGroundColor} flex items-center justify-between h-16 p-8 pt-0 pb-0`}
@@ -52,5 +54,5 @@ export default function Navbar() {
         </ul>
       </nav>
     </header>
-  );
+  ) : null;
 }

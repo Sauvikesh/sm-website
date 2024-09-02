@@ -11,7 +11,9 @@ export default function Footer() {
     pathname === '/sage' ? 'bg-[#e4edeb]' : 'bg-dark-b-bg';
   const footerTextColor = pathname === '/sage' ? 'text-black' : 'text-white';
 
-  return (
+  const invisible = pathname === '/login';
+
+  return !invisible ? (
     <footer
       className={`${footerBackGroundColor} ${footerTextColor} flex justify-between pb-20 p-53 pt-14`}
     >
@@ -51,5 +53,5 @@ export default function Footer() {
         </Link>
       </nav>
     </footer>
-  );
+  ) : null;
 }
