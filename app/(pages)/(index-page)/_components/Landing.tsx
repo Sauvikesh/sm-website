@@ -1,18 +1,23 @@
+import Image from 'next/image';
+
 export default function Landing() {
   return (
-    <section className="flex flex-col ml-[15%] w-[940px] h-[100vh] pt-[8%]">
-      <h1 className="text-white text-[200px] font-f-w h-[270px] animate-slide-header-down">
-        Samantha
+    <section className="flex flex-col h-[100vh] pt-[268px] items-center w-full pl-[15%] pr-[15%]">
+      <h1 className="text-white text-[128px] font-f-w h-[200px] animate-slide-header-down w-full">
+        Samantha Mah
       </h1>
-      <h2 className="text-white font-dm-sans text-[32px] pl-2 animate-slide-header-down-delayed">
-        is a curious product designer who finds joy in human connection and has
-        a penchant for creative problem solving.
-      </h2>
-      <div className="flex items-center gap-5 mt-36">
-        <div className="flex justify-center w-8 p-2 border-2 rounded-2xl h-11">
-          <span className="text-xs text-white animate-slide-line-down">|</span>
-        </div>
-        <p className="text-sm text-white">Scroll to explore</p>
+      <div className="flex flex-row animate-slide-header-down-delayed">
+        <h2 className="text-white font-dm-sans text-4xl w-[90%] font-normal self-start leading-normal tracking-[-0.015em]">
+          is a curious product designer who finds joy in human connection and
+          has a love for creative problem solving
+        </h2>
+        <Image
+          src="/matcha.svg"
+          width={1000}
+          height={1000}
+          alt="matcha"
+          className="w-[92px] h-[134px] mt-[-35px]"
+        />
       </div>
     </section>
   );
