@@ -42,11 +42,12 @@ export default function Landing() {
         />
       ))}
 
-      <h1 className="text-white text-[128px] font-f-w h-[200px] animate-slide-header-down w-full text-nowrap">
+      <h1 className="text-[128px] font-f-w h-[200px] animate-slide-header-down w-full text-nowrap">
         Samantha Mah
       </h1>
-      <div className="flex flex-row animate-slide-header-down-delayed ">
-        <h2 className="text-white font-dm-sans text-4xl w-[90%] font-normal self-start leading-normal tracking-[-0.015em]">
+
+      <div className="flex flex-row animate-slide-header-down-delayed">
+        <h2 className="text-4xl w-[90%] font-normal self-start leading-normal tracking-[-0.015em]">
           is a curious product designer who finds joy in human connection and
           has a love for creative problem solving
         </h2>
