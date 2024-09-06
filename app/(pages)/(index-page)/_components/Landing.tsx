@@ -1,47 +1,46 @@
 import Image from 'next/image';
 
 export default function Landing() {
+  const floatingImages = [
+    {
+      src: '/landing/cloud.svg',
+      className:
+        'w-[100px] h-auto absolute top-[40px] left-[520px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+    {
+      src: '/landing/4star.svg',
+      className:
+        'w-[100px] h-auto absolute top-[70px] right-[-50px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+    {
+      src: '/landing/cloud.svg',
+      className:
+        'w-[100px] h-auto absolute top-[600px] left-[-30px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+    {
+      src: '/landing/4star.svg',
+      className:
+        'w-[100px] h-auto absolute top-[280px] left-[140px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+    {
+      src: '/landing/star.svg',
+      className:
+        'w-[100px] h-auto absolute top-[680px] right-[140px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+  ];
+
   return (
     <section className="h-[100vh] pt-[268px]">
-      <Image
-        src="/landing/cloud.svg"
-        width={1000}
-        height={1000}
-        alt="matcha"
-        className="w-[100px] h-auto absolute top-[40px] left-[520px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full"
-      />
-
-      <Image
-        src="/landing/4star.svg"
-        width={1000}
-        height={1000}
-        alt="matcha"
-        className="w-[100px] h-auto absolute top-[70px] right-[-50px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full"
-      />
-
-      <Image
-        src="/landing/cloud.svg"
-        width={1000}
-        height={1000}
-        alt="matcha"
-        className="w-[100px] h-auto absolute top-[600px] left-[-30px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full"
-      />
-
-      <Image
-        src="/landing/4star.svg"
-        width={1000}
-        height={1000}
-        alt="matcha"
-        className="w-[100px] h-auto absolute top-[280px] left-[140px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full"
-      />
-
-      <Image
-        src="/landing/star.svg"
-        width={1000}
-        height={1000}
-        alt="matcha"
-        className="w-[100px] h-auto absolute top-[680px] right-[140px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full"
-      />
+      {floatingImages.map((image, index) => (
+        <Image
+          src={image.src}
+          width={1000}
+          height={1000}
+          alt="floating star :)"
+          className={image.className}
+          key={index}
+        />
+      ))}
 
       <h1 className="text-white text-[128px] font-f-w h-[200px] animate-slide-header-down w-full text-nowrap">
         Samantha Mah
