@@ -43,7 +43,7 @@ export default function Landing() {
         className="w-[100px] h-auto absolute top-[680px] right-[140px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full"
       />
 
-      <h1 className="text-white text-[128px] font-f-w h-[200px] animate-slide-header-down w-full">
+      <h1 className="text-white text-[128px] font-f-w h-[200px] animate-slide-header-down w-full text-nowrap">
         Samantha Mah
       </h1>
       <div className="flex flex-row animate-slide-header-down-delayed ">
