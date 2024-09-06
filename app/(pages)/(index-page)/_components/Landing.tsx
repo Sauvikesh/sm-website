@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Landing() {
   return (
-    <section className="flex flex-col h-[100vh] pt-[268px] items-center w-full pl-[15%] pr-[15%] overflow-hidden relative">
+    <section className="h-[100vh] pt-[268px]">
       <Image
         src="/landing/cloud.svg"
         width={1000}

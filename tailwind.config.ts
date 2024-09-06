@@ -21,8 +21,8 @@ const config: Config = {
         '17': '4.5rem',
       },
       colors: {
-        'dark-bg': 'var(--dark-backgrund)',
-        'light-bg': 'var(--light-backgrund)',
+        'dark-bg': 'var(--dark-background)',
+        'light-bg': 'var(--light-background)',
       },
       keyframes: {
         'slide-header-down': {
