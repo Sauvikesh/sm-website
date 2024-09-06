@@ -1,7 +1,7 @@
 'use client';
 import { useRef } from 'react';
 import CarouselImage from '../PhotoCarousel/CarouselImage';
-import CurrentStatus from './CurrentStatus';
+import CurrentStatus, { CurrentStatusProps } from './CurrentStatus';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function Bio() {
@@ -17,6 +17,25 @@ export default function Bio() {
     opacity: useTransform(scrollYProgress, [0, 1], [1, 0]),
   };
 
+  const currentStatus: CurrentStatusProps[] = [
+    {
+      header: "I'm Sam",
+      paragraph:
+        'A visionary designer with an adventurous spirit and an insatiable curiosity to learn from others',
+      intro: true,
+    },
+    {
+      header: 'CURRENTLY',
+      paragraph:
+        'On my way towards earning an undergraduate degree in Design at UC Davis',
+    },
+    {
+      header: 'PROBABLY',
+      paragraph:
+        'Drinking a matcha, listening to 70s soul, and solving the daily newspaper Sudoku',
+    },
+  ];
+
   return (
     <section className="h-[85vh] pl-[15%] pr-[15%]" ref={sectionRef}>
       <motion.h1
@@ -28,23 +47,9 @@ export default function Bio() {
 
       <article className="flex gap-3">
         <div className="flex flex-col gap-14 pt-7">
-          <div>
-            <h2 className="text-4xl font-semibold">I'm Sam</h2>
-            <p className="text-lg ">
-              A visionary designer with an adventurous spirit and an insatiable
-              curiosity to learn from others
-            </p>
-          </div>
-
-          <CurrentStatus
-            header="CURRENTLY"
-            paragraph="On my way towards earning an undergraduate degree in Design at UC Davis"
-          />
-
-          <CurrentStatus
-            header="PROBABLY"
-            paragraph="Drinking a matcha, listening to 70s soul, and solving the daily newspaper Sudoku"
-          />
+          {currentStatus.map((stat, index) => (
+            <CurrentStatus {...stat} key={index} />
+          ))}
         </div>
 
         <CarouselImage

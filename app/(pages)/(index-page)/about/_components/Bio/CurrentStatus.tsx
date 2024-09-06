@@ -1,15 +1,20 @@
 export type CurrentStatusProps = {
   header: string;
   paragraph: string;
+  intro?: boolean;
 };
 
 export default function CurrentStatus(props: CurrentStatusProps) {
-  const { header, paragraph } = props;
+  const { header, paragraph, intro } = props;
 
   return (
-    <div>
-      <h3 className="text-base text-gray-500 font-dm-sans">{header}</h3>
-      <p className="text-lg text-white font-dm-sans">{paragraph}</p>
+    <div className="font-dm-sans">
+      {intro ? (
+        <h2 className="text-4xl font-semibold">{header}</h2>
+      ) : (
+        <h3 className="text-base text-gray-500">{header}</h3>
+      )}
+      <p className="text-lg">{paragraph}</p>
     </div>
   );
 }
