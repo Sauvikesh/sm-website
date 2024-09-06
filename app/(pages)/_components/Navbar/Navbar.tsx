@@ -9,7 +9,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const boldAboutText = pathname === '/about' ? 'font-bold' : 'font-normal';
   const navBackGroundColor =
-    pathname === '/sage' ? 'bg-[#e4edeb]' : 'bg-dark-b-bg';
+    pathname === '/sage' ? 'bg-[#e4edeb]' : 'bg-dark-bg';
 
   const navTextColor = pathname === '/sage' ? 'text-black' : 'text-white';
 

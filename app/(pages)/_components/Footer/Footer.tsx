@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 export default function Footer() {
   const pathname = usePathname();
   const footerBackGroundColor =
-    pathname === '/sage' ? 'bg-[#e4edeb]' : 'bg-dark-b-bg';
+    pathname === '/sage' ? 'bg-[#e4edeb]' : 'bg-dark-bg';
   const footerTextColor = pathname === '/sage' ? 'text-black' : 'text-white';
 
   const invisible = pathname === '/login';

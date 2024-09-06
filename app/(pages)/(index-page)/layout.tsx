@@ -3,6 +3,7 @@ import '../.././globals.css';
 import Navbar from '../_components/Navbar/Navbar';
 import Footer from '../_components/Footer/Footer';
 import { fahkwang, dmSans } from '../../_fonts';
+import '../../globals.css';
 
 export const metadata: Metadata = {
   title: 'Portfolio',
