@@ -7,7 +7,7 @@ export default function FinalSolution() {
   };
 
   return (
-    <div className="pl-[11%] pr-[11%] pb-[243px]">
+    <div className="pl-[11%] pr-[11%] pt-[146px] pb-[243px] bg-[#F5F5F5]">
       <h1 className="text-[40px] font-bold tracking-[0.8px] text-center">
         Final Solution
       </h1>
