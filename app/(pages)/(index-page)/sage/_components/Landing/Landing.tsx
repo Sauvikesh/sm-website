@@ -24,12 +24,12 @@ export default function Landing() {
 
   return (
     <Providers>
-      <header className="bg-[#e4edeb] flex flex-col justify-center items-center w-full text-black">
-        <h1 className="text-[80px] font-semibold lead-[44px] font-f-w mt-9">
+      <header className="flex flex-col justify-center items-center">
+        <h1 className="text-[80px] font-semibold lead-[44px] font-f-w pt-9">
           Sage
         </h1>
-        <p className="text-base font-dm-sans">7 min read</p>
-        <div className="flex justify-around w-full mt-32">
+        <p className="text-base">7 min read</p>
+        <div className="flex justify-around pt-32">
           {parallaxImages.map((image, index) => (
             <ParallaxImage
               key={index}

@@ -15,18 +15,19 @@ export default function VideoTextCard(props: VideoTextCardProps) {
 
   return (
     <div
-      className={`flex m-[17vw] mt-0 mb-7 h-[100vh] gap-7 justify-around items-center ${rowReverse}`}
+      className={`flex h-[100vh] gap-7 justify-around items-center ${rowReverse}`}
     >
-      <div className="flex flex-col justify-center text-black w-[50%] gap-6">
+      <div className="flex flex-col justify-center w-[50%] gap-6">
         <Heading h1={pageName} p={heading} />
         <ul className="pl-5 list-disc">
           {bulletPoints.map((bullet, index) => (
-            <li className="text-lg font-dm-sans" key={index}>
+            <li className="text-lg" key={index}>
               {bullet}
             </li>
           ))}
         </ul>
       </div>
+
       <video className="w-2/5 h-4/5" controls>
         <source src={vidSrc} type="video/mp4" />
         <track

@@ -50,17 +50,17 @@ export default function Ideation() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center pt-12 font-dm-sans">
+    <div className="flex flex-col items-center justify-center pt-12">
       <Heading h1="IDEATION & SYNTHESIS" p="Identifying key insights" />
       <Image
         src="/sageImages/ideation/manyNotes.png"
         alt="many notes image"
         width={1000}
         height={1000}
-        className="w-[100%] h-auto pt-8"
+        className="w-full h-auto pt-8"
       />
       <div
-        className="flex flex-wrap justify-center pt-0 pb-0 p-53"
+        className="flex flex-wrap justify-center pl-[18%] pr-[18%]"
         ref={sectionRef}
       >
         {animatedCards.map((card, index) => (
