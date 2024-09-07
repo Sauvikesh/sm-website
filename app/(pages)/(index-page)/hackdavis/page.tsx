@@ -4,6 +4,7 @@ import SolutionPreview from './_components/SolutionPreview/SolutionPreview';
 import Process from './_components/Process/Process';
 import Question from './_components/Question/Question';
 import CardSort from './_components/CardSort/CardSort';
+import Ideation from './_components/Ideation/Ideation';
 
 export default function HackDavis() {
   return (
@@ -14,6 +15,7 @@ export default function HackDavis() {
       <Process />
       <Question />
       <CardSort />
+      <Ideation />
     </main>
   );
 }
