@@ -1,6 +1,7 @@
 import Landing from './_components/Landing/Landing';
 import Intro from './_components/Intro/Intro';
 import SolutionPreview from './_components/SolutionPreview/SolutionPreview';
+import Process from './_components/Process/Process';
 
 export default function HackDavis() {
   return (
@@ -8,6 +9,7 @@ export default function HackDavis() {
       <Landing />
       <Intro />
       <SolutionPreview />
+      <Process />
     </main>
   );
 }
