@@ -11,7 +11,8 @@ export default function Navbar() {
   const bgWorkText = pathname === '/' ? 'bg-black' : '';
   const bgPlayText = pathname === '/play' ? 'bg-black' : '';
   const navTextColor = pathname === '/sage' ? 'text-black' : 'text-white';
-  const invisible = pathname === '/login' || pathname === '/sage';
+  const invisible =
+    pathname === '/login' || pathname === '/sage' || pathname === '/hackdavis';
 
   const isVisible = useDisplayNav();
 
