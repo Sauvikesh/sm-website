@@ -1,56 +1,50 @@
 'use client';
 
-import Link from 'next/link';
-import Image from 'next/image';
-
 import { usePathname } from 'next/navigation';
+import NavItem from './NavItem';
+import { useDisplayNav } from '../../_hooks/useDisplayNav';
 
 export default function Navbar() {
   const pathname = usePathname();
-  const boldAboutText = pathname === '/about' ? 'font-bold' : 'font-normal';
-  const navBackGroundColor =
-    pathname === '/sage' ? 'bg-[#e4edeb]' : 'bg-dark-bg';
 
+  const bgAboutText = pathname === '/about' ? 'bg-black' : '';
+  const bgWorkText = pathname === '/' ? 'bg-black' : '';
+  const bgPlayText = pathname === '/play' ? 'bg-black' : '';
   const navTextColor = pathname === '/sage' ? 'text-black' : 'text-white';
+  const invisible = pathname === '/login' || pathname === '/sage';
 
-  const invisible = pathname === '/login';
+  const isVisible = useDisplayNav();
+
+  const navItems = [
+    {
+      href: '/',
+      label: 'Work',
+      bgColor: bgWorkText,
+      navTextColor: navTextColor,
+    },
+    {
+      href: 'https://drive.google.com/file/d/1JaJ5ppcmlcFHTJpduY-MQ9OY-nYny3V5/view',
+      label: 'Play',
+      bgColor: bgPlayText,
+      navTextColor: navTextColor,
+    },
+    {
+      href: '/about',
+      label: 'About',
+      bgColor: bgAboutText,
+      navTextColor: navTextColor,
+    },
+  ];
 
   return !invisible ? (
-    <header>
-      <nav
-        className={`${navBackGroundColor} flex items-center justify-between h-16 p-8 pt-0 pb-0`}
-      >
-        <ul>
-          <li>
-            <Link href="/">
-              <Image
-                src="/smLogo.png"
-                alt="sm Logo"
-                height={100}
-                width={100}
-                className="w-auto h-16"
-              ></Image>
-            </Link>
-          </li>
-        </ul>
-
-        <ul className="flex gap-5 p-5">
-          <li>
-            <Link
-              href="/about"
-              className={`${boldAboutText} ${navTextColor} font-dm-sans text-xl leading-none`}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://drive.google.com/file/d/1JaJ5ppcmlcFHTJpduY-MQ9OY-nYny3V5/view"
-              className={`text-xl leading-none ${navTextColor} font-dm-sans"`}
-            >
-              Resume
-            </Link>
-          </li>
+    <header
+      className={`sticky top-0 z-10 flex justify-center bg-transparent pt-12 transition-all duration-300  ${isVisible ? 'opacity-1 translate-y-0' : 'opacity-0 -translate-y-full'}`}
+    >
+      <nav className="flex items-center justify-center bg-[#38373C] w-fit rounded-[100px] font-dm-sans">
+        <ul className="flex gap-4 p-2 font-dm-sans text-white text-xl leading-none">
+          {navItems.map((item, index) => (
+            <NavItem key={index} {...item} />
+          ))}
         </ul>
       </nav>
     </header>
