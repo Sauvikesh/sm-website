@@ -3,6 +3,7 @@ import Intro from './_components/Intro/Intro';
 import SolutionPreview from './_components/SolutionPreview/SolutionPreview';
 import Process from './_components/Process/Process';
 import Question from './_components/Question/Question';
+import CardSort from './_components/CardSort/CardSort';
 
 export default function HackDavis() {
   return (
@@ -12,6 +13,7 @@ export default function HackDavis() {
       <SolutionPreview />
       <Process />
       <Question />
+      <CardSort />
     </main>
   );
 }
