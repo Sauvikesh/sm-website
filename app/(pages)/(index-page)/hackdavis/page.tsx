@@ -7,6 +7,7 @@ import CardSort from './_components/CardSort/CardSort';
 import Ideation from './_components/Ideation/Ideation';
 import FinalSolution from './_components/FinalSolution.tsx/FinalSolution';
 import Results from './_components/Results/Results';
+import Venue from './_components/Venue/Venue';
 
 export default function HackDavis() {
   return (
@@ -20,6 +21,7 @@ export default function HackDavis() {
       <Ideation />
       <FinalSolution />
       <Results />
+      <Venue />
     </main>
   );
 }
