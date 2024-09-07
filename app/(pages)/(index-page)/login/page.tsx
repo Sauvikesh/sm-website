@@ -16,7 +16,7 @@ export default async function LoginPage({
     redirect(callbackUrl);
   }
   return (
-    <div className="bg-dark-b-bg">
+    <div className="bg-dark-bg">
       <Form />
     </div>
   );

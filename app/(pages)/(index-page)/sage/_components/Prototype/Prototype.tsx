@@ -4,7 +4,7 @@ import Sketches from './Sketches';
 
 export default function Prototype() {
   return (
-    <div>
+    <div className="bg-white">
       <Sketches />
       <Description />
       <Feedback />

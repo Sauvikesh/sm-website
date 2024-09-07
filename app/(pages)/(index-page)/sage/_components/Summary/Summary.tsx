@@ -29,28 +29,28 @@ export default function Summary() {
   const gridContent2: GridContentBlockProps[] = [
     {
       header: 'OUTCOMES',
-      paragraph: `⭐️ Awarded "Most Innovative UX" and "Best UX ${(<br></br>)} Research" by
+      paragraph: `⭐️ Awarded "Most Innovative UX" and "Best UX Research" by
             industry judges from Meta, Amazon & DocuSign`,
       colSpan: 1,
     },
     {
       header: '__',
       paragraph: `⭐️ 74% of polled individuals from target audience reported they
-            were either extremely likely or likely to ${(<br></br>)} use Sage`,
+            were either extremely likely or likely to use Sage`,
       colSpan: 1,
       transparent: true,
     },
   ];
 
   return (
-    <div className="bg-white h-[100vh] flex flex-col justify-around items-center font-dm-sans">
-      <div className="grid w-full grid-cols-3 grid-rows-2 gap-4 pt-0 pb-0 p-53">
+    <div className="bg-white h-[100vh] flex flex-col justify-evenly items-center pl-[18%] pr-[18%]">
+      <div className="grid grid-cols-3 grid-rows-2 gap-4">
         {gridContent.map((content, index) => (
           <GridContentBlock key={index} {...content} />
         ))}
       </div>
 
-      <div className="grid w-full grid-cols-2 grid-rows-1 gap-4 pt-0 pb-0 p-53">
+      <div className="grid grid-cols-2 grid-rows-1 gap-4">
         {gridContent2.map((content, index) => (
           <GridContentBlock key={index} {...content} />
         ))}

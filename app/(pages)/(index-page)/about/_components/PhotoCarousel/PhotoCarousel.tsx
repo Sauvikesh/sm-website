@@ -65,28 +65,28 @@ export default function PhotoCarousel() {
   }, [translateX]);
 
   return (
-    <div className="w-[100%] min-h-[100vh]">
-      <div className="w-[100%] " style={{ height: `${dynamicHeight}px` }}>
+    <div className="w-full min-h-[100vh]">
+      <div className="w-full" style={{ height: `${dynamicHeight}px` }}>
         <div
-          className="sticky top-0 h-[100vh] w-[100%] overflow-x-hidden"
+          className="sticky top-0 h-[100vh] w-full overflow-x-hidden"
           ref={containerRef}
         >
           <div
-            className=" absolute h-[100%]"
+            className="absolute h-full"
             style={{ transform: `translateX(${translateX}px)` }}
             ref={objectRef}
           >
-            <div className="h-[100%] flex flex-nowrap justify-start items-center ml-8 gap-4">
+            <div className="h-full flex flex-nowrap justify-start items-center ml-8 gap-4">
               <div
-                className=" w-[400px] h-[350px] shrink-0 mb-[250px]"
+                className="w-[400px] h-[350px] shrink-0 mb-[250px]"
                 style={{
                   opacity: textOpacity,
                 }}
               >
-                <h1 className="text-white font-dm-sans text-4xl leading-[54px] font-medium mb-4">
+                <h1 className="text-4xl leading-[54px] font-medium mb-4">
                   Nice to meet you, I'm Sam
                 </h1>
-                <p className="text-lg font-light leading-8 text-white font-dm-sans">
+                <p className="text-lg font-light leading-8">
                   A visionary designer with an adventurous spirit and an
                   insatiable curiosity to learn from others
                 </p>
@@ -96,7 +96,7 @@ export default function PhotoCarousel() {
                 <CarouselImage {...img} key={index} />
               ))}
 
-              <div className="text-white w-[500px] h-[300px] shrink-0 border">
+              <div className="w-[500px] h-[300px] shrink-0 border">
                 box here?
               </div>
             </div>

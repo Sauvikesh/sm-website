@@ -15,14 +15,14 @@ export default function Description() {
   ];
 
   return (
-    <div className="flex flex-col justify-center pt-0 pb-12 bg-white font-dm-sans g-3 p-53">
+    <div className="flex flex-col justify-center pt-12 pb-12 g-3 pl-[18%] pr-[18%]">
       <Heading
         h1="PROTOTYPE & TEST"
         p="Conducting usability testing to inform iterations"
       />
       <div className="flex justify-between gap-12 pt-10 pl-4">
         <div className="flex flex-col w-[40%]">
-          <h2 className="text-2xl leading-[30px] mb-4">Tester Profile</h2>
+          <h2 className="text-2xl leading-[30px] pb-4">Tester Profile</h2>
           <ul className="pl-5 list-disc">
             {testerProfiles.map((profile, index) => (
               <li className="mb-4 text-lg leading-8" key={index}>
@@ -31,8 +31,9 @@ export default function Description() {
             ))}
           </ul>
         </div>
+
         <div className="flex flex-col w-[50%]">
-          <h2 className="text-2xl leading-[30px] mb-4">Task List</h2>
+          <h2 className="text-2xl leading-[30px] pb-4">Task List</h2>
           <ol className="pl-5 list-decimal">
             {tasks.map((task, index) => (
               <li className="mb-4 text-lg leading-8" key={index}>
@@ -42,8 +43,9 @@ export default function Description() {
           </ol>
         </div>
       </div>
-      <h2 className="text-2xl leading-[30px] mb-1 pl-5">Metrics</h2>
-      <h3 className="pl-5 mb-4 text-lg leading-8">Qualitative feedback</h3>
+
+      <h2 className="text-2xl leading-[30px] pb-1 pl-5">Metrics</h2>
+      <h3 className="pl-5 pb-4 text-lg leading-8">Qualitative feedback</h3>
     </div>
   );
 }

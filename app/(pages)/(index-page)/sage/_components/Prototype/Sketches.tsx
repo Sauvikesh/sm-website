@@ -29,11 +29,11 @@ export default function Sketches() {
     },
   ];
   return (
-    <div className="flex flex-col pt-24 pb-0 bg-white p-53">
-      <h1 className="leading-[54px] text-4xl font-semibold font-dm-sans">
+    <div className="flex flex-col pt-24 pb-16 pl-[18%] pr-[18%]">
+      <h1 className="leading-[54px] text-4xl font-semibold">
         Incorporating opportunity areas into sketches
       </h1>
-      <div className="flex pt-8">
+      <div className="flex pt-8 pb-16">
         {sketches.map((sketch, index) => (
           <Image
             src={sketch.src}
@@ -45,7 +45,7 @@ export default function Sketches() {
           />
         ))}
       </div>
-      <div className="grid grid-cols-2 grid-rows-2 pt-12 pb-12 gap-y-16 gap-x-12 font-dm-sans">
+      <div className="grid grid-cols-2 grid-rows-2 gap-y-16 gap-x-12">
         {sketchesGridBlocks.map((block, index) => (
           <SketchesGridBlocks {...block} key={index} />
         ))}
