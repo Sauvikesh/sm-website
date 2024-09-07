@@ -5,6 +5,7 @@ import Process from './_components/Process/Process';
 import Question from './_components/Question/Question';
 import CardSort from './_components/CardSort/CardSort';
 import Ideation from './_components/Ideation/Ideation';
+import FinalSolution from './_components/FinalSolution.tsx/FinalSolution';
 
 export default function HackDavis() {
   return (
@@ -16,6 +17,7 @@ export default function HackDavis() {
       <Question />
       <CardSort />
       <Ideation />
+      <FinalSolution />
     </main>
   );
 }
