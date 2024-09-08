@@ -1,14 +1,14 @@
-import Landing from './_components/Landing/Landing';
-import Intro from './_components/Intro/Intro';
-import SolutionPreview from './_components/SolutionPreview/SolutionPreview';
-import Process from './_components/Process/Process';
-import Question from './_components/Question/Question';
-import CardSort from './_components/CardSort/CardSort';
-import Ideation from './_components/Ideation/Ideation';
-import FinalSolution from './_components/FinalSolution/FinalSolution';
-import Results from './_components/Results/Results';
-import Venue from './_components/Venue/Venue';
-import Ending from './_components/Ending/Ending';
+import Landing from './_components/Sections/Landing/Landing';
+import Intro from './_components/Sections/Intro/Intro';
+import SolutionPreview from './_components/Sections/SolutionPreview/SolutionPreview';
+import Process from './_components/Sections/Process/Process';
+import Question from './_components/Sections/Question/Question';
+import CardSort from './_components/Sections/CardSort/CardSort';
+import Ideation from './_components/Sections/Ideation/Ideation';
+import FinalSolution from './_components/Sections/FinalSolution/FinalSolution';
+import Results from './_components/Sections/Results/Results';
+import Venue from './_components/Sections/Venue/Venue';
+import Ending from './_components/Sections/Ending/Ending';
 import DividerLine from './_components/DividerLine/DividerLine';
 
 export default function HackDavis() {
