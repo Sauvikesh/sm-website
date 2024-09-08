@@ -82,17 +82,15 @@ export default function Process() {
         </p>
       </div>
 
-      <div className="flex gap-16 relative">
+      <div className="flex gap-16 relative w-full">
         <div className="flex items-center gap-8">
-          <div className="bg-[#F1F1F1] rounded-[1000px]  overflow-hidden border border-[#CCCCCC] relative w-[255px] h-[190px]">
-            <Image
-              src="hackdavis/log_frog.svg"
-              alt="log frog"
-              width={1000}
-              height={1000}
-              className="absolute bottom-0"
-            />
-          </div>
+          <Image
+            src="hackdavis/frogCircle.svg"
+            alt="log frog"
+            width={1000}
+            height={1000}
+            className="w-[255px]"
+          />
           <div className="flex flex-col gap-4">
             <h3 className="font-medium">The beginning hacker</h3>
             <ul className="list-disc pl-4">
@@ -106,15 +104,13 @@ export default function Process() {
           </div>
         </div>
         <div className="flex items-center gap-8">
-          <div className="bg-[#F1F1F1] rounded-[1000px]  overflow-hidden border border-[#CCCCCC] relative w-[255px] h-[190px]">
-            <Image
-              src="hackdavis/hd_cow.svg"
-              alt="log frog"
-              width={1000}
-              height={1000}
-              className="absolute bottom-0 w-[145px] left-5"
-            />
-          </div>
+          <Image
+            src="hackdavis/cowCircle.svg"
+            alt="log frog"
+            width={1000}
+            height={1000}
+            className="w-[255px]"
+          />
           <div className="flex flex-col gap-4">
             <h3 className="font-medium">The potential sponsor</h3>
             <ul className="list-disc pl-4">

@@ -34,6 +34,7 @@ export default function Ideation() {
           alt="prize 1"
           width={1000}
           height={1000}
+          className="w-10"
         />
         <Image
           src="hackdavis/prize2.svg"
@@ -47,6 +48,7 @@ export default function Ideation() {
           alt="prize 1"
           width={1000}
           height={1000}
+          className="w-10"
         />
         <Image
           src="hackdavis/prize3.svg"
@@ -85,6 +87,7 @@ export default function Ideation() {
           alt="prize 1"
           width={50}
           height={1000}
+          className="w-10"
         />
         <Image
           src="hackdavis/teamAfter.svg"
@@ -121,6 +124,7 @@ export default function Ideation() {
           alt="prize 1"
           width={50}
           height={1000}
+          className="w-10"
         />
         <Image
           src="hackdavis/mbAfter.svg"
@@ -152,12 +156,14 @@ export default function Ideation() {
           alt="prize 1"
           width={1000}
           height={1000}
+          className="w-[50%]"
         />
         <Image
           src="hackdavis/loader.svg"
           alt="prize 1"
           width={1000}
           height={1000}
+          className="w-[50%]"
         />
       </div>
     </div>
