@@ -44,7 +44,7 @@ export default function Ending() {
             width={1000}
             height={1000}
           />
-          <p>The whole HackDavis team!</p>
+          <p className="pt-4">The whole HackDavis team!</p>
         </div>
         <div className="flex flex-col items-center justify-center">
           <Image
@@ -53,7 +53,7 @@ export default function Ending() {
             width={1000}
             height={1000}
           />
-          <p>Celebratory post-HackDavis photo</p>
+          <p className="pt-4">Celebratory post-HackDavis photo</p>
         </div>
       </div>
     </div>
