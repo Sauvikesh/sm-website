@@ -2,6 +2,8 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
+import { CommentProps } from './Comment';
+import Comment from './Comment';
 
 export default function FinalSolution() {
   const scrollToSection = (sectionId: string) => {
@@ -9,6 +11,65 @@ export default function FinalSolution() {
   };
 
   const [activeButton, setActiveButton] = useState(1);
+
+  const commentsAbout: CommentProps[] = [
+    {
+      text: 'Potential sponsors can gain a better understanding of the scale of the event through KPIs',
+      x: '-220px',
+      y: '20%',
+    },
+    {
+      text: "Users can learn about HackDavis's core values and what we stand for",
+      x: '-220px',
+      y: '38%',
+    },
+    {
+      text: 'Users can feel more connected and develop increased credibility by getting to know the people behind HackDavis',
+      x: '-220px',
+      y: '53%',
+    },
+    {
+      text: 'Users develop increased positive brand association by seeing our track record and have the ability to view sites for previous years',
+      x: '-220px',
+      y: '74%',
+    },
+  ];
+
+  const commentsLanding: CommentProps[] = [
+    {
+      text: 'Potential participants receive reassurance that creators of all backgrounds and levels of experience are welcome',
+      x: '-230px',
+      y: '59%',
+    },
+    {
+      text: 'Users can find answers to common questions they may have quicker',
+      x: '-230px',
+      y: '79%',
+    },
+  ];
+
+  const commentsDOE: CommentProps[] = [
+    {
+      text: 'Users can request help right away and easily navigate to the CTA later on',
+      x: '-215px',
+      y: '4%',
+    },
+    {
+      text: 'Users can easily discover resources via our educational starter pack',
+      x: '-215px',
+      y: '10%',
+    },
+    {
+      text: 'Users can see when events occur, and plan to attend specific workshops',
+      x: '-215px',
+      y: '20%',
+    },
+    {
+      text: 'Users gain motivation to register and can narrow down which tracks to apply for',
+      x: '-215px',
+      y: '34%',
+    },
+  ];
 
   return (
     <div className="pl-[11%] pr-[11%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
@@ -34,7 +95,7 @@ export default function FinalSolution() {
             }}
           >
             <p className="text-4xl font-bold tracking-[0.72px]">01</p>
-            <p className="text-[15px] tracking-[0.3px]">Registration</p>
+            <p className="text-[15px] tracking-[0.3px]">About</p>
           </div>
 
           <div
@@ -44,7 +105,7 @@ export default function FinalSolution() {
             }}
           >
             <p className="text-4xl font-bold tracking-[0.72px]">02</p>
-            <p className="text-[15px] tracking-[0.3px]">About</p>
+            <p className="text-[15px] tracking-[0.3px]">Registration</p>
           </div>
 
           <div
@@ -58,125 +119,63 @@ export default function FinalSolution() {
           </div>
         </div>
 
-        <div className="flex flex-col w-[65%] gap-[197px] relative">
-          <Image
-            src="/hackdavis/comment1.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="absolute w-[176px] right-[-168px] top-[4.5%]"
-          />
+        <div className="flex flex-col w-[65%] gap-[197px]">
+          <div className="flex relative">
+            <motion.div
+              onPointerOver={() => setActiveButton(1)}
+              onViewportEnter={() => setActiveButton(1)}
+            >
+              <Image
+                src="/hackdavis/About.png"
+                alt="about page"
+                width={1000}
+                height={1000}
+                id="1"
+              />
+            </motion.div>
 
-          <Image
-            src="/hackdavis/comment2.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="absolute w-[176px] right-[-168px] top-[8%]"
-          />
+            {commentsAbout.map((comment, index) => (
+              <Comment x={comment.x} y={comment.y} text={comment.text} key={index} />
+            ))}
+          </div>
 
-          <Image
-            src="/hackdavis/comment3.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="absolute w-[176px] right-[-168px] top-[11.5%]"
-          />
+          <div className="flex relative">
+            <motion.div
+              onPointerOver={() => setActiveButton(2)}
+              onViewportEnter={() => setActiveButton(2)}
+            >
+              <Image
+                src="/hackdavis/Landing.svg"
+                alt="about page"
+                width={1000}
+                height={1000}
+                id="2"
+              />
+            </motion.div>
 
-          <Image
-            src="/hackdavis/comment4.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="absolute w-[176px] right-[-168px] top-[15.5%]"
-          />
+            {commentsLanding.map((comment, index) => (
+              <Comment {...comment} key={index} />
+            ))}
+          </div>
 
-          <Image
-            src="/hackdavis/comment5.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="absolute w-[176px] right-[-178px] top-[41%]"
-          />
+          <div className="flex relative">
+            <motion.div
+              onPointerOver={() => setActiveButton(3)}
+              onViewportEnter={() => setActiveButton(3)}
+            >
+              <Image
+                src="/hackdavis/DOE.svg"
+                alt="about page"
+                width={1000}
+                height={1000}
+                id="3"
+              />
 
-          <Image
-            src="/hackdavis/comment6.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="absolute w-[176px] right-[-178px] top-[48.5%]"
-          />
-
-          <Image
-            src="/hackdavis/comment7.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="absolute w-[176px] right-[-165px] top-[57%]"
-          />
-
-          <Image
-            src="/hackdavis/comment8.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="absolute w-[176px] right-[-165px] top-[60%]"
-          />
-
-          <Image
-            src="/hackdavis/comment9.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="absolute w-[176px] right-[-165px] top-[65%]"
-          />
-
-          <Image
-            src="/hackdavis/comment10.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="absolute w-[176px] right-[-165px] top-[71%]"
-          />
-
-          <motion.div
-            onPointerOver={() => setActiveButton(1)}
-            onViewportEnter={() => setActiveButton(1)}
-          >
-            <Image
-              src="/hackdavis/About.png"
-              alt="about page"
-              width={1000}
-              height={1000}
-              id="1"
-            />
-          </motion.div>
-
-          <motion.div
-            onPointerOver={() => setActiveButton(2)}
-            onViewportEnter={() => setActiveButton(2)}
-          >
-            <Image
-              src="/hackdavis/Landing.svg"
-              alt="about page"
-              width={1000}
-              height={1000}
-              id="2"
-            />
-          </motion.div>
-
-          <motion.div
-            onPointerOver={() => setActiveButton(3)}
-            onViewportEnter={() => setActiveButton(3)}
-          >
-            <Image
-              src="/hackdavis/DOE.svg"
-              alt="about page"
-              width={1000}
-              height={1000}
-              id="3"
-            />
-          </motion.div>
+              {commentsDOE.map((comment, index) => (
+                <Comment {...comment} key={index} />
+              ))}
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>
