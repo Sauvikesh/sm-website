@@ -135,7 +135,12 @@ export default function FinalSolution() {
             </motion.div>
 
             {commentsAbout.map((comment, index) => (
-              <Comment x={comment.x} y={comment.y} text={comment.text} key={index} />
+              <Comment
+                x={comment.x}
+                y={comment.y}
+                text={comment.text}
+                key={index}
+              />
             ))}
           </div>
 
