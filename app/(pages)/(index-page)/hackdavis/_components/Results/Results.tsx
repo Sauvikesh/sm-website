@@ -16,23 +16,23 @@ export default function Results() {
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-8 pt-10">
-        <div className="bg-[#F1F1F1] w-[544px] h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
+      <div className="flex gap-8 pt-10 flex-nowrap">
+        <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
           <p className="text-[40px] font-bold">275,000+</p>
           <p className="text-2xl">Website Views</p>
         </div>
-        <div className="bg-[#F1F1F1] w-[544px] h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
+        <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
           <p className="text-[40px] font-bold">$80,000+</p>
           <p className="text-2xl">in Sponsorships</p>
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-8 pt-8">
-        <div className="bg-[#F1F1F1] w-[544px] h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
+      <div className="flex gap-8 pt-8 flex-nowrap">
+        <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
           <p className="text-[40px] font-bold">900+</p>
           <p className="text-2xl">Hackathon Participants</p>
         </div>
-        <div className="bg-[#F1F1F1] w-[544px] h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
+        <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
           <p className="text-[40px] font-bold">65%</p>
           <p className="text-2xl">First-Time Hackers</p>
         </div>
