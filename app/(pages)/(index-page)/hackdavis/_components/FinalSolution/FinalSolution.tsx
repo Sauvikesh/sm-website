@@ -58,7 +58,87 @@ export default function FinalSolution() {
           </div>
         </div>
 
-        <div className="flex flex-col w-[65%] gap-[197px]">
+        <div className="flex flex-col w-[65%] gap-[197px] relative">
+          <Image
+            src="/hackdavis/comment1.svg"
+            alt="about page"
+            width={1000}
+            height={1000}
+            className="absolute w-[176px] right-[-168px] top-[4.5%]"
+          />
+
+          <Image
+            src="/hackdavis/comment2.svg"
+            alt="about page"
+            width={1000}
+            height={1000}
+            className="absolute w-[176px] right-[-168px] top-[8%]"
+          />
+
+          <Image
+            src="/hackdavis/comment3.svg"
+            alt="about page"
+            width={1000}
+            height={1000}
+            className="absolute w-[176px] right-[-168px] top-[11.5%]"
+          />
+
+          <Image
+            src="/hackdavis/comment4.svg"
+            alt="about page"
+            width={1000}
+            height={1000}
+            className="absolute w-[176px] right-[-168px] top-[15.5%]"
+          />
+
+          <Image
+            src="/hackdavis/comment5.svg"
+            alt="about page"
+            width={1000}
+            height={1000}
+            className="absolute w-[176px] right-[-178px] top-[41%]"
+          />
+
+          <Image
+            src="/hackdavis/comment6.svg"
+            alt="about page"
+            width={1000}
+            height={1000}
+            className="absolute w-[176px] right-[-178px] top-[48.5%]"
+          />
+
+          <Image
+            src="/hackdavis/comment7.svg"
+            alt="about page"
+            width={1000}
+            height={1000}
+            className="absolute w-[176px] right-[-165px] top-[57%]"
+          />
+
+          <Image
+            src="/hackdavis/comment8.svg"
+            alt="about page"
+            width={1000}
+            height={1000}
+            className="absolute w-[176px] right-[-165px] top-[60%]"
+          />
+
+          <Image
+            src="/hackdavis/comment9.svg"
+            alt="about page"
+            width={1000}
+            height={1000}
+            className="absolute w-[176px] right-[-165px] top-[65%]"
+          />
+
+          <Image
+            src="/hackdavis/comment10.svg"
+            alt="about page"
+            width={1000}
+            height={1000}
+            className="absolute w-[176px] right-[-165px] top-[71%]"
+          />
+
           <motion.div
             onPointerOver={() => setActiveButton(1)}
             onViewportEnter={() => setActiveButton(1)}
