@@ -23,7 +23,7 @@ export default function SolutionPreview() {
         </button>
       </div>
 
-      <div className="flex items-start gap-5 pb-20">
+      <div className="flex items-start justify-center gap-5 pb-20">
         <Image
           src="/hackdavis/About.png"
           alt="about page"
@@ -36,13 +36,14 @@ export default function SolutionPreview() {
           alt="about page"
           width={1000}
           height={1000}
-          className="pt-[6px]"
+          className="pt-[6px] w-[30%]"
         />
         <Image
           src="/hackdavis/DOE.svg"
           alt="about page"
           width={1000}
           height={1000}
+          className="w-[30%]"
         />
       </div>
     </div>

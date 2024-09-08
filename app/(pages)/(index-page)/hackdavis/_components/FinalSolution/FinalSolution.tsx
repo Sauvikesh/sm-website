@@ -1,10 +1,14 @@
 'use client';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function FinalSolution() {
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const [activeButton, setActiveButton] = useState(1);
 
   return (
     <div className="pl-[11%] pr-[11%] pt-[146px] pb-[243px] bg-[#F5F5F5]">
@@ -24,24 +28,30 @@ export default function FinalSolution() {
           </div>
 
           <div
-            className="flex flex-col bg-[#EEEEEE] p-4 w-[160px]"
-            onClick={() => scrollToSection('1')}
+            className={`flex flex-col bg-[#EEEEEE] p-4 w-[160px] transition-opacity duration-200 ${activeButton === 1 ? 'opacity-100' : 'opacity-25'}`}
+            onClick={() => {
+              scrollToSection('1');
+            }}
           >
             <p className="text-4xl font-bold tracking-[0.72px]">01</p>
             <p className="text-[15px] tracking-[0.3px]">Registration</p>
           </div>
 
           <div
-            className="flex flex-col bg-[#EEEEEE] p-4 w-[160px]"
-            onClick={() => scrollToSection('2')}
+            className={`flex flex-col bg-[#EEEEEE] p-4 w-[160px] transition-opacity duration-200 ${activeButton === 2 ? 'opacity-100' : 'opacity-25'}`}
+            onClick={() => {
+              scrollToSection('2');
+            }}
           >
             <p className="text-4xl font-bold tracking-[0.72px]">02</p>
             <p className="text-[15px] tracking-[0.3px]">About</p>
           </div>
 
           <div
-            className="flex flex-col bg-[#EEEEEE] p-4 w-[160px]"
-            onClick={() => scrollToSection('3')}
+            className={`flex flex-col bg-[#EEEEEE] p-4 w-[160px] transition-opacity duration-200 ${activeButton === 3 ? 'opacity-100' : 'opacity-25'}`}
+            onClick={() => {
+              scrollToSection('3');
+            }}
           >
             <p className="text-4xl font-bold tracking-[0.72px]">03</p>
             <p className="text-[15px] tracking-[0.3px]">Day-of-Event</p>
@@ -49,30 +59,44 @@ export default function FinalSolution() {
         </div>
 
         <div className="flex flex-col w-[65%] gap-[197px]">
-          <Image
-            src="/hackdavis/About.png"
-            alt="about page"
-            width={1000}
-            height={1000}
-            id="1"
-          />
+          <motion.div
+            onPointerOver={() => setActiveButton(1)}
+            onViewportEnter={() => setActiveButton(1)}
+          >
+            <Image
+              src="/hackdavis/About.png"
+              alt="about page"
+              width={1000}
+              height={1000}
+              id="1"
+            />
+          </motion.div>
 
-          <Image
-            src="/hackdavis/Landing.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            id="2"
-          />
+          <motion.div
+            onPointerOver={() => setActiveButton(2)}
+            onViewportEnter={() => setActiveButton(2)}
+          >
+            <Image
+              src="/hackdavis/Landing.svg"
+              alt="about page"
+              width={1000}
+              height={1000}
+              id="2"
+            />
+          </motion.div>
 
-          <Image
-            src="/hackdavis/DOE.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="-mt-[1500px]"
-            id="3"
-          />
+          <motion.div
+            onPointerOver={() => setActiveButton(3)}
+            onViewportEnter={() => setActiveButton(3)}
+          >
+            <Image
+              src="/hackdavis/DOE.svg"
+              alt="about page"
+              width={1000}
+              height={1000}
+              id="3"
+            />
+          </motion.div>
         </div>
       </div>
     </div>
