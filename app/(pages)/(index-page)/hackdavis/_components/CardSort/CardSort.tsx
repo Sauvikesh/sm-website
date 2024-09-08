@@ -1,7 +1,7 @@
 import Image from 'next/image';
 export default function CardSort() {
   return (
-    <div className="pl-[11%] pr-[11%] pt-[130px] pb-[85px]">
+    <div className="pl-[11%] pr-[11%]">
       <h2 className="text-2xl font-medium leading-6 pb-4">
         Three different pages, three different use cases
       </h2>

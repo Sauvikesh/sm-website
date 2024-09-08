@@ -11,7 +11,7 @@ export default function FinalSolution() {
   const [activeButton, setActiveButton] = useState(1);
 
   return (
-    <div className="pl-[11%] pr-[11%] pt-[146px] pb-[243px] bg-[#F5F5F5]">
+    <div className="pl-[11%] pr-[11%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
       <h1 className="text-[40px] font-bold tracking-[0.8px] text-center">
         Final Solution
       </h1>

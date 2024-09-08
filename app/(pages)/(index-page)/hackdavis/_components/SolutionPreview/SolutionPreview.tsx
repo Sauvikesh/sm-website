@@ -23,7 +23,7 @@ export default function SolutionPreview() {
         </button>
       </div>
 
-      <div className="flex items-start justify-center gap-5 pb-20">
+      <div className="flex items-start justify-center gap-5">
         <Image
           src="/hackdavis/About.png"
           alt="about page"

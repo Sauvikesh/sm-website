@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Intro() {
   return (
-    <div className="pl-[11%] pr-[11%] pt-20 pb-20">
+    <div className="pl-[11%] pr-[11%]">
       <div className="flex w-full justify-between">
         <div className="flex flex-col w-[38%]">
           <h2 className="pb-2 text-2xl font-medium tracking-[0.48px]">

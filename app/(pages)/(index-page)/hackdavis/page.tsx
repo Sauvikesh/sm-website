@@ -9,16 +9,20 @@ import FinalSolution from './_components/FinalSolution/FinalSolution';
 import Results from './_components/Results/Results';
 import Venue from './_components/Venue/Venue';
 import Ending from './_components/Ending/Ending';
+import DividerLine from './_components/DividerLine/DividerLine';
 
 export default function HackDavis() {
   return (
-    <main className="bg-white text-black font-dm-sans tracking-[0.32px]">
+    <main className="bg-white text-black font-dm-sans tracking-[0.32px] flex flex-col gap-20">
       <Landing />
       <Intro />
+      <DividerLine />
       <SolutionPreview />
+      <DividerLine />
       <Process />
       <Question />
       <CardSort />
+      <DividerLine />
       <Ideation />
       <FinalSolution />
       <Results />

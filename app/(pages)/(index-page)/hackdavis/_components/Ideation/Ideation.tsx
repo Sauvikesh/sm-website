@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Ideation() {
   return (
-    <div className="pl-[11%] pr-[11%] pb-5">
+    <div className="pl-[11%] pr-[11%]">
       <div className="flex flex-col gap-4">
         <h1 className="text-[40px] font-bold tracking-[0.8px]">
           Ideations, Explorations & Iterations
@@ -150,7 +150,7 @@ export default function Ideation() {
         </p>
       </div>
 
-      <div className="flex gap-2 pt-10 pb-[100px] justify-center">
+      <div className="flex gap-2 pt-10 justify-center">
         <Image
           src="hackdavis/winMessage.svg"
           alt="prize 1"

@@ -1,10 +1,8 @@
 export default function Results() {
   return (
-    <div className="pl-[11%] pr-[11%] pb-[214px]">
+    <div className="pl-[11%] pr-[11%]">
       <div className="flex flex-col gap-4">
-        <h1 className=" pt-[118px] text-[40px] font-bold tracking-[0.8px]">
-          Results
-        </h1>
+        <h1 className="text-[40px] font-bold tracking-[0.8px]">Results</h1>
         <h2 className="text-2xl font-medium leading-6">
           Record-breaking numbers for the books
         </h2>

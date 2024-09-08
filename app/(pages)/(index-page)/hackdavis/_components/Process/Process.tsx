@@ -2,7 +2,7 @@ import Image from 'next/image';
 // TODO: plz refactor this and create components for reused code :))))
 export default function Process() {
   return (
-    <div className="flex flex-col pl-[11%] pr-[11%] gap-[84px] pb-6">
+    <div className="flex flex-col pl-[11%] pr-[11%] gap-[84px]">
       <h1 className="text-[40px] font-bold tracking-[0.8px] text-center">
         The Process
       </h1>
