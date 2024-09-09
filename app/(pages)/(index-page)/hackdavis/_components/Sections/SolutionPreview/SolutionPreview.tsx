@@ -32,14 +32,14 @@ export default function SolutionPreview() {
           className="w-[30%]"
         />
         <Image
-          src="/hackdavis/Landing.svg"
+          src="/hackdavis/Landing.png"
           alt="about page"
           width={1000}
           height={1000}
           className="pt-[6px] w-[30%]"
         />
         <Image
-          src="/hackdavis/DOE.svg"
+          src="/hackdavis/DOE.png"
           alt="about page"
           width={1000}
           height={1000}

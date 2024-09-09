@@ -150,7 +150,7 @@ export default function FinalSolution() {
               onViewportEnter={() => setActiveButton(2)}
             >
               <Image
-                src="/hackdavis/Landing.svg"
+                src="/hackdavis/Landing.png"
                 alt="about page"
                 width={1000}
                 height={1000}
@@ -169,7 +169,7 @@ export default function FinalSolution() {
               onViewportEnter={() => setActiveButton(3)}
             >
               <Image
-                src="/hackdavis/DOE.svg"
+                src="/hackdavis/DOE.png"
                 alt="about page"
                 width={1000}
                 height={1000}
