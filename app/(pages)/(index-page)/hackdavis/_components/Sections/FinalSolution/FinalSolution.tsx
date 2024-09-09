@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CommentProps } from './Comment';
 import Comment from './Comment';
 
@@ -86,6 +86,11 @@ export default function FinalSolution() {
     },
   ];
 
+  useEffect(() => {
+    scrollToSection(activeButton.toString());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [displayDesktop]);
+
   return (
     <div className="pl-[11%] pr-[11%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
       <h1 className="text-[40px] font-bold tracking-[0.8px] text-center">
@@ -97,13 +102,17 @@ export default function FinalSolution() {
           <div className="flex flex-col items-start gap-2">
             <button
               className={`${displayDesktop ? activeButtonStyle : inactiveButtonStyle} rounded-[100px] pl-6 pr-6 pt-2 pb-2`}
-              onClick={() => setDisplayDesktop(true)}
+              onClick={() => {
+                setDisplayDesktop(true);
+              }}
             >
               Desktop
             </button>
             <button
               className={`${displayDesktop ? inactiveButtonStyle : activeButtonStyle} rounded-[100px] pl-6 pr-6 pt-2 pb-2`}
-              onClick={() => setDisplayDesktop(false)}
+              onClick={() => {
+                setDisplayDesktop(false);
+              }}
             >
               Mobile
             </button>
