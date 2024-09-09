@@ -32,7 +32,7 @@ export default function SolutionPreview() {
           Jump to Solution
         </button>
 
-        <Link href="https://2024.hackdavis.io/">
+        <Link href="https://2024.hackdavis.io/" target="_blank">
           <button className="flex items-center gap-2 bg-white text-[#005271] p-4 rounded-lg border border-[#005271]">
             Experience on the Web
             <Image
