@@ -21,7 +21,7 @@ export default function FinalSolution() {
     : '/hackdavis/LandingMobile.png';
   const doeLink = displayDesktop
     ? '/hackdavis/DOE.png'
-    : '/hackdavis/DOEMobile.png';
+    : '/hackdavis/DoEMobile.png';
 
   const activeButtonStyle = 'bg-black text-white border border-white';
 
