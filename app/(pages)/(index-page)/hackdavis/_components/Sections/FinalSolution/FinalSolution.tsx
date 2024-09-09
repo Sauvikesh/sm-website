@@ -11,27 +11,42 @@ export default function FinalSolution() {
   };
 
   const [activeButton, setActiveButton] = useState(1);
+  const [displayDesktop, setDisplayDesktop] = useState(true);
+
+  const aboutLink = displayDesktop
+    ? '/hackdavis/About.png'
+    : '/hackdavis/AboutMobile.png';
+  const landingLink = displayDesktop
+    ? '/hackdavis/Landing.png'
+    : '/hackdavis/LandingMobile.png';
+  const doeLink = displayDesktop
+    ? '/hackdavis/DOE.png'
+    : '/hackdavis/DOEMobile.png';
+
+  const activeButtonStyle = 'bg-black text-white border border-white';
+
+  const inactiveButtonStyle = 'bg-white text-black border border-black';
 
   const commentsAbout: CommentProps[] = [
     {
       text: 'Potential sponsors can gain a better understanding of the scale of the event through KPIs',
       x: '-220px',
-      y: '20%',
+      y: displayDesktop ? '20%' : '12%',
     },
     {
       text: "Users can learn about HackDavis's core values and what we stand for",
       x: '-220px',
-      y: '38%',
+      y: displayDesktop ? '38%' : '21%',
     },
     {
       text: 'Users can feel more connected and develop increased credibility by getting to know the people behind HackDavis',
       x: '-220px',
-      y: '53%',
+      y: displayDesktop ? '53%' : '40%',
     },
     {
       text: 'Users develop increased positive brand association by seeing our track record and have the ability to view sites for previous years',
       x: '-220px',
-      y: '74%',
+      y: displayDesktop ? '74%' : '82%',
     },
   ];
 
@@ -39,12 +54,12 @@ export default function FinalSolution() {
     {
       text: 'Potential participants receive reassurance that creators of all backgrounds and levels of experience are welcome',
       x: '-230px',
-      y: '59%',
+      y: displayDesktop ? '59%' : '52%',
     },
     {
       text: 'Users can find answers to common questions they may have quicker',
       x: '-230px',
-      y: '79%',
+      y: displayDesktop ? '79%' : '65%',
     },
   ];
 
@@ -52,22 +67,22 @@ export default function FinalSolution() {
     {
       text: 'Users can request help right away and easily navigate to the CTA later on',
       x: '-215px',
-      y: '4%',
+      y: displayDesktop ? '4%' : '4%',
     },
     {
       text: 'Users can easily discover resources via our educational starter pack',
       x: '-215px',
-      y: '10%',
+      y: displayDesktop ? '10%' : '9%',
     },
     {
       text: 'Users can see when events occur, and plan to attend specific workshops',
       x: '-215px',
-      y: '20%',
+      y: displayDesktop ? '20%' : '12%',
     },
     {
       text: 'Users gain motivation to register and can narrow down which tracks to apply for',
       x: '-215px',
-      y: '34%',
+      y: displayDesktop ? '34%' : '28%',
     },
   ];
 
@@ -80,10 +95,16 @@ export default function FinalSolution() {
       <div className="flex w-full gap-12 relative">
         <div className="flex flex-col items-start gap-8 sticky top-12 h-fit">
           <div className="flex flex-col items-start gap-2">
-            <button className="bg-black text-white rounded-[100px] pl-6 pr-6 pt-2 pb-2">
+            <button
+              className={`${displayDesktop ? activeButtonStyle : inactiveButtonStyle} rounded-[100px] pl-6 pr-6 pt-2 pb-2`}
+              onClick={() => setDisplayDesktop(true)}
+            >
               Desktop
             </button>
-            <button className="bg-white text-black rounded-[100px] pl-6 pr-6 pt-2 pb-2 border border-black">
+            <button
+              className={`${displayDesktop ? inactiveButtonStyle : activeButtonStyle} rounded-[100px] pl-6 pr-6 pt-2 pb-2`}
+              onClick={() => setDisplayDesktop(false)}
+            >
               Mobile
             </button>
           </div>
@@ -126,7 +147,7 @@ export default function FinalSolution() {
               onViewportEnter={() => setActiveButton(1)}
             >
               <Image
-                src="/hackdavis/About.png"
+                src={aboutLink}
                 alt="about page"
                 width={1000}
                 height={1000}
@@ -150,7 +171,7 @@ export default function FinalSolution() {
               onViewportEnter={() => setActiveButton(2)}
             >
               <Image
-                src="/hackdavis/Landing.png"
+                src={landingLink}
                 alt="about page"
                 width={1000}
                 height={1000}
@@ -169,7 +190,7 @@ export default function FinalSolution() {
               onViewportEnter={() => setActiveButton(3)}
             >
               <Image
-                src="/hackdavis/DOE.png"
+                src={doeLink}
                 alt="about page"
                 width={1000}
                 height={1000}

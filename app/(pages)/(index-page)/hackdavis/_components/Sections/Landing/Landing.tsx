@@ -28,6 +28,7 @@ export default function Landing() {
           height={1000}
           alt="laptop"
           className="-translate-x-10 -translate-y-11 z-0"
+          priority
         />
       </div>
     </header>
