@@ -3,12 +3,12 @@ import Image from 'next/image';
 export default function Process() {
   return (
     <div className="flex flex-col pl-[11%] pr-[11%] gap-[84px]">
-      <h1 className="text-[40px] font-bold tracking-[0.8px] text-center">
+      <h1 className="text-center">
         The Process
       </h1>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-medium leading-6 pb-4">
+        <h2 className="pb-4">
           Hackathons are <span className=" italic">expensive</span>, like{' '}
           <span className=" italic">$80,000 expensive</span>
         </h2>
@@ -22,7 +22,7 @@ export default function Process() {
             <h2 className="text-4xl text-[#B5B5B5] font-bold tracking-[0.72px] leading-[54px]">
               01
             </h2>
-            <h2 className="text-2xl font-medium leading-6 pb-4">
+            <h2 className="pb-4">
               Securing adequate funding
             </h2>
             <p>
@@ -34,7 +34,7 @@ export default function Process() {
             <h2 className="text-4xl text-[#B5B5B5] font-bold tracking-[0.72px] leading-[54px]">
               02
             </h2>
-            <h2 className="text-2xl font-medium leading-6 pb-4">
+            <h2 className="pb-4">
               Increasing attendee registration
             </h2>
             <p>
@@ -46,7 +46,7 @@ export default function Process() {
       </div>
 
       <div>
-        <h2 className="text-2xl font-medium leading-6 pb-4">
+        <h2 className="pb-4">
           Designing for user vs. business needs... why not both?
         </h2>
         <p>
@@ -67,7 +67,7 @@ export default function Process() {
       </div>
 
       <div className="flex flex-col bg-[#F1F1F1] p-6 rounded-2xl gap-2 border border-[#D2D2D2]">
-        <h2 className="text-2xl font-medium leading-6">
+        <h2 >
           Opportunity Area: Leveraging Emotional Design
         </h2>
         <p>
@@ -92,7 +92,7 @@ export default function Process() {
             className="w-[255px]"
           />
           <div className="flex flex-col gap-4">
-            <h3 className="font-medium">The beginning hacker</h3>
+            <p className="font-medium">The beginning hacker</p>
             <ul className="list-disc pl-4">
               <li className="text-sm">
                 Unsure about whether they are qualified and/or capable
@@ -112,7 +112,7 @@ export default function Process() {
             className="w-[255px]"
           />
           <div className="flex flex-col gap-4">
-            <h3 className="font-medium">The potential sponsor</h3>
+            <p className="font-medium">The potential sponsor</p>
             <ul className="list-disc pl-4">
               <li className="text-sm">
                 Wants to learn about the mission and core values of HackDavis
@@ -126,7 +126,7 @@ export default function Process() {
       </div>
 
       <div>
-        <h2 className="text-2xl font-medium leading-6 pb-4">
+        <h2 className="pb-4">
           Setting actionable goals to address the target audiences
         </h2>
         <p>

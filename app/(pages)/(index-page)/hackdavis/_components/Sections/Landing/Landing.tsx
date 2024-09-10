@@ -6,7 +6,7 @@ export default function Landing() {
       <h1 className="text-[80px] font-medium lead-[44px] pt-9">
         HackDavis 2024
       </h1>
-      <p className="text-base pb-14">7 min read</p>
+      <p className="pb-14">7 min read</p>
       <div className="flex w-full items-center justify-center">
         <Image
           src="/hackdavis/Mobile.svg"

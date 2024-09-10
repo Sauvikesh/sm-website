@@ -3,7 +3,7 @@ export default function Ending() {
   return (
     <div className="pl-[11%] pr-[11%] flex flex-col gap-20 pb-20">
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-medium leading-6 pt-6">Challenges</h2>
+        <h2 className="pt-6">Challenges</h2>
         <p>
           Stepping outside the realm of exploratory projects upped the stakes of
           this one, and in an effort to do the very best I could, I had a hard
@@ -16,7 +16,7 @@ export default function Ending() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-medium leading-6">Takeaways</h2>
+        <h2>Takeaways</h2>
         <p>
           Building rapport and relationships between designers and engineers is
           integral to the success and shared vision across teams. Cultivating
@@ -27,7 +27,7 @@ export default function Ending() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-medium leading-6">Next Steps</h2>
+        <h2>Next Steps</h2>
         <p>
           I'm looking forward to seeing HackDavis 2025 come to life, and I hope
           that the work from this year serves as a jumping off point for next

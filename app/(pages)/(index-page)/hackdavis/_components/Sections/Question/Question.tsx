@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Question() {
   return (
     <div className="bg-[#005271] text-white p-[160px] flex relative">
-      <h1 className="text-[40px] font-bold tracking-[0.8px] pr-[23%]">
+      <h1 className="pr-[23%]">
         How might we inspire participants and sponsors to champion social good?{' '}
       </h1>
 

@@ -12,7 +12,7 @@ export default function SolutionPreview() {
 
   return (
     <div className="flex flex-col pl-[11%] pr-[11%] justify-center items-center">
-      <h1 className="pb-4 text-[40px] font-bold tracking-[0.8px]">
+      <h1 className="pb-4">
         Solution Preview
       </h1>
       <p className="pb-8">

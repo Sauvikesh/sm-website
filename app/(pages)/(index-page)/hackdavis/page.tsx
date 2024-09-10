@@ -13,7 +13,7 @@ import DividerLine from './_components/DividerLine/DividerLine';
 
 export default function HackDavis() {
   return (
-    <main className="bg-white text-black font-dm-sans tracking-[0.32px] flex flex-col gap-20">
+    <main className="bg-white text-black  flex flex-col gap-20">
       <Landing />
       <Intro />
       <DividerLine />

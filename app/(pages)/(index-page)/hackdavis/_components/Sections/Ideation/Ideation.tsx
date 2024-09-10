@@ -4,10 +4,10 @@ export default function Ideation() {
   return (
     <div className="pl-[11%] pr-[11%]">
       <div className="flex flex-col gap-4">
-        <h1 className="text-[40px] font-bold tracking-[0.8px]">
+        <h1>
           Ideations, Explorations & Iterations
         </h1>
-        <h2 className="text-2xl font-medium leading-6">
+        <h2>
           Displaying prizes in a more visually prominent way
         </h2>
         <p>
@@ -60,7 +60,7 @@ export default function Ideation() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-medium leading-6">
+        <h2 >
           Increasing personability on the about page
         </h2>
         <p>
@@ -99,7 +99,7 @@ export default function Ideation() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-medium leading-6">
+        <h2>
           Showcasing our values and integrity
         </h2>
         <p>
@@ -135,7 +135,7 @@ export default function Ideation() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-medium leading-6">
+        <h2>
           Uh oh... PNGs take forever to load
         </h2>
         <p>

@@ -2,8 +2,8 @@ export default function Results() {
   return (
     <div className="pl-[11%] pr-[11%]">
       <div className="flex flex-col gap-4">
-        <h1 className="text-[40px] font-bold tracking-[0.8px]">Results</h1>
-        <h2 className="text-2xl font-medium leading-6">
+        <h1>Results</h1>
+        <h2>
           Record-breaking numbers for the books
         </h2>
         <p>
@@ -16,23 +16,23 @@ export default function Results() {
 
       <div className="flex gap-8 pt-10 flex-nowrap">
         <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
-          <p className="text-[40px] font-bold">275,000+</p>
-          <p className="text-2xl">Website Views</p>
+          <h1>275,000+</h1>
+          <h2>Website Views</h2>
         </div>
         <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
-          <p className="text-[40px] font-bold">$80,000+</p>
-          <p className="text-2xl">in Sponsorships</p>
+          <h1>$80,000+</h1>
+          <h2>in Sponsorships</h2>
         </div>
       </div>
 
       <div className="flex gap-8 pt-8 flex-nowrap">
         <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
-          <p className="text-[40px] font-bold">900+</p>
-          <p className="text-2xl">Hackathon Participants</p>
+          <h1>900+</h1>
+          <h2>Hackathon Participants</h2>
         </div>
         <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
-          <p className="text-[40px] font-bold">65%</p>
-          <p className="text-2xl">First-Time Hackers</p>
+          <h1>65%</h1>
+          <h2>First-Time Hackers</h2>
         </div>
       </div>
     </div>

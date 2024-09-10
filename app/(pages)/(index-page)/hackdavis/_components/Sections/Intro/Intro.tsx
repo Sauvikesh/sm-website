@@ -5,7 +5,7 @@ export default function Intro() {
     <div className="pl-[11%] pr-[11%]">
       <div className="flex w-full justify-between">
         <div className="flex flex-col w-[38%]">
-          <h2 className="pb-2 text-2xl font-medium tracking-[0.48px]">
+          <h2 className="pb-2">
             Overview
           </h2>
           <p>
@@ -19,14 +19,14 @@ export default function Intro() {
           </p>
         </div>
         <div className="flex flex-col w-[18%]">
-          <h2 className="pb-2 text-2xl font-medium tracking-[0.48px]">
+          <h2 className="pb-2">
             My Role
           </h2>
           <p>
             Visual Design <br></br>User Research <br></br>
             Handoff & Documentation{' '}
           </p>
-          <h2 className="pb-2 pt-8 text-2xl font-medium tracking-[0.48px]">
+          <h2 className="pb-2 pt-8">
             Timeline
           </h2>
           <p>
@@ -34,7 +34,7 @@ export default function Intro() {
           </p>
         </div>
         <div className="flex flex-col w-[28%]">
-          <h2 className="pb-2 text-2xl font-medium tracking-[0.48px]">
+          <h2 className="pb-2">
             The Team
           </h2>
           <Image
@@ -46,7 +46,7 @@ export default function Intro() {
         </div>
       </div>
 
-      <h2 className="pb-2 text-2xl font-medium tracking-[0.48px] pt-17">
+      <h2 className="pb-2 pt-17">
         The Challenge
       </h2>
       <p>
