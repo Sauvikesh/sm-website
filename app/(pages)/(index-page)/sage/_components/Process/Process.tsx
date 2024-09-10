@@ -5,7 +5,7 @@ import Heading from '../Headings/Heading';
 // ^^ is this the best way I can assign the widths? doesn't look simple to change
 export default function Process() {
   return (
-    <div className="flex flex-col pl-[18%] pr-[18%] bg-gray-200 justify-center g-3 h-[60vh]">
+    <div className="flex flex-col pl-[11%] pr-[11%] bg-gray-200 justify-center g-3 h-[60vh]">
       <Heading h1="THE PROCESS" p="Project Goals" />
       <div className="flex">
         <Image

@@ -12,10 +12,8 @@ export default function GridContentBlock(props: GridContentBlockProps) {
 
   return (
     <div className={`col-span-${colSpan} row-span-1 p-4`}>
-      <h1 className={`text-base font-bold leading-[44px] ${transparentClass}`}>
-        {header}
-      </h1>
-      <p className="text-lg leading-8">{paragraph}</p>
+      <h3 className={` ${transparentClass}`}>{header}</h3>
+      <p>{paragraph}</p>
     </div>
   );
 }

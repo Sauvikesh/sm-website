@@ -11,7 +11,7 @@ import Prototype from './_components/Prototype/Prototype';
 
 export default function Sage() {
   return (
-    <main className="bg-[#e4edeb] text-black font-dm-sans">
+    <main className="bg-[#e4edeb] text-black">
       <Landing />
       <Summary />
       <Problem />

@@ -3,9 +3,7 @@ import Image from 'next/image';
 export default function Process() {
   return (
     <div className="flex flex-col pl-[11%] pr-[11%] gap-[84px]">
-      <h2 className="text-center">
-        The Process
-      </h2>
+      <h2 className="text-center">The Process</h2>
 
       <div className="flex flex-col gap-4">
         <h3>
@@ -22,9 +20,7 @@ export default function Process() {
             <h3 className="text-4xl text-[#B5B5B5] font-bold tracking-[0.72px] leading-[54px]">
               01
             </h3>
-            <h3 className="pb-4">
-              Securing adequate funding
-            </h3>
+            <h3 className="pb-4">Securing adequate funding</h3>
             <p>
               Is essential to the success of such a large-scale event, and all
               of the intricacies including venue, food, wifi, power, and prizes.
@@ -34,9 +30,7 @@ export default function Process() {
             <h3 className="text-4xl text-[#B5B5B5] font-bold tracking-[0.72px] leading-[54px]">
               02
             </h3>
-            <h3 className="pb-4">
-              Increasing attendee registration
-            </h3>
+            <h3 className="pb-4">Increasing attendee registration</h3>
             <p>
               Demonstrates the growth of HackDavis as an organization, leads to
               higher student impact, and more creation for social good.
@@ -67,9 +61,7 @@ export default function Process() {
       </div>
 
       <div className="flex flex-col bg-[#F1F1F1] p-6 rounded-2xl gap-2 border border-[#D2D2D2]">
-        <h3 >
-          Opportunity Area: Leveraging Emotional Design
-        </h3>
+        <h3>Opportunity Area: Leveraging Emotional Design</h3>
         <p>
           After connecting with previous HackDavis participants and sponsors, I
           realized that emotional design could be a powerful tool to balance

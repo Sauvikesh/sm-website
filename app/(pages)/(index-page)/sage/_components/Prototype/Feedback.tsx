@@ -14,7 +14,7 @@ export default function Feedback() {
   ];
 
   return (
-    <div className="flex flex-col pt-16 pb-0 pl-[18%] pr-[18%]">
+    <div className="flex flex-col pt-16 pb-0">
       {wireframes.map((frame, index) => (
         <Image
           src={frame.src}
@@ -22,14 +22,12 @@ export default function Feedback() {
           width={1000}
           height={1000}
           key={index}
-          className="w-[100%]"
+          className="w-[95%] self-center"
         />
       ))}
 
-      <h1 className="pt-40 pb-4 text-4xl font-bold">
-        Usability testing takeaways
-      </h1>
-      <ul className="pb-40 list-disc pl-11">
+      <h3 className="pt-40 pb-4">Usability testing takeaways</h3>
+      <ul className="pb-40 list-disc pl-5">
         {bulletPoints.map((bullet, index) => (
           <li className="pb-2 text-lg leading-8" key={index}>
             {bullet}

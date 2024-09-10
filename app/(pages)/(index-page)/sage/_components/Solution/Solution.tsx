@@ -4,7 +4,7 @@ import Heading from '../Headings/Heading';
 
 export default function Solution() {
   return (
-    <div className="flex flex-col bg-gray-500 pl-[18%] pr-[18%] justify-center g-3 h-[40vh]">
+    <div className="flex flex-col bg-gray-500 pl-[11%] pr-[11%] justify-center g-3 h-[40vh]">
       <Heading
         h1="THE SOLUTION"
         p="Help students set big-picture goals that simultaneously venerate

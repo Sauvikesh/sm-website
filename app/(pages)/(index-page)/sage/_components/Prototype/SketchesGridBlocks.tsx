@@ -8,8 +8,8 @@ export default function SketchesGridBlocks(props: SketchesGridBlocksProps) {
 
   return (
     <div className="col-span-1 row-span-1">
-      <h1 className="text-2xl leading-[44px]">{h1}</h1>
-      <p className="text-[18px] leading-8">{p}</p>
+      <h3>{h1}</h3>
+      <p className="pt-4">{p}</p>
     </div>
   );
 }

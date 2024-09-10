@@ -3,9 +3,7 @@ export default function Results() {
     <div className="pl-[11%] pr-[11%]">
       <div className="flex flex-col gap-4">
         <h2>Results</h2>
-        <h3>
-          Record-breaking numbers for the books
-        </h3>
+        <h3>Record-breaking numbers for the books</h3>
         <p>
           Ultimately, we hit our funding goal (phew) and had the pleasure of
           being co-hosted with Intel which allowed HackDavis to be the biggest

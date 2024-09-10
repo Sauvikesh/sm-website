@@ -4,12 +4,8 @@ export default function Ideation() {
   return (
     <div className="pl-[11%] pr-[11%]">
       <div className="flex flex-col gap-4">
-        <h2>
-          Ideations, Explorations & Iterations
-        </h2>
-        <h3>
-          Displaying prizes in a more visually prominent way
-        </h3>
+        <h2>Ideations, Explorations & Iterations</h2>
+        <h3>Displaying prizes in a more visually prominent way</h3>
         <p>
           In an earnest honesty, 2 out of the 5 interviewees admitted that the
           prizes highly motivated them to participate. I comprehensively
@@ -60,9 +56,7 @@ export default function Ideation() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h3 >
-          Increasing personability on the about page
-        </h3>
+        <h3>Increasing personability on the about page</h3>
         <p>
           Seeing the faces behind the magic helps potential participants and
           sponsors feel more connected to HackDavis and increases our
@@ -99,9 +93,7 @@ export default function Ideation() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h3>
-          Showcasing our values and integrity
-        </h3>
+        <h3>Showcasing our values and integrity</h3>
         <p>
           Exhibiting our values further builds trust and reassures potential
           sponsors that their investment is going towards a good cause.
@@ -135,9 +127,7 @@ export default function Ideation() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h3>
-          Uh oh... PNGs take forever to load
-        </h3>
+        <h3>Uh oh... PNGs take forever to load</h3>
         <p>
           After completing design handoff and documentation, engineering
           notified me that the loading time for the landing page was slower than

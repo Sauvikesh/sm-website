@@ -29,10 +29,8 @@ export default function Sketches() {
     },
   ];
   return (
-    <div className="flex flex-col pt-24 pb-16 pl-[18%] pr-[18%]">
-      <h1 className="leading-[54px] text-4xl font-semibold">
-        Incorporating opportunity areas into sketches
-      </h1>
+    <div className="flex flex-col pt-24 pb-16">
+      <h2>Incorporating opportunity areas into sketches</h2>
       <div className="flex pt-8 pb-16">
         {sketches.map((sketch, index) => (
           <Image

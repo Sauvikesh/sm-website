@@ -5,9 +5,7 @@ export default function Intro() {
     <div className="pl-[11%] pr-[11%]">
       <div className="flex w-full justify-between">
         <div className="flex flex-col w-[38%]">
-          <h3 className="pb-2">
-            Overview
-          </h3>
+          <h3 className="pb-2">Overview</h3>
           <p>
             HackDavis is the largest annual collegiate hackathon in California.
             For the 8th year in a row, HackDavis brought together students,
@@ -19,24 +17,18 @@ export default function Intro() {
           </p>
         </div>
         <div className="flex flex-col w-[18%]">
-          <h3 className="pb-2">
-            My Role
-          </h3>
+          <h3 className="pb-2">My Role</h3>
           <p>
             Visual Design <br></br>User Research <br></br>
             Handoff & Documentation{' '}
           </p>
-          <h3 className="pb-2 pt-8">
-            Timeline
-          </h3>
+          <h3 className="pb-2 pt-8">Timeline</h3>
           <p>
             6 months <br></br> Nov 2023 - Apr 2024{' '}
           </p>
         </div>
         <div className="flex flex-col w-[28%]">
-          <h3 className="pb-2">
-            The Team
-          </h3>
+          <h3 className="pb-2">The Team</h3>
           <Image
             src="/hackdavis/team.svg"
             alt="project team"
@@ -46,9 +38,7 @@ export default function Intro() {
         </div>
       </div>
 
-      <h3 className="pb-2 pt-17">
-        The Challenge
-      </h3>
+      <h3 className="pb-2 pt-17">The Challenge</h3>
       <p>
         Traditionally, hackathons consisted solely of programmers who tackled
         software problems and produced technological prototypes. However, the
