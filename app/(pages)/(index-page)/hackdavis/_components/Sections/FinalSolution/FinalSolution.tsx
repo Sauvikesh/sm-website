@@ -13,6 +13,17 @@ export default function FinalSolution() {
   const [activeButton, setActiveButton] = useState(1);
   const [displayDesktop, setDisplayDesktop] = useState(true);
 
+  const [renderCount, setRenderCount] = useState(0);
+
+  useEffect(() => {
+    if (renderCount < 2) {
+      setRenderCount((prev) => prev + 1);
+      return;
+    }
+    scrollToSection(activeButton.toString());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [displayDesktop]);
+
   const aboutLink = displayDesktop
     ? '/hackdavis/About.png'
     : '/hackdavis/AboutMobile.png';
@@ -85,11 +96,6 @@ export default function FinalSolution() {
       y: displayDesktop ? '34%' : '28%',
     },
   ];
-
-  useEffect(() => {
-    scrollToSection(activeButton.toString());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [displayDesktop]);
 
   return (
     <div className="pl-[11%] pr-[11%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
