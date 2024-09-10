@@ -93,9 +93,9 @@ export default function FinalSolution() {
 
   return (
     <div className="pl-[11%] pr-[11%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
-      <h1 className="text-center">
+      <h2 className="text-center">
         Final Solution
-      </h1>
+      </h2>
 
       <div className="flex w-full gap-12 relative">
         <div className="flex flex-col items-start gap-8 sticky top-12 h-fit">

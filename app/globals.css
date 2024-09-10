@@ -12,7 +12,7 @@ body {
   font-family: var(--font-dmSans), sans-serif;
 } 
 
-h1 {
+h2 {
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -20,7 +20,7 @@ h1 {
   letter-spacing: 0.8px;
 }
 
-h2 {
+h3 {
     font-size: 1.5rem /* 24px */;
     line-height: 2rem /* 32px */;
     font-weight: 500;
