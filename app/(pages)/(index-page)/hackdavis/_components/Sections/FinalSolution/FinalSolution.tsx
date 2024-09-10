@@ -1,28 +1,19 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { CommentProps } from './Comment';
 import Comment from './Comment';
+import { useScrollToSectionOnViewSwitch } from '@/app/(pages)/_hooks/useScrollToSection';
 
 export default function FinalSolution() {
-  const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   const [activeButton, setActiveButton] = useState(1);
   const [displayDesktop, setDisplayDesktop] = useState(true);
 
-  const [renderCount, setRenderCount] = useState(0);
-
-  useEffect(() => {
-    if (renderCount < 2) {
-      setRenderCount((prev) => prev + 1);
-      return;
-    }
-    scrollToSection(activeButton.toString());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [displayDesktop]);
+  const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  };
+  useScrollToSectionOnViewSwitch(activeButton, displayDesktop, scrollToSection);
 
   const aboutLink = displayDesktop
     ? '/hackdavis/About.png'
