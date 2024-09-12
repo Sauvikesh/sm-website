@@ -2,7 +2,7 @@ import TextCard, {
   TextCardProps,
 } from '@/app/(pages)/(index-page)/_components/TextCard';
 import Image from 'next/image';
-// TODO: plz refactor this and create components for reused code :))))
+
 export default function Process() {
   const textCardElements: TextCardProps[] = [
     {
