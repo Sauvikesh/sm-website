@@ -7,7 +7,7 @@ import { useScrollToSectionOnViewSwitch } from '@/app/(pages)/_hooks/useScrollTo
 //TODO: comeback to this later to refactor again maybe ???
 export default function FinalSolution() {
   const [activeScrollButton, setActiveScrollButton] = useState(1);
-  const [displayDesktop, setDisplayDesktop] = useState(false);
+  const [displayDesktop, setDisplayDesktop] = useState(true);
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
