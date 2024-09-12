@@ -7,7 +7,7 @@ import { useScrollToSectionOnViewSwitch } from '@/app/(pages)/_hooks/useScrollTo
 //TODO: comeback to this later to refactor again maybe ???
 export default function FinalSolution() {
   const [activeScrollButton, setActiveScrollButton] = useState(1);
-  const [displayDesktop, setDisplayDesktop] = useState(true);
+  const [displayDesktop, setDisplayDesktop] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
@@ -136,13 +136,14 @@ export default function FinalSolution() {
               <Image
                 src={
                   displayDesktop
-                    ? '/hackdavis/About.png'
-                    : '/hackdavis/AboutMobile.png'
+                    ? '/hackdavis/solutions/AboutHQ.png'
+                    : '/hackdavis/solutions/AboutMobileHQ.png'
                 }
                 alt="about page"
                 width={1000}
                 height={1000}
                 id="1"
+                priority={true}
               />
             </motion.div>
 
@@ -164,13 +165,14 @@ export default function FinalSolution() {
               <Image
                 src={
                   displayDesktop
-                    ? '/hackdavis/Landing.png'
-                    : '/hackdavis/LandingMobile.png'
+                    ? '/hackdavis/solutions/Landing.svg'
+                    : '/hackdavis/solutions/LandingMobile.svg'
                 }
                 alt="about page"
                 width={1000}
                 height={1000}
                 id="2"
+                priority={true}
               />
             </motion.div>
 
@@ -187,13 +189,14 @@ export default function FinalSolution() {
               <Image
                 src={
                   displayDesktop
-                    ? '/hackdavis/DOE.png'
-                    : '/hackdavis/DoEMobile.png'
+                    ? '/hackdavis/solutions/DOE.svg'
+                    : '/hackdavis/solutions/DoEMobile.svg'
                 }
                 alt="about page"
                 width={1000}
                 height={1000}
                 id="3"
+                priority={true}
               />
 
               {commentsDOE.map((comment, index) => (

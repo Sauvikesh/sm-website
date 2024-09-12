@@ -1,15 +1,8 @@
-'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import ScrollToSolution from './ScrollToSolution';
 
 export default function SolutionPreview() {
-  const handleScroll = () => {
-    const finalSolutionSection = document.getElementById('1');
-    if (finalSolutionSection) {
-      finalSolutionSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="flex flex-col pl-[11%] pr-[11%] justify-center items-center">
       <h2 className="pb-4">Solution Preview</h2>
@@ -23,12 +16,7 @@ export default function SolutionPreview() {
         participants.
       </p>
       <div className="flex gap-6 pb-20">
-        <button
-          className="bg-[#005271] text-white p-4 rounded-lg"
-          onClick={handleScroll}
-        >
-          Jump to Solution
-        </button>
+        <ScrollToSolution />
 
         <Link href="https://2024.hackdavis.io/" target="_blank">
           <button className="flex items-center gap-2 bg-white text-[#005271] p-4 rounded-lg border border-[#005271]">
@@ -46,21 +34,21 @@ export default function SolutionPreview() {
 
       <div className="flex items-start justify-center gap-5">
         <Image
-          src="/hackdavis/About.png"
+          src="/hackdavis/solutions/AboutHQ.png"
           alt="about page"
           width={1000}
           height={1000}
           className="w-[30%]"
         />
         <Image
-          src="/hackdavis/Landing.png"
+          src="/hackdavis/solutions/Landing.svg"
           alt="about page"
           width={1000}
           height={1000}
           className="pt-[6px] w-[30%]"
         />
         <Image
-          src="/hackdavis/DOE.png"
+          src="/hackdavis/solutions/DOE.svg"
           alt="about page"
           width={1000}
           height={1000}
