@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Question() {
   return (
-    <div className="bg-[#005271] text-white p-[160px] flex relative">
+    <section className="bg-[#005271] text-white p-[160px] flex relative">
       <h2 className="pr-[23%]">
         How might we inspire participants and sponsors to champion social good?{' '}
       </h2>
@@ -14,6 +14,6 @@ export default function Question() {
         height={1000}
         className="absolute w-[400px] top-[-115px] right-[100px]"
       />
-    </div>
+    </section>
   );
 }

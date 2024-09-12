@@ -23,7 +23,7 @@ export default function CardSort() {
   ];
 
   return (
-    <div className="pl-[11%] pr-[11%]">
+    <section className="pl-[11%] pr-[11%]">
       <Heading
         h3="Three different pages, three different use cases"
         p="After gathering a comprehensive list of the content, I set out to
@@ -44,6 +44,6 @@ export default function CardSort() {
         width={2000}
         height={1000}
       />
-    </div>
+    </section>
   );
 }

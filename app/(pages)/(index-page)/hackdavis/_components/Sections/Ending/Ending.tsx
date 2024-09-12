@@ -17,7 +17,7 @@ export default function Ending() {
   ];
 
   return (
-    <div className="pl-[11%] pr-[11%] flex flex-col gap-20 pb-20">
+    <section className="pl-[11%] pr-[11%] flex flex-col gap-20 pb-20">
       {headings.map((heading, index) => (
         <Heading {...heading} key={index} />
       ))}
@@ -42,6 +42,6 @@ export default function Ending() {
           <p className="pt-4">Celebratory post-HackDavis photo</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

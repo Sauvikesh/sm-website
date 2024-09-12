@@ -3,7 +3,7 @@ import Heading from '../../Heading/Heading';
 
 export default function Ideation() {
   return (
-    <div className="pl-[11%] pr-[11%]">
+    <section className="pl-[11%] pr-[11%]">
       <div className="flex flex-col gap-4">
         <h2>Ideations, Explorations & Iterations</h2>
         <Heading
@@ -151,6 +151,6 @@ export default function Ideation() {
           className="w-[50%]"
         />
       </div>
-    </div>
+    </section>
   );
 }

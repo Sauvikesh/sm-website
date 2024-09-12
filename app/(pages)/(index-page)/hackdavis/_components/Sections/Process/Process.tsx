@@ -2,7 +2,6 @@ import TextCard, {
   TextCardProps,
 } from '@/app/(pages)/(index-page)/_components/TextCard';
 import Image from 'next/image';
-import Heading from '../../Heading/Heading';
 
 export default function Process() {
   const textCardElements: TextCardProps[] = [
@@ -40,7 +39,7 @@ export default function Process() {
   ];
 
   return (
-    <div className="flex flex-col pl-[11%] pr-[11%] gap-[80px]">
+    <section className="flex flex-col pl-[11%] pr-[11%] gap-[80px]">
       <h2 className="text-center">The Process</h2>
 
       <div className="flex flex-col gap-4">
@@ -114,7 +113,7 @@ export default function Process() {
           3. Use effective and engaging storytelling
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

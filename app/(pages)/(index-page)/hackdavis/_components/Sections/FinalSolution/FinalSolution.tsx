@@ -98,7 +98,7 @@ export default function FinalSolution() {
   ];
 
   return (
-    <div className="pl-[11%] pr-[11%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
+    <section className="pl-[11%] pr-[11%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
       <h2 className="text-center">Final Solution</h2>
 
       <div className="flex w-full gap-12 relative">
@@ -203,7 +203,7 @@ export default function FinalSolution() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -260,7 +260,6 @@ export const ToggleButton = ({
     </button>
   );
 };
-
 
 export type CommentProps = {
   text: string;

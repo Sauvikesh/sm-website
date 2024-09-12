@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Intro() {
   return (
-    <div className="pl-[11%] pr-[11%]">
+    <section className="pl-[11%] pr-[11%]">
       <div className="flex w-full justify-between">
         <div className="flex flex-col w-[38%]">
           <h3 className="pb-2">Overview</h3>
@@ -47,6 +47,6 @@ export default function Intro() {
         experience levels, students with little to no technical experience often
         express their intimidation.
       </p>
-    </div>
+    </section>
   );
 }
