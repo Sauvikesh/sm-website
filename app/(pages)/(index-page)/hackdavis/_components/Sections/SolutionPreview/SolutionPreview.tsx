@@ -11,7 +11,7 @@ export default function SolutionPreview() {
   };
 
   return (
-    <div className="flex flex-col pl-[11%] pr-[11%] justify-center items-center">
+    <section className="flex flex-col pl-[11%] pr-[11%] justify-center items-center">
       <h2 className="pb-4">Solution Preview</h2>
       <p className="pb-8">
         A responsive website that sets students up for success by facilitating
@@ -67,6 +67,6 @@ export default function SolutionPreview() {
           className="w-[30%]"
         />
       </div>
-    </div>
+    </section>
   );
 }

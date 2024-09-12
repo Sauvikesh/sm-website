@@ -1,49 +1,41 @@
+import TextCard, {
+  TextCardProps,
+} from '@/app/(pages)/(index-page)/_components/TextCard';
 import Image from 'next/image';
+import Heading from '../../Heading/Heading';
 export default function CardSort() {
+  const textCardElements: TextCardProps[] = [
+    {
+      number: '01',
+      header: 'About',
+      body: 'Caters to potential sponsors and includes KPIs such as participants headcount and projects submitted. Delves into our key values and showcases our successful track record.',
+    },
+    {
+      number: '02',
+      header: 'Registration',
+      body: 'Serves as the first point-of-contact where potential participants begin their journey. Encourages participant registration and provides information about what a hackathon is.',
+    },
+    {
+      number: '03',
+      header: 'Day-of-Event',
+      body: 'One-stop shop for important resources; facilitates processes such as getting started with our educational starter pack, project submission, and requesting help.',
+    },
+  ];
+
   return (
-    <div className="pl-[11%] pr-[11%]">
-      <h3 className="pb-4">Three different pages, three different use cases</h3>
-      <p className="pb-8">
-        After gathering a comprehensive list of the content, I set out to
+    <section className="pl-[11%] pr-[11%]">
+      <Heading
+        h3="Three different pages, three different use cases"
+        p="After gathering a comprehensive list of the content, I set out to
         understand if there was a more intuitive way to organize everything. I
         conducted card sorting (for the first time!) with five individuals, and
-        built a site map consisting of three distinct pages.
-      </p>
+        built a site map consisting of three distinct pages."
+      />
 
-      <div className="flex gap-8 pb-[100px]">
-        <div className="flex flex-col bg-[#F1F1F1] p-6 rounded-2xl gap-4 border border-[#D2D2D2]">
-          <h3 className="text-4xl text-[#B5B5B5] font-bold tracking-[0.72px] leading-[54px]">
-            01
-          </h3>
-          <h3 className="text-2xl font-medium leading-6 pb-4">About</h3>
-          <p>
-            Caters to potential sponsors and includes KPIs such as participants
-            headcount and projects submitted. Delves into our key values and
-            showcases our successful track record.
-          </p>
-        </div>
-        <div className="flex flex-col bg-[#F1F1F1] p-6 rounded-2xl gap-4 border border-[#D2D2D2]">
-          <h3 className="text-4xl text-[#B5B5B5] font-bold tracking-[0.72px] leading-[54px]">
-            02
-          </h3>
-          <h3 className="text-2xl font-medium leading-6 pb-4">Registration</h3>
-          <p>
-            Serves as the first point-of-contact where potential participants
-            begin their journey. Encourages participant registration and
-            provides information about what a hackathon is.
-          </p>
-        </div>
-        <div className="flex flex-col bg-[#F1F1F1] p-6 rounded-2xl gap-4 border border-[#D2D2D2]">
-          <h3 className="text-4xl text-[#B5B5B5] font-bold tracking-[0.72px] leading-[54px]">
-            03
-          </h3>
-          <h3 className="text-2xl font-medium leading-6 pb-4">Day-of-Event</h3>
-          <p>
-            One-stop shop for important resources; facilitates processes such as
-            getting started with our educational starter pack, project
-            submission, and requesting help.
-          </p>
-        </div>
+      <div className="flex gap-8 pb-20 pt-8">
+        {textCardElements.map((card, index) => (
+          <TextCard {...card} key={index} />
+        ))}
       </div>
 
       <Image
@@ -52,6 +44,6 @@ export default function CardSort() {
         width={2000}
         height={1000}
       />
-    </div>
+    </section>
   );
 }

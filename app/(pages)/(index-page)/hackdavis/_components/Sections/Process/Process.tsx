@@ -1,8 +1,45 @@
+import TextCard, {
+  TextCardProps,
+} from '@/app/(pages)/(index-page)/_components/TextCard';
 import Image from 'next/image';
-// TODO: plz refactor this and create components for reused code :))))
+
 export default function Process() {
+  const textCardElements: TextCardProps[] = [
+    {
+      number: '01',
+      header: 'Securing adequate funding',
+      body: 'Is essential to the success of such a large-scale event, and all of the intricacies including venue, food, wifi, power, and prizes.',
+    },
+    {
+      number: '02',
+      header: 'Increasing attendee registration',
+      body: 'Demonstrates the growth of HackDavis as an organization, leads to higher student impact, and more creation for social good.',
+    },
+  ];
+
+  const profiles: UserProfileProps[] = [
+    {
+      imgSrc: 'hackdavis/frogCircle.svg',
+      imgAlt: 'log frog',
+      title: 'The beginning hacker',
+      listItems: [
+        'Unsure about whether they are qualified and/or capable',
+        'Want to explore tech and gain hands-on project experience',
+      ],
+    },
+    {
+      imgSrc: 'hackdavis/cowCircle.svg',
+      imgAlt: 'cow',
+      title: 'The potential sponsor',
+      listItems: [
+        'Wants to learn about the mission and core values of HackDavis',
+        'Needs to validate that their investment is going to a good cause',
+      ],
+    },
+  ];
+
   return (
-    <div className="flex flex-col pl-[11%] pr-[11%] gap-[84px]">
+    <section className="flex flex-col pl-[11%] pr-[11%] gap-[80px]">
       <h2 className="text-center">The Process</h2>
 
       <div className="flex flex-col gap-4">
@@ -16,26 +53,9 @@ export default function Process() {
         </p>
 
         <div className="flex gap-8">
-          <div className="flex flex-col bg-[#F1F1F1] p-6 rounded-2xl gap-4 border border-[#D2D2D2]">
-            <h3 className="text-4xl text-[#B5B5B5] font-bold tracking-[0.72px] leading-[54px]">
-              01
-            </h3>
-            <h3 className="pb-4">Securing adequate funding</h3>
-            <p>
-              Is essential to the success of such a large-scale event, and all
-              of the intricacies including venue, food, wifi, power, and prizes.
-            </p>
-          </div>
-          <div className="flex flex-col bg-[#F1F1F1] p-6 rounded-2xl gap-4 border border-[#D2D2D2]">
-            <h3 className="text-4xl text-[#B5B5B5] font-bold tracking-[0.72px] leading-[54px]">
-              02
-            </h3>
-            <h3 className="pb-4">Increasing attendee registration</h3>
-            <p>
-              Demonstrates the growth of HackDavis as an organization, leads to
-              higher student impact, and more creation for social good.
-            </p>
-          </div>
+          {textCardElements.map((card, index) => (
+            <TextCard {...card} key={index} />
+          ))}
         </div>
       </div>
 
@@ -60,61 +80,22 @@ export default function Process() {
         </p>
       </div>
 
-      <div className="flex flex-col bg-[#F1F1F1] p-6 rounded-2xl gap-2 border border-[#D2D2D2]">
-        <h3>Opportunity Area: Leveraging Emotional Design</h3>
-        <p>
-          After connecting with previous HackDavis participants and sponsors, I
+      <TextCard
+        header="Opportunity Area: Leveraging Emotional Design"
+        body="After connecting with previous HackDavis participants and sponsors, I
           realized that emotional design could be a powerful tool to balance
           user and business needs. Conveying a sense of inclusion makes the
           world of a difference to first-time participants and helps them take
           the first step to break barriers in tech, while demonstrating our
           professionalism, telling a wholistic story about our values, and
           showcasing previous years' success are integral to reassuring
-          potential sponsors that they are making a worthy investment.
-        </p>
-      </div>
+          potential sponsors that they are making a worthy investment."
+      />
 
       <div className="flex gap-16 relative w-full">
-        <div className="flex items-center gap-8">
-          <Image
-            src="hackdavis/frogCircle.svg"
-            alt="log frog"
-            width={1000}
-            height={1000}
-            className="w-[255px]"
-          />
-          <div className="flex flex-col gap-4">
-            <p className="font-medium">The beginning hacker</p>
-            <ul className="list-disc pl-4">
-              <li className="text-sm">
-                Unsure about whether they are qualified and/or capable
-              </li>
-              <li className="text-sm">
-                Want to explore tech and gain hands-on project experience
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex items-center gap-8">
-          <Image
-            src="hackdavis/cowCircle.svg"
-            alt="log frog"
-            width={1000}
-            height={1000}
-            className="w-[255px]"
-          />
-          <div className="flex flex-col gap-4">
-            <p className="font-medium">The potential sponsor</p>
-            <ul className="list-disc pl-4">
-              <li className="text-sm">
-                Wants to learn about the mission and core values of HackDavis
-              </li>
-              <li className="text-sm">
-                Needs to validate that their investment is going to a good cause
-              </li>
-            </ul>
-          </div>
-        </div>
+        {profiles.map((profile, index) => (
+          <UserProfile {...profile} key={index} />
+        ))}
       </div>
 
       <div>
@@ -131,6 +112,39 @@ export default function Process() {
           <br></br>
           3. Use effective and engaging storytelling
         </p>
+      </div>
+    </section>
+  );
+}
+
+type UserProfileProps = {
+  imgSrc: string;
+  imgAlt: string;
+  title: string;
+  listItems: string[];
+};
+
+function UserProfile(props: UserProfileProps) {
+  const { imgSrc, imgAlt, title, listItems } = props;
+
+  return (
+    <div className="flex items-center gap-8">
+      <Image
+        src={imgSrc}
+        alt={imgAlt}
+        width={1000}
+        height={1000}
+        className="w-[255px]"
+      />
+      <div className="flex flex-col gap-4">
+        <p className="font-medium">{title}</p>
+        <ul className="list-disc pl-4">
+          {listItems.map((item, index) => (
+            <li className="text-sm" key={index}>
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

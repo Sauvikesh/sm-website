@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Venue() {
   return (
-    <div className="w-full">
+    <section className="w-full">
       <Image
         src="hackdavis/venue.svg"
         alt="venue"
@@ -10,6 +10,6 @@ export default function Venue() {
         height={1000}
         className="w-full"
       />
-    </div>
+    </section>
   );
 }

@@ -2,32 +2,22 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
-import { CommentProps } from './Comment';
-import Comment from './Comment';
 import { useScrollToSectionOnViewSwitch } from '@/app/(pages)/_hooks/useScrollToSection';
 
+//TODO: comeback to this later to refactor again maybe ???
 export default function FinalSolution() {
-  const [activeButton, setActiveButton] = useState(1);
+  const [activeScrollButton, setActiveScrollButton] = useState(1);
   const [displayDesktop, setDisplayDesktop] = useState(true);
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
-  useScrollToSectionOnViewSwitch(activeButton, displayDesktop, scrollToSection);
 
-  const aboutLink = displayDesktop
-    ? '/hackdavis/About.png'
-    : '/hackdavis/AboutMobile.png';
-  const landingLink = displayDesktop
-    ? '/hackdavis/Landing.png'
-    : '/hackdavis/LandingMobile.png';
-  const doeLink = displayDesktop
-    ? '/hackdavis/DOE.png'
-    : '/hackdavis/DoEMobile.png';
-
-  const activeButtonStyle = 'bg-black text-white border border-white';
-
-  const inactiveButtonStyle = 'bg-white text-black border border-black';
+  useScrollToSectionOnViewSwitch(
+    activeScrollButton,
+    displayDesktop,
+    scrollToSection
+  );
 
   const commentsAbout: CommentProps[] = [
     {
@@ -88,70 +78,67 @@ export default function FinalSolution() {
     },
   ];
 
+  const scrollButtons = [
+    { sectionId: '1', number: '01', label: 'About' },
+    { sectionId: '2', number: '02', label: 'Registration' },
+    { sectionId: '3', number: '03', label: 'Schedule' },
+  ];
+
+  const toggleButtons = [
+    {
+      label: 'Desktop',
+      isActive: displayDesktop,
+      onClick: () => setDisplayDesktop(true),
+    },
+    {
+      label: 'Mobile',
+      isActive: !displayDesktop,
+      onClick: () => setDisplayDesktop(false),
+    },
+  ];
+
   return (
-    <div className="pl-[11%] pr-[11%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
+    <section className="pl-[11%] pr-[11%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
       <h2 className="text-center">Final Solution</h2>
 
       <div className="flex w-full gap-12 relative">
         <div className="flex flex-col items-start gap-8 sticky top-12 h-fit">
           <div className="flex flex-col items-start gap-2">
-            <button
-              className={`${displayDesktop ? activeButtonStyle : inactiveButtonStyle} rounded-[100px] pl-6 pr-6 pt-2 pb-2`}
-              onClick={() => {
-                setDisplayDesktop(true);
-              }}
-            >
-              Desktop
-            </button>
-            <button
-              className={`${displayDesktop ? inactiveButtonStyle : activeButtonStyle} rounded-[100px] pl-6 pr-6 pt-2 pb-2`}
-              onClick={() => {
-                setDisplayDesktop(false);
-              }}
-            >
-              Mobile
-            </button>
+            {toggleButtons.map((button, index) => (
+              <ToggleButton
+                key={index}
+                label={button.label}
+                onClick={button.onClick}
+                isActive={button.isActive}
+              />
+            ))}
           </div>
 
-          <div
-            className={`flex flex-col bg-[#EEEEEE] p-4 w-[160px] transition-opacity duration-200 ${activeButton === 1 ? 'opacity-100' : 'opacity-25'}`}
-            onClick={() => {
-              scrollToSection('1');
-            }}
-          >
-            <p className="text-4xl font-bold tracking-[0.72px]">01</p>
-            <p className="text-[15px] tracking-[0.3px]">About</p>
-          </div>
-
-          <div
-            className={`flex flex-col bg-[#EEEEEE] p-4 w-[160px] transition-opacity duration-200 ${activeButton === 2 ? 'opacity-100' : 'opacity-25'}`}
-            onClick={() => {
-              scrollToSection('2');
-            }}
-          >
-            <p className="text-4xl font-bold tracking-[0.72px]">02</p>
-            <p className="text-[15px] tracking-[0.3px]">Registration</p>
-          </div>
-
-          <div
-            className={`flex flex-col bg-[#EEEEEE] p-4 w-[160px] transition-opacity duration-200 ${activeButton === 3 ? 'opacity-100' : 'opacity-25'}`}
-            onClick={() => {
-              scrollToSection('3');
-            }}
-          >
-            <p className="text-4xl font-bold tracking-[0.72px]">03</p>
-            <p className="text-[15px] tracking-[0.3px]">Day-of-Event</p>
-          </div>
+          {scrollButtons.map((button, index) => (
+            <ScrollButton
+              key={index}
+              sectionId={button.sectionId}
+              activeButton={activeScrollButton}
+              buttonIndex={index + 1}
+              number={button.number}
+              label={button.label}
+              scrollToSection={scrollToSection}
+            />
+          ))}
         </div>
 
         <div className="flex flex-col w-[65%] gap-[197px]">
           <div className="flex relative">
             <motion.div
-              onPointerOver={() => setActiveButton(1)}
-              onViewportEnter={() => setActiveButton(1)}
+              onPointerOver={() => setActiveScrollButton(1)}
+              onViewportEnter={() => setActiveScrollButton(1)}
             >
               <Image
-                src={aboutLink}
+                src={
+                  displayDesktop
+                    ? '/hackdavis/About.png'
+                    : '/hackdavis/AboutMobile.png'
+                }
                 alt="about page"
                 width={1000}
                 height={1000}
@@ -171,11 +158,15 @@ export default function FinalSolution() {
 
           <div className="flex relative">
             <motion.div
-              onPointerOver={() => setActiveButton(2)}
-              onViewportEnter={() => setActiveButton(2)}
+              onPointerOver={() => setActiveScrollButton(2)}
+              onViewportEnter={() => setActiveScrollButton(2)}
             >
               <Image
-                src={landingLink}
+                src={
+                  displayDesktop
+                    ? '/hackdavis/Landing.png'
+                    : '/hackdavis/LandingMobile.png'
+                }
                 alt="about page"
                 width={1000}
                 height={1000}
@@ -190,11 +181,15 @@ export default function FinalSolution() {
 
           <div className="flex relative">
             <motion.div
-              onPointerOver={() => setActiveButton(3)}
-              onViewportEnter={() => setActiveButton(3)}
+              onPointerOver={() => setActiveScrollButton(3)}
+              onViewportEnter={() => setActiveScrollButton(3)}
             >
               <Image
-                src={doeLink}
+                src={
+                  displayDesktop
+                    ? '/hackdavis/DOE.png'
+                    : '/hackdavis/DoEMobile.png'
+                }
                 alt="about page"
                 width={1000}
                 height={1000}
@@ -208,6 +203,81 @@ export default function FinalSolution() {
           </div>
         </div>
       </div>
+    </section>
+  );
+}
+
+type ScrollButtonProps = {
+  sectionId: string;
+  activeButton: number;
+  buttonIndex: number;
+  number: string;
+  label: string;
+  scrollToSection: (sectionId: string) => void;
+};
+
+function ScrollButton({
+  sectionId,
+  activeButton,
+  buttonIndex,
+  number,
+  label,
+  scrollToSection,
+}: ScrollButtonProps) {
+  return (
+    <button
+      className={`flex flex-col bg-[#EEEEEE] p-4 w-[160px] transition-opacity duration-200 ${
+        activeButton === buttonIndex ? 'opacity-100' : 'opacity-25'
+      }`}
+      onClick={() => scrollToSection(sectionId)}
+    >
+      <p className="text-4xl font-bold tracking-[0.72px]">{number}</p>
+      <p className="text-[15px] tracking-[0.3px]">{label}</p>
+    </button>
+  );
+}
+
+type ToggleButtonProps = {
+  label: string;
+  onClick: () => void;
+  isActive: boolean;
+};
+
+export const ToggleButton = ({
+  label,
+  onClick,
+  isActive,
+}: ToggleButtonProps) => {
+  const activeButtonStyle = 'bg-black text-white border border-white';
+  const inactiveButtonStyle = 'bg-white text-black border border-black';
+
+  return (
+    <button
+      className={`${isActive ? activeButtonStyle : inactiveButtonStyle} rounded-[100px] pl-6 pr-6 pt-2 pb-2`}
+      onClick={onClick}
+    >
+      {label}
+    </button>
+  );
+};
+
+export type CommentProps = {
+  text: string;
+  x: string;
+  y: string;
+};
+
+export function Comment(props: CommentProps) {
+  const { text, x, y } = props;
+
+  return (
+    <div
+      className={`flex items-center absolute`}
+      style={{ right: `${x}`, top: `${y}` }}
+    >
+      <div className=" bg-[#005271] w-2 h-2 rounded-full"></div>
+      <div className="border-t-2 border-dashed border-[#005271] w-5"></div>
+      <p className="bg-white p-4 rounded-[4px] text-[14px] w-[192px]">{text}</p>
     </div>
   );
 }
