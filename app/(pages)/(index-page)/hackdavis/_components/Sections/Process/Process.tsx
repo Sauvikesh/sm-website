@@ -2,6 +2,7 @@ import TextCard, {
   TextCardProps,
 } from '@/app/(pages)/(index-page)/_components/TextCard';
 import Image from 'next/image';
+import Heading from '../../Heading/Heading';
 
 export default function Process() {
   const textCardElements: TextCardProps[] = [

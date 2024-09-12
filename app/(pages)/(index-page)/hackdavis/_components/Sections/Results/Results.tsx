@@ -1,3 +1,5 @@
+import Heading from '../../Heading/Heading';
+
 export default function Results() {
   const statCards: StatCardProps[] = [
     { number: '275,000+', description: 'Website Views' },
@@ -10,13 +12,13 @@ export default function Results() {
     <div className="pl-[11%] pr-[11%]">
       <div className="flex flex-col gap-4">
         <h2>Results</h2>
-        <h3>Record-breaking numbers for the books</h3>
-        <p>
-          Ultimately, we hit our funding goal (phew) and had the pleasure of
+        <Heading
+          h3="Record-breaking numbers for the books"
+          p="Ultimately, we hit our funding goal (phew) and had the pleasure of
           being co-hosted with Intel which allowed HackDavis to be the biggest
           its ever been. On the big day, we were joined by 900 participants, 65%
-          of which were first-time hackers.
-        </p>
+          of which were first-time hackers."
+        />
       </div>
 
       <div className="flex gap-8 pt-10 flex-wrap">

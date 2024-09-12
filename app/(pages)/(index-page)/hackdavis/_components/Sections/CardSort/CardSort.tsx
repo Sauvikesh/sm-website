@@ -2,6 +2,7 @@ import TextCard, {
   TextCardProps,
 } from '@/app/(pages)/(index-page)/_components/TextCard';
 import Image from 'next/image';
+import Heading from '../../Heading/Heading';
 export default function CardSort() {
   const textCardElements: TextCardProps[] = [
     {
@@ -23,15 +24,15 @@ export default function CardSort() {
 
   return (
     <div className="pl-[11%] pr-[11%]">
-      <h3 className="pb-4">Three different pages, three different use cases</h3>
-      <p className="pb-8">
-        After gathering a comprehensive list of the content, I set out to
+      <Heading
+        h3="Three different pages, three different use cases"
+        p="After gathering a comprehensive list of the content, I set out to
         understand if there was a more intuitive way to organize everything. I
         conducted card sorting (for the first time!) with five individuals, and
-        built a site map consisting of three distinct pages.
-      </p>
+        built a site map consisting of three distinct pages."
+      />
 
-      <div className="flex gap-8 pb-20">
+      <div className="flex gap-8 pb-20 pt-8">
         {textCardElements.map((card, index) => (
           <TextCard {...card} key={index} />
         ))}
