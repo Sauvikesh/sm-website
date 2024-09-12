@@ -1,4 +1,11 @@
 export default function Results() {
+  const statCards: StatCardProps[] = [
+    { number: '275,000+', description: 'Website Views' },
+    { number: '$80,000+', description: 'in Sponsorships' },
+    { number: '900+', description: 'Hackathon Participants' },
+    { number: '65%', description: 'First-Time Hackers' },
+  ];
+
   return (
     <div className="pl-[11%] pr-[11%]">
       <div className="flex flex-col gap-4">
@@ -12,27 +19,25 @@ export default function Results() {
         </p>
       </div>
 
-      <div className="flex gap-8 pt-10 flex-nowrap">
-        <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
-          <h2>275,000+</h2>
-          <h3>Website Views</h3>
-        </div>
-        <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
-          <h2>$80,000+</h2>
-          <h3>in Sponsorships</h3>
-        </div>
+      <div className="flex gap-8 pt-10 flex-wrap">
+        {statCards.map((stat, index) => (
+          <StatCard {...stat} key={index} />
+        ))}
       </div>
+    </div>
+  );
+}
 
-      <div className="flex gap-8 pt-8 flex-nowrap">
-        <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
-          <h2>900+</h2>
-          <h3>Hackathon Participants</h3>
-        </div>
-        <div className="bg-[#F1F1F1] w-full h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
-          <h2>65%</h2>
-          <h3>First-Time Hackers</h3>
-        </div>
-      </div>
+type StatCardProps = {
+  number: string;
+  description: string;
+};
+
+function StatCard({ number, description }: StatCardProps) {
+  return (
+    <div className="bg-[#F1F1F1] w-[calc(50%-1rem)] h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
+      <h2>{number}</h2>
+      <h3>{description}</h3>
     </div>
   );
 }
