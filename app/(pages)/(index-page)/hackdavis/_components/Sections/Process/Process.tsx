@@ -40,7 +40,7 @@ export default function Process() {
   ];
 
   return (
-    <div className="flex flex-col pl-[11%] pr-[11%] gap-[84px]">
+    <div className="flex flex-col pl-[11%] pr-[11%] gap-[80px]">
       <h2 className="text-center">The Process</h2>
 
       <div className="flex flex-col gap-4">
