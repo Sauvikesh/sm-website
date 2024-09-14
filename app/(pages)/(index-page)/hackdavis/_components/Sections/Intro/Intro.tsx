@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 export default function Intro() {
   return (
-    <section className="pl-[11%] pr-[11%]">
+    <section className="pl-[15%] pr-[15%]">
       <div className="flex w-full justify-between">
-        <div className="flex flex-col w-[38%]">
+        <div className="flex flex-col w-[43%]">
           <h3 className="pb-2">Overview</h3>
           <p>
             HackDavis is the largest annual collegiate hackathon in California.
@@ -16,7 +16,7 @@ export default function Intro() {
             warmly welcome new and returning participants.{' '}
           </p>
         </div>
-        <div className="flex flex-col w-[18%]">
+        <div className="flex flex-col w-[20%]">
           <h3 className="pb-2">My Role</h3>
           <p>
             Visual Design <br></br>User Research <br></br>
@@ -27,7 +27,7 @@ export default function Intro() {
             6 months <br></br> Nov 2023 - Apr 2024{' '}
           </p>
         </div>
-        <div className="flex flex-col w-[28%]">
+        <div className="flex flex-col w-[27%]">
           <h3 className="pb-2">The Team</h3>
           <Image
             src="/hackdavis/team.svg"
