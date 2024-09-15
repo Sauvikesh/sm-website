@@ -10,7 +10,7 @@ export default function Navbar() {
 
   const darkMode = useDarkModeSwitch();
 
-  const bgColor = darkMode ? 'bg-black': 'bg-white';
+  const bgColor = darkMode ? 'bg-black' : 'bg-white';
 
   const bgAboutText = pathname === '/about' ? bgColor : '';
 
@@ -47,7 +47,9 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-[39%] z-50 flex justify-center bg-transparent pt-12 transition-all duration-300  ${isVisible ? 'opacity-1 translate-y-0' : 'opacity-0 -translate-y-full'}`}
     >
-      <nav className={`flex items-center justify-center ${darkMode ? 'bg-[#38373C] text-white': 'bg-[#F1F1F1] text-black'} w-fit rounded-[100px] font-dm-sans`}>
+      <nav
+        className={`flex items-center justify-center ${darkMode ? 'bg-[#38373C] text-white' : 'bg-[#F1F1F1] text-black'} w-fit rounded-[100px] font-dm-sans`}
+      >
         <ul className="flex gap-4 p-2 font-dm-sans text-xl leading-none">
           {navItems.map((item, index) => (
             <NavItem key={index} {...item} />

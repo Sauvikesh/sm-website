@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
 
-
 //TODO: comeback to this later to refactor again maybe ???
 export default function FinalSolution() {
   const [activeScrollButton, setActiveScrollButton] = useState(1);
