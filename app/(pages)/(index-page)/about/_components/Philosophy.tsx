@@ -1,23 +1,33 @@
+import TextCard, { TextCardProps } from '../../_components/TextCard';
+
 export default function Philosophy() {
+  const textCardElements: TextCardProps[] = [
+    {
+      number: '01',
+      header: 'Empathy is like a magical superpower',
+      body: 'I strive to meet people where they are and understand a perspective that might be unfamiliar to my lived experiences',
+    },
+    {
+      number: '02',
+      header: 'Stay curious and open-minded',
+      body: "I'm thankful to be surrounded by people with diverse skillsets and point of views to challenge and expand my knowledge",
+    },
+    {
+      number: '03',
+      header: 'Take risks and embrace the unknown',
+      body: 'I value new experiences that challenge me and push me out of my comfort zone; I seek opportunities for growth',
+    },
+  ];
   return (
-    <article className="pl-[15%] pr-[15%]">
-      <h2 className="text-4xl mb-9 font-semibold leading-[54px]">
-        My design philosophy
-      </h2>
+    <article className="pl-[15%] pr-[15%] pb-[175px]">
+      <h3 className="text-4xl tracking-[0.72px]">
+        My design (& life) philosophy
+      </h3>
 
-      <div className="grid grid-rows-3 grid-cols-2 gap-x-12">
-        <h3 className="text-2xl row-span-1">Empathy is a superpower</h3>
-        <h3 className="text-2xl row-span-1">Learning never stops</h3>
-
-        <p className="text-lg leading-8 row-span-2">
-          Approaching life with an empathetic mindset paves the way to better
-          solutions for more diverse audiences.
-        </p>
-
-        <p className="text-lg leading-8 row-span-2">
-          There is so much value in staying curious and being open-minded; every
-          project and experience is a learning opportunity.
-        </p>
+      <div className="flex gap-8 pb-20 pt-6">
+        {textCardElements.map((card, index) => (
+          <TextCard {...card} key={index} />
+        ))}
       </div>
     </article>
   );

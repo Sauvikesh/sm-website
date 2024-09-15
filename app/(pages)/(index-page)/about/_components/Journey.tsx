@@ -1,7 +1,6 @@
 export default function Journey() {
   return (
     <article className="pb-36 pl-[15%] pr-[15%] text-lg leading-8 w-fit">
-      <h2 className="text-4xl mb-2 font-semibold leading-[54px]">My Journey</h2>
       <p>
         Throughout my childhood, I turned my ideas into reality through drawing
         and building furniture for my dolls. My expansive imagination naturally

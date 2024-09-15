@@ -6,8 +6,8 @@ export default function About() {
   return (
     <main className="flex flex-col items-center text-black font-dm-sans ">
       <Bio />
-      <Journey />
       <Philosophy />
+      <Journey />
     </main>
   );
 }
