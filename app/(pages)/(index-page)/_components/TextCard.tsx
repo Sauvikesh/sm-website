@@ -10,7 +10,7 @@ export default function TextCard(props: TextCardProps) {
 
   return (
     <div
-      className={`flex flex-col bg-[#F1F1F1] p-6 rounded-2xl gap-${contentGap} border border-[#D2D2D2] min-w-[315px]`}
+      className={`flex flex-col bg-[#F1F1F1] p-6 rounded-2xl gap-${contentGap} border border-[#D2D2D2] min-w-[31%]`}
     >
       {number && (
         <h3 className="text-4xl text-[#B5B5B5] font-bold tracking-[0.72px] leading-[54px]">

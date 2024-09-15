@@ -4,7 +4,7 @@ import Philosophy from './_components/Philosophy/Philosophy';
 
 export default function About() {
   return (
-    <main className="flex flex-col text-black font-dm-sans ">
+    <main className="flex flex-col text-black font-dm-sans">
       <Bio />
       <Philosophy />
       <Hobbies />

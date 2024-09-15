@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Bio() {
   return (
-    <section className="flex pl-[15%] pr-[15%] pt-[313px] pb-[232px] gap-[118px]">
+    <section className="flex pl-[15%] pr-[15%] pt-[313px] h-[100vh] gap-[118px]">
       <Image
         src="/about/SamTMah.png"
         alt="Sam Photo"
