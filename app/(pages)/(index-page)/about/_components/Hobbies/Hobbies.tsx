@@ -56,8 +56,10 @@ type HobbyImageProps = {
   caption: string;
 };
 export function HobbyImage({ colSpan, src, caption }: HobbyImageProps) {
+  const colSpanClass = colSpan === '1' ? 'col-span-1' : 'col-span-2';
+
   return (
-    <div className={`col-span-${colSpan} group`}>
+    <div className={`${colSpanClass} group`}>
       <Image src={src} alt="Sam Photo" width={1000} height={1000} />
       <h4 className="text-[#7D7D7E] text-center font-outfit pt-2 transition-all -translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
         {caption}
