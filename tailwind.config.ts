@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         'dm-sans': ['var(--font-dmSans)', 'sans-serif'],
         'f-w': ['var(--font-fw)', 'sans-serif'],
+        outfit: ['var(--font-outfit)', 'sans-serif'],
       },
       margin: {
         '53': '13.5rem',

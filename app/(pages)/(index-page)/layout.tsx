@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import '../.././globals.css';
 import Navbar from '../_components/Navbar/Navbar';
 import Footer from '../_components/Footer/Footer';
-import { fahkwang, dmSans } from '../../_fonts';
+import { fahkwang, dmSans, outfit } from '../../_fonts';
 import '../../globals.css';
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fahkwang.variable} ${dmSans.variable} bg-light-bg text-black`}
+        className={`${fahkwang.variable} ${dmSans.variable} ${outfit.variable} bg-light-bg text-black`}
       >
         <Navbar />
         {children}
