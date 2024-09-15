@@ -1,0 +1,103 @@
+import Image from 'next/image';
+
+export default function Play() {
+  return (
+    <section
+      className="flex flex-col pl-[15%] pr-[15%] pt-[511px] gap-[192px]"
+      id="dark-mode"
+    >
+      <FunText />
+      <BookShelf />
+      <CameraRoll />
+    </section>
+  );
+}
+
+function FunText() {
+  return (
+    <div className="flex flex-col items-center gap-10">
+      <div>
+        <h3>Don't want the fun to end?</h3>
+        <p className="font-f-w text-[80px] tracking-[1.6px] -rotate-[8deg] text-center">
+          play
+        </p>
+      </div>
+      <Line />
+    </div>
+  );
+}
+
+function Line() {
+  return (
+    <div className="h-[200px] w-full mt-28 mb-28 xs:mt-20 xs:mb-20">
+      <div className="h-[200px] w-full relative flex justify-center overflow-hidden animate-grow">
+        <div className="h-[200px] w-[1px] bg-white absolute"></div>
+      </div>
+    </div>
+  );
+}
+
+function BookShelf() {
+  return (
+    <div className="flex flex-col items-center gap-10">
+      <div className="flex flex-col items-center gap-4">
+        <h3 className="text-4xl tracking-[0.72px]">On my bookshelf</h3>
+        <p>
+          Every year since 2021, I set a goal to read 52 books. Here are some of
+          the standouts:
+        </p>
+      </div>
+      <div className="flex relative w-full h-[60vh]">
+        <Image
+          src="/about/book1.png"
+          alt="book 1"
+          width={1000}
+          height={1000}
+          className="w-auto h-[360px] absolute left-[8%] z-10"
+        />
+        <Image
+          src="/about/book2.png"
+          alt="book 2"
+          width={1000}
+          height={1000}
+          className="w-auto h-[360px] absolute left-[21%] top-[-4%] z-[9]"
+        />
+        <Image
+          src="/about/book3.png"
+          alt="book 3"
+          width={1000}
+          height={1000}
+          className="w-auto h-[360px] absolute left-[28%] z-[8]"
+        />
+        <Image
+          src="/about/book4.png"
+          alt="book 4"
+          width={1000}
+          height={1000}
+          className="w-auto h-[360px] absolute left-[38%] z-[7]"
+        />
+        <Image
+          src="/about/book5.png"
+          alt="book 5"
+          width={1000}
+          height={1000}
+          className="w-auto h-[360px] absolute left-[48%] z-[6]"
+        />
+      </div>
+    </div>
+  );
+}
+
+function CameraRoll() {
+  return (
+    <div className="flex flex-col items-center gap-10">
+      <div className="flex flex-col items-center gap-4">
+        <h3 className="text-4xl tracking-[0.72px]">From my camera roll</h3>
+        <p>
+          Capturing the beauty of the world through film and practicing the art
+          of noticing
+        </p>
+      </div>
+    </div>
+  );
+}
