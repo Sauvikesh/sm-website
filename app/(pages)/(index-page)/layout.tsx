@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fahkwang.variable} ${dmSans.variable} bg-dark-bg`}>
+      <body
+        className={`${fahkwang.variable} ${dmSans.variable} bg-light-bg text-black`}
+      >
         <Navbar />
         {children}
         <Footer />

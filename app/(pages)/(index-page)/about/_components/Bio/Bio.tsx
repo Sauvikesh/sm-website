@@ -1,62 +1,35 @@
 'use client';
-import { useRef } from 'react';
-import CarouselImage from '../PhotoCarousel/CarouselImage';
-import CurrentStatus, { CurrentStatusProps } from './CurrentStatus';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Bio() {
-  const sectionRef = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ['start 50%', 'end 150%'], // scroll starts 50% above the container, ends by ??% of container(weird math...yucky )
-  });
-
-  const slideInTextStyle = {
-    x: useTransform(scrollYProgress, [0, 1], [0, 250]),
-    opacity: useTransform(scrollYProgress, [0, 1], [1, 0]),
-  };
-
-  const currentStatus: CurrentStatusProps[] = [
-    {
-      header: "I'm Sam",
-      paragraph:
-        'A visionary designer with an adventurous spirit and an insatiable curiosity to learn from others',
-      intro: true,
-    },
-    {
-      header: 'CURRENTLY',
-      paragraph:
-        'On my way towards earning an undergraduate degree in Design at UC Davis',
-    },
-    {
-      header: 'PROBABLY',
-      paragraph:
-        'Drinking a matcha, listening to 70s soul, and solving the daily newspaper Sudoku',
-    },
-  ];
-
   return (
-    <section className="h-[85vh] pl-[15%] pr-[15%]" ref={sectionRef}>
-      <motion.h1
-        className="text-[5em] mb-9 font-semibold leading-[54px]"
-        style={slideInTextStyle}
-      >
-        Nice to meet you, I'm Sam
-      </motion.h1>
+    <section className="flex pl-[15%] pr-[15%] pt-[313px] pb-[232px] gap-[118px]">
+      <Image
+        src="/about/SamTMah.png"
+        alt="Sam Photo"
+        width={1000}
+        height={1000}
+        className="w-[315px] h-[329px]"
+      />
 
-      <article className="flex gap-3">
-        <div className="flex flex-col gap-14 pt-7">
-          {currentStatus.map((stat, index) => (
-            <CurrentStatus {...stat} key={index} />
-          ))}
-        </div>
-
-        <CarouselImage
-          src="/carouselImages/samPolaroid.png"
-          alt="Sam Polaroid"
-        />
-      </article>
+      <div className="flex flex-col gap-6">
+        <h3 className="text-4xl tracking-[0.72px]">
+          Nice to meet you, I'm Sam :D
+        </h3>
+        <p>
+          Throughout my childhood, I turned my ideas into reality through
+          drawing and building furniture for my dolls. My expansive imagination
+          naturally elected me as the consultant for creative problem solving,
+          from designing all of my relative's birthday cards to choosing the
+          paint color of my dad's motorcycles. <br></br> <br></br>I further
+          fueled my creative endeavors at Design Tech High School where I had
+          the opportunity to thrive in a project-based curriculum modeled after
+          Stanford University's d.school. This sparked a passion for the
+          intersection of human-centered design and technology, and opened up a
+          whole new world where I could continue to approach problems with a
+          creative and empathetic mindset.
+        </p>
+      </div>
     </section>
   );
 }
