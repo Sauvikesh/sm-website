@@ -4,7 +4,7 @@ import ScrollToSolution from './ScrollToSolution';
 
 export default function SolutionPreview() {
   return (
-    <section className="flex flex-col pl-[11%] pr-[11%] justify-center items-center">
+    <section className="flex flex-col pl-[15%] pr-[15%] justify-center items-center">
       <h2 className="pb-4">Solution Preview</h2>
       <p className="pb-8">
         A responsive website that sets students up for success by facilitating

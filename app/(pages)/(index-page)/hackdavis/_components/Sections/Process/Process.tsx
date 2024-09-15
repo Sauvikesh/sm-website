@@ -33,18 +33,18 @@ export default function Process() {
       title: 'The potential sponsor',
       listItems: [
         'Wants to learn about the mission and core values of HackDavis',
-        'Needs to validate that their investment is going to a good cause',
+        'Needs to validate that their investment',
       ],
     },
   ];
 
   return (
-    <section className="flex flex-col pl-[11%] pr-[11%] gap-[80px]">
+    <section className="flex flex-col pl-[15%] pr-[15%] gap-[80px]">
       <h2 className="text-center">The Process</h2>
 
       <div className="flex flex-col gap-4">
         <h3>
-          Hackathons are <span className=" italic">expensive</span>, like{' '}
+          Hackathons are <span className="italic">expensive</span>, like{' '}
           <span className=" italic">$80,000 expensive</span>
         </h3>
         <p>
@@ -92,7 +92,7 @@ export default function Process() {
           potential sponsors that they are making a worthy investment."
       />
 
-      <div className="flex gap-16 relative w-full">
+      <div className="flex justify-between relative w-full">
         {profiles.map((profile, index) => (
           <UserProfile {...profile} key={index} />
         ))}
@@ -128,17 +128,17 @@ function UserProfile(props: UserProfileProps) {
   const { imgSrc, imgAlt, title, listItems } = props;
 
   return (
-    <div className="flex items-center gap-8">
+    <div className="flex items-center gap-8 w-[40%]">
       <Image
         src={imgSrc}
         alt={imgAlt}
         width={1000}
         height={1000}
-        className="w-[255px]"
+        className="w-[140px]"
       />
       <div className="flex flex-col gap-4">
         <p className="font-medium">{title}</p>
-        <ul className="list-disc pl-4">
+        <ul className="list-disc list-inside">
           {listItems.map((item, index) => (
             <li className="text-sm" key={index}>
               {item}

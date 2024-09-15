@@ -98,7 +98,7 @@ export default function FinalSolution() {
   ];
 
   return (
-    <section className="pl-[11%] pr-[11%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
+    <section className="pl-[15%] pr-[15%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
       <h2 className="text-center">Final Solution</h2>
 
       <div className="flex w-full gap-12 relative">
@@ -229,7 +229,7 @@ function ScrollButton({
 }: ScrollButtonProps) {
   return (
     <button
-      className={`flex flex-col bg-[#EEEEEE] p-4 w-[160px] transition-opacity duration-200 ${
+      className={`flex flex-col bg-[#EEEEEE] p-4 w-[141px] transition-opacity duration-200 ${
         activeButton === buttonIndex ? 'opacity-100' : 'opacity-25'
       }`}
       onClick={() => scrollToSection(sectionId)}
@@ -256,7 +256,7 @@ export const ToggleButton = ({
 
   return (
     <button
-      className={`${isActive ? activeButtonStyle : inactiveButtonStyle} rounded-[100px] pl-6 pr-6 pt-2 pb-2`}
+      className={`${isActive ? activeButtonStyle : inactiveButtonStyle} rounded-[100px] pl-6 pr-6 pt-2 pb-2 w-[141px]`}
       onClick={onClick}
     >
       {label}

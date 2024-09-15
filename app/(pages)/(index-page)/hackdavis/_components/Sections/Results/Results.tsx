@@ -9,7 +9,7 @@ export default function Results() {
   ];
 
   return (
-    <section className="pl-[11%] pr-[11%]">
+    <section className="pl-[15%] pr-[15%]">
       <div className="flex flex-col gap-4">
         <h2>Results</h2>
         <Heading

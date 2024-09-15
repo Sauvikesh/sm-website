@@ -23,7 +23,7 @@ export default function CardSort() {
   ];
 
   return (
-    <section className="pl-[11%] pr-[11%]">
+    <section className="pl-[15%] pr-[15%]">
       <Heading
         h3="Three different pages, three different use cases"
         p="After gathering a comprehensive list of the content, I set out to
