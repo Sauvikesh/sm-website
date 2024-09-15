@@ -27,7 +27,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="flex flex-col items-center w-full pl-[15%] pr-[15%] overflow-hidden relativefont-dm-sans">
+    <main className="flex flex-col items-center w-full pl-[15%] pr-[15%] overflow-hidden relative font-dm-sans">
       <Landing />
       {caseStudyInformation.map((study, index) => (
         <CaseStudy {...study} key={index} />

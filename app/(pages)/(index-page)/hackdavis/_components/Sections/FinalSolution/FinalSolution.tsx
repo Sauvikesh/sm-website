@@ -1,8 +1,9 @@
 'use client';
+import { useScrollToSectionOnViewSwitch } from '@/app/(pages)/_hooks/useScrollToSection';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
-import { useScrollToSectionOnViewSwitch } from '@/app/(pages)/_hooks/useScrollToSection';
+
 
 //TODO: comeback to this later to refactor again maybe ???
 export default function FinalSolution() {
