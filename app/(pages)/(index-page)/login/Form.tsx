@@ -28,7 +28,7 @@ export default function Form() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-light-bg text-black h-[100vh] gap-6 pl-[520px] pr-[520px]">
+    <div className="flex flex-col items-center justify-center bg-light-bg text-black h-[100vh] gap-6 pl-[11%] pr-[11%]">
       <Image
         src="/blob.png"
         width={1000}
@@ -40,7 +40,7 @@ export default function Form() {
         onSubmit={handleSubmit}
         className="flex flex-col items-center justify-center gap-6 bg-inherit"
       >
-        <h1 className="text-2xl pl-[69px] pr-[69px] text-center leading-9 font-dm-sans font-medium">
+        <h1 className="text-2xl text-center leading-9 font-dm-sans font-medium">
           Enter the magic code <br></br>to access this page
         </h1>
         <div className="relative w-full">
