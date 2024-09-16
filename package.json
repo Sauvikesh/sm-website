@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@vercel/postgres": "^0.9.0",
+    "embla-carousel": "^8.3.0",
+    "embla-carousel-auto-scroll": "^8.3.0",
+    "embla-carousel-react": "^8.3.0",
     "framer-motion": "^11.3.30",
     "next": "14.2.5",
     "next-auth": "^4.24.7",

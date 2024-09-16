@@ -1,3 +1,5 @@
+import AutoScroll from 'embla-carousel-auto-scroll';
+import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 
 export default function Play() {
@@ -89,6 +91,15 @@ function BookShelf() {
 }
 
 function CameraRoll() {
+  const [emblaRef, _] = useEmblaCarousel({ loop: true }, [
+    AutoScroll({
+      playOnInit: true,
+      speed: 2,
+      stopOnInteraction: false,
+      startDelay: 0,
+    }),
+  ]);
+
   return (
     <div className="flex flex-col items-center gap-10">
       <div className="flex flex-col items-center gap-4">
@@ -97,6 +108,60 @@ function CameraRoll() {
           Capturing the beauty of the world through film and practicing the art
           of noticing
         </p>
+      </div>
+
+      <div className="overflow-hidden w-[100vw]" ref={emblaRef}>
+        <div className="flex w-full">
+          <Image
+            src="/about/photo0.png"
+            alt="book 1"
+            width={1000}
+            height={1000}
+            className="w-auto h-[300px] pl-8"
+          />
+          <Image
+            src="/about/photo1.png"
+            alt="book 1"
+            width={1000}
+            height={1000}
+            className="w-auto h-[300px] pl-8"
+          />
+          <Image
+            src="/about/photo2.png"
+            alt="book 1"
+            width={1000}
+            height={1000}
+            className="w-auto h-[300px] pl-8"
+          />
+          <Image
+            src="/about/photo3.png"
+            alt="book 1"
+            width={1000}
+            height={1000}
+            className="w-auto h-[300px] pl-8"
+          />
+          <Image
+            src="/about/photo0.png"
+            alt="book 1"
+            width={1000}
+            height={1000}
+            className="w-auto h-[300px] pl-8"
+          />
+          <Image
+            src="/about/photo1.png"
+            alt="book 1"
+            width={1000}
+            height={1000}
+            className="w-auto h-[300px] pl-8"
+          />
+          <Image
+            src="/about/photo2.png"
+            alt="book 1"
+            width={1000}
+            height={1000}
+            className="w-auto h-[300px] pl-8"
+          />
+        </div>
       </div>
     </div>
   );
