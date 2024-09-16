@@ -4,6 +4,7 @@ export default function Conclustion() {
   return (
     <article className="flex flex-col pl-[11%] pr-[11%] bg-white">
       <div className="flex flex-col gap-4">
+        <h2>Conclusion</h2>
         <h3>Challenges</h3>
         <p className="pb-10 text-lg leading-8">
           Narrowing down the ideas to implement was a challenge considering the
