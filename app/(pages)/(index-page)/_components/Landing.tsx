@@ -3,29 +3,29 @@ import Image from 'next/image';
 export default function Landing() {
   const floatingImages = [
     {
-      src: '/landing/cloud.svg',
-      className:
-        'w-[100px] h-auto absolute top-[40px] left-[520px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
-    },
-    {
-      src: '/landing/4star.svg',
-      className:
-        'w-[100px] h-auto absolute top-[70px] right-[-50px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
-    },
-    {
-      src: '/landing/cloud.svg',
-      className:
-        'w-[100px] h-auto absolute top-[600px] left-[-30px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
-    },
-    {
-      src: '/landing/4star.svg',
-      className:
-        'w-[100px] h-auto absolute top-[280px] left-[140px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
-    },
-    {
       src: '/landing/star.svg',
       className:
-        'w-[100px] h-auto absolute top-[680px] right-[140px] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[40px] right-[25%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+    {
+      src: '/landing/cloud.svg',
+      className:
+        'w-[100px] h-auto absolute top-[90px] right-[-3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+    {
+      src: '/landing/star2.svg',
+      className:
+        'w-[100px] h-auto absolute top-[680px] left-[-3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+    {
+      src: '/landing/4star.svg',
+      className:
+        'w-[100px] h-auto absolute top-[230px] left-[13%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+    {
+      src: '/landing/spade.svg',
+      className:
+        'w-[100px] h-auto absolute top-[-50px] left-[3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
   ];
 
