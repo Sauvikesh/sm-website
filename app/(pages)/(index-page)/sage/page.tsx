@@ -8,6 +8,7 @@ import Process from './_components/Process/Process';
 import Research from './_components/Research/Research';
 import Ideation from './_components/Ideation/Ideation';
 import Prototype from './_components/Prototype/Prototype';
+import FinalDesigns from './_components/FinalDesigns/FinalDesigns';
 
 export default function Sage() {
   return (
@@ -21,6 +22,7 @@ export default function Sage() {
       <Research />
       <Ideation />
       <Prototype />
+      <FinalDesigns />
       <Conclusion />
     </main>
   );
