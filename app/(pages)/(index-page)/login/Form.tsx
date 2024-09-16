@@ -28,7 +28,7 @@ export default function Form() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-inherit h-[100vh] gap-6 pl-[520px] pr-[520px]">
+    <div className="flex flex-col items-center justify-center bg-light-bg text-black h-[100vh] gap-6 pl-[520px] pr-[520px]">
       <Image
         src="/blob.png"
         width={1000}
@@ -40,7 +40,7 @@ export default function Form() {
         onSubmit={handleSubmit}
         className="flex flex-col items-center justify-center gap-6 bg-inherit"
       >
-        <h1 className="text-2xl text-white pl-[69px] pr-[69px] text-center leading-9 font-dm-sans">
+        <h1 className="text-2xl pl-[69px] pr-[69px] text-center leading-9 font-dm-sans font-medium">
           Enter the magic code <br></br>to access this page
         </h1>
         <div className="relative w-full">
@@ -49,7 +49,7 @@ export default function Form() {
             name="password"
             type="password"
             placeholder=" "
-            className="peer w-full h-10 p-[10px] border rounded-lg focus:ring-0 focus:outline-none"
+            className="peer w-full h-10 p-[10px] border rounded-lg focus:ring-0 focus:outline-none border-black"
           />
           <label
             htmlFor="password"
@@ -71,12 +71,12 @@ export default function Form() {
           </div>
         )}
         <button
-          className="flex items-center justify-center w-full h-10 p-2 text-white bg-blue-500 rounded-lg"
+          className="flex items-center justify-center w-full h-10 p-2 bg-[#1E46CC] rounded-lg text-white"
           type="submit"
         >
           Continue
         </button>
-        <p className="font-sans text-sm text-white">
+        <p className="font-sans text-sm">
           Can't find it? Reach out to stmah@ucdavis.edu
         </p>
       </form>
