@@ -96,12 +96,13 @@ function CameraRoll() {
       playOnInit: true,
       speed: 2,
       stopOnInteraction: false,
+      stopOnMouseEnter: true,
       startDelay: 0,
     }),
   ]);
 
   return (
-    <div className="flex flex-col items-center gap-10">
+    <div className="flex flex-col items-center gap-10 ">
       <div className="flex flex-col items-center gap-4">
         <h3 className="text-4xl tracking-[0.72px]">From my camera roll</h3>
         <p>
@@ -110,58 +111,64 @@ function CameraRoll() {
         </p>
       </div>
 
-      <div className="overflow-hidden w-[100vw]" ref={emblaRef}>
-        <div className="flex w-full">
-          <Image
-            src="/about/photo0.png"
-            alt="book 1"
-            width={1000}
-            height={1000}
-            className="w-auto h-[300px] pl-8"
-          />
-          <Image
-            src="/about/photo1.png"
-            alt="book 1"
-            width={1000}
-            height={1000}
-            className="w-auto h-[300px] pl-8"
-          />
-          <Image
-            src="/about/photo2.png"
-            alt="book 1"
-            width={1000}
-            height={1000}
-            className="w-auto h-[300px] pl-8"
-          />
-          <Image
-            src="/about/photo3.png"
-            alt="book 1"
-            width={1000}
-            height={1000}
-            className="w-auto h-[300px] pl-8"
-          />
-          <Image
-            src="/about/photo0.png"
-            alt="book 1"
-            width={1000}
-            height={1000}
-            className="w-auto h-[300px] pl-8"
-          />
-          <Image
-            src="/about/photo1.png"
-            alt="book 1"
-            width={1000}
-            height={1000}
-            className="w-auto h-[300px] pl-8"
-          />
-          <Image
-            src="/about/photo2.png"
-            alt="book 1"
-            width={1000}
-            height={1000}
-            className="w-auto h-[300px] pl-8"
-          />
+      <div className="group">
+        <div className="overflow-hidden w-[100vw]" ref={emblaRef}>
+          <div className="flex w-full">
+            <Image
+              src="/about/photo0.png"
+              alt="book 1"
+              width={1000}
+              height={1000}
+              className="w-auto h-[300px] pl-8"
+            />
+            <Image
+              src="/about/photo1.png"
+              alt="book 1"
+              width={1000}
+              height={1000}
+              className="w-auto h-[300px] pl-8"
+            />
+            <Image
+              src="/about/photo2.png"
+              alt="book 1"
+              width={1000}
+              height={1000}
+              className="w-auto h-[300px] pl-8"
+            />
+            <Image
+              src="/about/photo3.png"
+              alt="book 1"
+              width={1000}
+              height={1000}
+              className="w-auto h-[300px] pl-8"
+            />
+            <Image
+              src="/about/photo0.png"
+              alt="book 1"
+              width={1000}
+              height={1000}
+              className="w-auto h-[300px] pl-8"
+            />
+            <Image
+              src="/about/photo1.png"
+              alt="book 1"
+              width={1000}
+              height={1000}
+              className="w-auto h-[300px] pl-8"
+            />
+            <Image
+              src="/about/photo2.png"
+              alt="book 1"
+              width={1000}
+              height={1000}
+              className="w-auto h-[300px] pl-8"
+            />
+          </div>
         </div>
+
+        <h4 className="text-[#7D7D7E] text-center font-outfit pt-2 transition-all -translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+          caption
+        </h4>
       </div>
     </div>
   );
