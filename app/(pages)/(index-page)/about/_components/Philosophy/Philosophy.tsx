@@ -19,7 +19,7 @@ export default function Philosophy() {
     },
   ];
   return (
-    <section className="pl-[15%] pr-[15%] pb-[175px]">
+    <section className="pl-[15%] pr-[15%]">
       <h3 className="text-4xl tracking-[0.72px]">
         My design (& life) philosophy
       </h3>

@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Play() {
   return (
     <section
-      className="flex flex-col pl-[15%] pr-[15%] pt-[511px] gap-[192px]"
+      className="flex flex-col pl-[15%] pr-[15%] pt-[160px] gap-[192px]"
       id="dark-mode"
     >
       <FunText />
@@ -31,7 +31,7 @@ function FunText() {
 
 function Line() {
   return (
-    <div className="h-[200px] w-full mt-28 mb-28 xs:mt-20 xs:mb-20">
+    <div className="h-[200px] w-full mt-16 mb-16">
       <div className="h-[200px] w-full relative flex justify-center overflow-hidden animate-grow">
         <div className="h-[200px] w-[1px] bg-white absolute"></div>
       </div>
