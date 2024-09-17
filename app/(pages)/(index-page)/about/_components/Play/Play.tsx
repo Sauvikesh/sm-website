@@ -55,35 +55,35 @@ function BookShelf() {
           alt="book 1"
           width={1000}
           height={1000}
-          className="w-auto h-[360px] rounded-xl absolute -rotate-[18deg] z-[5] transition-transform duration-500 group-hover:-translate-x-[120%]"
+          className="w-auto h-[360px] rounded-xl absolute -rotate-[18deg] z-[5] transition-transform duration-500 -translate-x-[120%] group-hover:rotate-0 "
         />
         <Image
           src="/about/book2.png"
           alt="book 2"
           width={1000}
           height={1000}
-          className="w-auto h-[360px] rounded-xl absolute -rotate-[10deg] z-[4] transition-transform duration-500 group-hover:-translate-x-[70%]"
+          className="w-auto h-[360px] rounded-xl absolute -rotate-[10deg] z-[4] transition-transform duration-500 -translate-x-[70%] group-hover:rotate-0"
         />
         <Image
           src="/about/book3.png"
           alt="book 3"
           width={1000}
           height={1000}
-          className="w-auto h-[360px] rounded-xl absolute -rotate-[3deg] z-[3] transition-transform duration-500 group-hover:-translate-x-[0%]"
+          className="w-auto h-[360px] rounded-xl absolute -rotate-[3deg] z-[3] transition-transform duration-500 -translate-x-[0%] group-hover:rotate-0"
         />
         <Image
           src="/about/book4.png"
           alt="book 4"
           width={1000}
           height={1000}
-          className="w-auto h-[360px] rounded-xl absolute rotate-[5deg] z-[2] transition-transform duration-500 group-hover:translate-x-[70%]"
+          className="w-auto h-[360px] rounded-xl absolute rotate-[5deg] z-[2] transition-transform duration-500 translate-x-[70%] group-hover:rotate-0"
         />
         <Image
           src="/about/book5.png"
           alt="book 5"
           width={1000}
           height={1000}
-          className="w-auto h-[360px] rounded-xl absolute rotate-[13deg] z-[1] transition-transform duration-500 group-hover:translate-x-[120%]"
+          className="w-auto h-[360px] rounded-xl absolute rotate-[13deg] z-[1] transition-transform duration-500 translate-x-[120%] group-hover:rotate-0"
         />
       </div>
     </div>
