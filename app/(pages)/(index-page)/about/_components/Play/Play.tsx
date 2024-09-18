@@ -41,7 +41,7 @@ function Line() {
 
 function BookShelf() {
   return (
-    <div className="flex flex-col items-center gap-10">
+    <div className="flex flex-col items-center gap-10 w-[70vw]">
       <div className="flex flex-col items-center gap-4">
         <h3 className="text-4xl tracking-[0.72px]">On my bookshelf</h3>
         <p>
@@ -49,41 +49,41 @@ function BookShelf() {
           the standouts:
         </p>
       </div>
-      <div className="flex relative w-full h-[60vh] justify-center pt-10 group">
+      <div className="flex relative h-[60vh] justify-center pt-10 group gap-8">
         <Image
           src="/about/book1.png"
           alt="book 1"
           width={1000}
           height={1000}
-          className="w-auto h-[360px] rounded-xl absolute -rotate-[18deg] z-[5] transition-transform duration-500 -translate-x-[120%] group-hover:rotate-0 group-hover:-translate-x-[200%]"
+          className="w-auto h-[257px] rounded-xl z-[5] transition-transform duration-500 translate-x-[95%] -rotate-[18deg] group-hover:translate-x-0 group-hover:rotate-0"
         />
         <Image
           src="/about/book2.png"
           alt="book 2"
           width={1000}
           height={1000}
-          className="w-auto h-[360px] rounded-xl absolute -rotate-[10deg] z-[4] transition-transform duration-500 -translate-x-[70%] group-hover:rotate-0 group-hover:-translate-x-[100%]"
+          className="w-auto h-[257px] rounded-xl z-[4] transition-transform duration-500 translate-x-[40%] -rotate-[10deg] group-hover:translate-x-0 group-hover:rotate-0"
         />
         <Image
           src="/about/book3.png"
           alt="book 3"
           width={1000}
           height={1000}
-          className="w-auto h-[360px] rounded-xl absolute -rotate-[3deg] z-[3] transition-transform duration-500 -translate-x-[0%] group-hover:rotate-0"
+          className="w-auto h-[257px] rounded-xl z-[3] transition-transform duration-500 -rotate-[2deg] group-hover:translate-x-0 group-hover:rotate-0"
         />
         <Image
           src="/about/book4.png"
           alt="book 4"
           width={1000}
           height={1000}
-          className="w-auto h-[360px] rounded-xl absolute rotate-[5deg] z-[2] transition-transform duration-500 translate-x-[70%] group-hover:rotate-0 group-hover:translate-x-[97%]"
+          className="w-auto h-[257px] rounded-xl z-[2] transition-transform duration-500 -translate-x-[50%] rotate-[5deg] group-hover:translate-x-0 group-hover:rotate-0"
         />
         <Image
           src="/about/book5.png"
           alt="book 5"
           width={1000}
           height={1000}
-          className="w-auto h-[360px] rounded-xl absolute rotate-[13deg] z-[1] transition-transform duration-500 translate-x-[120%] group-hover:rotate-0 group-hover:translate-x-[200%]"
+          className="w-auto h-[257px] rounded-xl z-[1] transition-transform duration-500 -translate-x-[85%] rotate-[13deg] group-hover:translate-x-0 group-hover:rotate-0"
         />
       </div>
     </div>
