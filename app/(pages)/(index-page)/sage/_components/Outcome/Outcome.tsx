@@ -16,10 +16,10 @@ export default function Outcome() {
       </h2>
 
       <Image
-        src="/sageImages/outcome.png"
+        src="/sageImages/outcome.svg"
         width={1000}
         height={1000}
-        alt="blob"
+        alt="outcomes graph"
         className="w-[70%] h-auto pb-4 self-center"
       />
     </div>

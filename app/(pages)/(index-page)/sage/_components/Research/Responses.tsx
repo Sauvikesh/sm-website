@@ -8,7 +8,7 @@ export default function Responses() {
           94 of 98 respondents had difficulty practicing self-care due to lack
           of time.
         </h2>
-        <h2 className="text-[100px] leading-[110%] text-blue-600 font-bold text-center">
+        <h2 className="text-[100px] leading-[110%] text-[#1B454F] font-bold text-center">
           96%
         </h2>
       </div>
