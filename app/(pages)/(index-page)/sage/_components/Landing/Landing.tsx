@@ -6,17 +6,17 @@ import ParallaxImage, { ParallaxImageProps } from './ParallaxImage';
 export default function Landing() {
   const parallaxImages: ParallaxImageProps[] = [
     {
-      speed: 6,
+      speed: 26,
       src: '/sageImages/appImage1.png',
       alt: 'app image 1',
     },
     {
-      speed: 1,
+      speed: 21,
       src: '/sageImages/appImage2.png',
       alt: 'app image 2',
     },
     {
-      speed: 9,
+      speed: 29,
       src: '/sageImages/appImage3.png',
       alt: 'app image 3',
     },
@@ -29,7 +29,7 @@ export default function Landing() {
           Sage
         </h1>
         <p className="text-base">7 min read</p>
-        <div className="flex justify-around pt-32">
+        <div className="flex justify-around pt-20">
           {parallaxImages.map((image, index) => (
             <ParallaxImage
               key={index}
