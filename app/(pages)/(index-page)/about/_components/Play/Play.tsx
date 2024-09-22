@@ -143,15 +143,15 @@ type CarouselSlideProps = {
 
 function CarouselSlide({ imgUrl, imgCaption }: CarouselSlideProps) {
   return (
-    <div className="ml-10 flex-none group">
+    <div className="ml-10 flex-none group relative">
       <Image
         src={imgUrl}
         alt="photo 0"
         width={1000}
         height={1000}
-        className="w-auto h-[300px]"
+        className="w-auto h-[300px] z-20 relative"
       />
-      <h4 className="text-[#7D7D7E] text-center font-outfit pt-2 transition-all -translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+      <h4 className="text-[#7D7D7E] text-center font-outfit pt-2 transition-all opacity-0 -translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 z-10 relative">
         {imgCaption}
       </h4>
     </div>

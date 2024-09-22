@@ -60,8 +60,14 @@ export function HobbyImage({ colSpan, src, caption }: HobbyImageProps) {
 
   return (
     <div className={`${colSpanClass} group`}>
-      <Image src={src} alt="Sam Photo" width={1000} height={1000} />
-      <h4 className="text-[#7D7D7E] text-center font-outfit pt-2 transition-all -translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+      <Image
+        src={src}
+        alt="Sam Photo"
+        width={1000}
+        height={1000}
+        className="relative z-20"
+      />
+      <h4 className="text-[#7D7D7E] text-center font-outfit pt-2 transition-all -translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 relative z-10">
         {caption}
       </h4>
     </div>
