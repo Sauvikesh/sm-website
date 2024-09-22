@@ -1,8 +1,27 @@
-import Image from 'next/image';
+import { CaseStudyProps } from '@/app/(pages)/(index-page)/_components/CaseStudy';
 import Link from 'next/link';
-import { CaseStudyProps } from './CaseStudy';
+import Image from 'next/image';
 
-export default function CaseStudyThumbnail(props: CaseStudyProps) {
+export type OtherCaseStudiesProps = {
+  caseStudies: CaseStudyProps[];
+};
+
+export default function OtherCaseStudies({
+  caseStudies,
+}: OtherCaseStudiesProps) {
+  return (
+    <div className="pl-[15%] pr-[15%] flex flex-col items-center gap-10 pb-[225px]">
+      <h2>Discover More</h2>
+      <div className="flex gap-8">
+        {caseStudies.map((study, index) => (
+          <CaseStudyThumbnail {...study} key={index} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function CaseStudyThumbnail(props: CaseStudyProps) {
   const { org, purpose, desc, src, alt, linkurl } = props;
 
   return (
