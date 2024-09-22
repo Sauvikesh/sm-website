@@ -39,7 +39,7 @@ export default function Sage() {
   };
 
   return (
-    <main className="bg-white text-black flex flex-col gap-20">
+    <main className="bg-white text-black flex flex-col">
       <Landing />
       <Summary />
       <Problem />
@@ -54,6 +54,7 @@ export default function Sage() {
       <Conclusion />
       <Team />
       <DividerLine />
+      <span className="h-[80px]"></span>
       <OtherCaseStudies {...caseStudyInformation} />
     </main>
   );
