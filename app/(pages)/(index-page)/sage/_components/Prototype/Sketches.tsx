@@ -13,19 +13,19 @@ export default function Sketches() {
   const sketchesGridBlocks: SketchesGridBlocksProps[] = [
     {
       h1: 'Flexible goal setting',
-      p: '‍↳ Users can create realistic goals that align with their schedules',
+      p: 'Users can create realistic goals that align with their schedules',
     },
     {
       h1: 'Increased filter + sort abilities',
-      p: '‍↳ Users feel less overwhelmed which encourages searching for new practices',
+      p: 'Users feel less overwhelmed which encourages searching for new practices',
     },
     {
       h1: 'Gamified reward system',
-      p: '‍↳ Users can receive extrinsic motivation which encourages consistency',
+      p: 'Users can receive extrinsic motivation which encourages consistency',
     },
     {
       h1: 'Flexible goal setting',
-      p: '‍↳ Users find comfort in familiar practices that they curated themself',
+      p: 'Users find comfort in familiar practices that they curated themself',
     },
   ];
   return (
