@@ -116,49 +116,49 @@ function CameraRoll() {
           <div className="flex w-full">
             <Image
               src="/about/photo0.png"
-              alt="book 1"
+              alt="photo 0"
               width={1000}
               height={1000}
               className="w-auto h-[300px] pl-8"
             />
             <Image
               src="/about/photo1.png"
-              alt="book 1"
+              alt="photo 1"
               width={1000}
               height={1000}
               className="w-auto h-[300px] pl-8"
             />
             <Image
               src="/about/photo2.png"
-              alt="book 1"
+              alt="photo 2"
               width={1000}
               height={1000}
               className="w-auto h-[300px] pl-8"
             />
             <Image
               src="/about/photo3.png"
-              alt="book 1"
+              alt="photo 3"
               width={1000}
               height={1000}
               className="w-auto h-[300px] pl-8"
             />
             <Image
-              src="/about/photo0.png"
-              alt="book 1"
+              src="/about/photo4.png"
+              alt="photo 4"
               width={1000}
               height={1000}
               className="w-auto h-[300px] pl-8"
             />
             <Image
-              src="/about/photo1.png"
-              alt="book 1"
+              src="/about/photo5.png"
+              alt="photo 5"
               width={1000}
               height={1000}
               className="w-auto h-[300px] pl-8"
             />
             <Image
-              src="/about/photo2.png"
-              alt="book 1"
+              src="/about/photo6.png"
+              alt="photo 6"
               width={1000}
               height={1000}
               className="w-auto h-[300px] pl-8"
