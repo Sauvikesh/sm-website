@@ -10,6 +10,7 @@ import Results from './_components/Sections/Results/Results';
 import Venue from './_components/Sections/Venue/Venue';
 import Ending from './_components/Sections/Ending/Ending';
 import DividerLine from './_components/DividerLine/DividerLine';
+import OtherCaseStudies from './_components/Sections/OtherCaseStudies/OtherCaseStudies';
 
 export default function HackDavis() {
   return (
@@ -28,6 +29,8 @@ export default function HackDavis() {
       <Results />
       <Venue />
       <Ending />
+      <DividerLine />
+      <OtherCaseStudies />
     </main>
   );
 }
