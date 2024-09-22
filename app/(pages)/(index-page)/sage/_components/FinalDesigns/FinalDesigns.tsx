@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function FinalDesigns() {
   return (
-    <div className="bg-white pl-[11%] pr-[11%] flex flex-col gap-20 pb-20">
+    <div className="bg-white pl-[15%] pr-[15%] flex flex-col gap-20 pb-20">
       <h2>Final Designs</h2>
 
       <div className="flex justify-around">

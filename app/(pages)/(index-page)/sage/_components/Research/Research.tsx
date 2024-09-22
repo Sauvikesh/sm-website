@@ -4,7 +4,7 @@ import Responses from './Responses';
 
 export default function Research() {
   return (
-    <div className="bg-white pl-[11%] pr-[11%]">
+    <div className="bg-white pl-[15%] pr-[15%]">
       <Header />
       <Responses />
       <Market />

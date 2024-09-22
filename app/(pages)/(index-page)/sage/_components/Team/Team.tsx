@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Team() {
   return (
-    <div className="bg-white pl-[11%] pr-[11%] flex flex-row pb-20 pt-20 items-center gap-10 justify-between">
+    <div className="bg-white pl-[15%] pr-[15%] flex flex-row pb-20 pt-20 items-center gap-10 justify-between">
       <Image
         src="/sageImages/sageTeam.png"
         width={1000}

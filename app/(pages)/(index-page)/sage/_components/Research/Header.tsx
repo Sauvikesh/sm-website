@@ -9,7 +9,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="flex h-[60vh] items-center">
+    <div className="flex h-[60vh] items-center justify-between">
       <div className="flex flex-col justify-center g-3">
         <Heading
           h1="RESEARCH"

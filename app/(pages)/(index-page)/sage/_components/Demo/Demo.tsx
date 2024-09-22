@@ -69,7 +69,7 @@ const videoCardContent: VideoTextCardProps[] = [
 
 export default function Demo() {
   return (
-    <section className="flex flex-col justify-center bg-white pl-[11%] pr-[11%]">
+    <section className="flex flex-col justify-center bg-white pl-[15%] pr-[15%]">
       {videoCardContent.map((card, index) => (
         <VideoTextCard key={index} {...card} />
       ))}

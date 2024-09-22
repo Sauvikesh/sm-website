@@ -60,7 +60,7 @@ export default function Ideation() {
         className="w-full h-auto pt-8"
       />
       <div
-        className="flex flex-wrap justify-center pl-[18%] pr-[18%]"
+        className="flex flex-wrap justify-center pl-[15%] pr-[15%]"
         ref={sectionRef}
       >
         {animatedCards.map((card, index) => (

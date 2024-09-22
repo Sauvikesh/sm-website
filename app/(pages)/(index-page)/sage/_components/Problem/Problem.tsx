@@ -2,7 +2,7 @@ import Heading from '../Headings/Heading';
 
 export default function Problem() {
   return (
-    <div className="bg-[#F8F8F8] flex flex-col pl-[11%] pr-[11%] justify-center h-[80vh] gap-3">
+    <div className="bg-[#F8F8F8] flex flex-col pl-[15%] pr-[15%] justify-center h-[80vh] gap-3">
       <Heading
         h1="THE PROBLEM"
         p="Students have a desire to practice self-care. However, they struggle to

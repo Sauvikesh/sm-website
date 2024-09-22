@@ -41,7 +41,7 @@ export default function Summary() {
   // ];
 
   return (
-    <div className="bg-white h-[100vh] flex flex-col justify-around items-center pl-[11%] pr-[11%]">
+    <div className="bg-white h-[100vh] flex flex-col justify-around items-center pl-[15%] pr-[15%]">
       {/* <div className="grid grid-cols-3 grid-rows-2 gap-4">
         {gridContent.map((content, index) => (
           <GridContentBlock key={index} {...content} />

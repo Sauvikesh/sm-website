@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Outcome() {
   return (
-    <div className="bg-white pl-[11%] pr-[11%] flex flex-col gap-12 pb-20">
+    <div className="bg-white pl-[15%] pr-[15%] flex flex-col gap-12 pb-20">
       <h2>Outcome</h2>
 
       <h3>

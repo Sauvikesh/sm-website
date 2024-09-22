@@ -22,7 +22,7 @@ export default function Process() {
     },
   ];
   return (
-    <div className="flex flex-col pl-[11%] pr-[11%] bg-white justify-center g-3 h-[60vh]">
+    <div className="flex flex-col pl-[15%] pr-[15%] bg-white justify-center g-3 h-[60vh]">
       <div className="h-[1px] bg-[#CCC] mb-20"></div>
       <Heading h1="THE PROCESS" p="Project Goals" />
       <div className="flex gap-8 pb-20 pt-8">
