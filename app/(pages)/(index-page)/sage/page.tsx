@@ -11,10 +11,35 @@ import Prototype from './_components/Prototype/Prototype';
 import FinalDesigns from './_components/FinalDesigns/FinalDesigns';
 import Outcome from './_components/Outcome/Outcome';
 import Team from './_components/Team/Team';
+import OtherCaseStudies, {
+  OtherCaseStudiesProps,
+} from '../_components/OtherCaseStudies';
+import DividerLine from '../hackdavis/_components/DividerLine/DividerLine';
 
 export default function Sage() {
+  const caseStudyInformation: OtherCaseStudiesProps = {
+    caseStudies: [
+      {
+        org: 'Paramount+',
+        purpose: 'INTERNSHIP',
+        desc: 'Reimagining the live television experience',
+        src: '/caseStudies/paramount.png',
+        alt: 'Paramount Logo',
+        linkurl: '/paramount',
+      },
+      {
+        org: 'Sage',
+        purpose: 'PASSION PROJECT',
+        desc: "Equipping individuals to navigate life's stressors",
+        src: '/caseStudies/sage.png',
+        alt: 'Sage App',
+        linkurl: '/sage',
+      },
+    ],
+  };
+
   return (
-    <main className="bg-[#e4edeb] text-black">
+    <main className="bg-white text-black flex flex-col gap-20">
       <Landing />
       <Summary />
       <Problem />
@@ -28,6 +53,8 @@ export default function Sage() {
       <Outcome />
       <Conclusion />
       <Team />
+      <DividerLine />
+      <OtherCaseStudies {...caseStudyInformation} />
     </main>
   );
 }

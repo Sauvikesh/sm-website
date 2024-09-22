@@ -10,9 +10,32 @@ import Results from './_components/Sections/Results/Results';
 import Venue from './_components/Sections/Venue/Venue';
 import Ending from './_components/Sections/Ending/Ending';
 import DividerLine from './_components/DividerLine/DividerLine';
-import OtherCaseStudies from './_components/Sections/OtherCaseStudies/OtherCaseStudies';
+import OtherCaseStudies, {
+  OtherCaseStudiesProps,
+} from '../_components/OtherCaseStudies';
 
 export default function HackDavis() {
+  const caseStudyInformation: OtherCaseStudiesProps = {
+    caseStudies: [
+      {
+        org: 'Paramount+',
+        purpose: 'INTERNSHIP',
+        desc: 'Reimagining the live television experience',
+        src: '/caseStudies/paramount.png',
+        alt: 'Paramount Logo',
+        linkurl: '/paramount',
+      },
+      {
+        org: 'Sage',
+        purpose: 'PASSION PROJECT',
+        desc: "Equipping individuals to navigate life's stressors",
+        src: '/caseStudies/sage.png',
+        alt: 'Sage App',
+        linkurl: '/sage',
+      },
+    ],
+  };
+
   return (
     <main className="bg-white text-black flex flex-col gap-20">
       <Landing />
@@ -30,7 +53,7 @@ export default function HackDavis() {
       <Venue />
       <Ending />
       <DividerLine />
-      <OtherCaseStudies />
+      <OtherCaseStudies {...caseStudyInformation} />
     </main>
   );
 }
