@@ -101,8 +101,18 @@ function CameraRoll() {
     }),
   ]);
 
+  const carouselPhotos = [
+    { imgUrl: '/about/photo0.png', imgCaption: 'half moon bay, ca' },
+    { imgUrl: '/about/photo1.png', imgCaption: 'half moon bay, ca' },
+    { imgUrl: '/about/photo2.png', imgCaption: 'pebble beach, ca' },
+    { imgUrl: '/about/photo3.png', imgCaption: 'kamakura, japan' },
+    { imgUrl: '/about/photo4.png', imgCaption: 'santa barbara, ca' },
+    { imgUrl: '/about/photo5.png', imgCaption: 'hiroshima, japan' },
+    { imgUrl: '/about/photo6.png', imgCaption: 'arashiyama, japan' },
+  ];
+
   return (
-    <div className="flex flex-col items-center gap-10 ">
+    <div className="flex flex-col items-center gap-10 pb-[300px]">
       <div className="flex flex-col items-center gap-4">
         <h3 className="text-4xl tracking-[0.72px]">From my camera roll</h3>
         <p>
@@ -111,65 +121,39 @@ function CameraRoll() {
         </p>
       </div>
 
-      <div className="group">
-        <div className="overflow-hidden w-[100vw]" ref={emblaRef}>
-          <div className="flex w-full">
-            <Image
-              src="/about/photo0.png"
-              alt="photo 0"
-              width={1000}
-              height={1000}
-              className="w-auto h-[300px] pl-8"
+      <div className="overflow-hidden w-[100vw]" ref={emblaRef}>
+        <div className="flex">
+          {carouselPhotos.map((slide, index) => (
+            <CarouselSlide
+              key={index}
+              imgUrl={slide.imgUrl}
+              imgCaption={slide.imgCaption}
             />
-            <Image
-              src="/about/photo1.png"
-              alt="photo 1"
-              width={1000}
-              height={1000}
-              className="w-auto h-[300px] pl-8"
-            />
-            <Image
-              src="/about/photo2.png"
-              alt="photo 2"
-              width={1000}
-              height={1000}
-              className="w-auto h-[300px] pl-8"
-            />
-            <Image
-              src="/about/photo3.png"
-              alt="photo 3"
-              width={1000}
-              height={1000}
-              className="w-auto h-[300px] pl-8"
-            />
-            <Image
-              src="/about/photo4.png"
-              alt="photo 4"
-              width={1000}
-              height={1000}
-              className="w-auto h-[300px] pl-8"
-            />
-            <Image
-              src="/about/photo5.png"
-              alt="photo 5"
-              width={1000}
-              height={1000}
-              className="w-auto h-[300px] pl-8"
-            />
-            <Image
-              src="/about/photo6.png"
-              alt="photo 6"
-              width={1000}
-              height={1000}
-              className="w-auto h-[300px] pl-8"
-            />
-          </div>
+          ))}
         </div>
-
-        <h4 className="text-[#7D7D7E] text-center font-outfit pt-2 transition-all -translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
-          caption
-        </h4>
       </div>
+    </div>
+  );
+}
+
+type CarouselSlideProps = {
+  imgUrl: string;
+  imgCaption: string;
+};
+
+function CarouselSlide({ imgUrl, imgCaption }: CarouselSlideProps) {
+  return (
+    <div className="ml-10 flex-none group">
+      <Image
+        src={imgUrl}
+        alt="photo 0"
+        width={1000}
+        height={1000}
+        className="w-auto h-[300px]"
+      />
+      <h4 className="text-[#7D7D7E] text-center font-outfit pt-2 transition-all -translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+        {imgCaption}
+      </h4>
     </div>
   );
 }
