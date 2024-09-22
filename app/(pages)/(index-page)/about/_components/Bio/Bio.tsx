@@ -1,14 +1,51 @@
 import Image from 'next/image';
 
 export default function Bio() {
+  const floatingImages = [
+    {
+      src: '/landing/star.svg',
+      className:
+        'w-[100px] h-auto absolute top-[550px] left-[11%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full z-20',
+    },
+    {
+      src: '/landing/cloud.svg',
+      className:
+        'w-[100px] h-auto absolute top-[400px] left-[34%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full z-0',
+    },
+    {
+      src: '/landing/star2.svg',
+      className:
+        'w-[100px] h-auto absolute top-[200px] left-[13%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+    {
+      src: '/landing/4star.svg',
+      className:
+        'w-[100px] h-auto absolute top-[500px] right-[6%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+    {
+      src: '/landing/spade.svg',
+      className:
+        'w-[100px] h-auto absolute top-[50px] right-[-3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+    },
+  ];
   return (
     <section className="flex pl-[15%] pr-[15%] pt-[30vh] h-[80vh] gap-[118px]">
+      {floatingImages.map((image, index) => (
+        <Image
+          src={image.src}
+          width={1000}
+          height={1000}
+          alt="floating star :)"
+          className={image.className}
+          key={index}
+        />
+      ))}
       <Image
         src="/about/SamTMah.png"
         alt="Sam Photo"
         width={1000}
         height={1000}
-        className="w-[315px] h-[329px]"
+        className="w-[315px] h-[329px] z-10"
       />
 
       <div className="flex flex-col gap-6">
