@@ -14,7 +14,7 @@ export default function Process() {
     {
       number: '02',
       header: 'Increasing attendee registration',
-      body: 'Demonstrates the growth of HackDavis as an organization, leads to higher student impact, and more creation for social good.',
+      body: 'Demonstrates the growth of HackDavis as an organization, leads to higher student impact, and increases creation for social good.',
     },
   ];
 
@@ -84,17 +84,10 @@ export default function Process() {
 
         <TextCard
           header="Opportunity Area: Leveraging Emotional Design"
-          body="After connecting with previous HackDavis participants and sponsors, I
-        realized that emotional design could be a powerful tool to balance
-        user and business needs. Conveying a sense of inclusion makes the
-        world of a difference to first-time participants and helps them take
-        the first step to break barriers in tech, while demonstrating our
-        professionalism, telling a wholistic story about our values, and
-        showcasing previous years' success are integral to reassuring
-        potential sponsors that they are making a worthy investment."
+          body="After connecting with previous HackDavis participants and sponsors, I realized that emotional design could be a powerful tool to balance user and business needs. Conveying a sense of inclusion makes the world of a difference to first-time participants and helps them take the first step to break barriers in tech. Showcasing HackDavis’s professionalism and values and telling a wholistic story of previous years’ success are integral to reassuring potential sponsors that they are making a worthy investment."
         />
 
-        <div className="flex justify-between relative w-full">
+        <div className="flex gap-8 relative w-full">
           {profiles.map((profile, index) => (
             <UserProfile {...profile} key={index} />
           ))}
@@ -105,14 +98,14 @@ export default function Process() {
             Setting actionable goals to address the target audiences
           </h3>
           <p>
-            To familiarize myself with the principles of emotional design, I
-            conducted literature reviews on the topic and set three actionable
-            goals that would deliver a thoughtful execution of emotional design
-            to both target audiences: <br></br> <br></br>
-            1. Inject a signature personality <br></br>
-            2. Craft copy with the right tone to inspire or accommodate emotions{' '}
+            In an effort to deliver a thoughtful execution of emotional design,
+            I conducted literature reviews and set three goals: <br></br>{' '}
             <br></br>
-            3. Use effective and engaging storytelling
+            1. Inject a signature personality with HackDavis's mascots <br></br>
+            2. Craft copy with the right tone assuage and encourage beginners{' '}
+            <br></br>
+            3. Use effective and engaging storytelling that leaves users feeling
+            inspired
           </p>
         </div>
       </RevealWrapper>
@@ -131,7 +124,7 @@ function UserProfile(props: UserProfileProps) {
   const { imgSrc, imgAlt, title, listItems } = props;
 
   return (
-    <div className="flex items-center gap-8 w-[40%]">
+    <div className="flex flex-grow items-center gap-8 border border-[#CCCCCC] rounded-2xl pt-8 pb-8 pl-[43.5px] pr-[43.5px]">
       <Image
         src={imgSrc}
         alt={imgAlt}
@@ -140,7 +133,7 @@ function UserProfile(props: UserProfileProps) {
         className="w-[140px]"
       />
       <div className="flex flex-col gap-4">
-        <p className="font-medium">{title}</p>
+        <p className="font-semibold">{title}</p>
         <ul className="list-disc list-inside">
           {listItems.map((item, index) => (
             <li className="text-sm" key={index}>
