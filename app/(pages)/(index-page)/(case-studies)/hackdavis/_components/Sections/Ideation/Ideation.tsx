@@ -7,16 +7,12 @@ export default function Ideation() {
     <section className="pl-[15%] pr-[15%]">
       <RevealWrapper>
         <div className="flex flex-col gap-4">
-          <h2>Ideations, Explorations & Iterations</h2>
+          <h4 className="text-[#808080]">
+            Ideations, Explorations & Iterations
+          </h4>
           <Heading
             h3="Displaying prizes in a more visually prominent way"
-            p="In an earnest honesty, 2 out of the 5 interviewees admitted that the
-          prizes highly motivated them to participate. I comprehensively
-          displayed each prize using cards. Configuring the metadata on mobile
-          was a challenge because of the limited horizontal space, and I
-          iterated several times. Incorporating imagery made the prizes more
-          visually enticing, and placing the text underneath accommodated longer
-          strings of text, therefore preventing awkward truncation."
+            p="In an earnest honesty, 2 out of the 5 interviewees admitted that the prizes highly motivated them to participate. I comprehensively displayed each prize using cards. Configuring the metadata on mobile was a challenge because of the limited horizontal space, and I iterated several times. Incorporating imagery made the prizes more visually enticing, and placing the text underneath accommodated longer strings of text, therefore preventing awkward truncation."
           />
         </div>
 
@@ -29,29 +25,22 @@ export default function Ideation() {
             className="w-[28%]"
           />
           <Image
-            src="hackdavis/Arrow.svg"
-            alt="prize 1"
-            width={1000}
-            height={1000}
-            className="w-10"
-          />
-          <Image
             src="hackdavis/prize2.svg"
-            alt="prize 1"
+            alt="prize 2"
             width={1000}
             height={1000}
             className="w-[28%]"
           />
           <Image
             src="hackdavis/Arrow.svg"
-            alt="prize 1"
+            alt="arrow"
             width={1000}
             height={1000}
             className="w-10"
           />
           <Image
             src="hackdavis/prize3.svg"
-            alt="prize 1"
+            alt="prize 4"
             width={1000}
             height={1000}
             className="w-[28%]"
@@ -59,9 +48,9 @@ export default function Ideation() {
         </div>
 
         <Heading
-          h3="Increasing personability on the about page"
+          h3="Increasing personability on the About page"
           p="Seeing the faces behind the magic helps potential participants and
-          sponsors feel more connected to HackDavis and increases our
+          sponsors feel more connected to HackDavis and increases
           credibility. In my initial iterations, the user was required to click
           on a thumbnail to view details on an individual. However, this
           triggered unfamiliar scrolling behavior if the thumbnail and larger
@@ -70,27 +59,33 @@ export default function Ideation() {
           also reduced cognitive load by showcasing one person at a time."
         />
 
-        <div className="flex gap-2 pt-10 pb-[100px] justify-center pl-[15%] pr-[15%] ">
-          <Image
-            src="hackdavis/teamBefore.svg"
-            alt="prize 1"
-            width={1000}
-            height={1000}
-          />
+        <div className="flex gap-8 pt-10 pb-[100px] justify-center pl-[7%] pr-[7%]">
+          <div className="flex flex-col items-center gap-2">
+            <Image
+              src="hackdavis/teamBefore.svg"
+              alt="team section before image"
+              width={1000}
+              height={1000}
+            />
+            <h4 className="text-[#808080]">initial exploration</h4>
+          </div>
           <Image
             src="hackdavis/Arrow.svg"
-            alt="prize 1"
+            alt="arrow"
             width={50}
             height={1000}
             className="w-10"
           />
-          <Image
-            src="hackdavis/teamAfter.svg"
-            alt="prize 1"
-            width={1000}
-            height={1000}
-            className="translate-x-7"
-          />
+          <div className="flex flex-col items-center gap-2">
+            <Image
+              src="hackdavis/teamAfter.svg"
+              alt="team section after image"
+              width={1000}
+              height={1000}
+              className="translate-x-7"
+            />
+            <h4 className="text-[#808080]">final design on mobile</h4>
+          </div>
         </div>
 
         <Heading
@@ -103,13 +98,17 @@ export default function Ideation() {
           associations with CTAs."
         />
 
-        <div className="flex gap-2 pt-10 pb-[100px] justify-center pl-[15%] pr-[15%] ">
-          <Image
-            src="hackdavis/mbBefore.svg"
-            alt="prize 1"
-            width={1000}
-            height={1000}
-          />
+        <div className="flex gap-2 pt-10 pb-[100px] justify-center">
+          <div className="flex flex-col items-center gap-2">
+            <Image
+              src="hackdavis/mbBefore.svg"
+              alt="web before image"
+              width={1000}
+              height={1000}
+            />
+            <h4 className="text-[#808080]">initial exploration</h4>
+          </div>
+
           <Image
             src="hackdavis/Arrow.svg"
             alt="prize 1"
@@ -117,12 +116,15 @@ export default function Ideation() {
             height={1000}
             className="w-10"
           />
-          <Image
-            src="hackdavis/mbAfter.svg"
-            alt="prize 1"
-            width={1000}
-            height={1000}
-          />
+          <div className="flex flex-col items-center gap-2">
+            <Image
+              src="hackdavis/mbAfter.svg"
+              alt="web after image"
+              width={1000}
+              height={1000}
+            />
+            <h4 className="text-[#808080]">final design on web</h4>
+          </div>
         </div>
 
         <Heading
@@ -145,13 +147,15 @@ export default function Ideation() {
             height={1000}
             className="w-[50%]"
           />
-          <Image
-            src="hackdavis/loader.svg"
-            alt="prize 1"
-            width={1000}
-            height={1000}
-            className="w-[50%]"
-          />
+          <div className="flex flex-col items-center gap-2">
+            <Image
+              src="hackdavis/loader.svg"
+              alt="loader image"
+              width={1000}
+              height={1000}
+            />
+            <h4 className="text-[#808080]">final design on web</h4>
+          </div>
         </div>
       </RevealWrapper>
     </section>
