@@ -50,7 +50,7 @@ export default function Ideation() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center pt-12 bg-[#e4edeb]">
+    <div className="flex flex-col items-center justify-center pt-12 bg-[#e4edeb] text-center">
       <Heading h1="IDEATION & SYNTHESIS" p="Identifying key insights" />
       <Image
         src="/sageImages/ideation/manyNotes.png"

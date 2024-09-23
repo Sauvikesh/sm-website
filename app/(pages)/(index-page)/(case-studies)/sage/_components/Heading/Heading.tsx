@@ -7,9 +7,9 @@ export type HeadingProps = {
 export default function Heading(props: HeadingProps) {
   const { h1, p } = props;
   return (
-    <>
-      <h4>{p}</h4>
-      <h2>{h1}</h2>
-    </>
+    <div className="flex flex-col gap-6">
+      <h4>{h1}</h4>
+      <h3>{p}</h3>
+    </div>
   );
 }
