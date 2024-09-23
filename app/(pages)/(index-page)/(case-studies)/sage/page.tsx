@@ -1,16 +1,16 @@
-import Demo from './_components/Demo/Demo';
-import Landing from './_components/Landing/Landing';
-import Summary from './_components/Summary/Summary';
-import Problem from './_components/Problem/Problem';
-import Solution from './_components/Solution/Solution';
-import Conclusion from './_components/Conclusion/Conclusion';
-import Process from './_components/Process/Process';
-import Research from './_components/Research/Research';
-import Ideation from './_components/Ideation/Ideation';
-import Prototype from './_components/Prototype/Prototype';
-import FinalDesigns from './_components/FinalDesigns/FinalDesigns';
-import Outcome from './_components/Outcome/Outcome';
-import Team from './_components/Team/Team';
+import Demo from './_components/Sections/Demo/Demo';
+import Landing from './_components/Sections/Landing/Landing';
+import Summary from './_components/Sections/Summary/Summary';
+import Problem from './_components/Sections/Problem/Problem';
+import Solution from './_components/Sections/Solution/Solution';
+import Conclusion from './_components/Sections/Conclusion/Conclusion';
+import Process from './_components/Sections/Process/Process';
+import Research from './_components/Sections/Research/Research';
+import Ideation from './_components/Sections/Ideation/Ideation';
+import Prototype from './_components/Sections/Prototype/Prototype';
+import FinalDesigns from './_components/Sections/FinalDesigns/FinalDesigns';
+import Outcome from './_components/Sections/Outcome/Outcome';
+import Team from './_components/Sections/Team/Team';
 import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../_components/OtherCaseStudies/OtherCaseStudies';
