@@ -45,8 +45,8 @@ export default function Process() {
         <h2 className="text-center">The Process</h2>
       </Reveal>
 
-      <Reveal>
-        <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4">
+        <Reveal>
           <h3>
             Hackathons are <span className="italic">expensive</span>, like{' '}
             <span className=" italic">$80,000 expensive</span>
@@ -55,14 +55,16 @@ export default function Process() {
             Defining HackDavis' business goals was a vital first step of this
             project and helped determine key performance indicators (KPIs).
           </p>
+        </Reveal>
 
+        <Reveal>
           <div className="flex gap-8">
             {textCardElements.map((card, index) => (
               <TextCard {...card} key={index} />
             ))}
           </div>
-        </div>
-      </Reveal>
+        </Reveal>
+      </div>
 
       <Reveal>
         <div>
