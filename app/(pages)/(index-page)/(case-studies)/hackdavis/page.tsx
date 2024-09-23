@@ -40,7 +40,6 @@ export default function HackDavis() {
     <main className="bg-white text-black flex flex-col gap-20">
       <Landing />
       <Intro />
-      <DividerLine />
       <SolutionPreview />
       <DividerLine />
       <Process />

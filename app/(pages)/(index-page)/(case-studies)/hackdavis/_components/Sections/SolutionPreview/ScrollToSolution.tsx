@@ -13,7 +13,7 @@ export default function ScrollToSolution() {
       className="bg-[#005271] text-white p-4 rounded-lg"
       onClick={handleScroll}
     >
-      Jump to Solution
+      Jump to Final Solution
     </button>
   );
 }

@@ -7,22 +7,13 @@ export default function SolutionPreview() {
   return (
     <section className="flex flex-col pl-[15%] pr-[15%] justify-center items-center">
       <RevealWrapper>
-        <h2 className="pb-4">Solution Preview</h2>
-        <p className="pb-8">
-          A responsive website that sets students up for success by facilitating
-          resource discovery in a variety of subjects such as web development,
-          data science, hardware, design, and more. Through the use of plain
-          language and whimsical characters, users embark on a journey to learn
-          about our commitment to inclusion, the values that we embody as an
-          organization, and the diverse innovations created by previous
-          participants.
-        </p>
-        <div className="flex gap-6 pb-20 justify-center">
+        <h3 className="pb-4">Product Preview</h3>
+        <div className="flex gap-6 pb-10 justify-center">
           <ScrollToSolution />
 
           <Link href="https://2024.hackdavis.io/" target="_blank">
-            <button className="flex items-center gap-2 bg-white text-[#005271] p-4 rounded-lg border border-[#005271]">
-              Experience on the Web
+            <button className="flex items-center gap-2 bg-white text-[#173A52] p-4 rounded-lg border border-[#005271]">
+              Launch hackdavis.io
               <Image
                 src="/hackdavis/linkArrow.svg"
                 alt="link arrow"
@@ -35,27 +26,35 @@ export default function SolutionPreview() {
         </div>
 
         <div className="flex items-start justify-center gap-5">
-          <Image
-            src="/hackdavis/solutions/AboutHQ.png"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="w-[30%]"
-          />
-          <Image
-            src="/hackdavis/solutions/Landing.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="pt-[6px] w-[30%]"
-          />
-          <Image
-            src="/hackdavis/solutions/DOE.svg"
-            alt="about page"
-            width={1000}
-            height={1000}
-            className="w-[30%]"
-          />
+          <div className="flex flex-col w-[30%] items-center gap-2">
+            <Image
+              src="/hackdavis/solutions/AboutHQ.png"
+              alt="about page"
+              width={1000}
+              height={1000}
+            />
+            <h4 className="text-[#808080]"> about page on Web</h4>
+          </div>
+
+          <div className="flex flex-col w-[30%] items-center gap-2 pt-1">
+            <Image
+              src="/hackdavis/solutions/Landing.svg"
+              alt="about page"
+              width={1000}
+              height={1000}
+            />
+            <h4 className="text-[#808080]">registration page on Web</h4>
+          </div>
+
+          <div className="flex flex-col w-[30%] items-center gap-2">
+            <Image
+              src="/hackdavis/solutions/DOE.svg"
+              alt="about page"
+              width={1000}
+              height={1000}
+            />
+            <h4 className="text-[#808080]">day-of-event page on Web</h4>
+          </div>
         </div>
       </RevealWrapper>
     </section>
