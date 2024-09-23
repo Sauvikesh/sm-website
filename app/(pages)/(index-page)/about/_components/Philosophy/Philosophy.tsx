@@ -1,4 +1,6 @@
-import TextCard, { TextCardProps } from '../../../../_components/TextCard/TextCard';
+import TextCard, {
+  TextCardProps,
+} from '../../../../_components/TextCard/TextCard';
 
 export default function Philosophy() {
   const textCardElements: TextCardProps[] = [
