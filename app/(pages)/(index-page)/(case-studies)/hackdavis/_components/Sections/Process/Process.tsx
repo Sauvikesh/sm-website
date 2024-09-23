@@ -2,7 +2,7 @@ import TextCard, {
   TextCardProps,
 } from '@/app/(pages)/_components/TextCard/TextCard';
 import Image from 'next/image';
-import { Reveal } from '@/app/(pages)/(index-page)/_components/Reveal/Reveal';
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 
 export default function Process() {
   const textCardElements: TextCardProps[] = [
@@ -41,12 +41,10 @@ export default function Process() {
 
   return (
     <section className="flex flex-col pl-[15%] pr-[15%] gap-[80px]">
-      <Reveal>
+      <RevealWrapper>
         <h2 className="text-center">The Process</h2>
-      </Reveal>
 
-      <div className="flex flex-col gap-4">
-        <Reveal>
+        <div className="flex flex-col gap-4">
           <h3>
             Hackathons are <span className="italic">expensive</span>, like{' '}
             <span className=" italic">$80,000 expensive</span>
@@ -55,18 +53,14 @@ export default function Process() {
             Defining HackDavis' business goals was a vital first step of this
             project and helped determine key performance indicators (KPIs).
           </p>
-        </Reveal>
 
-        <Reveal>
           <div className="flex gap-8">
             {textCardElements.map((card, index) => (
               <TextCard {...card} key={index} />
             ))}
           </div>
-        </Reveal>
-      </div>
+        </div>
 
-      <Reveal>
         <div>
           <h3 className="pb-4">
             Designing for user vs. business needs... why not both?
@@ -87,9 +81,7 @@ export default function Process() {
             about their background, qualifications, and/or level of expertise.
           </p>
         </div>
-      </Reveal>
 
-      <Reveal>
         <TextCard
           header="Opportunity Area: Leveraging Emotional Design"
           body="After connecting with previous HackDavis participants and sponsors, I
@@ -101,17 +93,13 @@ export default function Process() {
         showcasing previous years' success are integral to reassuring
         potential sponsors that they are making a worthy investment."
         />
-      </Reveal>
 
-      <Reveal>
         <div className="flex justify-between relative w-full">
           {profiles.map((profile, index) => (
             <UserProfile {...profile} key={index} />
           ))}
         </div>
-      </Reveal>
 
-      <Reveal>
         <div>
           <h3 className="pb-4">
             Setting actionable goals to address the target audiences
@@ -127,7 +115,7 @@ export default function Process() {
             3. Use effective and engaging storytelling
           </p>
         </div>
-      </Reveal>
+      </RevealWrapper>
     </section>
   );
 }

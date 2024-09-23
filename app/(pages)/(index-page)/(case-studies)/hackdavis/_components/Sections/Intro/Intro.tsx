@@ -1,10 +1,10 @@
-import { Reveal } from '@/app/(pages)/(index-page)/_components/Reveal/Reveal';
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import Image from 'next/image';
 
 export default function Intro() {
   return (
     <section className="pl-[15%] pr-[15%]">
-      <Reveal>
+      <RevealWrapper>
         <div className="flex w-full justify-between">
           <div className="flex flex-col w-[43%]">
             <h3 className="pb-2">Overview</h3>
@@ -39,9 +39,7 @@ export default function Intro() {
             />
           </div>
         </div>
-      </Reveal>
 
-      <Reveal>
         <h3 className="pb-2 pt-17">The Challenge</h3>
         <p>
           Traditionally, hackathons consisted solely of programmers who tackled
@@ -51,7 +49,7 @@ export default function Intro() {
           and experience levels, students with little to no technical experience
           often express their intimidation.
         </p>
-      </Reveal>
+      </RevealWrapper>
     </section>
   );
 }

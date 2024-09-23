@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ScrollToSolution from './ScrollToSolution';
-import { Reveal } from '@/app/(pages)/(index-page)/_components/Reveal/Reveal';
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 
 export default function SolutionPreview() {
   return (
     <section className="flex flex-col pl-[15%] pr-[15%] justify-center items-center">
-      <Reveal>
+      <RevealWrapper>
         <h2 className="pb-4">Solution Preview</h2>
         <p className="pb-8">
           A responsive website that sets students up for success by facilitating
@@ -33,9 +33,7 @@ export default function SolutionPreview() {
             </button>
           </Link>
         </div>
-      </Reveal>
 
-      <Reveal>
         <div className="flex items-start justify-center gap-5">
           <Image
             src="/hackdavis/solutions/AboutHQ.png"
@@ -59,7 +57,7 @@ export default function SolutionPreview() {
             className="w-[30%]"
           />
         </div>
-      </Reveal>
+      </RevealWrapper>
     </section>
   );
 }
