@@ -3,10 +3,10 @@ import Image from 'next/image';
 export default function Landing() {
   return (
     <header className="bg-[#123041] text-white flex flex-col justify-center items-center pl-[11%] pr-[11%] pt-12">
-      <h1 className="text-[80px] font-medium lead-[44px] pt-9">
+      <h1 className="text-[80px] font-f-w font-medium lead-[44px] pt-9">
         HackDavis 2024
       </h1>
-      <p className="pb-14">7 min read</p>
+      <p className="pb-14 text-[18px] font-medium">7 min read</p>
       <div className="flex w-full items-center justify-center">
         <Image
           src="/hackdavis/Mobile.svg"
