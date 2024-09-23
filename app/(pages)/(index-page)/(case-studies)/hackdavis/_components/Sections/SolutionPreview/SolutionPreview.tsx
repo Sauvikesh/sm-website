@@ -26,7 +26,7 @@ export default function SolutionPreview() {
         </div>
 
         <div className="flex items-start justify-center gap-5">
-          <div className="flex flex-col w-[30%] items-center gap-2">
+          <div className="flex flex-col w-[33%] items-center gap-2">
             <Image
               src="/hackdavis/solutions/AboutHQ.png"
               alt="about page"
@@ -36,7 +36,7 @@ export default function SolutionPreview() {
             <h4 className="text-[#808080]"> about page on Web</h4>
           </div>
 
-          <div className="flex flex-col w-[30%] items-center gap-2 pt-1">
+          <div className="flex flex-col w-[33%] items-center gap-2 pt-1">
             <Image
               src="/hackdavis/solutions/Landing.svg"
               alt="about page"
@@ -46,7 +46,7 @@ export default function SolutionPreview() {
             <h4 className="text-[#808080]">registration page on Web</h4>
           </div>
 
-          <div className="flex flex-col w-[30%] items-center gap-2">
+          <div className="flex flex-col w-[33%] items-center gap-2">
             <Image
               src="/hackdavis/solutions/DOE.svg"
               alt="about page"
