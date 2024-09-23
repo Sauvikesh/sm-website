@@ -10,7 +10,7 @@ export default function CardSort() {
     {
       number: '01',
       header: 'About',
-      body: 'Caters to potential sponsors and includes KPIs such as participants headcount and projects submitted. Delves into our key values and showcases our successful track record.',
+      body: "Caters to potential sponsors and includes KPIs such as participants headcount and projects submitted. Showcases HackDavis's key values and successful track record.",
     },
     {
       number: '02',
@@ -20,7 +20,7 @@ export default function CardSort() {
     {
       number: '03',
       header: 'Day-of-Event',
-      body: 'One-stop shop for important resources; facilitates processes such as getting started with our educational starter pack, project submission, and requesting help.',
+      body: 'One-stop shop for important resources and facilitates processes such as navigating to the educational starter pack, submitting projects, and requesting help.',
     },
   ];
 
@@ -41,12 +41,15 @@ export default function CardSort() {
           ))}
         </div>
 
-        <Image
-          src="/hackdavis/cardSort.svg"
-          alt="card sort"
-          width={2000}
-          height={1000}
-        />
+        <div className="flex flex-col items-center gap-2">
+          <Image
+            src="/hackdavis/cardSort.svg"
+            alt="card sort"
+            width={2000}
+            height={1000}
+          />
+          <h4 className="text-[#808080]">site map for the three pages</h4>
+        </div>
       </RevealWrapper>
     </section>
   );
