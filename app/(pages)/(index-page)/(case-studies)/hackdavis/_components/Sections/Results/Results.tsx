@@ -1,4 +1,3 @@
-import Heading from '../../Heading/Heading';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 
 export default function Results() {
@@ -10,20 +9,19 @@ export default function Results() {
   ];
 
   return (
-    <section className="pl-[15%] pr-[15%]">
+    <section className="pl-[15%] pr-[15%] flex flex-col gap-10">
       <RevealWrapper>
-        <div className="flex flex-col gap-4">
-          <h2>Results</h2>
-          <Heading
-            h3="Record-breaking numbers for the books"
-            p="Ultimately, we hit our funding goal (phew) and had the pleasure of
-          being co-hosted with Intel which allowed HackDavis to be the biggest
-          its ever been. On the big day, we were joined by 900 participants, 65%
-          of which were first-time hackers."
-          />
+        <div className="flex flex-col gap-2">
+          <h3>The Results</h3>
+          <p>
+            Ultimately, HackDavis reached its funding goal (phew) and was
+            co-hosted for the first time in five years with Intel. On the big
+            day, 900 participants filled the UCenter, 65% of which were
+            first-time hackers.
+          </p>
         </div>
 
-        <div className="flex gap-8 pt-10 flex-wrap">
+        <div className="flex gap-8">
           {statCards.map((stat, index) => (
             <StatCard {...stat} key={index} />
           ))}
@@ -40,9 +38,9 @@ type StatCardProps = {
 
 function StatCard({ number, description }: StatCardProps) {
   return (
-    <div className="bg-[#F1F1F1] w-[calc(50%-1rem)] h-[184px] flex flex-col items-center justify-center border border-[#CCCCCC]">
-      <h2>{number}</h2>
-      <h3>{description}</h3>
+    <div className="bg-[#F1F1F1] w-[calc(50%-1rem)] h-[124px] flex flex-col items-center justify-center border border-[#CCCCCC] rounded-lg">
+      <h3>{number}</h3>
+      <p>{description}</p>
     </div>
   );
 }

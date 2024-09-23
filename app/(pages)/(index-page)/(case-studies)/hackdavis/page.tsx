@@ -41,15 +41,14 @@ export default function HackDavis() {
       <Landing />
       <Intro />
       <SolutionPreview />
-      <DividerLine />
+      <Results />
+      <Venue />
       <Process />
       <Question />
       <CardSort />
       <DividerLine />
       <Ideation />
       <FinalSolution />
-      <Results />
-      <Venue />
       <Ending />
       <DividerLine />
       <OtherCaseStudies {...caseStudyInformation} />
