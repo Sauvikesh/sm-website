@@ -9,10 +9,10 @@ import FinalSolution from './_components/Sections/FinalSolution/FinalSolution';
 import Results from './_components/Sections/Results/Results';
 import Venue from './_components/Sections/Venue/Venue';
 import Ending from './_components/Sections/Ending/Ending';
-import DividerLine from './_components/DividerLine/DividerLine';
+import DividerLine from '../_components/DividerLine/DividerLine';
 import OtherCaseStudies, {
   OtherCaseStudiesProps,
-} from '../_components/OtherCaseStudies';
+} from '../_components/OtherCaseStudies/OtherCaseStudies';
 
 export default function HackDavis() {
   const caseStudyInformation: OtherCaseStudiesProps = {

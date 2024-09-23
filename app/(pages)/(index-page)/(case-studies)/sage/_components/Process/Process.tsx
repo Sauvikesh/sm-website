@@ -1,5 +1,5 @@
 import Heading from '../Headings/Heading';
-import TextCard, { TextCardProps } from '../../../../_components/TextCard';
+import TextCard, { TextCardProps } from '../../../../../_components/TextCard/TextCard';
 
 // TODO: double check how the widths are being used here?? rn the percentage values are for the width of the flex container
 // ^^ is this the best way I can assign the widths? doesn't look simple to change

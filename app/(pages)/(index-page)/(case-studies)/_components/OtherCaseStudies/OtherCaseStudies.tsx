@@ -1,6 +1,6 @@
-import { CaseStudyProps } from '@/app/(pages)/(index-page)/_components/CaseStudy';
 import Link from 'next/link';
 import Image from 'next/image';
+import { CaseStudyProps } from '../../../_components/CaseStudy/CaseStudy';
 
 export type OtherCaseStudiesProps = {
   caseStudies: CaseStudyProps[];

@@ -13,8 +13,8 @@ import Outcome from './_components/Outcome/Outcome';
 import Team from './_components/Team/Team';
 import OtherCaseStudies, {
   OtherCaseStudiesProps,
-} from '../_components/OtherCaseStudies';
-import DividerLine from '../hackdavis/_components/DividerLine/DividerLine';
+} from '../_components/OtherCaseStudies/OtherCaseStudies';
+import DividerLine from '../_components/DividerLine/DividerLine';
 
 export default function Sage() {
   const caseStudyInformation: OtherCaseStudiesProps = {

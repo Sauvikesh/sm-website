@@ -1,5 +1,5 @@
-import CaseStudy, { CaseStudyProps } from './_components/CaseStudy';
-import Landing from './_components/Landing';
+import CaseStudy, { CaseStudyProps } from './_components/CaseStudy/CaseStudy';
+import Landing from './_components/Landing/Landing';
 
 export default function Home() {
   const caseStudyInformation: CaseStudyProps[] = [

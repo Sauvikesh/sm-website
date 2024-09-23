@@ -1,6 +1,6 @@
 import TextCard, {
   TextCardProps,
-} from '@/app/(pages)/(index-page)/_components/TextCard';
+} from '@/app/(pages)/_components/TextCard/TextCard';
 import Image from 'next/image';
 import Heading from '../../Heading/Heading';
 export default function CardSort() {
