@@ -27,7 +27,7 @@ export default function FinalSolution() {
       y: displayDesktop ? '20%' : '12%',
     },
     {
-      text: "Users can learn about HackDavis's core values and what we stand for",
+      text: "Users can learn about HackDavis' core values",
       x: '-220px',
       y: displayDesktop ? '38%' : '21%',
     },
@@ -37,7 +37,7 @@ export default function FinalSolution() {
       y: displayDesktop ? '53%' : '40%',
     },
     {
-      text: 'Users develop increased positive brand association by seeing our track record and have the ability to view sites for previous years',
+      text: 'Users develop increased positive brand association by seeing a positive track record and have the ability to view sites for previous years',
       x: '-220px',
       y: displayDesktop ? '74%' : '82%',
     },
@@ -50,7 +50,7 @@ export default function FinalSolution() {
       y: displayDesktop ? '59%' : '52%',
     },
     {
-      text: 'Users can find answers to common questions they may have quicker',
+      text: 'Users can find answers to common questions they may have',
       x: '-230px',
       y: displayDesktop ? '79%' : '65%',
     },
@@ -63,26 +63,31 @@ export default function FinalSolution() {
       y: displayDesktop ? '4%' : '4%',
     },
     {
-      text: 'Users can easily discover resources via our educational starter pack',
+      text: 'Users can discover resources via our educational starter pack',
       x: '-215px',
       y: displayDesktop ? '10%' : '9%',
     },
     {
+      text: 'Users can filter by event type to more easily parse the schedule',
+      x: '-215px',
+      y: displayDesktop ? '16%' : '14%',
+    },
+    {
       text: 'Users can see when events occur, and plan to attend specific workshops',
       x: '-215px',
-      y: displayDesktop ? '20%' : '12%',
+      y: displayDesktop ? '25%' : '20%',
     },
     {
       text: 'Users gain motivation to register and can narrow down which tracks to apply for',
       x: '-215px',
-      y: displayDesktop ? '34%' : '28%',
+      y: displayDesktop ? '34%' : '32%',
     },
   ];
 
   const scrollButtons = [
     { sectionId: '1', number: '01', label: 'About' },
     { sectionId: '2', number: '02', label: 'Registration' },
-    { sectionId: '3', number: '03', label: 'Schedule' },
+    { sectionId: '3', number: '03', label: 'Day-of-Event' },
   ];
 
   const toggleButtons = [
