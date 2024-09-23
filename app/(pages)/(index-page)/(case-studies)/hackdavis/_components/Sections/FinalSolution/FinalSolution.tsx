@@ -3,6 +3,7 @@ import { useScrollToSectionOnViewSwitch } from '@/app/(pages)/_hooks/useScrollTo
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 
 //TODO: comeback to this later to refactor again maybe ???
 export default function FinalSolution() {
@@ -99,113 +100,115 @@ export default function FinalSolution() {
 
   return (
     <section className="pl-[15%] pr-[15%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
-      <h2 className="text-center">Final Solution</h2>
+      <RevealWrapper>
+        <h2 className="text-center">Final Solution</h2>
 
-      <div className="flex w-full gap-12 relative">
-        <div className="flex flex-col items-start gap-8 sticky top-12 h-fit">
-          <div className="flex flex-col items-start gap-2">
-            {toggleButtons.map((button, index) => (
-              <ToggleButton
+        <div className="flex w-full gap-12 relative">
+          <div className="flex flex-col items-start gap-8 sticky top-12 h-fit">
+            <div className="flex flex-col items-start gap-2">
+              {toggleButtons.map((button, index) => (
+                <ToggleButton
+                  key={index}
+                  label={button.label}
+                  onClick={button.onClick}
+                  isActive={button.isActive}
+                />
+              ))}
+            </div>
+
+            {scrollButtons.map((button, index) => (
+              <ScrollButton
                 key={index}
+                sectionId={button.sectionId}
+                activeButton={activeScrollButton}
+                buttonIndex={index + 1}
+                number={button.number}
                 label={button.label}
-                onClick={button.onClick}
-                isActive={button.isActive}
+                scrollToSection={scrollToSection}
               />
             ))}
           </div>
 
-          {scrollButtons.map((button, index) => (
-            <ScrollButton
-              key={index}
-              sectionId={button.sectionId}
-              activeButton={activeScrollButton}
-              buttonIndex={index + 1}
-              number={button.number}
-              label={button.label}
-              scrollToSection={scrollToSection}
-            />
-          ))}
-        </div>
+          <div className="flex flex-col w-[65%] gap-[197px]">
+            <div className="flex relative">
+              <motion.div
+                onPointerOver={() => setActiveScrollButton(1)}
+                onViewportEnter={() => setActiveScrollButton(1)}
+              >
+                <Image
+                  src={
+                    displayDesktop
+                      ? '/hackdavis/solutions/AboutHQ.png'
+                      : '/hackdavis/solutions/AboutMobileHQ.png'
+                  }
+                  alt="about page"
+                  width={1000}
+                  height={1000}
+                  id="1"
+                  priority={true}
+                />
+              </motion.div>
 
-        <div className="flex flex-col w-[65%] gap-[197px]">
-          <div className="flex relative">
-            <motion.div
-              onPointerOver={() => setActiveScrollButton(1)}
-              onViewportEnter={() => setActiveScrollButton(1)}
-            >
-              <Image
-                src={
-                  displayDesktop
-                    ? '/hackdavis/solutions/AboutHQ.png'
-                    : '/hackdavis/solutions/AboutMobileHQ.png'
-                }
-                alt="about page"
-                width={1000}
-                height={1000}
-                id="1"
-                priority={true}
-              />
-            </motion.div>
+              {commentsAbout.map((comment, index) => (
+                <Comment
+                  x={comment.x}
+                  y={comment.y}
+                  text={comment.text}
+                  key={index}
+                />
+              ))}
+            </div>
 
-            {commentsAbout.map((comment, index) => (
-              <Comment
-                x={comment.x}
-                y={comment.y}
-                text={comment.text}
-                key={index}
-              />
-            ))}
-          </div>
+            <div className="flex relative">
+              <motion.div
+                onPointerOver={() => setActiveScrollButton(2)}
+                onViewportEnter={() => setActiveScrollButton(2)}
+              >
+                <Image
+                  src={
+                    displayDesktop
+                      ? '/hackdavis/solutions/Landing.svg'
+                      : '/hackdavis/solutions/LandingMobile.svg'
+                  }
+                  alt="about page"
+                  width={1000}
+                  height={1000}
+                  id="2"
+                  priority={true}
+                />
+              </motion.div>
 
-          <div className="flex relative">
-            <motion.div
-              onPointerOver={() => setActiveScrollButton(2)}
-              onViewportEnter={() => setActiveScrollButton(2)}
-            >
-              <Image
-                src={
-                  displayDesktop
-                    ? '/hackdavis/solutions/Landing.svg'
-                    : '/hackdavis/solutions/LandingMobile.svg'
-                }
-                alt="about page"
-                width={1000}
-                height={1000}
-                id="2"
-                priority={true}
-              />
-            </motion.div>
-
-            {commentsLanding.map((comment, index) => (
-              <Comment {...comment} key={index} />
-            ))}
-          </div>
-
-          <div className="flex relative">
-            <motion.div
-              onPointerOver={() => setActiveScrollButton(3)}
-              onViewportEnter={() => setActiveScrollButton(3)}
-            >
-              <Image
-                src={
-                  displayDesktop
-                    ? '/hackdavis/solutions/DOE.svg'
-                    : '/hackdavis/solutions/DoEMobile.svg'
-                }
-                alt="about page"
-                width={1000}
-                height={1000}
-                id="3"
-                priority={true}
-              />
-
-              {commentsDOE.map((comment, index) => (
+              {commentsLanding.map((comment, index) => (
                 <Comment {...comment} key={index} />
               ))}
-            </motion.div>
+            </div>
+
+            <div className="flex relative">
+              <motion.div
+                onPointerOver={() => setActiveScrollButton(3)}
+                onViewportEnter={() => setActiveScrollButton(3)}
+              >
+                <Image
+                  src={
+                    displayDesktop
+                      ? '/hackdavis/solutions/DOE.svg'
+                      : '/hackdavis/solutions/DoEMobile.svg'
+                  }
+                  alt="about page"
+                  width={1000}
+                  height={1000}
+                  id="3"
+                  priority={true}
+                />
+
+                {commentsDOE.map((comment, index) => (
+                  <Comment {...comment} key={index} />
+                ))}
+              </motion.div>
+            </div>
           </div>
         </div>
-      </div>
+      </RevealWrapper>
     </section>
   );
 }

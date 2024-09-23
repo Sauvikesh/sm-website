@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Heading, { HeadingProps } from '../../Heading/Heading';
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 export default function Ending() {
   const headings: HeadingProps[] = [
     {
@@ -18,30 +19,32 @@ export default function Ending() {
 
   return (
     <section className="pl-[15%] pr-[15%] flex flex-col gap-20 pb-20">
-      {headings.map((heading, index) => (
-        <Heading {...heading} key={index} />
-      ))}
+      <RevealWrapper>
+        {headings.map((heading, index) => (
+          <Heading {...heading} key={index} />
+        ))}
 
-      <div className="flex gap-8">
-        <div className="flex flex-col items-center justify-center">
-          <Image
-            src="hackdavis/wholeTeam.svg"
-            alt="HD team"
-            width={1000}
-            height={1000}
-          />
-          <p className="pt-4">The whole HackDavis team!</p>
+        <div className="flex gap-8">
+          <div className="flex flex-col items-center justify-center">
+            <Image
+              src="hackdavis/wholeTeam.svg"
+              alt="HD team"
+              width={1000}
+              height={1000}
+            />
+            <p className="pt-4">The whole HackDavis team!</p>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+            <Image
+              src="hackdavis/designTeam.svg"
+              alt="HD team"
+              width={1000}
+              height={1000}
+            />
+            <p className="pt-4">Celebratory post-HackDavis photo</p>
+          </div>
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <Image
-            src="hackdavis/designTeam.svg"
-            alt="HD team"
-            width={1000}
-            height={1000}
-          />
-          <p className="pt-4">Celebratory post-HackDavis photo</p>
-        </div>
-      </div>
+      </RevealWrapper>
     </section>
   );
 }

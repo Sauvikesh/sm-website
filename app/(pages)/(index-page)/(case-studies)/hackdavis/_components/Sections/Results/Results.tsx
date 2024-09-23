@@ -1,4 +1,5 @@
 import Heading from '../../Heading/Heading';
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 
 export default function Results() {
   const statCards: StatCardProps[] = [
@@ -10,22 +11,24 @@ export default function Results() {
 
   return (
     <section className="pl-[15%] pr-[15%]">
-      <div className="flex flex-col gap-4">
-        <h2>Results</h2>
-        <Heading
-          h3="Record-breaking numbers for the books"
-          p="Ultimately, we hit our funding goal (phew) and had the pleasure of
+      <RevealWrapper>
+        <div className="flex flex-col gap-4">
+          <h2>Results</h2>
+          <Heading
+            h3="Record-breaking numbers for the books"
+            p="Ultimately, we hit our funding goal (phew) and had the pleasure of
           being co-hosted with Intel which allowed HackDavis to be the biggest
           its ever been. On the big day, we were joined by 900 participants, 65%
           of which were first-time hackers."
-        />
-      </div>
+          />
+        </div>
 
-      <div className="flex gap-8 pt-10 flex-wrap">
-        {statCards.map((stat, index) => (
-          <StatCard {...stat} key={index} />
-        ))}
-      </div>
+        <div className="flex gap-8 pt-10 flex-wrap">
+          {statCards.map((stat, index) => (
+            <StatCard {...stat} key={index} />
+          ))}
+        </div>
+      </RevealWrapper>
     </section>
   );
 }

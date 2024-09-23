@@ -3,6 +3,8 @@ import TextCard, {
 } from '@/app/(pages)/_components/TextCard/TextCard';
 import Image from 'next/image';
 import Heading from '../../Heading/Heading';
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
+
 export default function CardSort() {
   const textCardElements: TextCardProps[] = [
     {
@@ -24,26 +26,28 @@ export default function CardSort() {
 
   return (
     <section className="pl-[15%] pr-[15%]">
-      <Heading
-        h3="Three different pages, three different use cases"
-        p="After gathering a comprehensive list of the content, I set out to
+      <RevealWrapper>
+        <Heading
+          h3="Three different pages, three different use cases"
+          p="After gathering a comprehensive list of the content, I set out to
         understand if there was a more intuitive way to organize everything. I
         conducted card sorting (for the first time!) with five individuals, and
         built a site map consisting of three distinct pages."
-      />
+        />
 
-      <div className="flex gap-8 pb-20 pt-8">
-        {textCardElements.map((card, index) => (
-          <TextCard {...card} key={index} />
-        ))}
-      </div>
+        <div className="flex gap-8 pb-20 pt-8">
+          {textCardElements.map((card, index) => (
+            <TextCard {...card} key={index} />
+          ))}
+        </div>
 
-      <Image
-        src="/hackdavis/cardSort.svg"
-        alt="card sort"
-        width={2000}
-        height={1000}
-      />
+        <Image
+          src="/hackdavis/cardSort.svg"
+          alt="card sort"
+          width={2000}
+          height={1000}
+        />
+      </RevealWrapper>
     </section>
   );
 }
