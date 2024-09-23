@@ -28,12 +28,12 @@ export default function Sage() {
         linkurl: '/paramount',
       },
       {
-        org: 'Sage',
-        purpose: 'PASSION PROJECT',
-        desc: "Equipping individuals to navigate life's stressors",
-        src: '/caseStudies/sage.png',
-        alt: 'Sage App',
-        linkurl: '/sage',
+        org: 'HackDavis 2024',
+        purpose: 'FREELANCE PROJECT',
+        desc: 'Empowering students to create for social good',
+        src: '/caseStudies/hackdavis.png',
+        alt: 'HackDavis Website',
+        linkurl: '/hackdavis',
       },
     ],
   };
