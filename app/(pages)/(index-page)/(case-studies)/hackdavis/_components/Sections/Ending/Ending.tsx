@@ -18,13 +18,27 @@ export default function Ending() {
   ];
 
   return (
-    <section className="pl-[15%] pr-[15%] flex flex-col gap-20 pb-20">
+    <section className="pl-[15%] pr-[15%] flex flex-col gap-4">
       <RevealWrapper>
-        {headings.map((heading, index) => (
-          <Heading {...heading} key={index} />
-        ))}
+        <h4 className="text-[#808080]">Reflection: lessons learned</h4>
+        <h3>
+          Working with engineers <span className="line-through">can be</span> is
+          fun
+        </h3>
+        <p>
+          Stepping outside the realm of exploratory projects upped the stakes of
+          this one, and it was a rewarding experience to see the designs come to
+          life because of the rapport and relationships that I built with the
+          engineers. <br></br> <br></br> My first time working with engineers
+          also meant it was my first time completing handoff! Per my request,
+          our team tried out Figma Dev Mode and it allowed me to streamline the
+          documentation process by annotating interactions and calling out
+          specific details. <br></br> <br></br>I learned how integral it is to
+          consider technical feasibility, and my empathy for engineers
+          contributed to the success of our cross-functional team.
+        </p>
 
-        <div className="flex gap-8">
+        <div className="flex gap-8 pt-16">
           <div className="flex flex-col items-center justify-center">
             <Image
               src="hackdavis/wholeTeam.svg"
