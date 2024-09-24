@@ -1,9 +1,9 @@
 import TextCard, {
   TextCardProps,
 } from '@/app/(pages)/_components/TextCard/TextCard';
-import Image from 'next/image';
 import Heading from '../../Heading/Heading';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function CardSort() {
   const textCardElements: TextCardProps[] = [
@@ -42,7 +42,7 @@ export default function CardSort() {
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <Image
+          <ImageWithModal
             src="/hackdavis/cardSort.svg"
             alt="card sort"
             width={2000}

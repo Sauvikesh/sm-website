@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ScrollToSolution from './ScrollToSolution';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function SolutionPreview() {
   return (
@@ -27,7 +28,7 @@ export default function SolutionPreview() {
 
         <div className="flex items-start justify-center gap-5">
           <div className="flex flex-col w-[33%] items-center gap-2">
-            <Image
+            <ImageWithModal
               src="/hackdavis/solutions/AboutHQ.png"
               alt="about page"
               width={1000}
@@ -37,7 +38,7 @@ export default function SolutionPreview() {
           </div>
 
           <div className="flex flex-col w-[33%] items-center gap-2 pt-1">
-            <Image
+            <ImageWithModal
               src="/hackdavis/solutions/Landing.svg"
               alt="about page"
               width={1000}
@@ -47,7 +48,7 @@ export default function SolutionPreview() {
           </div>
 
           <div className="flex flex-col w-[33%] items-center gap-2">
-            <Image
+            <ImageWithModal
               src="/hackdavis/solutions/DOE.svg"
               alt="about page"
               width={1000}

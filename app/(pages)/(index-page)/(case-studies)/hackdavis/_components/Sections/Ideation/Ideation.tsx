@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Heading from '../../Heading/Heading';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Ideation() {
   return (
@@ -17,14 +18,14 @@ export default function Ideation() {
         </div>
 
         <div className="flex gap-6 pt-10 pb-[100px]">
-          <Image
+          <ImageWithModal
             src="hackdavis/prize1.svg"
             alt="prize 1"
             width={1000}
             height={1000}
             className="w-[28%]"
           />
-          <Image
+          <ImageWithModal
             src="hackdavis/prize2.svg"
             alt="prize 2"
             width={1000}
@@ -38,7 +39,7 @@ export default function Ideation() {
             height={1000}
             className="w-10"
           />
-          <Image
+          <ImageWithModal
             src="hackdavis/prize3.svg"
             alt="prize 4"
             width={1000}
