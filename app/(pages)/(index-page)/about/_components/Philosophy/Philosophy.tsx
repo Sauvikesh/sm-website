@@ -1,6 +1,7 @@
 import TextCard, {
   TextCardProps,
 } from '../../../../_components/TextCard/TextCard';
+import { RevealWrapper } from '../../../_components/Reveal/RevealWrapper';
 
 export default function Philosophy() {
   const textCardElements: TextCardProps[] = [
@@ -22,15 +23,17 @@ export default function Philosophy() {
   ];
   return (
     <section className="pl-[15%] pr-[15%]">
-      <h3 className="text-4xl tracking-[0.72px]">
-        My design (& life) philosophy
-      </h3>
+      <RevealWrapper>
+        <h3 className="text-4xl tracking-[0.72px]">
+          My design (& life) philosophy
+        </h3>
 
-      <div className="flex gap-8 pb-20 pt-6">
-        {textCardElements.map((card, index) => (
-          <TextCard {...card} key={index} />
-        ))}
-      </div>
+        <div className="flex gap-8 pb-20 pt-6">
+          {textCardElements.map((card, index) => (
+            <TextCard {...card} key={index} />
+          ))}
+        </div>
+      </RevealWrapper>
     </section>
   );
 }

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { RevealWrapper } from '../../../_components/Reveal/RevealWrapper';
 
 export default function Hobbies() {
   const hobbyItems: HobbyImageProps[] = [
@@ -30,22 +31,24 @@ export default function Hobbies() {
   ];
   return (
     <section className="pl-[15%] pr-[15%]">
-      <h3 className="text-4xl tracking-[0.72px]">
-        Designer, but also, lifelong learner and adventurer
-      </h3>
-      <p className="pt-4 pb-8">
-        Jack of all trades, master of some. Of all the hobbies and skills I've
-        set out to learn, some have stuck, and others I definitely need more
-        practice with (driving stick shift, snowboarding, diversifying my
-        cooking), but I'm always eager to try new things. Here's what I've been
-        up to lately:
-      </p>
+      <RevealWrapper>
+        <h3 className="text-4xl tracking-[0.72px]">
+          Designer, but also, lifelong learner and adventurer
+        </h3>
+        <p className="pt-4 pb-8">
+          Jack of all trades, master of some. Of all the hobbies and skills I've
+          set out to learn, some have stuck, and others I definitely need more
+          practice with (driving stick shift, snowboarding, diversifying my
+          cooking), but I'm always eager to try new things. Here's what I've
+          been up to lately:
+        </p>
 
-      <div className="grid grid-rows-2 grid-cols-3 gap-8">
-        {hobbyItems.map((hobby, index) => (
-          <HobbyImage {...hobby} key={index} />
-        ))}
-      </div>
+        <div className="grid grid-rows-2 grid-cols-3 gap-8">
+          {hobbyItems.map((hobby, index) => (
+            <HobbyImage {...hobby} key={index} />
+          ))}
+        </div>
+      </RevealWrapper>
     </section>
   );
 }

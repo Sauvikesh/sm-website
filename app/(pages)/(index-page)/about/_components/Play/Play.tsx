@@ -1,6 +1,7 @@
 import AutoScroll from 'embla-carousel-auto-scroll';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
+import { RevealWrapper } from '../../../_components/Reveal/RevealWrapper';
 
 export default function Play() {
   return (
@@ -8,9 +9,11 @@ export default function Play() {
       className="flex flex-col pl-[15%] pr-[15%] pt-[160px] gap-[192px]"
       id="dark-mode"
     >
-      <FunText />
-      <BookShelf />
-      <CameraRoll />
+      <RevealWrapper>
+        <FunText />
+        <BookShelf />
+        <CameraRoll />
+      </RevealWrapper>
     </section>
   );
 }
