@@ -11,7 +11,7 @@ export default function OtherCaseStudies({
   caseStudies,
 }: OtherCaseStudiesProps) {
   return (
-    <div className="pl-[15%] pr-[15%] flex flex-col items-center gap-10 pb-[225px]">
+    <section className="pl-[15%] pr-[15%] flex flex-col items-center gap-10 pb-[225px]">
       <RevealWrapper>
         <h2>Discover More</h2>
         <div className="flex gap-8">
@@ -20,7 +20,7 @@ export default function OtherCaseStudies({
           ))}
         </div>
       </RevealWrapper>
-    </div>
+    </section>
   );
 }
 

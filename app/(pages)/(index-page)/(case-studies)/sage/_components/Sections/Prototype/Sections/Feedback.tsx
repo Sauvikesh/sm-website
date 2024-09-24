@@ -1,3 +1,4 @@
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import Image from 'next/image';
 
 export default function Feedback() {
@@ -15,25 +16,27 @@ export default function Feedback() {
 
   return (
     <div className="flex flex-col pt-16 pb-0">
-      {wireframes.map((frame, index) => (
-        <Image
-          src={frame.src}
-          alt={frame.alt}
-          width={1000}
-          height={1000}
-          key={index}
-          className="w-[95%] self-center"
-        />
-      ))}
-
-      <h3 className="pt-40 pb-4">Usability testing takeaways</h3>
-      <ul className="pb-40 list-disc pl-5">
-        {bulletPoints.map((bullet, index) => (
-          <li className="pb-2 text-lg leading-8" key={index}>
-            {bullet}
-          </li>
+      <RevealWrapper>
+        {wireframes.map((frame, index) => (
+          <Image
+            src={frame.src}
+            alt={frame.alt}
+            width={1000}
+            height={1000}
+            key={index}
+            className="w-[95%] self-center"
+          />
         ))}
-      </ul>
+
+        <h3 className="pt-40 pb-4">Usability testing takeaways</h3>
+        <ul className="pb-40 list-disc pl-5">
+          {bulletPoints.map((bullet, index) => (
+            <li className="pb-2 text-lg leading-8" key={index}>
+              {bullet}
+            </li>
+          ))}
+        </ul>
+      </RevealWrapper>
     </div>
   );
 }

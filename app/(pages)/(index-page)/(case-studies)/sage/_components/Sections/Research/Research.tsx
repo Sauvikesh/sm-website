@@ -4,10 +4,10 @@ import Responses from './Sections/Responses';
 
 export default function Research() {
   return (
-    <div className="pl-[15%] pr-[15%]">
+    <section className="pl-[15%] pr-[15%]">
       <Header />
       <Responses />
       <Market />
-    </div>
+    </section>
   );
 }

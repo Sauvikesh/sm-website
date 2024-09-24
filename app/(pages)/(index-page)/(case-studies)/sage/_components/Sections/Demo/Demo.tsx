@@ -1,3 +1,4 @@
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import Heading from '../../Heading/Heading';
 
 const videoCardContent: VideoTextCardProps[] = [
@@ -70,9 +71,11 @@ const videoCardContent: VideoTextCardProps[] = [
 export default function Demo() {
   return (
     <section className="flex flex-col justify-center pl-[15%] pr-[15%]">
-      {videoCardContent.map((card, index) => (
-        <VideoTextCard key={index} {...card} />
-      ))}
+      <RevealWrapper>
+        {videoCardContent.map((card, index) => (
+          <VideoTextCard key={index} {...card} />
+        ))}
+      </RevealWrapper>
     </section>
   );
 }

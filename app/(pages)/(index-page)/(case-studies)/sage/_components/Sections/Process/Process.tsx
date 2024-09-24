@@ -2,6 +2,7 @@ import TextCard, {
   TextCardProps,
 } from '@/app/(pages)/_components/TextCard/TextCard';
 import Heading from '../../Heading/Heading';
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 
 const textCardElements: TextCardProps[] = [
   {
@@ -24,14 +25,16 @@ const textCardElements: TextCardProps[] = [
 // ^^ is this the best way I can assign the widths? doesn't look simple to change
 export default function Process() {
   return (
-    <div className="flex flex-col pl-[15%] pr-[15%] justify-center g-3 h-[60vh]">
-      <div className="h-[1px] bg-[#CCC] mb-20"></div>
-      <Heading h1="THE PROCESS" p="Project Goals" />
-      <div className="flex gap-8 pb-20 pt-8">
-        {textCardElements.map((card, index) => (
-          <TextCard {...card} key={index} />
-        ))}
-      </div>
-    </div>
+    <section className="flex flex-col pl-[15%] pr-[15%] justify-center g-3 h-[60vh]">
+      <RevealWrapper>
+        <div className="h-[1px] bg-[#CCC] mb-20"></div>
+        <Heading h1="THE PROCESS" p="Project Goals" />
+        <div className="flex gap-8 pb-20 pt-8">
+          {textCardElements.map((card, index) => (
+            <TextCard {...card} key={index} />
+          ))}
+        </div>
+      </RevealWrapper>
+    </section>
   );
 }

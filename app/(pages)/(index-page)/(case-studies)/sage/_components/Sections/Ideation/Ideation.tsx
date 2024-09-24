@@ -5,6 +5,7 @@ import { useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import Heading from '../../Heading/Heading';
 import { motion, MotionValue } from 'framer-motion';
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 
 export default function Ideation() {
   const sectionRef = useRef(null);
@@ -50,27 +51,29 @@ export default function Ideation() {
   ];
 
   return (
-    <div
+    <section
       className="flex flex-col items-center justify-center pt-12 bg-contain text-center"
       style={{ backgroundImage: "url('/sageImages/ideation/dots.png')" }}
     >
-      <Heading h1="IDEATION & SYNTHESIS" p="Identifying key insights" />
-      <Image
-        src="/sageImages/ideation/manyNotes.png"
-        alt="many notes image"
-        width={1000}
-        height={1000}
-        className="w-full h-auto pt-8"
-      />
-      <div
-        className="flex flex-wrap justify-center pl-[15%] pr-[15%]"
-        ref={sectionRef}
-      >
-        {animatedCards.map((card, index) => (
-          <AnimatedCard {...card} key={index} />
-        ))}
-      </div>
-    </div>
+      <RevealWrapper>
+        <Heading h1="IDEATION & SYNTHESIS" p="Identifying key insights" />
+        <Image
+          src="/sageImages/ideation/manyNotes.png"
+          alt="many notes image"
+          width={1000}
+          height={1000}
+          className="w-full h-auto pt-8"
+        />
+        <div
+          className="flex flex-wrap justify-center pl-[15%] pr-[15%]"
+          ref={sectionRef}
+        >
+          {animatedCards.map((card, index) => (
+            <AnimatedCard {...card} key={index} />
+          ))}
+        </div>
+      </RevealWrapper>
+    </section>
   );
 }
 

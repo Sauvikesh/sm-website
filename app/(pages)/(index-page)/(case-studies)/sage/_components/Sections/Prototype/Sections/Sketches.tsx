@@ -1,3 +1,4 @@
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import Image from 'next/image';
 
 const sketches = [
@@ -29,24 +30,26 @@ const sketchesGridBlocks: SketchesGridBlocksProps[] = [
 export default function Sketches() {
   return (
     <div className="flex flex-col pt-24 pb-16">
-      <h2>Incorporating opportunity areas into sketches</h2>
-      <div className="flex pt-8 pb-16">
-        {sketches.map((sketch, index) => (
-          <Image
-            src={sketch.src}
-            alt={sketch.alt}
-            width={1000}
-            height={1000}
-            key={index}
-            className="w-[25%]"
-          />
-        ))}
-      </div>
-      <div className="grid grid-cols-2 grid-rows-2 gap-y-16 gap-x-12">
-        {sketchesGridBlocks.map((block, index) => (
-          <SketchesGridBlocks {...block} key={index} />
-        ))}
-      </div>
+      <RevealWrapper>
+        <h2>Incorporating opportunity areas into sketches</h2>
+        <div className="flex pt-8 pb-16">
+          {sketches.map((sketch, index) => (
+            <Image
+              src={sketch.src}
+              alt={sketch.alt}
+              width={1000}
+              height={1000}
+              key={index}
+              className="w-[25%]"
+            />
+          ))}
+        </div>
+        <div className="grid grid-cols-2 grid-rows-2 gap-y-16 gap-x-12">
+          {sketchesGridBlocks.map((block, index) => (
+            <SketchesGridBlocks {...block} key={index} />
+          ))}
+        </div>
+      </RevealWrapper>
     </div>
   );
 }

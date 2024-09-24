@@ -1,3 +1,4 @@
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import Heading from '../../../Heading/Heading';
 
 export default function Description() {
@@ -16,36 +17,38 @@ export default function Description() {
 
   return (
     <div className="flex flex-col justify-center pt-12 pb-12 g-3">
-      <Heading
-        h1="PROTOTYPE & TEST"
-        p="Conducting usability testing to inform iterations"
-      />
-      <div className="flex justify-between gap-12 pt-10 pl-4">
-        <div className="flex flex-col w-[40%]">
-          <h3 className="pb-4">Tester Profile</h3>
-          <ul className="pl-5 list-disc">
-            {testerProfiles.map((profile, index) => (
-              <li className="mb-4 text-lg leading-8" key={index}>
-                {profile}
-              </li>
-            ))}
-          </ul>
+      <RevealWrapper>
+        <Heading
+          h1="PROTOTYPE & TEST"
+          p="Conducting usability testing to inform iterations"
+        />
+        <div className="flex justify-between gap-12 pt-10 pl-4">
+          <div className="flex flex-col w-[40%]">
+            <h3 className="pb-4">Tester Profile</h3>
+            <ul className="pl-5 list-disc">
+              {testerProfiles.map((profile, index) => (
+                <li className="mb-4 text-lg leading-8" key={index}>
+                  {profile}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="flex flex-col w-[50%]">
+            <h3 className="pb-4">Task List</h3>
+            <ol className="pl-5 list-decimal">
+              {tasks.map((task, index) => (
+                <li className="mb-4 text-lg leading-8" key={index}>
+                  {task}
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
 
-        <div className="flex flex-col w-[50%]">
-          <h3 className="pb-4">Task List</h3>
-          <ol className="pl-5 list-decimal">
-            {tasks.map((task, index) => (
-              <li className="mb-4 text-lg leading-8" key={index}>
-                {task}
-              </li>
-            ))}
-          </ol>
-        </div>
-      </div>
-
-      <h3 className="pb-1 pl-5">Metrics</h3>
-      <p className="pl-5 pb-4 ">Qualitative feedback</p>
+        <h3 className="pb-1 pl-5">Metrics</h3>
+        <p className="pl-5 pb-4 ">Qualitative feedback</p>
+      </RevealWrapper>
     </div>
   );
 }
