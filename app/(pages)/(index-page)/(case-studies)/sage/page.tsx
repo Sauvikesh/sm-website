@@ -2,7 +2,6 @@ import Demo from './_components/Sections/Demo/Demo';
 import Landing from './_components/Sections/Landing/Landing';
 import Summary from './_components/Sections/Summary/Summary';
 import Problem from './_components/Sections/Problem/Problem';
-import Solution from './_components/Sections/Solution/Solution';
 import Conclusion from './_components/Sections/Conclusion/Conclusion';
 import Process from './_components/Sections/Process/Process';
 import Research from './_components/Sections/Research/Research';
@@ -42,11 +41,11 @@ export default function Sage() {
     <main className="bg-white text-black flex flex-col">
       <Landing />
       <Summary />
-      <Problem />
-      <Solution />
+      <DividerLine />
       <Demo />
       <Process />
       <Research />
+      <Problem />
       <Ideation />
       <Prototype />
       <FinalDesigns />

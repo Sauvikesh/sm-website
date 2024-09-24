@@ -1,5 +1,6 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import Heading from '../../Heading/Heading';
+import JumpToSolution from './JumpToSolution';
 
 const videoCardContent: VideoTextCardProps[] = [
   {
@@ -70,8 +71,10 @@ const videoCardContent: VideoTextCardProps[] = [
 
 export default function Demo() {
   return (
-    <section className="flex flex-col justify-center pl-[15%] pr-[15%]">
+    <section className="flex flex-col justify-center items-center pl-[15%] pr-[15%] pt-20 gap-4">
       <RevealWrapper>
+        <h3>Product Preview</h3>
+        <JumpToSolution />
         {videoCardContent.map((card, index) => (
           <VideoTextCard key={index} {...card} />
         ))}

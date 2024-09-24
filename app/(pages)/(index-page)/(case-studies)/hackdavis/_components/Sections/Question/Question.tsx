@@ -1,11 +1,15 @@
+import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import Image from 'next/image';
 
 export default function Question() {
   return (
     <section className="bg-[#005271] text-white p-[160px] pl-[216px] pr-[216px] flex relative">
-      <h2 className="pr-[23%]">
-        How might we inspire participants and sponsors to champion social good?{' '}
-      </h2>
+      <RevealWrapper>
+        <h2 className="pr-[23%]">
+          How might we inspire participants and sponsors to champion social
+          good?{' '}
+        </h2>
+      </RevealWrapper>
 
       <Image
         src="/hackdavis/charstack3.svg"

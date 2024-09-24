@@ -1,4 +1,7 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
+import StatCard, {
+  StatCardProps,
+} from '../../../../_components/StatCard/StatCard';
 
 export default function Results() {
   const statCards: StatCardProps[] = [
@@ -28,19 +31,5 @@ export default function Results() {
         </div>
       </RevealWrapper>
     </section>
-  );
-}
-
-type StatCardProps = {
-  number: string;
-  description: string;
-};
-
-function StatCard({ number, description }: StatCardProps) {
-  return (
-    <div className="bg-[#F1F1F1] w-[calc(50%-1rem)] h-[124px] flex flex-col items-center justify-center border border-[#CCCCCC] rounded-lg">
-      <h3>{number}</h3>
-      <p>{description}</p>
-    </div>
   );
 }
