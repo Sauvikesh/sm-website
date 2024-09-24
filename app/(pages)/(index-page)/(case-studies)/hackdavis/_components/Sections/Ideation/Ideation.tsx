@@ -89,8 +89,8 @@ export default function Ideation() {
         </div>
 
         <Heading
-          h3="Showcasing our values and integrity"
-          p="Exhibiting our values further builds trust and reassures potential
+          h3="Showcasing HackDavis' values and integrity"
+          p="Exhibiting HackDavis' values further builds trust and reassures potential
           sponsors that their investment is going towards a good cause.
           Reconfiguring the information in the cards allowed me to maximize
           screen real estate and reduced the lockup by 458 pixels. Additionally,
