@@ -6,7 +6,7 @@ import { RevealWrapper } from '../../../_components/Reveal/RevealWrapper';
 export default function Play() {
   return (
     <section
-      className="flex flex-col pl-[15%] pr-[15%] pt-[160px] gap-[192px]"
+      className="flex flex-col pl-[15%] pr-[15%] gap-[192px]"
       id="dark-mode"
     >
       <RevealWrapper>

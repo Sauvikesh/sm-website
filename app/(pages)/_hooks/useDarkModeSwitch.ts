@@ -8,8 +8,8 @@ export function useDarkModeSwitch() {
       const scrollPosition = window.scrollY;
       const targetSection = document.getElementById('dark-mode');
 
-      // Check if the target section is reached
-      if (targetSection && scrollPosition >= targetSection.offsetTop) {
+      // Check if the target section is reached;
+      if (targetSection && scrollPosition >= targetSection.offsetTop - 400) {
         setDarkMode(true);
       } else {
         setDarkMode(false);
