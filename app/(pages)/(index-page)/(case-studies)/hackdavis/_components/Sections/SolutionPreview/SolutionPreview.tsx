@@ -34,7 +34,7 @@ export default function SolutionPreview() {
               width={1000}
               height={1000}
             />
-            <h4 className="text-[#808080]"> about page on Web</h4>
+            <h4> about page on Web</h4>
           </div>
 
           <div className="flex flex-col w-[33%] items-center gap-2 pt-1">
@@ -44,7 +44,7 @@ export default function SolutionPreview() {
               width={1000}
               height={1000}
             />
-            <h4 className="text-[#808080]">registration page on Web</h4>
+            <h4>registration page on Web</h4>
           </div>
 
           <div className="flex flex-col w-[33%] items-center gap-2">
@@ -54,7 +54,7 @@ export default function SolutionPreview() {
               width={1000}
               height={1000}
             />
-            <h4 className="text-[#808080]">day-of-event page on Web</h4>
+            <h4>day-of-event page on Web</h4>
           </div>
         </div>
       </RevealWrapper>

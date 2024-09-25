@@ -5,7 +5,7 @@ export default function Outcome() {
   return (
     <section className="pl-[15%] pr-[15%] flex flex-col gap-12 pb-20">
       <RevealWrapper>
-        <h2>Outcome</h2>
+        <h3>Outcome</h3>
 
         <h3>
           After polling 38 individuals from our target audience, 29% reported

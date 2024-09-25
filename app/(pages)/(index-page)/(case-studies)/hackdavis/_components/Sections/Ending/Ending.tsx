@@ -4,7 +4,7 @@ export default function Ending() {
   return (
     <section className="pl-[15%] pr-[15%] flex flex-col gap-4">
       <RevealWrapper>
-        <h4 className="text-[#808080]">Reflection: lessons learned</h4>
+        <h4>Reflection: lessons learned</h4>
         <h3>
           Working with engineers <span className="line-through">can be</span> is
           fun
@@ -30,7 +30,7 @@ export default function Ending() {
               width={1000}
               height={1000}
             />
-            <h4 className="pt-4 text-[#808080]">The whole HackDavis team!</h4>
+            <h4 className="pt-4">The whole HackDavis team!</h4>
           </div>
           <div className="flex flex-col items-center justify-center">
             <ImageWithModal
@@ -39,9 +39,7 @@ export default function Ending() {
               width={1000}
               height={1000}
             />
-            <h4 className="pt-4 text-[#808080]">
-              Celebratory post-HackDavis photo
-            </h4>
+            <h4 className="pt-4">Celebratory post-HackDavis photo</h4>
           </div>
         </div>
       </RevealWrapper>

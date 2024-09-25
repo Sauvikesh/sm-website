@@ -34,7 +34,7 @@ function CaseStudyThumbnail(props: CaseStudyProps) {
     >
       <div className="flex gap-2">
         <h4 className="font-outfit">{org}</h4>
-        <h4 className="font-outfit text-[#919191]">{purpose}</h4>
+        <h4 className="font-outfit">{purpose}</h4>
       </div>
       <h3 className="pt-2 pb-20">{desc}</h3>
       <Image

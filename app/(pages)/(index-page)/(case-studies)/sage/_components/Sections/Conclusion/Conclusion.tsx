@@ -7,9 +7,9 @@ export default function Conclustion() {
     <section className="flex flex-col pl-[15%] pr-[15%]">
       <RevealWrapper>
         <div className="flex flex-col gap-4">
-          <h2>Conclusion</h2>
+          <h4>Reflection</h4>
           <h3>Challenges</h3>
-          <p className="pb-10 text-lg leading-8">
+          <p className="pb-10 leading-8">
             Narrowing down the ideas to implement was a challenge considering
             the time constraint of the project. As it was not possible to
             utilize all of the features ideated, the ones that best addressed

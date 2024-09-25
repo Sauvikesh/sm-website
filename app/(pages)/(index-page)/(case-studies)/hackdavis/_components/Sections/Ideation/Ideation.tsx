@@ -8,9 +8,7 @@ export default function Ideation() {
     <section className="pl-[15%] pr-[15%]">
       <RevealWrapper>
         <div className="flex flex-col gap-4">
-          <h4 className="text-[#808080]">
-            Ideations, Explorations & Iterations
-          </h4>
+          <h4>Ideations, Explorations & Iterations</h4>
           <Heading
             h3="Displaying prizes in a more visually prominent way"
             p="In an earnest honesty, 2 out of the 5 interviewees admitted that the prizes highly motivated them to participate. I comprehensively displayed each prize using cards. Configuring the metadata on mobile was a challenge because of the limited horizontal space, and I iterated several times. Incorporating imagery made the prizes more visually enticing, and placing the text underneath accommodated longer strings of text, therefore preventing awkward truncation."
@@ -68,7 +66,7 @@ export default function Ideation() {
               width={1000}
               height={1000}
             />
-            <h4 className="text-[#808080]">initial exploration</h4>
+            <h4>initial exploration</h4>
           </div>
           <Image
             src="hackdavis/Arrow.svg"
@@ -85,7 +83,7 @@ export default function Ideation() {
               height={1000}
               className="translate-x-7"
             />
-            <h4 className="text-[#808080]">final design on mobile</h4>
+            <h4>final design on mobile</h4>
           </div>
         </div>
 
@@ -107,7 +105,7 @@ export default function Ideation() {
               width={1000}
               height={1000}
             />
-            <h4 className="text-[#808080]">initial exploration</h4>
+            <h4>initial exploration</h4>
           </div>
 
           <Image
@@ -124,7 +122,7 @@ export default function Ideation() {
               width={1000}
               height={1000}
             />
-            <h4 className="text-[#808080]">final design on web</h4>
+            <h4>final design on web</h4>
           </div>
         </div>
 
@@ -155,7 +153,7 @@ export default function Ideation() {
               width={1000}
               height={1000}
             />
-            <h4 className="text-[#808080]">final design on web</h4>
+            <h4>final design on web</h4>
           </div>
         </div>
       </RevealWrapper>

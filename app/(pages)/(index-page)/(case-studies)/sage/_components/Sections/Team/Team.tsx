@@ -10,7 +10,7 @@ export default function Team() {
           width={1000}
           height={1000}
           alt="team photo"
-          className="w-[40%] h-auto pb-4 self-center"
+          className="w-[40%] h-auto pb-4 self-center rounded-2xl"
         />
 
         <div className="flex flex-col gap-8 w-[35%]">
