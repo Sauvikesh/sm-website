@@ -29,7 +29,7 @@ const ImageModal = ({ src, alt, onClose }: ImageModalProps) => {
           alt={alt}
           width={1000}
           height={1000}
-          className="object-contain w-[80vw]" // Adjust the size of the image inside the modal
+          className="object-contain w-[100vw] pt-20 pb-20 cursor-zoom-out" // Adjust the size of the image inside the modal
         />
       </div>
     </div>

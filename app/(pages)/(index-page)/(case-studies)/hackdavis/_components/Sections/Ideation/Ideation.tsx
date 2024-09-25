@@ -62,7 +62,7 @@ export default function Ideation() {
 
         <div className="flex gap-8 pt-10 pb-[100px] justify-center pl-[7%] pr-[7%]">
           <div className="flex flex-col items-center gap-2">
-            <Image
+            <ImageWithModal
               src="hackdavis/teamBefore.svg"
               alt="team section before image"
               width={1000}
@@ -78,7 +78,7 @@ export default function Ideation() {
             className="w-10"
           />
           <div className="flex flex-col items-center gap-2">
-            <Image
+            <ImageWithModal
               src="hackdavis/teamAfter.svg"
               alt="team section after image"
               width={1000}
@@ -101,7 +101,7 @@ export default function Ideation() {
 
         <div className="flex gap-2 pt-10 pb-[100px] justify-center">
           <div className="flex flex-col items-center gap-2">
-            <Image
+            <ImageWithModal
               src="hackdavis/mbBefore.svg"
               alt="web before image"
               width={1000}
@@ -112,13 +112,13 @@ export default function Ideation() {
 
           <Image
             src="hackdavis/Arrow.svg"
-            alt="prize 1"
+            alt="arrow"
             width={50}
             height={1000}
             className="w-10"
           />
           <div className="flex flex-col items-center gap-2">
-            <Image
+            <ImageWithModal
               src="hackdavis/mbAfter.svg"
               alt="web after image"
               width={1000}
@@ -141,15 +141,15 @@ export default function Ideation() {
         />
 
         <div className="flex gap-2 pt-10 justify-center">
-          <Image
+          <ImageWithModal
             src="hackdavis/winMessage.svg"
-            alt="prize 1"
+            alt="teammate message"
             width={1000}
             height={1000}
             className="w-[50%]"
           />
           <div className="flex flex-col items-center gap-2">
-            <Image
+            <ImageWithModal
               src="hackdavis/loader.svg"
               alt="loader image"
               width={1000}

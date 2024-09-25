@@ -1,9 +1,9 @@
 'use client';
 import { useScrollToSectionOnViewSwitch } from '@/app/(pages)/_hooks/useScrollToSection';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { useState } from 'react';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 //TODO: comeback to this later to refactor again maybe ???
 export default function FinalSolution() {
@@ -137,10 +137,11 @@ export default function FinalSolution() {
           <div className="flex flex-col w-[65%] gap-[197px]">
             <div className="flex relative">
               <motion.div
+                id="1"
                 onPointerOver={() => setActiveScrollButton(1)}
                 onViewportEnter={() => setActiveScrollButton(1)}
               >
-                <Image
+                <ImageWithModal
                   src={
                     displayDesktop
                       ? '/hackdavis/solutions/AboutHQ.png'
@@ -149,8 +150,6 @@ export default function FinalSolution() {
                   alt="about page"
                   width={1000}
                   height={1000}
-                  id="1"
-                  priority={true}
                 />
               </motion.div>
 
@@ -166,10 +165,11 @@ export default function FinalSolution() {
 
             <div className="flex relative">
               <motion.div
+                id="2"
                 onPointerOver={() => setActiveScrollButton(2)}
                 onViewportEnter={() => setActiveScrollButton(2)}
               >
-                <Image
+                <ImageWithModal
                   src={
                     displayDesktop
                       ? '/hackdavis/solutions/Landing.svg'
@@ -178,8 +178,6 @@ export default function FinalSolution() {
                   alt="about page"
                   width={1000}
                   height={1000}
-                  id="2"
-                  priority={true}
                 />
               </motion.div>
 
@@ -190,10 +188,11 @@ export default function FinalSolution() {
 
             <div className="flex relative">
               <motion.div
+                id="3"
                 onPointerOver={() => setActiveScrollButton(3)}
                 onViewportEnter={() => setActiveScrollButton(3)}
               >
-                <Image
+                <ImageWithModal
                   src={
                     displayDesktop
                       ? '/hackdavis/solutions/DOE.svg'
@@ -202,8 +201,6 @@ export default function FinalSolution() {
                   alt="about page"
                   width={1000}
                   height={1000}
-                  id="3"
-                  priority={true}
                 />
 
                 {commentsDOE.map((comment, index) => (

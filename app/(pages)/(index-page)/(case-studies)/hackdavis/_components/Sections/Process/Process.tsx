@@ -1,8 +1,8 @@
 import TextCard, {
   TextCardProps,
 } from '@/app/(pages)/_components/TextCard/TextCard';
-import Image from 'next/image';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Process() {
   const textCardElements: TextCardProps[] = [
@@ -125,7 +125,7 @@ function UserProfile(props: UserProfileProps) {
 
   return (
     <div className="flex flex-grow items-center gap-8 border border-[#CCCCCC] rounded-2xl pt-8 pb-8 pl-[43.5px] pr-[43.5px]">
-      <Image
+      <ImageWithModal
         src={imgSrc}
         alt={imgAlt}
         width={1000}

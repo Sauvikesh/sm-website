@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Landing() {
   return (
@@ -8,27 +8,26 @@ export default function Landing() {
       </h1>
       <p className="pb-14 text-[18px] font-medium">7 min read</p>
       <div className="flex w-full items-center justify-center">
-        <Image
+        <ImageWithModal
           src="/hackdavis/Mobile.svg"
           width={1000}
           height={1000}
           alt="mobile phone"
           className="translate-x-11 z-10"
         />
-        <Image
+        <ImageWithModal
           src="/hackdavis/Tablet.svg"
           width={1000}
           height={1000}
           alt="tablet"
           className="translate-x-7 -translate-y-2 z-10"
         />
-        <Image
+        <ImageWithModal
           src="/hackdavis/Laptop.svg"
           width={1000}
           height={1000}
           alt="laptop"
           className="-translate-x-10 -translate-y-11 z-0"
-          priority
         />
       </div>
     </header>

@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 export default function Ending() {
   return (
     <section className="pl-[15%] pr-[15%] flex flex-col gap-4">
@@ -24,7 +24,7 @@ export default function Ending() {
 
         <div className="flex gap-8 pt-16">
           <div className="flex flex-col items-center justify-center">
-            <Image
+            <ImageWithModal
               src="hackdavis/wholeTeam.svg"
               alt="HD team"
               width={1000}
@@ -33,7 +33,7 @@ export default function Ending() {
             <h4 className="pt-4 text-[#808080]">The whole HackDavis team!</h4>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <Image
+            <ImageWithModal
               src="hackdavis/designTeam.svg"
               alt="HD team"
               width={1000}
