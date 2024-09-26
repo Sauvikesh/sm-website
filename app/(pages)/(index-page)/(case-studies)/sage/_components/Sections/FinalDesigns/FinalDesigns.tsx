@@ -13,7 +13,7 @@ export default function FinalDesigns() {
         </div>
 
         <Image
-          src="/sageImages/sageDesign1.png"
+          src="/sageImages/finalDesigns/sageDesign1.png"
           width={1000}
           height={1000}
           alt="blob"
@@ -25,7 +25,7 @@ export default function FinalDesigns() {
           <h3>Personal Garden</h3>
         </div>
         <Image
-          src="/sageImages/sageDesign2.png"
+          src="/sageImages/finalDesigns/sageDesign2.png"
           width={1000}
           height={1000}
           alt="blob"
@@ -34,7 +34,7 @@ export default function FinalDesigns() {
 
         <h3 className="text-center">Special Collections</h3>
         <Image
-          src="/sageImages/sageDesign3.png"
+          src="/sageImages/finalDesigns/sageDesign3.png"
           width={1000}
           height={1000}
           alt="blob"
@@ -44,7 +44,7 @@ export default function FinalDesigns() {
         <h3 className="text-center">Inclusive Meditation</h3>
 
         <Image
-          src="/sageImages/sageDesign4.png"
+          src="/sageImages/finalDesigns/sageDesign4.png"
           width={1000}
           height={1000}
           alt="blob"
@@ -53,7 +53,7 @@ export default function FinalDesigns() {
         <h3 className="text-center">Tech-free Journaling</h3>
 
         <Image
-          src="/sageImages/sageDesign5.png"
+          src="/sageImages/finalDesigns/sageDesign5.png"
           width={1000}
           height={1000}
           alt="blob"

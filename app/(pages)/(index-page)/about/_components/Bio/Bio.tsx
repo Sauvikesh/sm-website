@@ -4,27 +4,27 @@ import { RevealWrapper } from '../../../_components/Reveal/RevealWrapper';
 export default function Bio() {
   const floatingImages = [
     {
-      src: '/landing/star.svg',
+      src: '/landing/shapes/star.svg',
       className:
         'w-[100px] h-auto absolute top-[550px] left-[11%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full z-20',
     },
     {
-      src: '/landing/cloud.svg',
+      src: '/landing/shapes/cloud.svg',
       className:
         'w-[100px] h-auto absolute top-[400px] left-[34%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full z-0',
     },
     {
-      src: '/landing/star2.svg',
+      src: '/landing/shapes/star2.svg',
       className:
         'w-[100px] h-auto absolute top-[200px] left-[13%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
-      src: '/landing/4star.svg',
+      src: '/landing/shapes/4star.svg',
       className:
         'w-[100px] h-auto absolute top-[500px] right-[6%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
-      src: '/landing/spade.svg',
+      src: '/landing/shapes/spade.svg',
       className:
         'w-[100px] h-auto absolute top-[50px] right-[-3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
