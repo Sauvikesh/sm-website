@@ -29,7 +29,7 @@ export default function SolutionPreview() {
         <div className="flex items-start justify-center gap-5">
           <div className="flex flex-col w-[33%] items-center gap-2">
             <ImageWithModal
-              src="/hackdavis/solutions/AboutHQ.png"
+              src="https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/AboutDesktop.svg"
               alt="about page"
               width={1000}
               height={1000}
@@ -39,7 +39,7 @@ export default function SolutionPreview() {
 
           <div className="flex flex-col w-[33%] items-center gap-2 pt-1">
             <ImageWithModal
-              src="/hackdavis/solutions/Landing.svg"
+              src="https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/Landing.svg"
               alt="about page"
               width={1000}
               height={1000}
@@ -49,7 +49,7 @@ export default function SolutionPreview() {
 
           <div className="flex flex-col w-[33%] items-center gap-2">
             <ImageWithModal
-              src="/hackdavis/solutions/DOE.svg"
+              src="https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/DOE.svg"
               alt="about page"
               width={1000}
               height={1000}

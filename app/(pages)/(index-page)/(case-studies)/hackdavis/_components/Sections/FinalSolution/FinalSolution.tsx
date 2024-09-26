@@ -144,8 +144,8 @@ export default function FinalSolution() {
                 <ImageWithModal
                   src={
                     displayDesktop
-                      ? '/hackdavis/solutions/AboutHQ.png'
-                      : '/hackdavis/solutions/AboutMobileHQ.png'
+                      ? 'https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/AboutDesktop.svg'
+                      : 'https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/AboutMobile.svg'
                   }
                   alt="about page"
                   width={1000}
@@ -172,8 +172,8 @@ export default function FinalSolution() {
                 <ImageWithModal
                   src={
                     displayDesktop
-                      ? '/hackdavis/solutions/Landing.svg'
-                      : '/hackdavis/solutions/LandingMobile.svg'
+                      ? 'https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/Landing.svg'
+                      : 'https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/LandingMobile.svg'
                   }
                   alt="about page"
                   width={1000}
@@ -195,8 +195,8 @@ export default function FinalSolution() {
                 <ImageWithModal
                   src={
                     displayDesktop
-                      ? '/hackdavis/solutions/DOE.svg'
-                      : '/hackdavis/solutions/DoEMobile.svg'
+                      ? 'https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/DOE.svg'
+                      : 'https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/DOEMobile.svg'
                   }
                   alt="about page"
                   width={1000}

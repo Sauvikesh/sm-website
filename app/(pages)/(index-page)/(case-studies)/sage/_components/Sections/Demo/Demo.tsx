@@ -10,7 +10,7 @@ const videoCardContent: VideoTextCardProps[] = [
       'Users receive personalized suggestions based on which communities they identify with',
       'Users set goals autonomously',
     ],
-    vidSrc: '/sageVideos/Onboarding.mp4',
+    vidSrc: 'https://d1ejtjbpinwbmz.cloudfront.net/Sage/Onboarding.mp4',
   },
   {
     pageName: 'HOME PAGE',
@@ -19,7 +19,7 @@ const videoCardContent: VideoTextCardProps[] = [
       'Users curate, name, and choose a cover for personal collections',
       'Users have the ability to complete activities such as journaling outside of the app',
     ],
-    vidSrc: '/sageVideos/Journaling.mp4',
+    vidSrc: 'https://d1ejtjbpinwbmz.cloudfront.net/Sage/Journaling.mp4',
     flipElements: true,
   },
   {
@@ -29,7 +29,7 @@ const videoCardContent: VideoTextCardProps[] = [
       'Users complete activities that are relevant to their identities and goals',
       'Users can schedule and add activities to their calendar for a later time',
     ],
-    vidSrc: '/sageVideos/SpecialCollection.mp4',
+    vidSrc: 'https://d1ejtjbpinwbmz.cloudfront.net/Sage/SpecialCollection.mp4',
   },
   {
     pageName: 'EXPLORE PAGE',
@@ -38,7 +38,7 @@ const videoCardContent: VideoTextCardProps[] = [
       'Users can discover new activities by feeling, duration, and method',
       'Users can filter and sort search results',
     ],
-    vidSrc: '/sageVideos/Explore.mp4',
+    vidSrc: 'https://d1ejtjbpinwbmz.cloudfront.net/Sage/Explore.mp4',
     flipElements: true,
   },
   {
@@ -47,7 +47,7 @@ const videoCardContent: VideoTextCardProps[] = [
     bulletPoints: [
       'Users have the flexibility to remove, reschedule, and add planned activities for another day',
     ],
-    vidSrc: '/sageVideos/Calendar.mp4',
+    vidSrc: 'https://d1ejtjbpinwbmz.cloudfront.net/Sage/Calendar.mp4',
   },
   {
     pageName: 'PROFILE PAGE',
@@ -56,7 +56,7 @@ const videoCardContent: VideoTextCardProps[] = [
       'Users are rewarded for practicing self-care on a monthly basis',
       'Users receive extrinsic motivation to reach their personal goals',
     ],
-    vidSrc: '/sageVideos/Garden.mp4',
+    vidSrc: 'https://d1ejtjbpinwbmz.cloudfront.net/Sage/Garden.mp4',
     flipElements: true,
   },
   {
@@ -65,7 +65,7 @@ const videoCardContent: VideoTextCardProps[] = [
     bulletPoints: [
       'Users have a more inclusive way to meditate with the ability to view captions',
     ],
-    vidSrc: '/sageVideos/Meditation.mp4',
+    vidSrc: 'https://d1ejtjbpinwbmz.cloudfront.net/Sage/Meditation.mp4',
   },
 ];
 
