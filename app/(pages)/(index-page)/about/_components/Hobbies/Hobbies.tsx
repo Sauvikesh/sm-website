@@ -5,27 +5,27 @@ export default function Hobbies() {
   const hobbyItems: HobbyImageProps[] = [
     {
       colSpan: '1',
-      src: '/about/ceramic.png',
+      src: '/about/hobbies/ceramic.png',
       caption: 'having My first ceramics pop up!',
     },
     {
       colSpan: '1',
-      src: '/about/film.png',
+      src: '/about/hobbies/film.png',
       caption: 'exploring & taking film photos',
     },
     {
       colSpan: '1',
-      src: '/about/hike.png',
+      src: '/about/hobbies/hike.png',
       caption: 'Hiking the california mountains',
     },
     {
       colSpan: '1',
-      src: '/about/pumpkin.png',
+      src: '/about/hobbies/pumpkin.png',
       caption: 'Pumpkin painting in the park',
     },
     {
       colSpan: '2',
-      src: '/about/designathon.png',
+      src: '/about/hobbies/designathon.png',
       caption: 'hosting the first designathon at uc davis',
     },
   ];

@@ -54,35 +54,35 @@ function BookShelf() {
       </div>
       <div className="flex relative h-[60vh] justify-center pt-10 group gap-8">
         <Image
-          src="/about/book1.png"
+          src="/about/books/book1.png"
           alt="book 1"
           width={1000}
           height={1000}
           className="w-auto h-[257px] rounded-xl z-[5] transition-transform duration-500 translate-x-[95%] -rotate-[18deg] group-hover:translate-x-0 group-hover:rotate-0"
         />
         <Image
-          src="/about/book2.png"
+          src="/about/books/book2.png"
           alt="book 2"
           width={1000}
           height={1000}
           className="w-auto h-[257px] rounded-xl z-[4] transition-transform duration-500 translate-x-[40%] -rotate-[10deg] group-hover:translate-x-0 group-hover:rotate-0"
         />
         <Image
-          src="/about/book3.png"
+          src="/about/books/book3.png"
           alt="book 3"
           width={1000}
           height={1000}
           className="w-auto h-[257px] rounded-xl z-[3] transition-transform duration-500 -rotate-[2deg] group-hover:translate-x-0 group-hover:rotate-0"
         />
         <Image
-          src="/about/book4.png"
+          src="/about/books/book4.png"
           alt="book 4"
           width={1000}
           height={1000}
           className="w-auto h-[257px] rounded-xl z-[2] transition-transform duration-500 -translate-x-[50%] rotate-[5deg] group-hover:translate-x-0 group-hover:rotate-0"
         />
         <Image
-          src="/about/book5.png"
+          src="/about/books/book5.png"
           alt="book 5"
           width={1000}
           height={1000}
@@ -105,13 +105,34 @@ function CameraRoll() {
   ]);
 
   const carouselPhotos = [
-    { imgUrl: '/about/photo0.png', imgCaption: 'half moon bay, ca' },
-    { imgUrl: '/about/photo1.png', imgCaption: 'half moon bay, ca' },
-    { imgUrl: '/about/photo2.png', imgCaption: 'pebble beach, ca' },
-    { imgUrl: '/about/photo3.png', imgCaption: 'kamakura, japan' },
-    { imgUrl: '/about/photo4.png', imgCaption: 'santa barbara, ca' },
-    { imgUrl: '/about/photo5.png', imgCaption: 'hiroshima, japan' },
-    { imgUrl: '/about/photo6.png', imgCaption: 'arashiyama, japan' },
+    {
+      imgUrl: '/about/photoCarousel/photo0.png',
+      imgCaption: 'half moon bay, ca',
+    },
+    {
+      imgUrl: '/about/photoCarousel/photo1.png',
+      imgCaption: 'half moon bay, ca',
+    },
+    {
+      imgUrl: '/about/photoCarousel/photo2.png',
+      imgCaption: 'pebble beach, ca',
+    },
+    {
+      imgUrl: '/about/photoCarousel/photo3.png',
+      imgCaption: 'kamakura, japan',
+    },
+    {
+      imgUrl: '/about/photoCarousel/photo4.png',
+      imgCaption: 'santa barbara, ca',
+    },
+    {
+      imgUrl: '/about/photoCarousel/photo5.png',
+      imgCaption: 'hiroshima, japan',
+    },
+    {
+      imgUrl: '/about/photoCarousel/photo6.png',
+      imgCaption: 'arashiyama, japan',
+    },
   ];
 
   return (
@@ -149,7 +170,7 @@ function CarouselSlide({ imgUrl, imgCaption }: CarouselSlideProps) {
     <div className="ml-10 flex-none group relative">
       <Image
         src={imgUrl}
-        alt="photo 0"
+        alt="photography image"
         width={1000}
         height={1000}
         className="w-auto h-[300px] z-20 relative"

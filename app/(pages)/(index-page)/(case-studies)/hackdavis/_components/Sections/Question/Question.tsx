@@ -12,7 +12,7 @@ export default function Question() {
       </RevealWrapper>
 
       <Image
-        src="/hackdavis/charstack3.svg"
+        src="/hackdavis/process/charstack3.svg"
         alt="char stack"
         width={1000}
         height={1000}

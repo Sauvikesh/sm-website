@@ -17,14 +17,14 @@ export default function Ideation() {
 
         <div className="flex gap-6 pt-10 pb-[100px]">
           <ImageWithModal
-            src="hackdavis/prize1.svg"
+            src="hackdavis/ideation/prize1.svg"
             alt="prize 1"
             width={1000}
             height={1000}
             className="w-[28%]"
           />
           <ImageWithModal
-            src="hackdavis/prize2.svg"
+            src="hackdavis/ideation/prize2.svg"
             alt="prize 2"
             width={1000}
             height={1000}
@@ -38,7 +38,7 @@ export default function Ideation() {
             className="w-10"
           />
           <ImageWithModal
-            src="hackdavis/prize3.svg"
+            src="hackdavis/ideation/prize3.svg"
             alt="prize 4"
             width={1000}
             height={1000}
@@ -61,7 +61,7 @@ export default function Ideation() {
         <div className="flex gap-8 pt-10 pb-[100px] justify-center pl-[7%] pr-[7%]">
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="hackdavis/teamBefore.svg"
+              src="hackdavis/ideation/teamBefore.svg"
               alt="team section before image"
               width={1000}
               height={1000}
@@ -77,7 +77,7 @@ export default function Ideation() {
           />
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="hackdavis/teamAfter.svg"
+              src="hackdavis/ideation/teamAfter.svg"
               alt="team section after image"
               width={1000}
               height={1000}
@@ -100,7 +100,7 @@ export default function Ideation() {
         <div className="flex gap-2 pt-10 pb-[100px] justify-center">
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="hackdavis/mbBefore.svg"
+              src="hackdavis/ideation/mbBefore.svg"
               alt="web before image"
               width={1000}
               height={1000}
@@ -117,7 +117,7 @@ export default function Ideation() {
           />
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="hackdavis/mbAfter.svg"
+              src="hackdavis/ideation/mbAfter.svg"
               alt="web after image"
               width={1000}
               height={1000}
@@ -140,7 +140,7 @@ export default function Ideation() {
 
         <div className="flex gap-2 pt-10 justify-center">
           <ImageWithModal
-            src="hackdavis/winMessage.svg"
+            src="hackdavis/ideation/winMessage.svg"
             alt="teammate message"
             width={1000}
             height={1000}
@@ -148,7 +148,7 @@ export default function Ideation() {
           />
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="hackdavis/loader.svg"
+              src="hackdavis/ideation/loader.svg"
               alt="loader image"
               width={1000}
               height={1000}

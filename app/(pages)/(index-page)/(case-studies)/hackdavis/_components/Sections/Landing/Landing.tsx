@@ -9,21 +9,21 @@ export default function Landing() {
       <p className="pb-14 text-[18px] font-medium">7 min read</p>
       <div className="flex w-full items-center justify-center">
         <ImageWithModal
-          src="/hackdavis/Mobile.svg"
+          src="/hackdavis/hero/Mobile.svg"
           width={1000}
           height={1000}
           alt="mobile phone"
           className="translate-x-11 z-10"
         />
         <ImageWithModal
-          src="/hackdavis/Tablet.svg"
+          src="/hackdavis/hero/Tablet.svg"
           width={1000}
           height={1000}
           alt="tablet"
           className="translate-x-7 -translate-y-2 z-10"
         />
         <ImageWithModal
-          src="/hackdavis/Laptop.svg"
+          src="/hackdavis/hero/Laptop.svg"
           width={1000}
           height={1000}
           alt="laptop"

@@ -25,8 +25,8 @@ export default function Ending() {
         <div className="flex gap-8 pt-16">
           <div className="flex flex-col items-center justify-center">
             <ImageWithModal
-              src="hackdavis/wholeTeam.svg"
-              alt="HD team"
+              src="hackdavis/reflection/wholeTeam.svg"
+              alt="HD entire team"
               width={1000}
               height={1000}
             />
@@ -34,8 +34,8 @@ export default function Ending() {
           </div>
           <div className="flex flex-col items-center justify-center">
             <ImageWithModal
-              src="hackdavis/designTeam.svg"
-              alt="HD team"
+              src="hackdavis/reflection/designTeam.svg"
+              alt="HD design team"
               width={1000}
               height={1000}
             />
