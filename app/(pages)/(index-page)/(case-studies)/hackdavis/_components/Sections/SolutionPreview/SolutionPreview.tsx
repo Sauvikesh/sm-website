@@ -29,7 +29,7 @@ export default function SolutionPreview() {
         <div className="flex items-start justify-center gap-5">
           <div className="flex flex-col w-[33%] items-center gap-2">
             <ImageWithModal
-              src="https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/AboutDesktop.svg"
+              src="https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/AboutDesktop2.svg"
               alt="about page"
               width={1000}
               height={1000}

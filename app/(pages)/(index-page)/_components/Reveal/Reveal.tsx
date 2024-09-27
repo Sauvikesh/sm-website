@@ -17,7 +17,7 @@ export const Reveal = ({ children }: RevealProps) => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.25 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
       >
         {children}
       </motion.div>
