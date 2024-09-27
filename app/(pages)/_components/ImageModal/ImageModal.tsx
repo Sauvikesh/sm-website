@@ -8,6 +8,7 @@ type ImageWithModalProps = {
   width: number;
   height: number;
   className?: string;
+  addPriority?: boolean;
 };
 
 export const ImageWithModal = ({
@@ -16,6 +17,7 @@ export const ImageWithModal = ({
   width,
   height,
   className,
+  addPriority,
 }: ImageWithModalProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -36,6 +38,7 @@ export const ImageWithModal = ({
         height={height}
         className={`cursor-zoom-in ${className}`} // Change cursor to indicate it's clickable
         onClick={openModal}
+        priority={addPriority}
       />
       {isModalOpen && <ImageModal src={src} alt={alt} onClose={closeModal} />}
     </>
