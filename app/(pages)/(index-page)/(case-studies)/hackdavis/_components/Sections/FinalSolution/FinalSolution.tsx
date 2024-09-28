@@ -144,8 +144,8 @@ export default function FinalSolution() {
                 <ImageWithModal
                   src={
                     displayDesktop
-                      ? 'https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/AboutDesktop.svg'
-                      : 'https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/AboutMobile.svg'
+                      ? 'https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/AboutDesktop2.svg'
+                      : 'https://d1ejtjbpinwbmz.cloudfront.net/HackDavis/AboutMobile2.svg'
                   }
                   alt="about page"
                   width={1000}

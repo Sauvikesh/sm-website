@@ -1,10 +1,10 @@
-import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
+import Image from "next/image";
 
 export default function Venue() {
   return (
     <section className="w-full pt-20 pb-20">
-      <ImageWithModal
-        src="hackdavis/venue.svg"
+      <Image
+        src="/hackdavis/venue.png"
         alt="venue"
         width={1000}
         height={1000}
