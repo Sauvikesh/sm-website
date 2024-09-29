@@ -21,14 +21,12 @@ export default function Ideation() {
             alt="prize 1"
             width={1000}
             height={1000}
-            className="w-[28%]"
           />
           <ImageWithModal
             src="hackdavis/ideation/prize2.svg"
             alt="prize 2"
             width={1000}
             height={1000}
-            className="w-[28%]"
           />
           <Image
             src="hackdavis/Arrow.svg"
@@ -42,7 +40,6 @@ export default function Ideation() {
             alt="prize 4"
             width={1000}
             height={1000}
-            className="w-[28%]"
           />
         </div>
 
@@ -138,13 +135,12 @@ export default function Ideation() {
           will appear."
         />
 
-        <div className="flex gap-2 pt-10 justify-center">
+        <div className="flex gap-2 pt-10 justify-center items-center">
           <ImageWithModal
             src="hackdavis/ideation/winMessage.svg"
             alt="teammate message"
             width={1000}
             height={1000}
-            className="w-[50%]"
           />
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal

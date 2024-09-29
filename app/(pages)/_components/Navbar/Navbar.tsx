@@ -45,7 +45,7 @@ export default function Navbar() {
 
   return !invisible ? (
     <header
-      className={`fixed top-0 left-[39%] z-50 flex justify-center bg-transparent pt-12 transition-all duration-300  ${isVisible ? 'opacity-1 translate-y-0' : 'opacity-0 -translate-y-full'}`}
+      className={`fixed top-0 left-[39%] z-20 flex justify-center bg-transparent pt-12 transition-all duration-300  ${isVisible ? 'opacity-1 translate-y-0' : 'opacity-0 -translate-y-full'}`}
     >
       <nav
         className={`flex items-center justify-center ${darkMode ? 'bg-[#38373C] text-white' : 'bg-[#F1F1F1] text-black'} w-fit rounded-[100px] font-dm-sans`}

@@ -130,7 +130,7 @@ function UserProfile(props: UserProfileProps) {
         alt={imgAlt}
         width={1000}
         height={1000}
-        className="w-[140px]"
+        className="w-[240px]"
       />
       <div className="flex flex-col gap-4">
         <p className="font-semibold">{title}</p>

@@ -13,7 +13,7 @@ export default function Landing() {
           width={1000}
           height={1000}
           alt="mobile phone"
-          className="translate-x-11 z-10 w-[178px]"
+          className="z-10 w-[178px] translate-x-6 -translate-y-2"
           addPriority={true}
         />
         <ImageWithModal
@@ -21,7 +21,7 @@ export default function Landing() {
           width={1000}
           height={1000}
           alt="tablet"
-          className="translate-x-7 -translate-y-2 z-10 w-[391px]"
+          className="z-10 w-[391px] translate-x-4 -translate-y-3"
           addPriority={true}
         />
         <ImageWithModal
@@ -29,7 +29,7 @@ export default function Landing() {
           width={1000}
           height={1000}
           alt="laptop"
-          className="-translate-x-10 -translate-y-11 z-0 w-[620px]"
+          className="z-0 w-[620px] -translate-y-8 -translate-x-4"
           addPriority={true}
         />
       </div>

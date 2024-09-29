@@ -43,6 +43,10 @@ const config: Config = {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
+        appear: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
         lineGrow: {
           '0%': {
             height: '0px',
@@ -63,6 +67,7 @@ const config: Config = {
         'slide-line-down': 'slide-line-down 2s linear infinite',
         'load-rotate-full': 'load-rotate 1400ms cubic-bezier(0.4, 0, 0.2, 1)',
         grow: 'lineGrow 2s ease-in-out infinite',
+        appear: 'appear 0.5s ease-in-out',
       },
     },
   },
