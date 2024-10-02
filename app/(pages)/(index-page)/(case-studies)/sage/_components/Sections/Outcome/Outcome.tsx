@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Outcome() {
   return (
-    <section className="pl-[15%] pr-[15%] flex flex-col gap-12 pb-20">
+    <section className="flex flex-col gap-12 pb-20">
       <RevealWrapper>
         <h3>Outcome</h3>
 

@@ -25,7 +25,7 @@ const textCardElements: TextCardProps[] = [
 // ^^ is this the best way I can assign the widths? doesn't look simple to change
 export default function Process() {
   return (
-    <section className="flex flex-col pl-[15%] pr-[15%] justify-center g-3 h-[60vh]">
+    <section className="flex flex-col justify-center g-3 h-[60vh]">
       <RevealWrapper>
         <div className="h-[1px] bg-[#CCC] mb-20"></div>
         <Heading h1="THE PROCESS" p="Project Goals" />

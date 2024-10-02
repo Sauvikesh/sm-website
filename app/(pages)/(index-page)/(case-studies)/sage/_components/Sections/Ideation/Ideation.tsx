@@ -52,7 +52,7 @@ export default function Ideation() {
 
   return (
     <section
-      className="flex flex-col items-center justify-center pt-12 bg-contain text-center"
+      className="flex flex-col items-center justify-center pt-12 bg-contain text-center pl-[20%] pr-[20%]"
       style={{ backgroundImage: "url('/sageImages/ideation/dots.png')" }}
     >
       <RevealWrapper>
@@ -64,10 +64,7 @@ export default function Ideation() {
           height={1000}
           className="w-full h-auto pt-8"
         />
-        <div
-          className="flex flex-wrap justify-center pl-[15%] pr-[15%]"
-          ref={sectionRef}
-        >
+        <div className="flex flex-wrap justify-center" ref={sectionRef}>
           {animatedCards.map((card, index) => (
             <AnimatedCard {...card} key={index} />
           ))}

@@ -4,11 +4,11 @@ import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/Rev
 
 export default function Conclustion() {
   return (
-    <section className="flex flex-col pl-[15%] pr-[15%]">
+    <section className="flex flex-col">
       <RevealWrapper>
         <div className="flex flex-col gap-4">
           <h4>Reflection</h4>
-          <h3>Challenges</h3>
+          <h3 className="pb-2">Challenges</h3>
           <p className="pb-10 leading-8">
             Narrowing down the ideas to implement was a challenge considering
             the time constraint of the project. As it was not possible to
@@ -22,7 +22,7 @@ export default function Conclustion() {
 
         <div className="flex flex-col gap-4">
           <h3 className="pb-2">Takeaways</h3>
-          <p className="pb-10">
+          <p className="pb-10 leading-8">
             The primary takeaway from this project was prioritizing intention
             and users' needs. Behind every design choice, whether it be
             information architecture, brand identity or content design, there
@@ -33,7 +33,7 @@ export default function Conclustion() {
 
         <div className="flex flex-col gap-4">
           <h3 className="pb-2">Next Steps</h3>
-          <p className="pb-10">
+          <p className="pb-10 leading-8">
             If this project were to move forward, I would love to conduct
             another round of usability testing with hi-fis to further assess any
             additional pain points that may come up and fine-tune the visual

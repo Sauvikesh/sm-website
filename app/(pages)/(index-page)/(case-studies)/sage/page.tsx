@@ -40,21 +40,27 @@ export default function Sage() {
   return (
     <main className="bg-white text-black flex flex-col">
       <Landing />
-      <Summary />
-      <DividerLine />
-      <Demo />
-      <Process />
-      <Research />
+      <div className="pl-[20%] pr-[20%] ">
+        <Summary />
+        <DividerLine />
+        <Demo />
+        <Process />
+        <Research />
+      </div>
+
       <Problem />
+
       <Ideation />
-      <Prototype />
-      <FinalDesigns />
-      <Outcome />
-      <Conclusion />
-      <Team />
-      <DividerLine />
-      <span className="h-[80px]"></span>
-      <OtherCaseStudies {...caseStudyInformation} />
+      <div className="pl-[20%] pr-[20%] ">
+        <Prototype />
+        <FinalDesigns />
+        <Outcome />
+        <Conclusion />
+        <Team />
+        <DividerLine />
+        <div className="h-[80px]"></div>
+        <OtherCaseStudies {...caseStudyInformation} />
+      </div>
     </main>
   );
 }

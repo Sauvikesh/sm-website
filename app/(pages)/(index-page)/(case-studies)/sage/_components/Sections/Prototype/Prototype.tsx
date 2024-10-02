@@ -4,7 +4,7 @@ import Sketches from './Sections/Sketches';
 
 export default function Prototype() {
   return (
-    <section className="pl-[15%] pr-[15%]">
+    <section>
       <Sketches />
       <Description />
       <Feedback />

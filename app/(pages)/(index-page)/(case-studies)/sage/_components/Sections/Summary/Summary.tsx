@@ -3,7 +3,7 @@ import StatCard from '../../../../_components/StatCard/StatCard';
 
 export default function Summary() {
   return (
-    <section className="flex flex-col pl-[15%] pr-[15%] pt-[42px] gap-10 pb-20">
+    <section className="flex flex-col pt-[42px] gap-10 pb-20">
       <RevealWrapper>
         <div className="flex justify-between">
           <div className="flex flex-col gap-2">
