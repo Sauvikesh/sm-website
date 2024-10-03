@@ -12,7 +12,7 @@ export default function Ideation() {
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ['start 30%', 'end 110%'], // scroll starts 30% above the container, ends by 90% of container(weird math...yucky )
+    offset: ['start 50%', 'end 110%'], // scroll starts 50% above the container, ends by 90% of container(weird math...)
   });
 
   const animatedCards: AnimatedCardProps[] = [
