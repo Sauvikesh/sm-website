@@ -63,9 +63,9 @@ function SketchesGridBlocks(props: SketchesGridBlocksProps) {
   const { h1, p } = props;
 
   return (
-    <div className="col-span-1 row-span-1">
+    <div className="flex flex-col col-span-1 row-span-1 gap-4">
       <h3>{h1}</h3>
-      <p className="pt-4">{p}</p>
+      <p>{p}</p>
     </div>
   );
 }
