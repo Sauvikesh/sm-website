@@ -40,7 +40,8 @@ export default function Sage() {
   return (
     <main className="bg-white text-black flex flex-col">
       <Landing />
-      <div className="pl-[20%] pr-[20%] ">
+
+      <div className="px-[20%]">
         <Summary />
         <DividerLine />
         <Demo />
@@ -49,9 +50,9 @@ export default function Sage() {
       </div>
 
       <Problem />
-
       <Ideation />
-      <div className="pl-[20%] pr-[20%] ">
+
+      <div className="px-[20%]">
         <Prototype />
         <FinalDesigns />
         <Outcome />
