@@ -14,8 +14,8 @@ export default function Team() {
         />
 
         <div className="flex flex-col gap-8 w-[35%]">
-          <h2>Our team on presentation day! 🥳</h2>
-          <h3>I'm wearing green in spirit.</h3>
+          <h3>Our team on presentation day! 🥳</h3>
+          <p>I'm wearing green in spirit.</p>
         </div>
       </section>
     </RevealWrapper>

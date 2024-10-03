@@ -7,15 +7,15 @@ export default function Outcome() {
       <RevealWrapper>
         <h3>Outcome</h3>
 
-        <h3>
+        <p>
           After polling 38 individuals from our target audience, 29% reported
           that they were extremely likely and 45% reported they were likely to
           use Sage.
-        </h3>
+        </p>
 
-        <h2 className="text-center">
+        <h3 className="text-center">
           How likely are you to use this application?
-        </h2>
+        </h3>
 
         <Image
           src="/sageImages/outcome.svg"
