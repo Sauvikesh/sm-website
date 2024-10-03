@@ -1,65 +1,72 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import Image from 'next/image';
 
+const finalDesigns: FinalDesignWithTitlesProps[] = [
+  {
+    titles: ['Home', 'Explore'],
+    imageSrc: '/sageImages/finalDesigns/sageDesign1.png',
+    imageAlt: 'Sage Final Design 1',
+  },
+  {
+    titles: ['Schedule', 'Personal Garden'],
+    imageSrc: '/sageImages/finalDesigns/sageDesign2.png',
+    imageAlt: 'Sage Final Design 2',
+  },
+  {
+    titles: ['Special Collections'],
+    imageSrc: '/sageImages/finalDesigns/sageDesign3.png',
+    imageAlt: 'Sage Final Design 3',
+  },
+  {
+    titles: ['Inclusive Meditation'],
+    imageSrc: '/sageImages/finalDesigns/sageDesign4.png',
+    imageAlt: 'Sage Final Design 4',
+  },
+  {
+    titles: ['Tech-free Journaling'],
+    imageSrc: '/sageImages/finalDesigns/sageDesign5.png',
+    imageAlt: 'Sage Final Design 5',
+  },
+];
+
 export default function FinalDesigns() {
   return (
-    <section className="flex flex-col gap-20 pb-20" id="1">
+    <section className="flex flex-col gap-20" id="1">
       <RevealWrapper>
         <h2 className="text-center">Final Designs</h2>
 
-        <div className="flex justify-around">
-          <h3>Home</h3>
-          <h3>Explore</h3>
-        </div>
-
-        <Image
-          src="/sageImages/finalDesigns/sageDesign1.png"
-          width={1000}
-          height={1000}
-          alt="blob"
-          className="w-full h-auto pb-4"
-        />
-
-        <div className="flex justify-around">
-          <h3>Schedule</h3>
-          <h3>Personal Garden</h3>
-        </div>
-        <Image
-          src="/sageImages/finalDesigns/sageDesign2.png"
-          width={1000}
-          height={1000}
-          alt="blob"
-          className="w-full h-auto pb-4"
-        />
-
-        <h3 className="text-center">Special Collections</h3>
-        <Image
-          src="/sageImages/finalDesigns/sageDesign3.png"
-          width={1000}
-          height={1000}
-          alt="blob"
-          className="w-full h-auto pb-4"
-        />
-
-        <h3 className="text-center">Inclusive Meditation</h3>
-
-        <Image
-          src="/sageImages/finalDesigns/sageDesign4.png"
-          width={1000}
-          height={1000}
-          alt="blob"
-          className="w-full h-auto pb-4"
-        />
-        <h3 className="text-center">Tech-free Journaling</h3>
-
-        <Image
-          src="/sageImages/finalDesigns/sageDesign5.png"
-          width={1000}
-          height={1000}
-          alt="blob"
-          className="w-full h-auto pb-4"
-        />
+        {finalDesigns.map((section, index) => (
+          <FinalDesignWithTitles
+            key={index}
+            titles={section.titles}
+            imageSrc={section.imageSrc}
+            imageAlt={section.imageAlt}
+          />
+        ))}
       </RevealWrapper>
     </section>
+  );
+}
+
+type FinalDesignWithTitlesProps = {
+  titles: string[]; // An array of titles for h3 tags
+  imageSrc: string; // Image source
+  imageAlt: string; // Image alt text
+};
+
+function FinalDesignWithTitles({
+  titles,
+  imageSrc,
+  imageAlt,
+}: FinalDesignWithTitlesProps) {
+  return (
+    <div className="flex flex-col gap-10">
+      <div className="flex justify-around">
+        {titles.map((title, index) => (
+          <h3 key={index}>{title}</h3>
+        ))}
+      </div>
+      <Image src={imageSrc} width={1000} height={1000} alt={imageAlt} />
+    </div>
   );
 }

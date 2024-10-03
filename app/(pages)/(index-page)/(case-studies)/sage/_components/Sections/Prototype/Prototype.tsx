@@ -4,7 +4,7 @@ import Sketches from './Sections/Sketches';
 
 export default function Prototype() {
   return (
-    <section>
+    <section className="flex flex-col gap-20">
       <Sketches />
       <Description />
       <Feedback />

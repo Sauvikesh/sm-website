@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Team() {
   return (
     <RevealWrapper>
-      <section className="flex flex-row pb-20 pt-20 items-center gap-10 justify-between">
+      <section className="flex flex-row items-center gap-10 justify-between">
         <Image
           src="/sageImages/sageTeam.png"
           width={1000}

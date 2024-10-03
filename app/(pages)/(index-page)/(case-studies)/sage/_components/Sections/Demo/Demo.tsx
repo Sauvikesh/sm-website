@@ -71,7 +71,7 @@ const videoCardContent: VideoTextCardProps[] = [
 
 export default function Demo() {
   return (
-    <section className="flex flex-col justify-center items-center pt-20 gap-4">
+    <section className="flex flex-col justify-center items-center gap-4">
       <RevealWrapper>
         <h3>Product Preview</h3>
         <JumpToSolution />

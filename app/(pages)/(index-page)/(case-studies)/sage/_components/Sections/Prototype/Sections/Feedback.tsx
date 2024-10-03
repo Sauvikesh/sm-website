@@ -15,7 +15,7 @@ export default function Feedback() {
   ];
 
   return (
-    <section className="flex flex-col  pt-16 pb-0">
+    <section className="flex flex-col gap-20">
       <RevealWrapper>
         {wireframes.map((frame, index) => (
           <Image
@@ -27,14 +27,16 @@ export default function Feedback() {
           />
         ))}
 
-        <h3 className="pt-40 pb-4">Usability testing takeaways</h3>
-        <ul className="pb-40 list-disc pl-5">
-          {bulletPoints.map((bullet, index) => (
-            <li className="pb-2 text-lg leading-8" key={index}>
-              {bullet}
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-col gap-4">
+          <h3>Usability testing takeaways</h3>
+          <ul className="list-disc pl-5">
+            {bulletPoints.map((bullet, index) => (
+              <li className="pb-2 text-lg leading-8" key={index}>
+                {bullet}
+              </li>
+            ))}
+          </ul>
+        </div>
       </RevealWrapper>
     </section>
   );

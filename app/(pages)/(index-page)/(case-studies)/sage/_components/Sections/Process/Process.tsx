@@ -21,15 +21,13 @@ const textCardElements: TextCardProps[] = [
     body: 'Empowers users to be proactive and better their mental health.',
   },
 ];
-// TODO: double check how the widths are being used here?? rn the percentage values are for the width of the flex container
-// ^^ is this the best way I can assign the widths? doesn't look simple to change
+
 export default function Process() {
   return (
-    <section className="flex flex-col justify-center g-3 h-[60vh]">
+    <section className="flex flex-col justify-center gap-10">
       <RevealWrapper>
-        <div className="h-[1px] bg-[#CCC] mb-20"></div>
         <Heading h1="THE PROCESS" p="Project Goals" />
-        <div className="flex gap-8 pb-20 pt-8">
+        <div className="flex gap-8">
           {textCardElements.map((card, index) => (
             <TextCard {...card} key={index} />
           ))}

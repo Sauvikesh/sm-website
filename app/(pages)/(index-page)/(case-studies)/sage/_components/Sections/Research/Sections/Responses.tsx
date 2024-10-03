@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 export default function Responses() {
   return (
-    <div className="flex flex-col pt-8 pb-8">
+    <div className="flex flex-col gap-10">
       <RevealWrapper>
-        <div className="flex pb-28 justify-between">
+        <div className="flex justify-between">
           <h2 className="w-[65%]">
             94 of 98 respondents had difficulty practicing self-care due to lack
             of time.

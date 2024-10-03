@@ -38,30 +38,23 @@ export default function Sage() {
   };
 
   return (
-    <main className="bg-white text-black flex flex-col">
+    <main className="bg-white text-black flex flex-col px-[20%] overflow-hidden gap-20">
       <Landing />
-
-      <div className="px-[20%]">
-        <Summary />
-        <DividerLine />
-        <Demo />
-        <Process />
-        <Research />
-      </div>
-
+      <Summary />
+      <DividerLine />
+      <Demo />
+      <DividerLine />
+      <Process />
+      <Research />
       <Problem />
       <Ideation />
-
-      <div className="px-[20%]">
-        <Prototype />
-        <FinalDesigns />
-        <Outcome />
-        <Conclusion />
-        <Team />
-        <DividerLine />
-        <div className="h-[80px]"></div>
-        <OtherCaseStudies {...caseStudyInformation} />
-      </div>
+      <Prototype />
+      <FinalDesigns />
+      <Outcome />
+      <Conclusion />
+      <Team />
+      <DividerLine />
+      <OtherCaseStudies {...caseStudyInformation} />
     </main>
   );
 }

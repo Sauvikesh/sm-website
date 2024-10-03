@@ -52,7 +52,7 @@ export default function Ideation() {
 
   return (
     <section
-      className="flex flex-col items-center justify-center pt-12 bg-contain text-center px-[20%]"
+      className="flex flex-col items-center justify-center pt-12 bg-contain text-center px-[40%] mx-[-40%]"
       style={{ backgroundImage: "url('/sageImages/ideation/dots.png')" }}
     >
       <RevealWrapper>

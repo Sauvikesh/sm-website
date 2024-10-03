@@ -29,7 +29,7 @@ const sketchesGridBlocks: SketchesGridBlocksProps[] = [
 
 export default function Sketches() {
   return (
-    <div className="flex flex-col pt-24 pb-16">
+    <div className="flex flex-col">
       <RevealWrapper>
         <h3>Incorporating opportunity areas into sketches</h3>
         <div className="flex pt-8 pb-16">

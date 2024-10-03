@@ -11,8 +11,8 @@ export default function Header() {
 
   return (
     <RevealWrapper>
-      <div className="flex h-[60vh] items-center justify-between">
-        <div className="flex flex-col justify-center g-3">
+      <div className="flex items-center justify-between">
+        <div className="flex flex-col justify-center gap-3">
           <Heading
             h1="RESEARCH"
             p="Understanding our user: the overwhelmed student"

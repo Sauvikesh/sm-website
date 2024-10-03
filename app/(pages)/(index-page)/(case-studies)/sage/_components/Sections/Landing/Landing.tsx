@@ -24,7 +24,7 @@ export default function Landing() {
 
   return (
     <Providers>
-      <header className="flex flex-col justify-center items-center bg-[#e4edeb]">
+      <header className="flex flex-col justify-center items-center bg-[#e4edeb] mx-[-40%]">
         <h1 className="text-[80px] font-semibold lead-[44px] font-f-w pt-9">
           Sage
         </h1>

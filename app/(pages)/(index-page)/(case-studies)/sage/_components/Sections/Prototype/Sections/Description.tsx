@@ -16,16 +16,16 @@ export default function Description() {
   ];
 
   return (
-    <div className="flex flex-col justify-center pt-12 gap-3">
+    <div className="flex flex-col justify-center gap-10">
       <RevealWrapper>
         <Heading
           h1="PROTOTYPE & TEST"
           p="Conducting usability testing to inform iterations"
         />
-        <div className="flex justify-between gap-12 pt-10 pl-4">
-          <div className="flex flex-col w-[50%]">
-            <h3 className="pb-4">Tester Profile</h3>
-            <ul className="pl-5 list-disc">
+        <div className="flex justify-between gap-12">
+          <div className="flex flex-col w-[50%] gap-4">
+            <h3>Tester Profile</h3>
+            <ul className="pl-4 list-disc">
               {testerProfiles.map((profile, index) => (
                 <li className="mb-4 text-lg leading-8" key={index}>
                   {profile}
@@ -34,8 +34,8 @@ export default function Description() {
             </ul>
           </div>
 
-          <div className="flex flex-col w-[50%]">
-            <h3 className="pb-4">Task List</h3>
+          <div className="flex flex-col w-[50%] gap-4">
+            <h3>Task List</h3>
             <ol className="pl-5 list-decimal">
               {tasks.map((task, index) => (
                 <li className="mb-4 text-lg leading-8" key={index}>
@@ -46,8 +46,10 @@ export default function Description() {
           </div>
         </div>
 
-        <h3 className="pb-1">Metrics</h3>
-        <p className="pb-4 ">Qualitative feedback</p>
+        <div className="flex flex-col gap-2">
+          <h3>Metrics</h3>
+          <p>Qualitative feedback</p>
+        </div>
       </RevealWrapper>
     </div>
   );
