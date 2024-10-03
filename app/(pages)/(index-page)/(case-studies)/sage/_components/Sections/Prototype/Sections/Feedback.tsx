@@ -15,7 +15,7 @@ export default function Feedback() {
   ];
 
   return (
-    <div className="flex flex-col pt-16 pb-0">
+    <section className="flex flex-col  pt-16 pb-0">
       <RevealWrapper>
         {wireframes.map((frame, index) => (
           <Image
@@ -24,7 +24,6 @@ export default function Feedback() {
             width={1000}
             height={1000}
             key={index}
-            className="w-[95%] self-center"
           />
         ))}
 
@@ -37,6 +36,6 @@ export default function Feedback() {
           ))}
         </ul>
       </RevealWrapper>
-    </div>
+    </section>
   );
 }

@@ -16,14 +16,14 @@ export default function Description() {
   ];
 
   return (
-    <div className="flex flex-col justify-center pt-12 pb-12 g-3">
+    <div className="flex flex-col justify-center pt-12 gap-3">
       <RevealWrapper>
         <Heading
           h1="PROTOTYPE & TEST"
           p="Conducting usability testing to inform iterations"
         />
         <div className="flex justify-between gap-12 pt-10 pl-4">
-          <div className="flex flex-col w-[40%]">
+          <div className="flex flex-col w-[50%]">
             <h3 className="pb-4">Tester Profile</h3>
             <ul className="pl-5 list-disc">
               {testerProfiles.map((profile, index) => (
@@ -46,8 +46,8 @@ export default function Description() {
           </div>
         </div>
 
-        <h3 className="pb-1 pl-5">Metrics</h3>
-        <p className="pl-5 pb-4 ">Qualitative feedback</p>
+        <h3 className="pb-1">Metrics</h3>
+        <p className="pb-4 ">Qualitative feedback</p>
       </RevealWrapper>
     </div>
   );
