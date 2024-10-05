@@ -31,7 +31,7 @@ export default function Feedback() {
           <h3>Usability testing takeaways</h3>
           <ul className="list-disc pl-5">
             {bulletPoints.map((bullet, index) => (
-              <li className="pb-2 text-lg leading-8" key={index}>
+              <li className="pb-2 leading-8" key={index}>
                 {bullet}
               </li>
             ))}
