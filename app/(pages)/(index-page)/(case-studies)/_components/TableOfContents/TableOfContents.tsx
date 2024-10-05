@@ -3,7 +3,12 @@
 import { useEffect, useState } from 'react';
 
 export type TableOfContentsProps = {
-  sections: string[];
+  sections: SectionHeading[];
+};
+
+type SectionHeading = {
+  sectionName: string;
+  level: number;
 };
 
 export default function TableOfContents({ sections }: TableOfContentsProps) {
@@ -43,19 +48,21 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
       <div className="flex flex-col w-max gap-5 p-4 absolute group-hover:opacity-0">
         {sections.map((section, index) => (
           <div
-            className={`w-4 h-1 bg-black transition-opacity ${currentSection === section ? 'opacity-100' : 'opacity-25'}`}
+            className={`h-1 bg-black transition-opacity ${currentSection === section.sectionName ? 'opacity-100' : 'opacity-25'}`}
             key={index}
+            style={{ width: `${20 / section.level}px` }}
           ></div>
         ))}
       </div>
-      <div className="flex flex-col absolute opacity-0 w-max bg-white rounded-lg shadow-lg p-4 group-hover:opacity-100 transition-opacity duration-500">
+      <div className="flex flex-col gap-4 absolute opacity-0 w-max bg-white rounded-lg shadow-lg p-4 group-hover:opacity-100 transition-opacity duration-500">
         {sections.map((section, index) => (
           <p
-            className="hover:text-red-400"
-            onClick={() => scrollToSection(section)}
+            className="hover:text-red-400 "
+            onClick={() => scrollToSection(section.sectionName)}
             key={index}
+            style={{ paddingLeft: `${section.level * 10}px` }}
           >
-            {section}
+            {section.sectionName}
           </p>
         ))}
       </div>

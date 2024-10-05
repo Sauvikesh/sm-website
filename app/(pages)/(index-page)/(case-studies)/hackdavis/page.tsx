@@ -13,9 +13,7 @@ import DividerLine from '../_components/DividerLine/DividerLine';
 import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../_components/OtherCaseStudies/OtherCaseStudies';
-import TableOfContents, {
-  TableOfContentsProps,
-} from '../_components/TableOfContents/TableOfContents';
+import TableOfContents from '../_components/TableOfContents/TableOfContents';
 
 export default function HackDavis() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -39,21 +37,22 @@ export default function HackDavis() {
     ],
   };
 
-  const pageContents: TableOfContentsProps = {
-    sections: [
-      'Overview',
-      'Product Preview',
-      'Research',
-      'Iterations',
-      'Usabilty Testing',
-      'Final Solution',
-      'Reflection',
-    ],
-  };
+  const pageContents = [
+    { sectionName: 'Overview', level: 1 },
+    { sectionName: 'Product Preview', level: 1 },
+    { sectionName: 'Research', level: 1 },
+    { sectionName: 'Iterations', level: 1 },
+    { sectionName: 'Usability Testing', level: 1 },
+    { sectionName: 'Final Solution', level: 1 },
+    { sectionName: 'About Page', level: 2 },
+    { sectionName: 'Registration Page', level: 2 },
+    { sectionName: 'Day-of-Event Page', level: 2 },
+    { sectionName: 'Reflection', level: 1 },
+  ];
 
   return (
     <main className="bg-white text-black flex flex-col gap-20">
-      <TableOfContents sections={pageContents.sections} />
+      <TableOfContents sections={pageContents} />
       <Landing />
       <Intro />
       <SolutionPreview />
