@@ -5,7 +5,7 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 
 export default function Ideation() {
   return (
-    <section className="pl-[15%] pr-[15%]">
+    <section className="pl-[15%] pr-[15%]" id="Iterations">
       <RevealWrapper>
         <div className="flex flex-col gap-4">
           <h4>Ideations, Explorations & Iterations</h4>
@@ -138,7 +138,10 @@ export default function Ideation() {
           will appear."
         />
 
-        <div className="flex gap-2 pt-10 justify-center">
+        <section
+          className="flex gap-2 pt-10 justify-center"
+          id="Usabilty Testing"
+        >
           <ImageWithModal
             src="hackdavis/ideation/winMessage.svg"
             alt="teammate message"
@@ -155,7 +158,7 @@ export default function Ideation() {
             />
             <h4>final design on web</h4>
           </div>
-        </div>
+        </section>
       </RevealWrapper>
     </section>
   );

@@ -40,7 +40,15 @@ export default function HackDavis() {
   };
 
   const pageContents: TableOfContentsProps = {
-    sections: ['bruh', 'h'],
+    sections: [
+      'Overview',
+      'Product Preview',
+      'Research',
+      'Iterations',
+      'Usabilty Testing',
+      'Final Solution',
+      'Reflection',
+    ],
   };
 
   return (

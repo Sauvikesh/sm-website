@@ -104,7 +104,10 @@ export default function FinalSolution() {
   ];
 
   return (
-    <section className="pl-[15%] pr-[15%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
+    <section
+      className="pl-[15%] pr-[15%] pt-[146px] pb-[241px] bg-[#F5F5F5]"
+      id="Final Solution"
+    >
       <RevealWrapper>
         <h2 className="text-center">Final Solution</h2>
 

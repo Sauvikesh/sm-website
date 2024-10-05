@@ -6,7 +6,10 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 
 export default function SolutionPreview() {
   return (
-    <section className="flex flex-col pl-[15%] pr-[15%] justify-center items-center">
+    <section
+      className="flex flex-col pl-[15%] pr-[15%] justify-center items-center"
+      id="Product Preview"
+    >
       <RevealWrapper>
         <h3 className="pb-4">Product Preview</h3>
         <div className="flex gap-6 pb-10 justify-center">
