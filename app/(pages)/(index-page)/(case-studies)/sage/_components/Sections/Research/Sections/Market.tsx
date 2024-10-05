@@ -6,9 +6,9 @@ const competitiveAnalysisData: CompetitorAnalysisProps[] = [
     logoUrl: '/sageImages/research/calmLogo.png',
     mission: `"Support every step of
           their mental health journey."`,
-    advantage:
-      '#1 app for sleep, meditation, and relaxation',
-    disadvantage: 'Goals are pre-set to daily practice, and user can only maintain their streak by completing at least one session per day',
+    advantage: '#1 app for sleep, meditation, and relaxation',
+    disadvantage:
+      'Goals are pre-set to daily practice, and user can only maintain their streak by completing at least one session per day',
   },
   {
     logoUrl: '/sageImages/research/headspaceLogo.png',
