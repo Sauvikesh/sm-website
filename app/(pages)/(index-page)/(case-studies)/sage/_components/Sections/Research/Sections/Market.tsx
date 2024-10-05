@@ -3,15 +3,17 @@ import Image from 'next/image';
 
 export default function Market() {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-20">
       <RevealWrapper>
-        <h3>What does the current market look like?</h3>
-        <p>
-          Meditation apps are not a new phenomenon. By 2024, the market is
-          projected to reach $5.11B. Calm and Headspace are two existing big
-          players in the industry. However, they fail to provide a flexible goal
-          setting system and personalized recommendations.
-        </p>
+        <div className="flex flex-col gap-2">
+          <h3>What does the current market look like?</h3>
+          <p>
+            Meditation apps are not a new phenomenon. By 2024, the market is
+            projected to reach $5.11B. Calm and Headspace are two existing big
+            players in the industry. However, they fail to provide a flexible
+            goal setting system and personalized recommendations.
+          </p>
+        </div>
         <div className="flex justify-between gap-8 pt-12">
           <Image
             src="/sageImages/research/calm.jpg"

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Responses() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-20">
       <RevealWrapper>
         <div className="flex justify-between">
           <h2 className="w-[65%]">
