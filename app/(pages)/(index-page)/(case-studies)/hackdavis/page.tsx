@@ -13,6 +13,9 @@ import DividerLine from '../_components/DividerLine/DividerLine';
 import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../_components/OtherCaseStudies/OtherCaseStudies';
+import TableOfContents, {
+  TableOfContentsProps,
+} from '../_components/TableOfContents/TableOfContents';
 
 export default function HackDavis() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -36,8 +39,13 @@ export default function HackDavis() {
     ],
   };
 
+  const pageContents: TableOfContentsProps = {
+    sections: ['bruh', 'h'],
+  };
+
   return (
     <main className="bg-white text-black flex flex-col gap-20">
+      <TableOfContents sections={pageContents.sections} />
       <Landing />
       <Intro />
       <SolutionPreview />
