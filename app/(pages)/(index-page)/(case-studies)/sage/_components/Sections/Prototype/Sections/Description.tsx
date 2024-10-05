@@ -27,7 +27,7 @@ export default function Description() {
             <h3>Tester Profile</h3>
             <ul className="pl-4 list-disc">
               {testerProfiles.map((profile, index) => (
-                <li className="mb-4 text-lg leading-8" key={index}>
+                <li className="mb-4 leading-8" key={index}>
                   {profile}
                 </li>
               ))}
@@ -38,7 +38,7 @@ export default function Description() {
             <h3>Task List</h3>
             <ol className="pl-5 list-decimal">
               {tasks.map((task, index) => (
-                <li className="mb-4 text-lg leading-8" key={index}>
+                <li className="mb-4 leading-8" key={index}>
                   {task}
                 </li>
               ))}
