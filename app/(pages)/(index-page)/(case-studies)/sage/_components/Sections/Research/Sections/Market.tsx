@@ -20,7 +20,7 @@ const competitiveAnalysisData: CompetitorAnalysisProps[] = [
 ];
 export default function Market() {
   return (
-    <div className="flex flex-col gap-20">
+    <div className="flex flex-col gap-10">
       <RevealWrapper>
         <div className="flex flex-col gap-2">
           <h3>What does the current market look like?</h3>
@@ -31,7 +31,7 @@ export default function Market() {
             goal setting system and personalized recommendations.
           </p>
         </div>
-        <div className="flex justify-between gap-8 pt-12">
+        <div className="flex justify-between gap-10 ">
           {competitiveAnalysisData.map((competitor, index) => (
             <CompetitorAnalysis
               logoUrl={competitor.logoUrl}
@@ -60,7 +60,7 @@ function CompetitorAnalysis({
   disadvantage,
 }: CompetitorAnalysisProps) {
   return (
-    <div className="flex flex-col w-1/2 p-8 bg-[#F2F2F2] gap-8">
+    <div className="flex flex-col w-1/2 p-8 bg-[#F2F2F2] gap-8 rounded-2xl border border-[#CCCCCC]">
       <Image
         src={logoUrl}
         alt="competitor app logo"
