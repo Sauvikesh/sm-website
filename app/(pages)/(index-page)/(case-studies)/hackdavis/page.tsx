@@ -42,7 +42,7 @@ export default function HackDavis() {
     { sectionName: 'Product Preview', level: 1 },
     { sectionName: 'Research', level: 1 },
     { sectionName: 'Iterations', level: 1 },
-    { sectionName: 'Usability Testing', level: 1 },
+    { sectionName: 'Usabilty Testing', level: 1 },
     { sectionName: 'Final Solution', level: 1 },
     { sectionName: 'About Page', level: 2 },
     { sectionName: 'Registration Page', level: 2 },

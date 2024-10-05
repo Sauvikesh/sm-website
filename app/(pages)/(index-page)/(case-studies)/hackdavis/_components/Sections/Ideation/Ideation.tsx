@@ -5,15 +5,15 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 
 export default function Ideation() {
   return (
-    <section className="pl-[15%] pr-[15%]" id="Iterations">
+    <section className="pl-[15%] pr-[15%]">
       <RevealWrapper>
-        <div className="flex flex-col gap-4">
+        <section className="flex flex-col gap-4" id="Iterations">
           <h4>Ideations, Explorations & Iterations</h4>
           <Heading
             h3="Displaying prizes in a more visually prominent way"
             p="In an earnest honesty, 2 out of the 5 interviewees admitted that the prizes highly motivated them to participate. I comprehensively displayed each prize using cards. Configuring the metadata on mobile was a challenge because of the limited horizontal space, and I iterated several times. Incorporating imagery made the prizes more visually enticing, and placing the text underneath accommodated longer strings of text, therefore preventing awkward truncation."
           />
-        </div>
+        </section>
 
         <div className="flex gap-6 pt-10 pb-[100px]">
           <ImageWithModal
