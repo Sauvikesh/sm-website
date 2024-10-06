@@ -138,10 +138,7 @@ export default function Ideation() {
           will appear."
         />
 
-        <section
-          className="flex gap-2 pt-10 justify-center"
-          id="Usabilty Testing"
-        >
+        <div className="flex gap-2 pt-10 justify-center">
           <ImageWithModal
             src="hackdavis/ideation/winMessage.svg"
             alt="teammate message"
@@ -158,7 +155,7 @@ export default function Ideation() {
             />
             <h4>final design on web</h4>
           </div>
-        </section>
+        </div>
       </RevealWrapper>
     </section>
   );

@@ -45,21 +45,22 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
 
   return (
     <div className="fixed pt-20 pl-10 group z-50 -mx-[15%]">
-      <div className="flex flex-col w-max gap-5 p-4 absolute group-hover:opacity-0">
+      <div className="flex flex-col w-max gap-3 p-4 absolute group-hover:opacity-0">
         {sections.map((section, index) => (
           <div
-            className={`h-1 bg-black transition-opacity ${currentSection === section.sectionName ? 'opacity-100' : 'opacity-25'}`}
+            className={`h-[2px] w-4 bg-black transition-opacity ${currentSection === section.sectionName ? 'opacity-100' : 'opacity-25'}`}
             key={index}
-            style={{ width: `${20 / (section.level + 1)}px` }}
+            // style={{ width: `${20 / (section.level + 1)}px` }}
           ></div>
         ))}
       </div>
-      <div className="flex flex-col gap-4 absolute opacity-0 w-max bg-white rounded-lg shadow-lg p-4 group-hover:opacity-100 transition-opacity duration-500">
+      <div className="flex flex-col  absolute opacity-0 w-max bg-white rounded-lg shadow-lg p-4 group-hover:opacity-100 transition-opacity duration-500">
         {sections.map((section, index) => (
           <p
             onClick={() => scrollToSection(section.sectionName)}
             key={index}
-            style={{ paddingLeft: `${section.level * 10}px` }}
+            style={{ paddingLeft: `${(section.level + 1) * 12}px` }}
+            className={`hover:bg-[#f1f1f1] p-1 ${currentSection === section.sectionName ? 'text-[#4185F4]' : ''}`}
           >
             {section.sectionName}
           </p>
