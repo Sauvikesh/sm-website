@@ -44,7 +44,7 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
   };
 
   return (
-    <div className="fixed pt-20 pl-10 group z-50">
+    <div className="fixed pt-20 pl-10 group z-50 -mx-[15%]">
       <div className="flex flex-col w-max gap-5 p-4 absolute group-hover:opacity-0">
         {sections.map((section, index) => (
           <div

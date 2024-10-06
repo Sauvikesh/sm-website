@@ -2,7 +2,7 @@ import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/Rev
 import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 export default function Ending() {
   return (
-    <section className="pl-[15%] pr-[15%] flex flex-col gap-4" id="Reflection">
+    <section className="flex flex-col gap-4" id="Reflection">
       <RevealWrapper>
         <h4>Reflection: lessons learned</h4>
         <h3>

@@ -40,10 +40,7 @@ export default function Process() {
   ];
 
   return (
-    <section
-      className="flex flex-col pl-[15%] pr-[15%] gap-[80px]"
-      id="Research"
-    >
+    <section className="flex flex-col gap-[80px]" id="Research">
       <RevealWrapper>
         <h2 className="text-center">The Process</h2>
 

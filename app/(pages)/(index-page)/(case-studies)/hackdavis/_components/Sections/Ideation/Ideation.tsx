@@ -5,7 +5,7 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 
 export default function Ideation() {
   return (
-    <section className="pl-[15%] pr-[15%]">
+    <section>
       <RevealWrapper>
         <section className="flex flex-col gap-4" id="Iterations">
           <h4>Ideations, Explorations & Iterations</h4>

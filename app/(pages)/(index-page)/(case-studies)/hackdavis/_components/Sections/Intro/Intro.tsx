@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Intro() {
   return (
-    <section className="pl-[15%] pr-[15%]">
+    <section>
       <RevealWrapper>
         <div className="flex w-full justify-between pb-10">
           <div className="flex flex-col gap-2">

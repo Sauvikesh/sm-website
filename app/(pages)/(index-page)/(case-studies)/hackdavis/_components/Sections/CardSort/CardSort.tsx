@@ -25,7 +25,7 @@ export default function CardSort() {
   ];
 
   return (
-    <section className="pl-[15%] pr-[15%]">
+    <section>
       <RevealWrapper>
         <Heading
           h3="Three different pages, three different use cases"

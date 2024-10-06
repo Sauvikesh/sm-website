@@ -104,7 +104,7 @@ export default function FinalSolution() {
   ];
 
   return (
-    <section className="pl-[15%] pr-[15%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
+    <section className="flex flex-col items-center -mx-[40%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
       <RevealWrapper>
         <section>
           <h2 className="text-center" id="Final Solution">
