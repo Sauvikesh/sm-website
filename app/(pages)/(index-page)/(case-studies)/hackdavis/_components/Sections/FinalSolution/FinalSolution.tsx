@@ -106,7 +106,11 @@ export default function FinalSolution() {
   return (
     <section className="pl-[15%] pr-[15%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
       <RevealWrapper>
-        <h2 className="text-center">Final Solution</h2>
+        <section>
+          <h2 className="text-center" id="Final Solution">
+            Final Solution
+          </h2>
+        </section>
 
         <div className="flex w-full gap-12 relative">
           <div className="flex flex-col items-start gap-8 sticky top-12 h-fit">
@@ -135,7 +139,7 @@ export default function FinalSolution() {
           </div>
 
           <div className="flex flex-col w-[65%] gap-[197px]">
-            <div className="flex relative">
+            <section className="flex relative" id="About Page">
               <motion.div
                 id="1"
                 onPointerOver={() => setActiveScrollButton(1)}
@@ -161,9 +165,9 @@ export default function FinalSolution() {
                   key={index}
                 />
               ))}
-            </div>
+            </section>
 
-            <div className="flex relative">
+            <section className="flex relative" id="Registration Page">
               <motion.div
                 id="2"
                 onPointerOver={() => setActiveScrollButton(2)}
@@ -184,9 +188,9 @@ export default function FinalSolution() {
               {commentsLanding.map((comment, index) => (
                 <Comment {...comment} key={index} />
               ))}
-            </div>
+            </section>
 
-            <div className="flex relative">
+            <section className="flex relative" id="Day-of-Event Page">
               <motion.div
                 id="3"
                 onPointerOver={() => setActiveScrollButton(3)}
@@ -207,7 +211,7 @@ export default function FinalSolution() {
                   <Comment {...comment} key={index} />
                 ))}
               </motion.div>
-            </div>
+            </section>
           </div>
         </div>
       </RevealWrapper>

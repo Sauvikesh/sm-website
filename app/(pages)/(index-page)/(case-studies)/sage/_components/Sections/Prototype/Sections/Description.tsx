@@ -46,7 +46,7 @@ export default function Description() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 -mt-10">
+        <div className="flex flex-col gap-2 -mt-20">
           <h3>Metrics</h3>
           <p>Qualitative feedback</p>
         </div>

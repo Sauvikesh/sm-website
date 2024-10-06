@@ -13,6 +13,7 @@ import DividerLine from '../_components/DividerLine/DividerLine';
 import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../_components/OtherCaseStudies/OtherCaseStudies';
+import TableOfContents from '../_components/TableOfContents/TableOfContents';
 
 export default function HackDavis() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -36,8 +37,22 @@ export default function HackDavis() {
     ],
   };
 
+  const pageContents = [
+    { sectionName: 'Overview', level: 0 },
+    { sectionName: 'Product Preview', level: 0 },
+    { sectionName: 'Research', level: 0 },
+    { sectionName: 'Iterations', level: 0 },
+    { sectionName: 'Usabilty Testing', level: 0 },
+    { sectionName: 'Final Solution', level: 0 },
+    { sectionName: 'About Page', level: 1 },
+    { sectionName: 'Registration Page', level: 1 },
+    { sectionName: 'Day-of-Event Page', level: 1 },
+    { sectionName: 'Reflection', level: 0 },
+  ];
+
   return (
     <main className="bg-white text-black flex flex-col gap-20">
+      <TableOfContents sections={pageContents} />
       <Landing />
       <Intro />
       <SolutionPreview />
