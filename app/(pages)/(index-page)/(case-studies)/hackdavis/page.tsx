@@ -38,16 +38,16 @@ export default function HackDavis() {
   };
 
   const pageContents = [
-    { sectionName: 'Overview', level: 1 },
-    { sectionName: 'Product Preview', level: 1 },
-    { sectionName: 'Research', level: 1 },
-    { sectionName: 'Iterations', level: 1 },
-    { sectionName: 'Usabilty Testing', level: 1 },
-    { sectionName: 'Final Solution', level: 1 },
-    { sectionName: 'About Page', level: 2 },
-    { sectionName: 'Registration Page', level: 2 },
-    { sectionName: 'Day-of-Event Page', level: 2 },
-    { sectionName: 'Reflection', level: 1 },
+    { sectionName: 'Overview', level: 0 },
+    { sectionName: 'Product Preview', level: 0 },
+    { sectionName: 'Research', level: 0 },
+    { sectionName: 'Iterations', level: 0 },
+    { sectionName: 'Usabilty Testing', level: 0 },
+    { sectionName: 'Final Solution', level: 0 },
+    { sectionName: 'About Page', level: 1 },
+    { sectionName: 'Registration Page', level: 1 },
+    { sectionName: 'Day-of-Event Page', level: 1 },
+    { sectionName: 'Reflection', level: 0 },
   ];
 
   return (

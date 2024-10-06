@@ -50,14 +50,13 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
           <div
             className={`h-1 bg-black transition-opacity ${currentSection === section.sectionName ? 'opacity-100' : 'opacity-25'}`}
             key={index}
-            style={{ width: `${20 / section.level}px` }}
+            style={{ width: `${20 / (section.level + 1)}px` }}
           ></div>
         ))}
       </div>
       <div className="flex flex-col gap-4 absolute opacity-0 w-max bg-white rounded-lg shadow-lg p-4 group-hover:opacity-100 transition-opacity duration-500">
         {sections.map((section, index) => (
           <p
-            className="hover:text-red-400 "
             onClick={() => scrollToSection(section.sectionName)}
             key={index}
             style={{ paddingLeft: `${section.level * 10}px` }}
