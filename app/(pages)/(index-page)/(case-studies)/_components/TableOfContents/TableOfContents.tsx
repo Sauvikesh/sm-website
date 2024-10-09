@@ -54,7 +54,7 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
           ></div>
         ))}
       </div>
-      <div className="flex flex-col  absolute opacity-0 w-max bg-white rounded-lg shadow-lg p-4 group-hover:opacity-100 transition-opacity duration-500">
+      <div className="flex flex-col absolute opacity-0 w-max bg-white rounded-lg shadow-lg p-4 group-hover:opacity-100 transition-opacity duration-500">
         {sections.map((section, index) => (
           <p
             onClick={() => scrollToSection(section.sectionName)}

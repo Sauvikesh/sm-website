@@ -110,10 +110,11 @@ export default function FinalSolution() {
           <h2 className="text-center" id="Final Solution">
             Final Solution
           </h2>
+          
         </section>
 
         <div className="flex w-full gap-12 relative">
-          <div className="flex flex-col items-start gap-8 sticky top-12 h-fit">
+          <div className="flex flex-col items-start gap-8 sticky top-20 h-fit">
             <div className="flex flex-col items-start gap-2">
               {toggleButtons.map((button, index) => (
                 <ToggleButton
@@ -125,7 +126,7 @@ export default function FinalSolution() {
               ))}
             </div>
 
-            {scrollButtons.map((button, index) => (
+            {/* {scrollButtons.map((button, index) => (
               <ScrollButton
                 key={index}
                 sectionId={button.sectionId}
@@ -135,7 +136,7 @@ export default function FinalSolution() {
                 label={button.label}
                 scrollToSection={scrollToSection}
               />
-            ))}
+            ))} */}
           </div>
 
           <div className="flex flex-col w-[65%] gap-[197px]">
