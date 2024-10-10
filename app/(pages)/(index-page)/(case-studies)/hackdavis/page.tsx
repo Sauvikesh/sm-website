@@ -50,7 +50,7 @@ export default function HackDavis() {
   ];
 
   return (
-    <main className="bg-white text-black flex flex-col gap-20 px-[15%] overflow-clip">
+    <main className="bg-white text-black flex flex-col gap-20 px-[18%] overflow-clip">
       <TableOfContents sections={pageContents} />
       <Landing />
       <Intro />

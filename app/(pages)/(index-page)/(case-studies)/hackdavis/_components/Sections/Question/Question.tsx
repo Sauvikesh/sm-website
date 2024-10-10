@@ -16,7 +16,7 @@ export default function Question() {
         alt="char stack"
         width={1000}
         height={1000}
-        className="absolute w-[400px] top-[-115px] right-[100px]"
+        className="absolute w-[400px] top-[-115px] right-[80px]"
       />
     </section>
   );

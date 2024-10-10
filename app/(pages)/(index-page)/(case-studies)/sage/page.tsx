@@ -49,7 +49,7 @@ export default function Sage() {
   ];
 
   return (
-    <main className="bg-white text-black flex flex-col px-[20%] overflow-hidden gap-20">
+    <main className="bg-white text-black flex flex-col px-[18%] overflow-hidden gap-20">
       <TableOfContents sections={pageContents} />
       <Landing />
       <Summary />
