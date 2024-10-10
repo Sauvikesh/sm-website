@@ -14,6 +14,7 @@ import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../_components/OtherCaseStudies/OtherCaseStudies';
 import DividerLine from '../_components/DividerLine/DividerLine';
+import TableOfContents from '../_components/TableOfContents/TableOfContents';
 
 export default function Sage() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -37,8 +38,19 @@ export default function Sage() {
     ],
   };
 
+  const pageContents = [
+    { sectionName: 'Overview', level: 0 },
+    { sectionName: 'Product Preview', level: 0 },
+    { sectionName: 'Research', level: 0 },
+    { sectionName: 'Ideation', level: 0 },
+    { sectionName: 'Prototype', level: 0 },
+    { sectionName: 'Final Designs', level: 0 },
+    { sectionName: 'Reflection', level: 0 },
+  ];
+
   return (
     <main className="bg-white text-black flex flex-col px-[20%] overflow-hidden gap-20">
+      <TableOfContents sections={pageContents} />
       <Landing />
       <Summary />
       <DividerLine />

@@ -12,7 +12,7 @@ export default function Results() {
   ];
 
   return (
-    <section className="pl-[15%] pr-[15%] flex flex-col gap-10">
+    <section className="flex flex-col gap-10">
       <RevealWrapper>
         <div className="flex flex-col gap-2">
           <h3>The Results</h3>

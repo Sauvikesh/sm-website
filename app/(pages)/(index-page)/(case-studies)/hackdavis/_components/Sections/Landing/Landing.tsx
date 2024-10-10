@@ -3,7 +3,7 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 export default function Landing() {
   return (
     <section
-      className="bg-[#123041] h-[75vh] text-white flex flex-col justify-center items-center pl-[11%] pr-[11%] pt-12"
+      className="bg-[#123041] h-[75vh] text-white flex flex-col justify-center items-center -mx-[40%] pt-12"
       id="Overview"
     >
       <h1 className="text-[80px] font-f-w font-medium lead-[44px] pt-9">

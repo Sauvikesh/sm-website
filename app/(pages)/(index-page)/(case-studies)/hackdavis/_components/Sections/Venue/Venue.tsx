@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Venue() {
   return (
-    <section className="w-full pt-20 pb-20">
+    <section className="pt-20 pb-20 -mx-[40%]">
       <Image
         src="/hackdavis/venue.png"
         alt="venue"

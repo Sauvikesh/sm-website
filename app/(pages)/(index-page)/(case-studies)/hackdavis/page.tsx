@@ -42,7 +42,6 @@ export default function HackDavis() {
     { sectionName: 'Product Preview', level: 0 },
     { sectionName: 'Research', level: 0 },
     { sectionName: 'Iterations', level: 0 },
-    { sectionName: 'Usabilty Testing', level: 0 },
     { sectionName: 'Final Solution', level: 0 },
     { sectionName: 'About Page', level: 1 },
     { sectionName: 'Registration Page', level: 1 },
@@ -51,7 +50,7 @@ export default function HackDavis() {
   ];
 
   return (
-    <main className="bg-white text-black flex flex-col gap-20">
+    <main className="bg-white text-black flex flex-col gap-20 px-[15%] overflow-clip">
       <TableOfContents sections={pageContents} />
       <Landing />
       <Intro />

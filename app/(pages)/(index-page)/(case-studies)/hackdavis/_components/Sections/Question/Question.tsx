@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Question() {
   return (
-    <section className="bg-[#005271] text-white p-[160px] pl-[216px] pr-[216px] flex relative">
+    <section className="bg-[#005271] text-white p-[160px] pl-[30%] -mx-[30%] flex relative">
       <RevealWrapper>
         <h2 className="pr-[23%]">
           How might we inspire participants and sponsors to champion social

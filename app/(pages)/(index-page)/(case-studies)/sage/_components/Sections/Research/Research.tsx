@@ -4,7 +4,7 @@ import Responses from './Sections/Responses';
 
 export default function Research() {
   return (
-    <section className="flex flex-col gap-20">
+    <section className="flex flex-col gap-20" id="Research">
       <Header />
       <Responses />
       <Market />
