@@ -31,7 +31,7 @@ const finalDesigns: FinalDesignWithTitlesProps[] = [
 
 export default function FinalDesigns() {
   return (
-    <section className="flex flex-col gap-20" id="1">
+    <section className="flex flex-col gap-20" id="Final Designs">
       <RevealWrapper>
         <h2 className="text-center">Final Designs</h2>
 

@@ -54,6 +54,7 @@ export default function Ideation() {
     <section
       className="flex flex-col items-center justify-center pt-12 bg-contain text-center px-[40%] mx-[-40%]"
       style={{ backgroundImage: "url('/sageImages/ideation/dots.png')" }}
+      id="Ideation"
     >
       <RevealWrapper>
         <Heading h1="IDEATION & SYNTHESIS" p="Identifying key insights" />

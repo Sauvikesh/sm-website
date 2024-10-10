@@ -25,7 +25,7 @@ const sageSummary: HeadingWithBodyProps[] = [
 
 export default function Summary() {
   return (
-    <section className="flex flex-col pt-[42px] gap-10">
+    <section className="flex flex-col pt-[42px] gap-10" id="Overview">
       <RevealWrapper>
         <div className="flex justify-between">
           <div className="flex flex-col gap-2">

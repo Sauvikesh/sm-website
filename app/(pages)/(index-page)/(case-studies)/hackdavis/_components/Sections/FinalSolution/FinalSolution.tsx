@@ -84,11 +84,11 @@ export default function FinalSolution() {
     },
   ];
 
-  const scrollButtons = [
-    { sectionId: '1', number: '01', label: 'About' },
-    { sectionId: '2', number: '02', label: 'Registration' },
-    { sectionId: '3', number: '03', label: 'Day-of-Event' },
-  ];
+  // const scrollButtons = [
+  //   { sectionId: '1', number: '01', label: 'About' },
+  //   { sectionId: '2', number: '02', label: 'Registration' },
+  //   { sectionId: '3', number: '03', label: 'Day-of-Event' },
+  // ];
 
   const toggleButtons = [
     {
@@ -110,7 +110,6 @@ export default function FinalSolution() {
           <h2 className="text-center" id="Final Solution">
             Final Solution
           </h2>
-          
         </section>
 
         <div className="flex w-full gap-12 relative">
@@ -220,35 +219,35 @@ export default function FinalSolution() {
   );
 }
 
-type ScrollButtonProps = {
-  sectionId: string;
-  activeButton: number;
-  buttonIndex: number;
-  number: string;
-  label: string;
-  scrollToSection: (sectionId: string) => void;
-};
+// type ScrollButtonProps = {
+//   sectionId: string;
+//   activeButton: number;
+//   buttonIndex: number;
+//   number: string;
+//   label: string;
+//   scrollToSection: (sectionId: string) => void;
+// };
 
-function ScrollButton({
-  sectionId,
-  activeButton,
-  buttonIndex,
-  number,
-  label,
-  scrollToSection,
-}: ScrollButtonProps) {
-  return (
-    <button
-      className={`flex flex-col bg-[#EEEEEE] p-4 w-[141px] transition-opacity duration-200 ${
-        activeButton === buttonIndex ? 'opacity-100' : 'opacity-25'
-      }`}
-      onClick={() => scrollToSection(sectionId)}
-    >
-      <p className="text-4xl font-bold tracking-[0.72px]">{number}</p>
-      <p className="text-[15px] tracking-[0.3px]">{label}</p>
-    </button>
-  );
-}
+// function ScrollButton({
+//   sectionId,
+//   activeButton,
+//   buttonIndex,
+//   number,
+//   label,
+//   scrollToSection,
+// }: ScrollButtonProps) {
+//   return (
+//     <button
+//       className={`flex flex-col bg-[#EEEEEE] p-4 w-[141px] transition-opacity duration-200 ${
+//         activeButton === buttonIndex ? 'opacity-100' : 'opacity-25'
+//       }`}
+//       onClick={() => scrollToSection(sectionId)}
+//     >
+//       <p className="text-4xl font-bold tracking-[0.72px]">{number}</p>
+//       <p className="text-[15px] tracking-[0.3px]">{label}</p>
+//     </button>
+//   );
+// }
 
 type ToggleButtonProps = {
   label: string;

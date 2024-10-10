@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export type TableOfContentsProps = {
   sections: SectionHeading[];
@@ -43,14 +44,16 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const pathname = usePathname();
+  const sideMargin = pathname == '/sage' ? '-mx-[20%]' : '-mx-[15%]';
+
   return (
-    <div className="fixed pt-20 pl-10 group z-50 -mx-[15%]">
+    <div className={`fixed pt-20 pl-10 group z-50 ${sideMargin}`}>
       <div className="flex flex-col w-max gap-3 p-4 absolute group-hover:opacity-0">
         {sections.map((section, index) => (
           <div
             className={`h-[2px] w-4 bg-black transition-opacity ${currentSection === section.sectionName ? 'opacity-100' : 'opacity-25'}`}
             key={index}
-            // style={{ width: `${20 / (section.level + 1)}px` }}
           ></div>
         ))}
       </div>

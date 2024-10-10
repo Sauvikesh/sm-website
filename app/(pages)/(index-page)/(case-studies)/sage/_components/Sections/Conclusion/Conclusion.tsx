@@ -20,7 +20,7 @@ const reflectionParagraphs: HeadingWithBodyProps[] = [
 
 export default function Conclusion() {
   return (
-    <section className="flex flex-col gap-4">
+    <section className="flex flex-col gap-4" id="Reflection">
       <RevealWrapper>
         <h4>Reflection</h4>
         <div className="flex flex-col gap-8">

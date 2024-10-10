@@ -16,7 +16,7 @@ export default function Description() {
   ];
 
   return (
-    <div className="flex flex-col justify-center gap-10">
+    <section className="flex flex-col justify-center gap-10" id="Prototype">
       <RevealWrapper>
         <Heading
           h1="PROTOTYPE & TEST"
@@ -51,6 +51,6 @@ export default function Description() {
           <p>Qualitative feedback</p>
         </div>
       </RevealWrapper>
-    </div>
+    </section>
   );
 }
