@@ -63,7 +63,7 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
             onClick={() => scrollToSection(section.sectionName)}
             key={index}
             style={{ paddingLeft: `${(section.level + 1) * 12}px` }}
-            className={`hover:bg-[#f1f1f1] p-1 ${currentSection === section.sectionName ? 'text-[#4185F4]' : ''}`}
+            className={`hover:bg-[#f1f1f1] p-1 pr-3 ${currentSection === section.sectionName ? 'text-[#4185F4]' : ''}`}
           >
             {section.sectionName}
           </p>
