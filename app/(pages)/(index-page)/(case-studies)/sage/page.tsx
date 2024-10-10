@@ -43,7 +43,7 @@ export default function Sage() {
     { sectionName: 'Product Preview', level: 0 },
     { sectionName: 'Research', level: 0 },
     { sectionName: 'Ideation', level: 0 },
-    { sectionName: 'Prototype', level: 0 },
+    { sectionName: 'Usability Testing', level: 0 },
     { sectionName: 'Final Designs', level: 0 },
     { sectionName: 'Reflection', level: 0 },
   ];
@@ -61,6 +61,8 @@ export default function Sage() {
       <Problem />
       <Ideation />
       <Prototype />
+      <DividerLine />
+
       <FinalDesigns />
       <Outcome />
       <Conclusion />

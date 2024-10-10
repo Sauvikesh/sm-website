@@ -84,7 +84,7 @@ export default function Process() {
 
         <TextCard
           header="Opportunity Area: Leveraging Emotional Design"
-          body="After connecting with previous HackDavis participants and sponsors, I realized that emotional design could be a powerful tool to balance user and business needs. Conveying a sense of inclusion makes the world of a difference to first-time participants and helps them take the first step to break barriers in tech. Showcasing HackDavis’s professionalism and values and telling a wholistic story of previous years’ success are integral to reassuring potential sponsors that they are making a worthy investment."
+          body="After connecting with previous HackDavis participants and sponsors, I realized that emotional design could be a powerful tool to balance user and business needs. Conveying a sense of inclusion makes the world of a difference to first-time participants and helps them take the first step to break barriers in tech. Showcasing HackDavis' professionalism and values and telling a wholistic story of previous years’ success are integral to reassuring potential sponsors that they are making a worthy investment."
         />
 
         <div className="flex gap-8 relative w-full">
@@ -101,7 +101,7 @@ export default function Process() {
             In an effort to deliver a thoughtful execution of emotional design,
             I conducted literature reviews and set three goals: <br></br>{' '}
             <br></br>
-            1. Inject a signature personality with HackDavis's mascots <br></br>
+            1. Inject a signature personality with HackDavis' mascots <br></br>
             2. Craft copy with the right tone assuage and encourage beginners{' '}
             <br></br>
             3. Use effective and engaging storytelling that leaves users feeling

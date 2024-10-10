@@ -10,7 +10,7 @@ export default function CardSort() {
     {
       number: '01',
       header: 'About',
-      body: "Caters to potential sponsors and includes KPIs such as participants headcount and projects submitted. Showcases HackDavis's key values and successful track record.",
+      body: "Caters to potential sponsors and includes KPIs such as participants headcount and projects submitted. Showcases HackDavis' key values and successful track record.",
     },
     {
       number: '02',

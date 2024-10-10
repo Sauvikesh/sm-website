@@ -16,7 +16,10 @@ export default function Description() {
   ];
 
   return (
-    <section className="flex flex-col justify-center gap-10" id="Prototype">
+    <section
+      className="flex flex-col justify-center gap-10"
+      id="Usability Testing"
+    >
       <RevealWrapper>
         <Heading
           h1="PROTOTYPE & TEST"

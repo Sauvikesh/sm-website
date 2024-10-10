@@ -65,7 +65,7 @@ export default function Intro() {
               facilitating resource discovery in a variety of subjects such as
               web development, data science, hardware, design, and more. Through
               the use of plain language and whimsical characters, users embark
-              on a journey to learn about HackDavis's commitment to inclusion,
+              on a journey to learn about HackDavis' commitment to inclusion,
               the values that the organization embodies, and the diverse
               innovations created by previous participants.
             </p>

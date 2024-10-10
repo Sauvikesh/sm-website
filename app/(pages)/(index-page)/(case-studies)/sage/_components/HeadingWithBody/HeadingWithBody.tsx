@@ -8,7 +8,7 @@ export default function HeadingWithBody({
   body,
 }: HeadingWithBodyProps) {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-2">
       <h3>{header}</h3>
       <p>{body}</p>
     </div>
