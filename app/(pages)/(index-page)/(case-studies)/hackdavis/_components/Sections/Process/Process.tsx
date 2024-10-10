@@ -45,10 +45,7 @@ export default function Process() {
         <h2 className="text-center">The Process</h2>
 
         <div className="flex flex-col gap-4">
-          <h3>
-            Hackathons are <span className="italic">expensive</span>, like{' '}
-            <span className=" italic">$80,000 expensive</span>
-          </h3>
+          <h3>Designing for user vs. business needs... why not both?</h3>
           <p>
             Defining HackDavis' business goals was a vital first step of this
             project and helped determine key performance indicators (KPIs).
@@ -63,7 +60,7 @@ export default function Process() {
 
         <div>
           <h3 className="pb-4">
-            Designing for user vs. business needs... why not both?
+            Opportunity Area: Leveraging Emotional Design
           </h3>
           <p>
             Understanding user needs are equally as important, and I conducted 5
@@ -81,11 +78,6 @@ export default function Process() {
             about their background, qualifications, and/or level of expertise.
           </p>
         </div>
-
-        <TextCard
-          header="Opportunity Area: Leveraging Emotional Design"
-          body="After connecting with previous HackDavis participants and sponsors, I realized that emotional design could be a powerful tool to balance user and business needs. Conveying a sense of inclusion makes the world of a difference to first-time participants and helps them take the first step to break barriers in tech. Showcasing HackDavis' professionalism and values and telling a wholistic story of previous years’ success are integral to reassuring potential sponsors that they are making a worthy investment."
-        />
 
         <div className="flex gap-8 relative w-full">
           {profiles.map((profile, index) => (
