@@ -17,7 +17,7 @@ export default function SolutionPreview() {
 
           <Link href="https://2024.hackdavis.io/" target="_blank">
             <button className="flex items-center gap-2 bg-white text-[#173A52] p-4 rounded-lg border border-[#005271]">
-              Launch hackdavis.io
+              <p>Launch hackdavis.io</p>
               <Image
                 src="/hackdavis/linkArrow.svg"
                 alt="link arrow"
