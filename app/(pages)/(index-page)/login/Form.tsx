@@ -30,7 +30,7 @@ export default function Form() {
   return (
     <div className="flex flex-col items-center justify-center bg-light-bg text-black h-[100vh] gap-6 pl-[11%] pr-[11%]">
       <Image
-        src="/blob.png"
+        src="/blob.svg"
         width={1000}
         height={1000}
         alt="blob"

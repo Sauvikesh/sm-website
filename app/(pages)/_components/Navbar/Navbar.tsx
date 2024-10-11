@@ -37,7 +37,7 @@ export default function Navbar() {
       bgColor: bgAboutText,
     },
     {
-      href: 'https://drive.google.com/file/d/1JaJ5ppcmlcFHTJpduY-MQ9OY-nYny3V5/view',
+      href: 'https://docs.google.com/document/d/1Fegz8HzzS1Cmv8bQi4V_tRu7TuhCL0DnKkqsYi-UU-A/edit?usp=sharing',
       label: 'Resume',
       bgColor: bgPlayText,
     },
