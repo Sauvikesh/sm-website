@@ -50,7 +50,7 @@ export default function Footer() {
 
   return !invisible ? (
     <footer
-      className={`${textColor} ${bgColor} flex justify-between px-case-study pb-[89px] relative overflow-x-clip`}
+      className={`${textColor} ${bgColor} flex justify-between px-case-study pb-[89px] pt-20 relative overflow-x-clip`}
     >
       <div className="flex flex-col justify-between">
         <div className="flex flex-col gap-4">
@@ -67,7 +67,9 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <h4 className="text-white justify-self-end">© Samantha Mah 2024</h4>
+        <h4 className={`${textColor} justify-self-end`}>
+          © Samantha Mah 2024
+        </h4>
       </div>
 
       <nav className="flex flex-col gap-6">
