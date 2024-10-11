@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { usePathname } from 'next/navigation';
+import { useDarkModeSwitch } from '../../_hooks/useDarkModeSwitch';
 
 // NOTE: maybe I should refactor this to use grid instead of flex boxes ???
 export default function Footer() {
@@ -11,7 +12,7 @@ export default function Footer() {
   //   pathname === '/sage' ? 'bg-[#e4edeb]' : 'bg-dark-bg';
   // const footerTextColor = pathname === '/sage' ? 'text-black' : 'text-white';
 
-  const invisible = pathname === '/login' || pathname === '/about';
+  const invisible = pathname === '/login';
 
   const linkIconElements: LinkIconProps[] = [
     {
@@ -41,9 +42,15 @@ export default function Footer() {
         'w-[80px] h-auto absolute bottom-[1%] right-[-3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
   ];
+
+  const darkMode = useDarkModeSwitch();
+
+  const bgColor = darkMode ? 'bg-dark-bg' : 'bg-white';
+  const textColor = darkMode ? 'text-white' : 'text-black';
+
   return !invisible ? (
     <footer
-      className={`text-black bg-white flex justify-between px-case-study pb-[89px] relative`}
+      className={`${textColor} ${bgColor} flex justify-between px-case-study pb-[89px] relative overflow-x-clip`}
     >
       <div className="flex flex-col justify-between">
         <div className="flex flex-col gap-4">
@@ -60,7 +67,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <h4 className="text-black justify-self-end">© Samantha Mah 2024</h4>
+        <h4 className="text-white justify-self-end">© Samantha Mah 2024</h4>
       </div>
 
       <nav className="flex flex-col gap-6">
