@@ -20,6 +20,7 @@ const config: Config = {
       padding: {
         '53': '13.5rem',
         '17': '4.5rem',
+        'case-study': '18%',
       },
       colors: {
         'dark-bg': 'var(--dark-background)',
