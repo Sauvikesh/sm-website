@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import '../.././globals.css';
 import Navbar from '../_components/Navbar/Navbar';
-// import Footer from '../_components/Footer/Footer';
+import Footer from '../_components/Footer/Footer';
 import { fahkwang, dmSans, outfit } from '../../_fonts';
 import '../../globals.css';
 
@@ -18,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fahkwang.variable} ${dmSans.variable} ${outfit.variable} bg-light-bg text-black`}
+        className={`${fahkwang.variable} ${dmSans.variable} ${outfit.variable} bg-light-bg text-black overflow-x-hidden`}
       >
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
