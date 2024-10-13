@@ -30,7 +30,7 @@ export default function Header() {
           alt="sleepy"
           width={1000}
           height={1000}
-          className="w-[40%]"
+          className="w-[30%]"
         />
       </div>
     </RevealWrapper>
