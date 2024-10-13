@@ -107,14 +107,14 @@ export default function FinalSolution() {
     <section className="flex flex-col items-center -mx-[40%] pt-[146px] pb-[241px] bg-[#F5F5F5]">
       <RevealWrapper>
         <section>
-          <h2 className="text-center" id="Final Solution">
+          <h2 className="pb-10" id="Final Solution">
             Final Solution
           </h2>
         </section>
 
         <div className="flex w-full gap-12 relative">
-          <div className="flex flex-col items-start gap-8 sticky top-20 h-fit">
-            <div className="flex flex-col items-start gap-2">
+          <div className="flex flex-col items-center gap-8 sticky top-20 h-fit">
+            {/* <div className="flex flex-col items-start gap-2">
               {toggleButtons.map((button, index) => (
                 <ToggleButton
                   key={index}
@@ -123,7 +123,7 @@ export default function FinalSolution() {
                   isActive={button.isActive}
                 />
               ))}
-            </div>
+            </div> */}
 
             {/* {scrollButtons.map((button, index) => (
               <ScrollButton
@@ -138,8 +138,21 @@ export default function FinalSolution() {
             ))} */}
           </div>
 
-          <div className="flex flex-col w-[65%] gap-[197px]">
-            <section className="flex relative" id="About Page">
+          <div className="flex flex-col w-[70%] ml-[130px] gap-[197px]">
+            <section
+              className="flex flex-col relative items-center gap-10"
+              id="About Page"
+            >
+              <div className="flex flex-row items-start gap-2">
+                {toggleButtons.map((button, index) => (
+                  <ToggleButton
+                    key={index}
+                    label={button.label}
+                    onClick={button.onClick}
+                    isActive={button.isActive}
+                  />
+                ))}
+              </div>
               <motion.div
                 id="1"
                 onPointerOver={() => setActiveScrollButton(1)}
@@ -167,7 +180,20 @@ export default function FinalSolution() {
               ))}
             </section>
 
-            <section className="flex relative" id="Registration Page">
+            <section
+              className="flex flex-col relative items-center gap-10"
+              id="Registration Page"
+            >
+              <div className="flex flex-row items-start gap-2">
+                {toggleButtons.map((button, index) => (
+                  <ToggleButton
+                    key={index}
+                    label={button.label}
+                    onClick={button.onClick}
+                    isActive={button.isActive}
+                  />
+                ))}
+              </div>
               <motion.div
                 id="2"
                 onPointerOver={() => setActiveScrollButton(2)}
@@ -190,7 +216,20 @@ export default function FinalSolution() {
               ))}
             </section>
 
-            <section className="flex relative" id="Day-of-Event Page">
+            <section
+              className="flex flex-col items-center relative gap-10"
+              id="Day-of-Event Page"
+            >
+              <div className="flex flex-row items-start gap-2">
+                {toggleButtons.map((button, index) => (
+                  <ToggleButton
+                    key={index}
+                    label={button.label}
+                    onClick={button.onClick}
+                    isActive={button.isActive}
+                  />
+                ))}
+              </div>
               <motion.div
                 id="3"
                 onPointerOver={() => setActiveScrollButton(3)}
