@@ -43,9 +43,17 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div className={`fixed pt-20 pl-10 group z-50 -mx-[18%]`}>
-      <div className="flex flex-col w-max gap-3 p-4 absolute group-hover:opacity-0">
+    <div
+      className={`fixed mt-20 pl-10 z-50 -mx-[18%]`}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div
+        className={`flex flex-col w-max gap-3 p-4 absolute ${isHovered ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300 z-10`}
+        onMouseEnter={() => setIsHovered(true)}
+      >
         {sections.map((section, index) => (
           <div
             className={`h-[2px] w-4 bg-black transition-opacity ${currentSection === section.sectionName ? 'opacity-100' : 'opacity-25'}`}
@@ -53,10 +61,14 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
           ></div>
         ))}
       </div>
-      <div className="flex flex-col absolute invisible w-max bg-white rounded-lg shadow-lg p-4 group-hover:visible transition-opacity">
+      <div
+        className={`flex flex-col absolute w-max bg-white rounded-lg shadow-lg p-4 ${isHovered ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300 z-0`}
+      >
         {sections.map((section, index) => (
           <p
-            onClick={() => scrollToSection(section.sectionName)}
+            onClick={() =>
+              isHovered ? scrollToSection(section.sectionName) : null
+            }
             key={index}
             style={{ paddingLeft: `${(section.level + 1) * 12}px` }}
             className={`hover:bg-[#f1f1f1] p-1 pr-3 ${currentSection === section.sectionName ? 'text-[#4185F4]' : ''}`}
