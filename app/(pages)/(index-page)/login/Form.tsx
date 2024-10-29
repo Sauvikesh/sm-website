@@ -5,8 +5,11 @@ import { FormEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
+export type FormProps = {
+  callBackURL: string;
+};
 // TODO: look up how to password placeholder moves up when you start typing
-export default function Form() {
+export default function Form({ callBackURL }: FormProps) {
   const router = useRouter();
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -22,7 +25,7 @@ export default function Form() {
     if (!result?.ok) {
       setErrorMessage('Sorry, but that password is incorrect.');
     } else {
-      router.push('/paramount');
+      router.push(callBackURL);
       router.refresh();
     }
   };

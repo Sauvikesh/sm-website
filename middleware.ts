@@ -1,3 +1,3 @@
 export { default } from 'next-auth/middleware';
 
-export const config = { matcher: ['/paramount'] };
+export const config = { matcher: ['/paramountP2'] };

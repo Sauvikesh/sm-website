@@ -9,7 +9,7 @@ export default function Home() {
       desc: 'Reimagining the live television experience',
       src: '/caseStudies/paramount.png',
       alt: 'Paramount Logo',
-      linkurl: '/paramount',
+      linkurl: '/paramountP2',
     },
     {
       org: 'HackDavis 2024',
