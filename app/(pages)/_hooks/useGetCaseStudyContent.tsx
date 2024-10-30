@@ -60,16 +60,13 @@ export function useGetCaseStudyContent({
 
   const fetchImages = async (folder: string) => {
     try {
-      const response = await fetch(
-        `/api/getCaseStudyImages?folder=${folder}`,
-        {
-          method: 'GET',
-          credentials: 'include', // Ensures cookies are sent for authentication if needed
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        }
-      );
+      const response = await fetch(`/api/getCaseStudyImages?folder=${folder}`, {
+        method: 'GET',
+        credentials: 'include', // Ensures cookies are sent for authentication if needed
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
 
       if (!response.ok) {
         const errorData = await response.json();

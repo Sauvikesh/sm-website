@@ -17,12 +17,11 @@ export default function ParamountP2() {
   const data: useGetCaseStudyContentProps = {
     contentID: 4,
     tableName: 'p_project_2',
-    folder: 'errorMessaging/'
+    folder: 'errorMessaging/',
   };
 
   const [bodyData, h2Data, h3Data, h4Data, images, error] =
     useGetCaseStudyContent(data);
-    console.log(images?.at(1).url)
 
   return (
     <div>
@@ -31,7 +30,7 @@ export default function ParamountP2() {
       ) : bodyData && h2Data && h3Data && h4Data && images ? (
         <main className="bg-white text-black flex flex-col gap-20 px-case-study overflow-clip">
           <Summary body={bodyData.slice(0, 7)} h3={h3Data.slice(0, 7)} />
-          <Image src={images?.at(1).url} alt='' width={500} height={500} />
+          <Image src={images?.at(1).url} alt="" width={500} height={500} />
         </main>
       ) : (
         <p>Loading...</p>

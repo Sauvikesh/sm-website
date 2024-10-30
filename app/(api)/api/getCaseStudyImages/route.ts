@@ -42,25 +42,29 @@ export async function GET(req: Request): Promise<Response> {
 
     const { Contents } = await s3Client.send(listCommand);
 
-
     if (!Contents || Contents.length === 0) {
-        return new Response(JSON.stringify({ error: 'No images found in specified folder' }), {
-            status: 404,
-          });
+      return new Response(
+        JSON.stringify({ error: 'No images found in specified folder' }),
+        {
+          status: 404,
+        }
+      );
     }
 
     const imageUrls = await Promise.all(
-        Contents.map(async (item) => {
-          if (item.Key) {
-            const getCommand = new GetObjectCommand({
-              Bucket: process.env.STM_S3_BUCKET_NAME,
-              Key: item.Key,
-            });
-  
-            const url = await getSignedUrl(s3Client, getCommand, { expiresIn: 300 });
-            return { key: item.Key, url };
-          }
-        })
+      Contents.map(async (item) => {
+        if (item.Key) {
+          const getCommand = new GetObjectCommand({
+            Bucket: process.env.STM_S3_BUCKET_NAME,
+            Key: item.Key,
+          });
+
+          const url = await getSignedUrl(s3Client, getCommand, {
+            expiresIn: 300,
+          });
+          return { key: item.Key, url };
+        }
+      })
     );
 
     return new Response(JSON.stringify(imageUrls), { status: 200 });
