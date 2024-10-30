@@ -9,7 +9,13 @@ export type useGetCaseStudyContentProps = {
 export function useGetCaseStudyContent({
   contentID,
   tableName,
-}: useGetCaseStudyContentProps) {
+}: useGetCaseStudyContentProps): [
+  string[] | null,
+  string[] | null,
+  string[] | null,
+  string[] | null,
+  string | null,
+] {
   const [bodyData, setBodyData] = useState<string[] | null>(null);
   const [h2Data, setH2Data] = useState<string[] | null>(null);
   const [h3Data, setH3Data] = useState<string[] | null>(null);
