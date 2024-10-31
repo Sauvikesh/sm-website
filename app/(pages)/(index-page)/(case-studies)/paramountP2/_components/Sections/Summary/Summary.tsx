@@ -1,6 +1,7 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import HeadingBody from '../../../../_components/HeadingBody/HeadingBody';
 import { contentProps } from '../../../page';
+import JumpToFinalDesigns from './JumpToFinalDesigns';
 
 export default function Summary(content: contentProps) {
   // TODO: make this look nicer ??
@@ -10,9 +11,9 @@ export default function Summary(content: contentProps) {
   }));
 
   return (
-    <section className="flex flex-col pt-[42px] gap-10" id="Overview">
+    <section className="flex flex-col gap-10" id="Overview">
       <RevealWrapper>
-        <div className="flex justify-between">
+        <div className="flex flex-row justify-between">
           {pageContent
             ?.slice(0, 4)
             .map((para, index) => (
@@ -26,6 +27,10 @@ export default function Summary(content: contentProps) {
             .map((para, index) => (
               <HeadingBody h={para.h} p={para.p} key={index} />
             ))}
+        </div>
+
+        <div className="flex justify-center">
+          <JumpToFinalDesigns />
         </div>
       </RevealWrapper>
     </section>
