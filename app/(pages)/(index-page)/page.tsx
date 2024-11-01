@@ -9,6 +9,14 @@ export default function Home() {
       desc: 'Reimagining the live television experience',
       src: '/caseStudies/paramount.png',
       alt: 'Paramount Logo',
+      linkurl: '/paramountP1',
+    },
+    {
+      org: 'Paramount+',
+      purpose: 'INTERNSHIP',
+      desc: 'Guiding users towards resolution during video playback error',
+      src: '/caseStudies/paramount.png',
+      alt: 'Paramount Logo',
       linkurl: '/paramountP2',
     },
     {
