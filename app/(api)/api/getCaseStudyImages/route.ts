@@ -51,8 +51,16 @@ export async function GET(req: Request): Promise<Response> {
       );
     }
 
+    const sortedContents = Contents?.sort((a, b) => {
+      // If either date is undefined, consider it as the latest date for sorting purposes
+      const dateA = a.LastModified ? new Date(a.LastModified).getTime() : 0;
+      const dateB = b.LastModified ? new Date(b.LastModified).getTime() : 0;
+
+      return dateA - dateB; // Ascending order
+    });
+
     const imageUrls = await Promise.all(
-      Contents.map(async (item) => {
+      sortedContents.map(async (item) => {
         if (item.Key) {
           const getCommand = new GetObjectCommand({
             Bucket: process.env.STM_S3_BUCKET_NAME,
