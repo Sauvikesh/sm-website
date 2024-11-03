@@ -27,9 +27,27 @@ export function useGetCaseStudyContent({
 
   const [error, setError] = useState<string | null>(null);
 
+  const CACHE_EXPIRATION_TIME = 10 * 60 * 1000; // 10 minutes
+
   // Function to fetch data from the API
   const fetchData = async (id: number, table: string) => {
     try {
+      const cacheKey = `${id}-${table}`;
+
+      // Check local storage for cached data
+      const cachedData = localStorage.getItem(cacheKey);
+      if (cachedData) {
+        const { data, timestamp } = JSON.parse(cachedData);
+        if (Date.now() - timestamp < CACHE_EXPIRATION_TIME) {
+          // Cache is still valid
+          console.log('content hit, so get cache');
+          setBodyData(data.body);
+          setH2Data(data.h2);
+          setH3Data(data.h3);
+          setH4Data(data.h4);
+          return;
+        }
+      }
       const response = await fetch(
         `/api/getCaseStudyData?id=${id}&table=${table}`,
         {
@@ -48,6 +66,13 @@ export function useGetCaseStudyContent({
       }
 
       const result: ErrorMessageContent = await response.json();
+
+      console.log('content miss so caching data');
+      localStorage.setItem(
+        cacheKey,
+        JSON.stringify({ data: result, timestamp: Date.now() })
+      );
+
       setBodyData(result.body);
       setH2Data(result.h2);
       setH3Data(result.h3);
@@ -60,6 +85,19 @@ export function useGetCaseStudyContent({
 
   const fetchImages = async (folder: string) => {
     try {
+      const cacheKey = `images-${folder}`;
+
+      // Check local storage for cached data
+      const cachedData = localStorage.getItem(cacheKey);
+      if (cachedData) {
+        const { data, timestamp } = JSON.parse(cachedData);
+        if (Date.now() - timestamp < CACHE_EXPIRATION_TIME) {
+          // Cache is still valid
+          console.log('images hit, so get cache');
+          setImages(data);
+          return;
+        }
+      }
       const response = await fetch(`/api/getCaseStudyImages?folder=${folder}`, {
         method: 'GET',
         credentials: 'include', // Ensures cookies are sent for authentication if needed
@@ -75,6 +113,12 @@ export function useGetCaseStudyContent({
       }
 
       const result = await response.json();
+
+      console.log('images miss so caching data');
+      localStorage.setItem(
+        cacheKey,
+        JSON.stringify({ data: result, timestamp: Date.now() })
+      );
       setImages(result);
     } catch (err) {
       console.error('Error fetching images:', err);
@@ -85,6 +129,7 @@ export function useGetCaseStudyContent({
   useEffect(() => {
     fetchData(contentID, tableName);
     fetchImages(folder);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [contentID, tableName, folder]);
 
   return [bodyData, h2Data, h3Data, h4Data, images, error];
