@@ -3,7 +3,7 @@
 // TODO: put the right ID
 export default function JumpToFinalDesigns() {
   const handleScroll = () => {
-    const finalDesignsection = document.getElementById('1');
+    const finalDesignsection = document.getElementById('Final Designs');
     if (finalDesignsection) {
       finalDesignsection.scrollIntoView({ behavior: 'smooth' });
     }
