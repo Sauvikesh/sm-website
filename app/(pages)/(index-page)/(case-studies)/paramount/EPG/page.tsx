@@ -12,6 +12,7 @@ import WideImage from './_components/Sections/WideImage/WideImage';
 import DividerLine from '../../_components/DividerLine/DividerLine';
 import MarketBehavior from './_components/Sections/MarketBehavior/MarketBehavior';
 import UserResearch from './_components/Sections/UserResearch/UserResearch';
+import MentalModels from './_components/Sections/MentalModels/MentalModels';
 
 export default function ParamountP1() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -67,6 +68,12 @@ export default function ParamountP1() {
             images={images.slice(8, 13)}
           />
           <DividerLine />
+          <MentalModels
+            body={bodyData.slice(9, 13)}
+            h3={h3Data.slice(10, 14)}
+            h4={h4Data.slice(2, 8)}
+            images={images.slice(13, 19)}
+          />
 
           <OtherCaseStudies {...caseStudyInformation} />
         </main>
