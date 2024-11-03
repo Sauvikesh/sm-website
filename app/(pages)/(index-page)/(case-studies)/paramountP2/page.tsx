@@ -8,6 +8,7 @@ import CouchImage from './_components/Sections/CouchImage/CouchImage';
 import Landing from './_components/Sections/Landing/Landing';
 import DividerLine from '../_components/DividerLine/DividerLine';
 import BreakDown from './_components/Sections/Breakdown/Breakdown';
+import Iterations from './_components/Sections/Iterations/Iterations';
 
 export type contentProps = {
   body?: string[];
@@ -42,6 +43,12 @@ export default function ParamountP2() {
             h3={h3Data.slice(7, 11)}
             h4={h4Data.slice(0, 7)}
             images={images.slice(6, 13)}
+          />
+          <Iterations
+            body={bodyData.slice(11, 14)}
+            h3={h3Data.slice(11, 14)}
+            h4={h4Data.slice(7, 14)}
+            images={images.slice(13, 17)}
           />
         </main>
       ) : (
