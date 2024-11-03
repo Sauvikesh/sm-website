@@ -27,7 +27,7 @@ export function useGetCaseStudyContent({
 
   const [error, setError] = useState<string | null>(null);
 
-  const CACHE_EXPIRATION_TIME = 10 * 60 * 1000; // 10 minutes
+  const CACHE_EXPIRATION_TIME = 60 * 60 * 1000; // 60 minutes
 
   // Function to fetch data from the API
   const fetchData = async (id: number, table: string) => {

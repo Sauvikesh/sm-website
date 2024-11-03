@@ -68,7 +68,7 @@ export async function GET(req: Request): Promise<Response> {
           });
 
           const url = await getSignedUrl(s3Client, getCommand, {
-            expiresIn: 300,
+            expiresIn: 3600,
           });
           return { key: item.Key, url };
         }

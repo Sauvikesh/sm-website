@@ -1,14 +1,16 @@
+import FormattedP from '@/app/(pages)/_components/FormattedP/FormattedP';
+
 export type HeadingBodyProps = {
-  h: string;
-  p: string;
+  h: string | undefined;
+  p: string | undefined;
 };
 
 export default function HeadingBody(props: HeadingBodyProps) {
-  const { h, p } = props;
+  const { h = '', p = '' } = props;
   return (
     <div className="flex flex-col gap-2">
       <h3>{h}</h3>
-      <p>{p}</p>
+      <FormattedP text={p} />
     </div>
   );
 }

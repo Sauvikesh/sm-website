@@ -5,7 +5,7 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 const handler = NextAuth({
   session: {
     strategy: 'jwt',
-    maxAge: 10 * 60, // user will be logged in for 10 mins - Sauvikesh
+    maxAge: 60 * 60, // user will be logged in for 60 mins - Sauvikesh
   },
   pages: {
     signIn: '/login',
