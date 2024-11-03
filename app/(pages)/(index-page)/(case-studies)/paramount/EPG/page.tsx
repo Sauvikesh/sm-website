@@ -13,6 +13,8 @@ import DividerLine from '../../_components/DividerLine/DividerLine';
 import MarketBehavior from './_components/Sections/MarketBehavior/MarketBehavior';
 import UserResearch from './_components/Sections/UserResearch/UserResearch';
 import MentalModels from './_components/Sections/MentalModels/MentalModels';
+import Navigation from './_components/Sections/Navigation/Navigation';
+import Personalization from './_components/Sections/Personalization/Personalization';
 
 export default function ParamountP1() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -73,6 +75,18 @@ export default function ParamountP1() {
             h3={h3Data.slice(10, 14)}
             h4={h4Data.slice(2, 8)}
             images={images.slice(13, 19)}
+          />
+          <Navigation
+            body={bodyData.slice(13, 14)}
+            h3={h3Data.slice(14, 15)}
+            h4={h4Data.slice(8, 11)}
+            images={images.slice(19, 22)}
+          />
+          <Personalization
+            body={bodyData.slice(14, 15)}
+            h3={h3Data.slice(15, 16)}
+            h4={h4Data.slice(11, 14)}
+            images={images.slice(22, 25)}
           />
 
           <OtherCaseStudies {...caseStudyInformation} />
