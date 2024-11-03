@@ -74,7 +74,10 @@ export default function FinalDesigns(content: contentProps) {
   const allDesigns = [tvDesigns, webDesigns, mobileDesigns];
 
   return (
-    <section className="flex flex-col items-center bg-[#F0F0F0] -mx-[40%] gap-20 pt-20 pb-20">
+    <section
+      className="flex flex-col items-center bg-[#F0F0F0] -mx-[40%] gap-20 pt-20 pb-20"
+      id="Final Designs"
+    >
       <RevealWrapper>
         <div className="flex flex-col items-center gap-6">
           <h2>{content.h2?.at(0)}</h2>

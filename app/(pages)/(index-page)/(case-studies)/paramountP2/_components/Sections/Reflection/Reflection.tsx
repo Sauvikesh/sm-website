@@ -4,7 +4,7 @@ import { contentProps } from '../../../page';
 
 export default function Reflection(content: contentProps) {
   return (
-    <section className="flex flex-col gap-8">
+    <section className="flex flex-col gap-8" id="Reflection">
       <RevealWrapper>
         <div className="flex flex-col gap-4">
           <h4>{content.h4?.at(0)}</h4>

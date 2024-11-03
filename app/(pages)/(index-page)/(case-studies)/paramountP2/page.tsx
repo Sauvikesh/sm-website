@@ -15,6 +15,7 @@ import Reflection from './_components/Sections/Reflection/Reflection';
 import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../_components/OtherCaseStudies/OtherCaseStudies';
+import TableOfContents from '../_components/TableOfContents/TableOfContents';
 
 export type contentProps = {
   body?: string[];
@@ -45,6 +46,14 @@ export default function ParamountP2() {
       },
     ],
   };
+  const pageContents = [
+    { sectionName: 'Overview', level: 0 },
+    { sectionName: 'Product Breakdown', level: 0 },
+    { sectionName: 'Iterations', level: 0 },
+    { sectionName: 'Final Designs', level: 0 },
+    { sectionName: 'Results', level: 0 },
+    { sectionName: 'Reflection', level: 0 },
+  ];
 
   const data: useGetCaseStudyContentProps = {
     contentID: 5,
@@ -61,6 +70,8 @@ export default function ParamountP2() {
         <p>Error: {error}</p>
       ) : bodyData && h2Data && h3Data && h4Data && images ? (
         <main className="flex flex-col gap-20 px-case-study overflow-clip">
+          <TableOfContents sections={pageContents} />
+
           <Landing h2={h2Data.slice(0, 1)} images={images.slice(2, 6)} />
           <Summary body={bodyData.slice(0, 7)} h3={h3Data.slice(0, 7)} />
           <CouchImage images={images.slice(1, 2)} />

@@ -5,7 +5,7 @@ import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/Rev
 
 export default function Iterations(content: contentProps) {
   return (
-    <section className="flex flex-col gap-20">
+    <section className="flex flex-col gap-20" id="Iterations">
       <RevealWrapper>
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-4">

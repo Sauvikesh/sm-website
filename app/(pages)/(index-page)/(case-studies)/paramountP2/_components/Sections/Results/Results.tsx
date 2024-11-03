@@ -4,7 +4,7 @@ import { contentProps } from '../../../page';
 
 export default function Results(content: contentProps) {
   return (
-    <section className="flex flex-col gap-10">
+    <section className="flex flex-col gap-10" id="Results">
       <RevealWrapper>
         <div className="flex flex-col gap-4">
           <h4>{content.h4?.at(0)}</h4>

@@ -6,7 +6,7 @@ import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/Rev
 
 export default function BreakDown(content: contentProps) {
   return (
-    <section className="flex flex-col gap-20">
+    <section className="flex flex-col gap-20" id="Product Breakdown">
       <RevealWrapper>
         <div className="flex flex-col gap-10">
           <h3>{content.h3?.at(0)}</h3>
