@@ -10,6 +10,7 @@ import DividerLine from '../_components/DividerLine/DividerLine';
 import BreakDown from './_components/Sections/Breakdown/Breakdown';
 import Iterations from './_components/Sections/Iterations/Iterations';
 import FinalDesigns from './_components/Sections/FinalDesigns/FinalDesigns';
+import Results from './_components/Sections/Results/Results';
 
 export type contentProps = {
   body?: string[];
@@ -58,6 +59,14 @@ export default function ParamountP2() {
             h4={h4Data.slice(14, 17)}
             images={images.slice(17, 23)}
           />
+          <DividerLine />
+          <Results
+            body={bodyData.slice(20, 23)}
+            h2={h2Data.slice(1, 2)}
+            h3={h3Data.slice(16, 17)}
+            h4={h4Data.slice(17, 18)}
+          />
+          <DividerLine />
         </main>
       ) : (
         <p>Loading...</p>
