@@ -1,4 +1,4 @@
-import HeadingBody from '../../../../_components/HeadingBody/HeadingBody';
+import HeadingBody from '../../../../../_components/HeadingBody/HeadingBody';
 import { contentProps } from '../../../page';
 import Image from 'next/image';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';

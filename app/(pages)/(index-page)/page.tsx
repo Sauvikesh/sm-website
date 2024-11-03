@@ -9,7 +9,7 @@ export default function Home() {
       desc: 'Reimagining the live television experience',
       src: '/caseStudies/paramount.png',
       alt: 'Paramount Logo',
-      linkurl: '/paramountP1',
+      linkurl: '/paramount/EPG',
     },
     {
       org: 'Paramount+',
@@ -17,7 +17,7 @@ export default function Home() {
       desc: 'Guiding users towards resolution during video playback error',
       src: '/caseStudies/paramount.png',
       alt: 'Paramount Logo',
-      linkurl: '/paramountP2',
+      linkurl: '/paramount/errorMessaging',
     },
     {
       org: 'HackDavis 2024',

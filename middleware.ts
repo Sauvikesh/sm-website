@@ -1,3 +1,5 @@
 export { default } from 'next-auth/middleware';
 
-export const config = { matcher: ['/paramountP2'] };
+export const config = {
+  matcher: ['/paramount/errorMessaging', '/paramount/EPG'],
+};

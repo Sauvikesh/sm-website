@@ -2,7 +2,7 @@
 import { contentProps } from '../../../page';
 import Image from 'next/image';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
-import { ToggleButton } from '../../../../hackdavis/_components/Sections/FinalSolution/FinalSolution';
+import { ToggleButton } from '../../../../../hackdavis/_components/Sections/FinalSolution/FinalSolution';
 import { useState } from 'react';
 
 export default function FinalDesigns(content: contentProps) {

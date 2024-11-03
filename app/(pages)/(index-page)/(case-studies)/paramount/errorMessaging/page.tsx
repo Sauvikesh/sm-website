@@ -6,7 +6,7 @@ import {
 import Summary from './_components/Sections/Summary/Summary';
 import CouchImage from './_components/Sections/CouchImage/CouchImage';
 import Landing from './_components/Sections/Landing/Landing';
-import DividerLine from '../_components/DividerLine/DividerLine';
+import DividerLine from '../../_components/DividerLine/DividerLine';
 import BreakDown from './_components/Sections/Breakdown/Breakdown';
 import Iterations from './_components/Sections/Iterations/Iterations';
 import FinalDesigns from './_components/Sections/FinalDesigns/FinalDesigns';
@@ -14,8 +14,8 @@ import Results from './_components/Sections/Results/Results';
 import Reflection from './_components/Sections/Reflection/Reflection';
 import OtherCaseStudies, {
   OtherCaseStudiesProps,
-} from '../_components/OtherCaseStudies/OtherCaseStudies';
-import TableOfContents from '../_components/TableOfContents/TableOfContents';
+} from '../../_components/OtherCaseStudies/OtherCaseStudies';
+import TableOfContents from '../../_components/TableOfContents/TableOfContents';
 
 export type contentProps = {
   body?: string[];

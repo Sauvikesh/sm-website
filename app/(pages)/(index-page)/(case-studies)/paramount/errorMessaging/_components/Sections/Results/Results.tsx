@@ -1,5 +1,5 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
-import HeadingBody from '../../../../_components/HeadingBody/HeadingBody';
+import HeadingBody from '../../../../../_components/HeadingBody/HeadingBody';
 import { contentProps } from '../../../page';
 
 export default function Results(content: contentProps) {
