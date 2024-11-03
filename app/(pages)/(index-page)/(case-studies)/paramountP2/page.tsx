@@ -11,6 +11,10 @@ import BreakDown from './_components/Sections/Breakdown/Breakdown';
 import Iterations from './_components/Sections/Iterations/Iterations';
 import FinalDesigns from './_components/Sections/FinalDesigns/FinalDesigns';
 import Results from './_components/Sections/Results/Results';
+import Reflection from './_components/Sections/Reflection/Reflection';
+import OtherCaseStudies, {
+  OtherCaseStudiesProps,
+} from '../_components/OtherCaseStudies/OtherCaseStudies';
 
 export type contentProps = {
   body?: string[];
@@ -21,6 +25,27 @@ export type contentProps = {
 };
 
 export default function ParamountP2() {
+  const caseStudyInformation: OtherCaseStudiesProps = {
+    caseStudies: [
+      {
+        org: 'Paramount+',
+        purpose: 'INTERNSHIP',
+        desc: 'Reimagining the live television experience',
+        src: '/caseStudies/paramount.png',
+        alt: 'Paramount Logo',
+        linkurl: '/paramount',
+      },
+      {
+        org: 'Sage',
+        purpose: 'PASSION PROJECT',
+        desc: "Equipping individuals to navigate life's stressors",
+        src: '/caseStudies/sage.png',
+        alt: 'Sage App',
+        linkurl: '/sage',
+      },
+    ],
+  };
+
   const data: useGetCaseStudyContentProps = {
     contentID: 5,
     tableName: 'p_project_2',
@@ -62,11 +87,17 @@ export default function ParamountP2() {
           <DividerLine />
           <Results
             body={bodyData.slice(20, 23)}
-            h2={h2Data.slice(1, 2)}
             h3={h3Data.slice(16, 17)}
             h4={h4Data.slice(17, 18)}
           />
           <DividerLine />
+          <Reflection
+            body={bodyData.slice(23, 26)}
+            h3={h3Data.slice(17, 20)}
+            h4={h4Data.slice(18, 19)}
+          />
+          <DividerLine />
+          <OtherCaseStudies {...caseStudyInformation} />
         </main>
       ) : (
         <p>Loading...</p>
