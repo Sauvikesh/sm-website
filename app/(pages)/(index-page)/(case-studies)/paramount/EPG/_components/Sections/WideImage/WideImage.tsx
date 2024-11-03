@@ -7,7 +7,7 @@ export default function WideImage(content: contentProps) {
       className="flex flex-col items-center gap-10 pt-[130px] -mx-[40%]"
       style={{
         backgroundImage:
-          'radial-gradient(67.21% 51.52% at 67.71% 57.25%, #0064FF 0%, #000 73.44%);',
+          'radial-gradient(67.21% 51.52% at 67.71% 57.25%, #0064FF 0%, #000 73.44%)',
         backgroundSize: 'cover',
       }}
     >
