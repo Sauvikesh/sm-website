@@ -11,6 +11,7 @@ import Landing from './_components/Sections/Landing/Landing';
 import WideImage from './_components/Sections/WideImage/WideImage';
 import DividerLine from '../../_components/DividerLine/DividerLine';
 import MarketBehavior from './_components/Sections/MarketBehavior/MarketBehavior';
+import UserResearch from './_components/Sections/UserResearch/UserResearch';
 
 export default function ParamountP1() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -60,6 +61,12 @@ export default function ParamountP1() {
             h4={h4Data.slice(0, 2)}
             images={images.slice(6, 8)}
           />
+          <UserResearch
+            body={bodyData.slice(8, 9)}
+            h3={h3Data.slice(8, 10)}
+            images={images.slice(8, 13)}
+          />
+          <DividerLine />
 
           <OtherCaseStudies {...caseStudyInformation} />
         </main>
