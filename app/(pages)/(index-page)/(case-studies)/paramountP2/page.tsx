@@ -9,6 +9,7 @@ import Landing from './_components/Sections/Landing/Landing';
 import DividerLine from '../_components/DividerLine/DividerLine';
 import BreakDown from './_components/Sections/Breakdown/Breakdown';
 import Iterations from './_components/Sections/Iterations/Iterations';
+import FinalDesigns from './_components/Sections/FinalDesigns/FinalDesigns';
 
 export type contentProps = {
   body?: string[];
@@ -20,7 +21,7 @@ export type contentProps = {
 
 export default function ParamountP2() {
   const data: useGetCaseStudyContentProps = {
-    contentID: 4,
+    contentID: 5,
     tableName: 'p_project_2',
     folder: 'errorMessaging/',
   };
@@ -49,6 +50,13 @@ export default function ParamountP2() {
             h3={h3Data.slice(11, 14)}
             h4={h4Data.slice(7, 14)}
             images={images.slice(13, 17)}
+          />
+          <FinalDesigns
+            body={bodyData.slice(14, 20)}
+            h2={h2Data.slice(1, 2)}
+            h3={h3Data.slice(14, 16)}
+            h4={h4Data.slice(14, 17)}
+            images={images.slice(17, 23)}
           />
         </main>
       ) : (

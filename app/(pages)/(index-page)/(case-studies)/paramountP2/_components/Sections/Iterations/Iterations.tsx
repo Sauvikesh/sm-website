@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 
 export default function Iterations(content: contentProps) {
-  console.log(content.body?.at(0));
   return (
     <section className="flex flex-col gap-20">
       <RevealWrapper>

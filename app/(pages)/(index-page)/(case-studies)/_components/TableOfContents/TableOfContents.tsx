@@ -31,7 +31,7 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
     // Automatically observe all section elements inside the container
     const sections = document.querySelectorAll('section[id]');
     sections?.forEach((section) => observer.observe(section));
-    console.log(sections);
+    // console.log(sections);
 
     // Cleanup observer on unmount
     return () => {
