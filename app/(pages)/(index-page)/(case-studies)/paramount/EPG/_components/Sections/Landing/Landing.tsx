@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Landing(content: contentProps) {
   return (
     <section
-      className="flex flex-col items-center gap-10 pt-[130px] pb-5 -mx-[40%]"
+      className="flex flex-col items-center gap-10 pt-[130px] -mx-[40%]"
       style={{
         backgroundImage:
           'radial-gradient(67.21% 51.52% at 67.71% 57.25%, #0064FF 0%, #000 73.44%)',
@@ -28,14 +28,14 @@ export default function Landing(content: contentProps) {
           alt=""
           width={1000}
           height={1000}
-          className="w-[1027px] -mb-5"
+          className="w-[1027px]"
         />
         <Image
           src={content.images?.at(1)?.url}
           alt=""
           width={1000}
           height={1000}
-          className="w-[301px] absolute bottom-[-4%] right-[-10%]"
+          className="w-[301px] absolute bottom-[0%] right-[-10%]"
         />
       </div>
     </section>

@@ -8,6 +8,7 @@ import OtherCaseStudies, {
 } from '../../_components/OtherCaseStudies/OtherCaseStudies';
 import Summary from '../errorMessaging/_components/Sections/Summary/Summary';
 import Landing from './_components/Sections/Landing/Landing';
+import WideImage from './_components/Sections/WideImage/WideImage';
 
 export default function ParamountP1() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -49,6 +50,8 @@ export default function ParamountP1() {
         <main className="flex flex-col gap-20 px-case-study overflow-clip">
           <Landing h2={h2Data.slice(0, 1)} images={images.slice(1, 3)} />
           <Summary body={bodyData.slice(0, 7)} h3={h3Data.slice(0, 7)} />
+          <WideImage images={images.slice(3, 6)} />
+
           <OtherCaseStudies {...caseStudyInformation} />
         </main>
       ) : (
