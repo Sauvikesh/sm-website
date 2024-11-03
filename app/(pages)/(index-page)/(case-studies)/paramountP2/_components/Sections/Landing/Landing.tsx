@@ -22,7 +22,7 @@ export default function Landing(content: contentProps) {
         />
         <div className="flex flex-col w-[670px] items-center gap-4">
           <h2 className="text-center text-white">{content.h2?.at(0)}</h2>
-          <h4>7 min read</h4>
+          <h4 className="text-[#ECF1FC]">7 min read</h4>
         </div>
         <div className="relative w-full">
           <Image
@@ -45,6 +45,13 @@ export default function Landing(content: contentProps) {
             width={1000}
             height={1000}
             className="w-[573px] absolute bottom-0 right-[-80%]"
+          />
+          <Image
+            src={content.images?.at(3)?.url}
+            alt=""
+            width={1000}
+            height={1000}
+            className="w-[408px] absolute bottom-0 left-[-57%]"
           />
         </div>
       </RevealWrapper>
