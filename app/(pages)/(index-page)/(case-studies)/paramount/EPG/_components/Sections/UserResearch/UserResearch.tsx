@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function UserResearch(content: contentProps) {
   return (
-    <section className="flex flex-col gap-20" id="Market Behavior">
+    <section className="flex flex-col gap-20" id="User Research">
       <RevealWrapper>
         <HeadingBody h={content.h3?.at(0)} p={content.body?.at(0)} />
 

@@ -18,6 +18,7 @@ import Personalization from './_components/Sections/Personalization/Personalizat
 import Visibility from './_components/Sections/Visibility/Visibility';
 import FinalDesigns from './_components/Sections/FinalDesigns/FinalDesigns';
 import Reflection from './_components/Sections/Reflection/Reflection';
+import TableOfContents from '../../_components/TableOfContents/TableOfContents';
 
 export default function ParamountP1() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -40,6 +41,17 @@ export default function ParamountP1() {
       },
     ],
   };
+  const pageContents = [
+    { sectionName: 'Overview', level: 0 },
+    { sectionName: 'Market Behavior', level: 0 },
+    { sectionName: 'User Research', level: 0 },
+    { sectionName: 'Mental Models', level: 0 },
+    { sectionName: 'Navigation', level: 0 },
+    { sectionName: 'Personalization', level: 0 },
+    { sectionName: 'Visibility', level: 0 },
+    { sectionName: 'Final Designs', level: 0 },
+    { sectionName: 'Reflection', level: 0 },
+  ];
 
   const data: useGetCaseStudyContentProps = {
     contentID: 6,
@@ -57,6 +69,7 @@ export default function ParamountP1() {
         <p>Error: {error}</p>
       ) : bodyData && h2Data && h3Data && h4Data && images ? (
         <main className="flex flex-col gap-20 px-case-study overflow-clip">
+          <TableOfContents sections={pageContents} />
           <Landing h2={h2Data.slice(0, 1)} images={images.slice(1, 3)} />
           <Summary body={bodyData.slice(0, 7)} h3={h3Data.slice(0, 7)} />
           <WideImage images={images.slice(3, 6)} />
