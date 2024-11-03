@@ -15,6 +15,7 @@ import UserResearch from './_components/Sections/UserResearch/UserResearch';
 import MentalModels from './_components/Sections/MentalModels/MentalModels';
 import Navigation from './_components/Sections/Navigation/Navigation';
 import Personalization from './_components/Sections/Personalization/Personalization';
+import Visibility from './_components/Sections/Visibility/Visibility';
 
 export default function ParamountP1() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -87,6 +88,12 @@ export default function ParamountP1() {
             h3={h3Data.slice(15, 16)}
             h4={h4Data.slice(11, 14)}
             images={images.slice(22, 25)}
+          />
+          <Visibility
+            body={bodyData.slice(15, 17)}
+            h3={h3Data.slice(16, 17)}
+            h4={h4Data.slice(14, 19)}
+            images={images.slice(25, 28)}
           />
 
           <OtherCaseStudies {...caseStudyInformation} />
