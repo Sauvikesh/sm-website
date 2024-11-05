@@ -15,24 +15,43 @@ import OtherCaseStudies, {
 } from '../_components/OtherCaseStudies/OtherCaseStudies';
 import TableOfContents from '../_components/TableOfContents/TableOfContents';
 
-export default function HackDavis() {
+export default async function HackDavis() {
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCaseStudyImages?folder=${'landingPage/'}`,
+    {
+      method: 'GET',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch images: ${response.statusText}`);
+  }
+
+  const images = await response.json();
+
   const caseStudyInformation: OtherCaseStudiesProps = {
     caseStudies: [
       {
         org: 'Paramount+',
         purpose: 'INTERNSHIP',
         desc: 'Reimagining the live television experience',
-        src: '/caseStudies/paramount.png',
+        src: images.at(2).url,
         alt: 'Paramount Logo',
         linkurl: '/paramount',
+        gradient: '',
       },
       {
         org: 'Sage',
         purpose: 'PASSION PROJECT',
         desc: "Equipping individuals to navigate life's stressors",
-        src: '/caseStudies/sage.png',
+        src: '/caseStudies/sage.svg',
         alt: 'Sage App',
         linkurl: '/sage',
+        gradient: '',
       },
     ],
   };

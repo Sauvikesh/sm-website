@@ -26,6 +26,7 @@ export default function Sage() {
         src: '/caseStudies/paramount.png',
         alt: 'Paramount Logo',
         linkurl: '/paramount',
+        gradient: '',
       },
       {
         org: 'HackDavis 2024',
@@ -34,6 +35,7 @@ export default function Sage() {
         src: '/caseStudies/hackdavis.png',
         alt: 'HackDavis Website',
         linkurl: '/hackdavis',
+        gradient: '',
       },
     ],
   };

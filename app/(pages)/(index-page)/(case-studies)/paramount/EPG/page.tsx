@@ -31,6 +31,7 @@ export default function ParamountP1() {
         src: '/caseStudies/paramount.png',
         alt: 'Paramount Logo',
         linkurl: '/paramount',
+        gradient: '',
       },
       {
         org: 'Sage',
@@ -39,6 +40,7 @@ export default function ParamountP1() {
         src: '/caseStudies/sage.png',
         alt: 'Sage App',
         linkurl: '/sage',
+        gradient: '',
       },
     ],
   };
