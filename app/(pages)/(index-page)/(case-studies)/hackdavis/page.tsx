@@ -1,3 +1,4 @@
+'use client';
 import Landing from './_components/Sections/Landing/Landing';
 import Intro from './_components/Sections/Intro/Intro';
 import SolutionPreview from './_components/Sections/SolutionPreview/SolutionPreview';
@@ -14,24 +15,10 @@ import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../_components/OtherCaseStudies/OtherCaseStudies';
 import TableOfContents from '../_components/TableOfContents/TableOfContents';
+import { useGetImages } from '@/app/(pages)/_hooks/useGetImages';
 
-export default async function HackDavis() {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCaseStudyImages?folder=${'landingPage/'}`,
-    {
-      method: 'GET',
-      credentials: 'include',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }
-  );
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch images: ${response.statusText}`);
-  }
-
-  const images = await response.json();
+export default function HackDavis() {
+  const [images, _] = useGetImages('landingPage/');
 
   const caseStudyInformation: OtherCaseStudiesProps = {
     caseStudies: [
@@ -39,7 +26,7 @@ export default async function HackDavis() {
         org: 'Paramount+',
         purpose: 'INTERNSHIP',
         desc: 'Reimagining the live television experience',
-        src: images.at(2).url,
+        src: images?.at(2).url,
         alt: 'Paramount Logo',
         linkurl: '/paramount',
         gradient: '',

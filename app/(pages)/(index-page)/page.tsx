@@ -1,30 +1,18 @@
+'use client';
+import Loader from '../_components/Loader/Loader';
+import { useGetImages } from '../_hooks/useGetImages';
 import CaseStudy, { CaseStudyProps } from './_components/CaseStudy/CaseStudy';
 import Landing from './_components/Landing/Landing';
 
-export default async function Home() {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCaseStudyImages?folder=${'landingPage/'}`,
-    {
-      method: 'GET',
-      credentials: 'include',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }
-  );
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch images: ${response.statusText}`);
-  }
-
-  const images = await response.json();
+export default function Home() {
+  const [images, error] = useGetImages('landingPage/');
 
   const caseStudyInformation: CaseStudyProps[] = [
     {
       org: 'Paramount+',
       purpose: 'INTERNSHIP',
       desc: 'Reimagining the live television experience',
-      src: images.at(2).url,
+      src: images?.at(2).url,
       alt: 'Paramount Logo',
       linkurl: '/paramount/EPG',
       gradient:
@@ -34,7 +22,7 @@ export default async function Home() {
       org: 'Paramount+',
       purpose: 'INTERNSHIP',
       desc: 'Guiding users towards resolution during video playback error',
-      src: images.at(1).url,
+      src: images?.at(1).url,
       alt: 'Paramount Logo',
       linkurl: '/paramount/errorMessaging',
       gradient:
@@ -63,11 +51,19 @@ export default async function Home() {
   ];
 
   return (
-    <main className="flex flex-col items-center w-full pl-[15%] pr-[15%] pb-20 overflow-hidden relative font-dm-sans gap-20">
-      <Landing />
-      {caseStudyInformation.map((study, index) => (
-        <CaseStudy {...study} key={index} />
-      ))}
-    </main>
+    <div>
+      {error ? (
+        <p>Error: {error}</p>
+      ) : images ? (
+        <main className="flex flex-col items-center w-full pl-[15%] pr-[15%] pb-20 overflow-hidden relative font-dm-sans gap-20">
+          <Landing />
+          {caseStudyInformation.map((study, index) => (
+            <CaseStudy {...study} key={index} />
+          ))}
+        </main>
+      ) : (
+        <Loader />
+      )}
+    </div>
   );
 }
