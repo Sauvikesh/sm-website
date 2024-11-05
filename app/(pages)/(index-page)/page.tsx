@@ -6,7 +6,6 @@ export default async function Home() {
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCaseStudyImages?folder=${'landingPage/'}&apiKey=${process.env.API_KEY}`,
     {
       method: 'GET',
-      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
       },
