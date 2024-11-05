@@ -16,6 +16,7 @@ import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../../_components/OtherCaseStudies/OtherCaseStudies';
 import TableOfContents from '../../_components/TableOfContents/TableOfContents';
+import Loader from '@/app/(pages)/_components/Loader/Loader';
 
 export type contentProps = {
   body?: string[];
@@ -111,7 +112,7 @@ export default function ParamountP2() {
           <OtherCaseStudies {...caseStudyInformation} />
         </main>
       ) : (
-        <p>Loading...</p>
+        <Loader />
       )}
     </div>
   );

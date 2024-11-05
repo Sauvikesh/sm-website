@@ -63,6 +63,8 @@ const config: Config = {
         'slide-header-down-delayed': 'slide-header-down-delay 1s ease-in-out',
         'slide-line-down': 'slide-line-down 2s linear infinite',
         'load-rotate-full': 'load-rotate 1400ms cubic-bezier(0.4, 0, 0.2, 1)',
+        'load-rotate-full-infinite':
+          'load-rotate 1400ms cubic-bezier(0.4, 0, 0.2, 1) infinite',
         grow: 'lineGrow 2s ease-in-out infinite',
       },
     },

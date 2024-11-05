@@ -19,6 +19,7 @@ import Visibility from './_components/Sections/Visibility/Visibility';
 import FinalDesigns from './_components/Sections/FinalDesigns/FinalDesigns';
 import Reflection from './_components/Sections/Reflection/Reflection';
 import TableOfContents from '../../_components/TableOfContents/TableOfContents';
+import Loader from '@/app/(pages)/_components/Loader/Loader';
 
 export default function ParamountP1() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -128,7 +129,7 @@ export default function ParamountP1() {
           <OtherCaseStudies {...caseStudyInformation} />
         </main>
       ) : (
-        <p>Loading...</p>
+        <Loader />
       )}
     </div>
   );
