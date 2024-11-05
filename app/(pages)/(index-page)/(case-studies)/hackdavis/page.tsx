@@ -1,4 +1,3 @@
-'use client';
 import Landing from './_components/Sections/Landing/Landing';
 import Intro from './_components/Sections/Intro/Intro';
 import SolutionPreview from './_components/Sections/SolutionPreview/SolutionPreview';
@@ -15,10 +14,22 @@ import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../_components/OtherCaseStudies/OtherCaseStudies';
 import TableOfContents from '../_components/TableOfContents/TableOfContents';
-import { useGetImages } from '@/app/(pages)/_hooks/useGetImages';
 
-export default function HackDavis() {
-  const [images, _] = useGetImages('landingPage/');
+export default async function HackDavis() {
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCaseStudyImages?folder=${'landingPage/'}&apiKey=${process.env.API_KEY}`,
+    {
+      method: 'GET',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+  );
+  if (!response.ok) {
+    throw new Error(`Failed to fetch images noooo: ${response.statusText}`);
+  }
+  const images = await response.json();
 
   const caseStudyInformation: OtherCaseStudiesProps = {
     caseStudies: [

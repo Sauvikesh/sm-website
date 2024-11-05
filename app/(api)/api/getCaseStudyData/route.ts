@@ -1,5 +1,4 @@
 import { sql } from '@vercel/postgres';
-import { getServerSession } from 'next-auth';
 
 // Define a union of allowed table names for type safety
 type TableName = 'p_project_2' | 'anotherTableName';
@@ -20,20 +19,18 @@ function isValidTableName(table: string): table is TableName {
 
 // GET request handler to fetch data by id and table name
 export async function GET(req: Request): Promise<Response> {
-  const session = await getServerSession();
-
-  if (!session) {
-    return new Response(JSON.stringify({ error: 'Unauthorized' }), {
-      status: 401,
-    });
-  }
-
   try {
     // Parse query parameters
     const url = new URL(req.url);
     const id = url.searchParams.get('id');
     const table = url.searchParams.get('table');
+    const apiKey = url.searchParams.get('apiKey');
 
+    if (apiKey !== process.env.API_KEY) {
+      return new Response(JSON.stringify({ error: 'Unauthorized' }), {
+        status: 401,
+      });
+    }
     // Validate ID and table name
     if (!id) {
       return new Response(

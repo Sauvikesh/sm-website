@@ -1,8 +1,3 @@
-'use client';
-import {
-  useGetCaseStudyContent,
-  useGetCaseStudyContentProps,
-} from '@/app/(pages)/_hooks/useGetCaseStudyContent';
 import Summary from './_components/Sections/Summary/Summary';
 import CouchImage from './_components/Sections/CouchImage/CouchImage';
 import Landing from './_components/Sections/Landing/Landing';
@@ -16,7 +11,6 @@ import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../../_components/OtherCaseStudies/OtherCaseStudies';
 import TableOfContents from '../../_components/TableOfContents/TableOfContents';
-import Loader from '@/app/(pages)/_components/Loader/Loader';
 
 export type contentProps = {
   body?: string[];
@@ -26,7 +20,7 @@ export type contentProps = {
   images?: any[];
 };
 
-export default function ParamountP2() {
+export default async function ParamountP2() {
   const caseStudyInformation: OtherCaseStudiesProps = {
     caseStudies: [
       {
@@ -42,7 +36,7 @@ export default function ParamountP2() {
         org: 'Sage',
         purpose: 'PASSION PROJECT',
         desc: "Equipping individuals to navigate life's stressors",
-        src: '/caseStudies/sage.png',
+        src: '/caseStudies/sage.svg',
         alt: 'Sage App',
         linkurl: '/sage',
         gradient: '',
@@ -58,64 +52,83 @@ export default function ParamountP2() {
     { sectionName: 'Reflection', level: 0 },
   ];
 
-  const data: useGetCaseStudyContentProps = {
-    contentID: 5,
-    tableName: 'p_project_2',
-    folder: 'errorMessaging/',
-  };
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCaseStudyData?id=5&table=p_project_2&apiKey=${process.env.API_KEY}`,
+    {
+      method: 'GET',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+  );
+  if (!response.ok) {
+    throw new Error(`Failed to fetch images: ${response.statusText}`);
+  }
+  const result = await response.json();
+  const [bodyData, h2Data, h3Data, h4Data] = [
+    result.body,
+    result.h2,
+    result.h3,
+    result.h4,
+  ];
 
-  const [bodyData, h2Data, h3Data, h4Data, images, error] =
-    useGetCaseStudyContent(data);
+  const responseImages = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCaseStudyImages?folder=${'errorMessaging/'}&apiKey=${process.env.API_KEY}`,
+    {
+      method: 'GET',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+  );
+  if (!responseImages.ok) {
+    throw new Error(`Failed to fetch images noooo: ${response.statusText}`);
+  }
+  const images = await responseImages.json();
 
   return (
-    <div>
-      {error ? (
-        <p>Error: {error}</p>
-      ) : bodyData && h2Data && h3Data && h4Data && images ? (
-        <main className="flex flex-col gap-20 px-case-study overflow-clip">
-          <TableOfContents sections={pageContents} />
+    <main className="flex flex-col gap-20 px-case-study overflow-clip">
+      <TableOfContents sections={pageContents} />
 
-          <Landing h2={h2Data.slice(0, 1)} images={images.slice(2, 6)} />
-          <Summary body={bodyData.slice(0, 7)} h3={h3Data.slice(0, 7)} />
-          <CouchImage images={images.slice(1, 2)} />
-          <DividerLine />
-          <BreakDown
-            body={bodyData.slice(7, 11)}
-            h3={h3Data.slice(7, 11)}
-            h4={h4Data.slice(0, 7)}
-            images={images.slice(6, 13)}
-          />
-          <Iterations
-            body={bodyData.slice(11, 14)}
-            h3={h3Data.slice(11, 14)}
-            h4={h4Data.slice(7, 14)}
-            images={images.slice(13, 17)}
-          />
-          <FinalDesigns
-            body={bodyData.slice(14, 20)}
-            h2={h2Data.slice(1, 2)}
-            h3={h3Data.slice(14, 16)}
-            h4={h4Data.slice(14, 17)}
-            images={images.slice(17, 23)}
-          />
-          <DividerLine />
-          <Results
-            body={bodyData.slice(20, 23)}
-            h3={h3Data.slice(16, 17)}
-            h4={h4Data.slice(17, 18)}
-          />
-          <DividerLine />
-          <Reflection
-            body={bodyData.slice(23, 26)}
-            h3={h3Data.slice(17, 20)}
-            h4={h4Data.slice(18, 19)}
-          />
-          <DividerLine />
-          <OtherCaseStudies {...caseStudyInformation} />
-        </main>
-      ) : (
-        <Loader />
-      )}
-    </div>
+      <Landing h2={h2Data.slice(0, 1)} images={images.slice(2, 6)} />
+      <Summary body={bodyData.slice(0, 7)} h3={h3Data.slice(0, 7)} />
+      <CouchImage images={images.slice(1, 2)} />
+      <DividerLine />
+      <BreakDown
+        body={bodyData.slice(7, 11)}
+        h3={h3Data.slice(7, 11)}
+        h4={h4Data.slice(0, 7)}
+        images={images.slice(6, 13)}
+      />
+      <Iterations
+        body={bodyData.slice(11, 14)}
+        h3={h3Data.slice(11, 14)}
+        h4={h4Data.slice(7, 14)}
+        images={images.slice(13, 17)}
+      />
+      <FinalDesigns
+        body={bodyData.slice(14, 20)}
+        h2={h2Data.slice(1, 2)}
+        h3={h3Data.slice(14, 16)}
+        h4={h4Data.slice(14, 17)}
+        images={images.slice(17, 23)}
+      />
+      <DividerLine />
+      <Results
+        body={bodyData.slice(20, 23)}
+        h3={h3Data.slice(16, 17)}
+        h4={h4Data.slice(17, 18)}
+      />
+      <DividerLine />
+      <Reflection
+        body={bodyData.slice(23, 26)}
+        h3={h3Data.slice(17, 20)}
+        h4={h4Data.slice(18, 19)}
+      />
+      <DividerLine />
+      <OtherCaseStudies {...caseStudyInformation} />
+    </main>
   );
 }
