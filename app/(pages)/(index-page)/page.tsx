@@ -6,7 +6,6 @@ import Landing from './_components/Landing/Landing';
 
 export default function Home() {
   const [images, error] = useGetImages('landingPage/');
-  console.log(images);
 
   const caseStudyInformation: CaseStudyProps[] = [
     {
