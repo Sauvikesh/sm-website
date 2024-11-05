@@ -23,13 +23,13 @@ export async function GET(req: Request): Promise<Response> {
   const url = new URL(req.url);
   const id = url.searchParams.get('id');
   const table = url.searchParams.get('table');
-  const apiKey = url.searchParams.get('apiKey');
+  // const apiKey = url.searchParams.get('apiKey');
   try {
-    if (apiKey !== process.env.API_KEY) {
-      return new Response(JSON.stringify({ error: 'Unauthorized' }), {
-        status: 401,
-      });
-    }
+    // if (apiKey !== process.env.API_KEY) {
+    //   return new Response(JSON.stringify({ error: 'Unauthorized' }), {
+    //     status: 401,
+    //   });
+    // }
     // Validate ID and table name
     if (!id) {
       return new Response(
