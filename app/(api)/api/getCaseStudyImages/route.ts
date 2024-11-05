@@ -14,11 +14,10 @@ const s3Client = new S3Client({
 });
 
 export async function GET(req: Request): Promise<Response> {
+  const url = new URL(req.url);
+  const folder = url.searchParams.get('folder');
+  const apiKey = url.searchParams.get('apiKey');
   try {
-    const url = new URL(req.url);
-    const folder = url.searchParams.get('folder');
-    const apiKey = url.searchParams.get('apiKey');
-
     if (apiKey !== process.env.API_KEY) {
       return new Response(JSON.stringify({ error: 'Unauthorized' }), {
         status: 401,

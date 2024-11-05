@@ -19,13 +19,12 @@ function isValidTableName(table: string): table is TableName {
 
 // GET request handler to fetch data by id and table name
 export async function GET(req: Request): Promise<Response> {
+  // Parse query parameters
+  const url = new URL(req.url);
+  const id = url.searchParams.get('id');
+  const table = url.searchParams.get('table');
+  const apiKey = url.searchParams.get('apiKey');
   try {
-    // Parse query parameters
-    const url = new URL(req.url);
-    const id = url.searchParams.get('id');
-    const table = url.searchParams.get('table');
-    const apiKey = url.searchParams.get('apiKey');
-
     if (apiKey !== process.env.API_KEY) {
       return new Response(JSON.stringify({ error: 'Unauthorized' }), {
         status: 401,
