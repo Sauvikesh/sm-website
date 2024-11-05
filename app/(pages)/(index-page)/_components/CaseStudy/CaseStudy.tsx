@@ -16,19 +16,19 @@ export default function CaseStudy(props: CaseStudyProps) {
   return (
     <Link
       href={linkurl}
-      className="flex flex-col items-center pb-12 bg-[#F1F1F1] w-full rounded-3xl border-[#CCC] border"
+      className="flex flex-col px-[10%] items-center bg-[#F1F1F1] w-full rounded-3xl border-[#CCC] border"
     >
-      <div className="flex gap-2 pt-12">
-        <h4 className="font-outfit">{org}</h4>
+      <div className="flex gap-2 pt-12 pb-2">
+        <h4 className="font-outfit text-black">{org}</h4>
         <h4 className="font-outfit">{purpose}</h4>
       </div>
-      <h3 className="pt-2">{desc}</h3>
+      <h3 className="pb-20">{desc}</h3>
       <Image
         src={src}
         alt={alt}
         height={1000}
         width={1000}
-        className="w-1/2 h-auto transition duration-300 ease-in-out hover:cursor-pointer"
+        className="w-full h-auto hover:cursor-pointer"
       ></Image>
     </Link>
   );
