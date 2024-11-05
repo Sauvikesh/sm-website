@@ -61,7 +61,7 @@ export default async function ParamountP1() {
     }
   );
   if (!response.ok) {
-    throw new Error(`Failed to fetch images: ${response.statusText}`);
+    throw new Error(`Failed to fetch data in EPG: ${response.statusText}`);
   }
   const result = await response.json();
 
@@ -83,7 +83,7 @@ export default async function ParamountP1() {
     }
   );
   if (!responseImages.ok) {
-    throw new Error(`Failed to fetch images noooo: ${response.statusText}`);
+    throw new Error(`Failed to fetch images in EPG: ${response.statusText}`);
   }
   const images = await responseImages.json();
 

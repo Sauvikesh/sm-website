@@ -27,7 +27,7 @@ export default async function HackDavis() {
     }
   );
   if (!response.ok) {
-    throw new Error(`Failed to fetch images noooo: ${response.statusText}`);
+    throw new Error(`Failed to fetch images in HD: ${response.statusText}`);
   }
   const images = await response.json();
 

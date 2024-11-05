@@ -63,7 +63,7 @@ export default async function ParamountP2() {
     }
   );
   if (!response.ok) {
-    throw new Error(`Failed to fetch images: ${response.statusText}`);
+    throw new Error(`Failed to fetch data in error: ${response.statusText}`);
   }
   const result = await response.json();
   const [bodyData, h2Data, h3Data, h4Data] = [
@@ -84,7 +84,7 @@ export default async function ParamountP2() {
     }
   );
   if (!responseImages.ok) {
-    throw new Error(`Failed to fetch images noooo: ${response.statusText}`);
+    throw new Error(`Failed to fetch images in error: ${response.statusText}`);
   }
   const images = await responseImages.json();
 

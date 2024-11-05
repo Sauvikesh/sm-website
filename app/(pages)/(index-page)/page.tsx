@@ -13,7 +13,9 @@ export default async function Home() {
     }
   );
   if (!response.ok) {
-    throw new Error(`Failed to fetch images noooo: ${response.statusText}`);
+    throw new Error(
+      `Failed to fetch images in index page: ${response.statusText}`
+    );
   }
   const images = await response.json();
 
