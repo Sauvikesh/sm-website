@@ -51,7 +51,7 @@ export default async function ParamountP1() {
   ];
 
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCaseStudyData?id=6&table=p_project_2&apiKey=${process.env.API_KEY}`,
+    `${process.env.BASE_URL}/api/getCaseStudyData?id=6&table=p_project_2&apiKey=${process.env.API_KEY}`,
     {
       method: 'GET',
       credentials: 'include',
@@ -73,7 +73,7 @@ export default async function ParamountP1() {
   ];
 
   const responseImages = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCaseStudyImages?folder=${'EPG/'}&apiKey=${process.env.API_KEY}`,
+    `${process.env.BASE_URL}/api/getCaseStudyImages?folder=${'EPG/'}&apiKey=${process.env.API_KEY}`,
     {
       method: 'GET',
       credentials: 'include',

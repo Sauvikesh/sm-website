@@ -17,7 +17,7 @@ import TableOfContents from '../_components/TableOfContents/TableOfContents';
 
 export default async function HackDavis() {
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCaseStudyImages?folder=${'landingPage/'}&apiKey=${process.env.API_KEY}`,
+    `${process.env.BASE_URL}/api/getCaseStudyImages?folder=${'landingPage/'}&apiKey=${process.env.API_KEY}`,
     {
       method: 'GET',
       credentials: 'include',

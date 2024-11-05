@@ -3,7 +3,7 @@ import Landing from './_components/Landing/Landing';
 
 export default async function Home() {
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCaseStudyImages?folder=${'landingPage/'}&apiKey=${process.env.API_KEY}`,
+    `${process.env.BASE_URL}/api/getCaseStudyImages?folder=${'landingPage/'}&apiKey=${process.env.API_KEY}`,
     {
       method: 'GET',
       headers: {
