@@ -3,6 +3,7 @@ import CaseStudy, { CaseStudyProps } from './_components/CaseStudy/CaseStudy';
 import Landing from './_components/Landing/Landing';
 
 export default async function Home() {
+  console.log('HERERE', process.env.BASE_URL);
   const images = await getImageData('landingPage/');
 
   const caseStudyInformation: CaseStudyProps[] = [
