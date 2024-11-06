@@ -40,6 +40,7 @@ export default async function ParamountP1() {
       },
     ],
   };
+
   const pageContents = [
     { sectionName: 'Overview', level: 0 },
     { sectionName: 'Market Behavior', level: 0 },
@@ -51,7 +52,6 @@ export default async function ParamountP1() {
     { sectionName: 'Final Designs', level: 0 },
     { sectionName: 'Reflection', level: 0 },
   ];
-
   const [bodyData, h2Data, h3Data, h4Data] = await getContentData('6');
   const images = await getImageData('EPG/');
 
@@ -103,7 +103,7 @@ export default async function ParamountP1() {
         body={bodyData.slice(17, 21)}
         h3={h3Data.slice(17, 21)}
         h4={h4Data.slice(18, 22)}
-        images={images.slice(27, 28)}
+        images={images.slice(28, 39)}
       />
       <DividerLine />
       <Reflection
