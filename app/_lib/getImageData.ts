@@ -2,9 +2,9 @@ export default async function getImageData(folderName: string) {
   const response = await fetch(
     `${process.env.BASE_URL}/api/getCaseStudyImages?folder=${folderName}&apiKey=${process.env.API_KEY}`,
     {
-      method: 'GET',
       headers: {
-        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        method: 'GET',
       },
     }
   );

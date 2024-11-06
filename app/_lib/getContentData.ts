@@ -2,10 +2,9 @@ export default async function getContentData(id: string) {
   const response = await fetch(
     `${process.env.BASE_URL}/api/getCaseStudyData?id=${id}&table=p_project_2&apiKey=${process.env.API_KEY}`,
     {
-      method: 'GET',
-      credentials: 'include',
       headers: {
-        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        method: 'GET',
       },
     }
   );
