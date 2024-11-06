@@ -14,6 +14,8 @@ import Visibility from './_components/Sections/Visibility/Visibility';
 import FinalDesigns from './_components/Sections/FinalDesigns/FinalDesigns';
 import Reflection from './_components/Sections/Reflection/Reflection';
 import TableOfContents from '../../_components/TableOfContents/TableOfContents';
+import getImageData from '@/app/_lib/getImageData';
+import getContentData from '@/app/_lib/getContentData';
 
 export default async function ParamountP1() {
   const caseStudyInformation: OtherCaseStudiesProps = {
@@ -50,42 +52,8 @@ export default async function ParamountP1() {
     { sectionName: 'Reflection', level: 0 },
   ];
 
-  const response = await fetch(
-    `${process.env.BASE_URL}/api/getCaseStudyData?id=6&table=p_project_2&apiKey=${process.env.API_KEY}`,
-    {
-      method: 'GET',
-      credentials: 'include',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }
-  );
-  if (!response.ok) {
-    throw new Error(`Failed to fetch data in EPG: ${response.statusText}`);
-  }
-  const result = await response.json();
-
-  const [bodyData, h2Data, h3Data, h4Data] = [
-    result.body,
-    result.h2,
-    result.h3,
-    result.h4,
-  ];
-
-  const responseImages = await fetch(
-    `${process.env.BASE_URL}/api/getCaseStudyImages?folder=${'EPG/'}&apiKey=${process.env.API_KEY}`,
-    {
-      method: 'GET',
-      credentials: 'include',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }
-  );
-  if (!responseImages.ok) {
-    throw new Error(`Failed to fetch images in EPG: ${response.statusText}`);
-  }
-  const images = await responseImages.json();
+  const [bodyData, h2Data, h3Data, h4Data] = await getContentData('6');
+  const images = await getImageData('EPG/');
 
   return (
     <main className="flex flex-col gap-20 px-case-study overflow-clip">

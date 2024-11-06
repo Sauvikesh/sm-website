@@ -1,22 +1,9 @@
+import getImageData from '@/app/_lib/getImageData';
 import CaseStudy, { CaseStudyProps } from './_components/CaseStudy/CaseStudy';
 import Landing from './_components/Landing/Landing';
 
 export default async function Home() {
-  const response = await fetch(
-    `${process.env.BASE_URL}/api/getCaseStudyImages?folder=${'landingPage/'}&apiKey=${process.env.API_KEY}`,
-    {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }
-  );
-  if (!response.ok) {
-    throw new Error(
-      `Failed to fetch images in index page: ${response.statusText}`
-    );
-  }
-  const images = await response.json();
+  const images = await getImageData('landingPage/');
 
   const caseStudyInformation: CaseStudyProps[] = [
     {

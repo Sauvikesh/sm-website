@@ -14,22 +14,10 @@ import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../_components/OtherCaseStudies/OtherCaseStudies';
 import TableOfContents from '../_components/TableOfContents/TableOfContents';
+import getImageData from '@/app/_lib/getImageData';
 
 export default async function HackDavis() {
-  const response = await fetch(
-    `${process.env.BASE_URL}/api/getCaseStudyImages?folder=${'landingPage/'}&apiKey=${process.env.API_KEY}`,
-    {
-      method: 'GET',
-      credentials: 'include',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }
-  );
-  if (!response.ok) {
-    throw new Error(`Failed to fetch images in HD: ${response.statusText}`);
-  }
-  const images = await response.json();
+  const images = await getImageData('landingPage/');
 
   const caseStudyInformation: OtherCaseStudiesProps = {
     caseStudies: [

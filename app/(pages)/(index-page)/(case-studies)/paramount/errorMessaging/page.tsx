@@ -11,6 +11,8 @@ import OtherCaseStudies, {
   OtherCaseStudiesProps,
 } from '../../_components/OtherCaseStudies/OtherCaseStudies';
 import TableOfContents from '../../_components/TableOfContents/TableOfContents';
+import getImageData from '@/app/_lib/getImageData';
+import getContentData from '@/app/_lib/getContentData';
 
 export type contentProps = {
   body?: string[];
@@ -52,41 +54,8 @@ export default async function ParamountP2() {
     { sectionName: 'Reflection', level: 0 },
   ];
 
-  const response = await fetch(
-    `${process.env.BASE_URL}/api/getCaseStudyData?id=5&table=p_project_2&apiKey=${process.env.API_KEY}`,
-    {
-      method: 'GET',
-      credentials: 'include',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }
-  );
-  if (!response.ok) {
-    throw new Error(`Failed to fetch data in error: ${response.statusText}`);
-  }
-  const result = await response.json();
-  const [bodyData, h2Data, h3Data, h4Data] = [
-    result.body,
-    result.h2,
-    result.h3,
-    result.h4,
-  ];
-
-  const responseImages = await fetch(
-    `${process.env.BASE_URL}/api/getCaseStudyImages?folder=${'errorMessaging/'}&apiKey=${process.env.API_KEY}`,
-    {
-      method: 'GET',
-      credentials: 'include',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }
-  );
-  if (!responseImages.ok) {
-    throw new Error(`Failed to fetch images in error: ${response.statusText}`);
-  }
-  const images = await responseImages.json();
+  const [bodyData, h2Data, h3Data, h4Data] = await getContentData('5');
+  const images = await getImageData('errorMessaging/');
 
   return (
     <main className="flex flex-col gap-20 px-case-study overflow-clip">
