@@ -11,7 +11,7 @@ export default async function Home() {
       org: 'Paramount+',
       purpose: 'INTERNSHIP',
       desc: 'Reimagining the live television experience',
-      src: images.at(2).url,
+      src: images?.at(2)?.url || '',
       alt: 'Paramount Logo',
       linkurl: '/paramount/EPG',
       gradient:
@@ -21,7 +21,7 @@ export default async function Home() {
       org: 'Paramount+',
       purpose: 'INTERNSHIP',
       desc: 'Guiding users towards resolution during video playback error',
-      src: images.at(1).url,
+      src: images?.at(1)?.url || '',
       alt: 'Paramount Logo',
       linkurl: '/paramount/errorMessaging',
       gradient:
