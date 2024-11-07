@@ -86,16 +86,18 @@ function LoadingParallaxImage(props: ParallaxImageProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <Parallax speed={speed}>
+    <>
       {isLoading && <Loader />}
-      <Image
-        src={src}
-        alt={alt}
-        width={1000}
-        height={1000}
-        className="w-[30vw]"
-        onLoadingComplete={() => setIsLoading(false)}
-      ></Image>
-    </Parallax>
+      <Parallax speed={speed}>
+        <Image
+          src={src}
+          alt={alt}
+          width={1000}
+          height={1000}
+          className="w-[30vw]"
+          onLoadingComplete={() => setIsLoading(false)}
+        ></Image>
+      </Parallax>
+    </>
   );
 }
