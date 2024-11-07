@@ -1,5 +1,5 @@
 import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
-import LoadingImage from './LoadingImage';
+import LoadingImage from '@/app/(pages)/_components/LoadingImage/LoadingImage';
 
 export default function Landing() {
   return (
@@ -13,39 +13,18 @@ export default function Landing() {
         height={1000}
         alt="hackdavis image"
         className="w-[40px] pt-[230px]"
-        addPriority={true}
       />
       <h2 className="pt-10 text-center">
         Empowering students to<br></br> create for social good
       </h2>
       <p className="pb-10 pt-4 text-[18px] font-medium">7 min read</p>
-      {/* <div className="flex w-full items-center justify-center">
-        <ImageWithModal
-          src="/hackdavis/hero/Mobile.png"
-          width={1000}
-          height={1000}
-          alt="mobile phone"
-          className="translate-x-11 z-10 w-[178px]"
-          addPriority={true}
-        />
-        <ImageWithModal
-          src="/hackdavis/hero/Tablet.png"
-          width={1000}
-          height={1000}
-          alt="tablet"
-          className="translate-x-7 -translate-y-2 z-10 w-[391px]"
-          addPriority={true}
-        />
-        <ImageWithModal
-          src="/hackdavis/hero/Laptop.png"
-          width={1000}
-          height={1000}
-          alt="laptop"
-          className="-translate-x-10 -translate-y-11 z-0 w-[620px]"
-          addPriority={true}
-        />
-      </div> */}
-      <LoadingImage />
+      <LoadingImage
+        src="/caseStudies/hackdavis.svg"
+        width={1000}
+        height={1000}
+        alt="hackdavis image"
+        className="w-[1120px]"
+      />
     </section>
   );
 }

@@ -1,14 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { ImageProps } from 'next/image';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
-type ImageWithModalProps = {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-  className?: string;
-  addPriority?: boolean;
+type ImageWithModalProps = ImageProps & {
   onLoadingComplete?: () => void;
 };
 
@@ -18,7 +14,6 @@ export const ImageWithModal = ({
   width,
   height,
   className,
-  addPriority,
   onLoadingComplete,
 }: ImageWithModalProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -40,7 +35,6 @@ export const ImageWithModal = ({
         height={height}
         className={`cursor-zoom-in ${className}`} // Change cursor to indicate it's clickable
         onClick={openModal}
-        priority={addPriority}
         onLoadingComplete={onLoadingComplete}
       />
       {isModalOpen && <ImageModal src={src} alt={alt} onClose={closeModal} />}
@@ -49,7 +43,7 @@ export const ImageWithModal = ({
 };
 
 type ImageModalProps = {
-  src: string;
+  src: string | StaticImport;
   alt: string;
   onClose: () => void;
 };

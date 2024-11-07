@@ -2,20 +2,19 @@
 import { useState } from 'react';
 import Loader from '@/app/(pages)/_components/Loader/Loader';
 import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
+import { ImageProps } from 'next/image';
 
-export default function LoadingImage() {
+type ImageWithStateProps = ImageProps;
+
+export default function LoadingImage(props: ImageWithStateProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
     <>
       {isLoading && <Loader />}
       <ImageWithModal
-        src="/caseStudies/hackdavis.svg"
-        width={1000}
-        height={1000}
-        alt="hackdavis image"
-        className="w-[1120px]"
-        addPriority={true}
+        {...props}
+        alt=""
         onLoadingComplete={() => setIsLoading(false)}
       />
     </>

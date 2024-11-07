@@ -2,8 +2,13 @@
 import { Providers } from '@/app/_providers';
 import { Parallax } from 'react-scroll-parallax';
 import Image from 'next/image';
-import { useState } from 'react';
-import Loader from '@/app/(pages)/_components/Loader/Loader';
+import LoadingImage from '@/app/(pages)/_components/LoadingImage/LoadingImage';
+
+type ParallaxImageProps = {
+  speed: number;
+  src: string;
+  alt: string;
+};
 
 export default function Landing() {
   const parallaxImages: ParallaxImageProps[] = [
@@ -35,69 +40,32 @@ export default function Landing() {
           {parallaxImages.map((image, index) => {
             if (index === 0) {
               return (
-                <LoadingParallaxImage
-                  key={index}
-                  speed={image.speed}
-                  src={image.src}
-                  alt={image.alt}
-                />
+                <Parallax speed={image.speed} key={index}>
+                  <LoadingImage
+                    src={image.src}
+                    alt={image.alt}
+                    width={1000}
+                    height={1000}
+                    className="w-[30vw]"
+                  ></LoadingImage>
+                </Parallax>
               );
             } else {
               return (
-                <ParallaxImage
-                  key={index}
-                  speed={image.speed}
-                  src={image.src}
-                  alt={image.alt}
-                />
+                <Parallax speed={image.speed} key={index}>
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={1000}
+                    height={1000}
+                    className="w-[30vw]"
+                  ></Image>
+                </Parallax>
               );
             }
           })}
         </div>
       </header>
     </Providers>
-  );
-}
-
-type ParallaxImageProps = {
-  speed: number;
-  src: string;
-  alt: string;
-};
-
-function ParallaxImage(props: ParallaxImageProps) {
-  const { speed, src, alt } = props;
-
-  return (
-    <Parallax speed={speed}>
-      <Image
-        src={src}
-        alt={alt}
-        width={1000}
-        height={1000}
-        className="w-[30vw]"
-      ></Image>
-    </Parallax>
-  );
-}
-
-function LoadingParallaxImage(props: ParallaxImageProps) {
-  const { speed, src, alt } = props;
-  const [isLoading, setIsLoading] = useState(true);
-
-  return (
-    <>
-      {isLoading && <Loader />}
-      <Parallax speed={speed}>
-        <Image
-          src={src}
-          alt={alt}
-          width={1000}
-          height={1000}
-          className="w-[30vw]"
-          onLoadingComplete={() => setIsLoading(false)}
-        ></Image>
-      </Parallax>
-    </>
   );
 }
