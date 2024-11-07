@@ -1,3 +1,4 @@
+import LoadingImage from '@/app/(pages)/_components/LoadingImage/LoadingImage';
 import { contentProps } from '../../../page';
 import Image from 'next/image';
 
@@ -23,7 +24,7 @@ export default function Landing(content: contentProps) {
         <h4 className="text-[#ECF1FC]">7 min read</h4>
       </div>
       <div className="relative">
-        <Image
+        <LoadingImage
           src={content.images?.at(0)?.url}
           alt=""
           width={1000}

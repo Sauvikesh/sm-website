@@ -15,6 +15,7 @@ export default function LoadingImage(props: ImageWithStateProps) {
       <ImageWithModal
         {...props}
         alt=""
+        loading="eager"
         onLoadingComplete={() => setIsLoading(false)}
       />
     </>

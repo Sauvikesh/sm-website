@@ -14,6 +14,7 @@ export const ImageWithModal = ({
   width,
   height,
   className,
+  loading,
   onLoadingComplete,
 }: ImageWithModalProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -33,6 +34,7 @@ export const ImageWithModal = ({
         alt={alt}
         width={width}
         height={height}
+        loading={loading}
         className={`cursor-zoom-in ${className}`} // Change cursor to indicate it's clickable
         onClick={openModal}
         onLoadingComplete={onLoadingComplete}
@@ -69,6 +71,7 @@ const ImageModal = ({ src, alt, onClose }: ImageModalProps) => {
           alt={alt}
           width={1000}
           height={1000}
+          loading="eager"
           className="object-contain w-[100vw] pt-20 pb-20 cursor-zoom-out" // Adjust the size of the image inside the modal
         />
       </div>
