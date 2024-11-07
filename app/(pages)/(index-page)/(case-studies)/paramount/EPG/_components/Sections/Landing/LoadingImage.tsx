@@ -9,10 +9,7 @@ export default function LoadingImage(content: contentProps) {
 
   return (
     <div className="relative">
-      {isLoading && (
-        // Render a loader component while the image is loading
-        <Loader />
-      )}
+      {isLoading && <Loader />}
       <Image
         src={content.images?.at(0)?.url}
         alt=""

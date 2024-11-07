@@ -1,6 +1,7 @@
 import getImageData from '@/app/_lib/getImageData';
 import CaseStudy, { CaseStudyProps } from './_components/CaseStudy/CaseStudy';
 import Landing from './_components/Landing/Landing';
+import LoadingCaseStudy from './_components/CaseStudy/LoadingCase';
 
 export default async function Home() {
   const images = await getImageData('landingPage/');
@@ -43,9 +44,13 @@ export default async function Home() {
   return (
     <main className="flex flex-col px-[15%] pb-20 overflow-clip relative font-dm-sans gap-20">
       <Landing />
-      {caseStudyInformation.map((study, index) => (
-        <CaseStudy {...study} key={index} />
-      ))}
+      {caseStudyInformation.map((study, index) => {
+        if (index === 0) {
+          return <LoadingCaseStudy {...study} key={index} />;
+        } else {
+          return <CaseStudy {...study} key={index} />;
+        }
+      })}
     </main>
   );
 }

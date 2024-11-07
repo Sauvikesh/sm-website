@@ -1,4 +1,5 @@
 import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
+import LoadingImage from './LoadingImage';
 
 export default function Landing() {
   return (
@@ -44,14 +45,7 @@ export default function Landing() {
           addPriority={true}
         />
       </div> */}
-      <ImageWithModal
-        src="/caseStudies/hackdavis.svg"
-        width={1000}
-        height={1000}
-        alt="hackdavis image"
-        className="w-[1120px]"
-        addPriority={true}
-      />
+      <LoadingImage />
     </section>
   );
 }
