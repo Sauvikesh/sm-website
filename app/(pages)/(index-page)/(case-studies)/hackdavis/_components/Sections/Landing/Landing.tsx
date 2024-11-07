@@ -3,14 +3,22 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 export default function Landing() {
   return (
     <section
-      className="bg-[#123041] h-[75vh] text-white flex flex-col justify-center items-center -mx-[40%] pt-12"
+      className="bg-[#112636] h-[100vh] overflow-clip text-white flex flex-col justify-center items-center -mx-[40%]"
       id="Overview"
     >
-      <h1 className="text-[80px] font-f-w font-medium lead-[44px] pt-9">
-        HackDavis 2024
-      </h1>
-      <p className="pb-14 text-[18px] font-medium">7 min read</p>
-      <div className="flex w-full items-center justify-center">
+      <ImageWithModal
+        src="/hackdavis/logo.svg"
+        width={1000}
+        height={1000}
+        alt="hackdavis image"
+        className="w-[40px] pt-[230px]"
+        addPriority={true}
+      />
+      <h2 className="pt-10 text-center">
+        Empowering students to<br></br> create for social good
+      </h2>
+      <p className="pb-10 pt-4 text-[18px] font-medium">7 min read</p>
+      {/* <div className="flex w-full items-center justify-center">
         <ImageWithModal
           src="/hackdavis/hero/Mobile.png"
           width={1000}
@@ -35,7 +43,15 @@ export default function Landing() {
           className="-translate-x-10 -translate-y-11 z-0 w-[620px]"
           addPriority={true}
         />
-      </div>
+      </div> */}
+      <ImageWithModal
+        src="/caseStudies/hackdavis.svg"
+        width={1000}
+        height={1000}
+        alt="hackdavis image"
+        className="w-[1120px]"
+        addPriority={true}
+      />
     </section>
   );
 }
