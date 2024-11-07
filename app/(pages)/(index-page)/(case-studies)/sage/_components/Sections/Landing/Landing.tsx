@@ -2,6 +2,8 @@
 import { Providers } from '@/app/_providers';
 import { Parallax } from 'react-scroll-parallax';
 import Image from 'next/image';
+import { useState } from 'react';
+import Loader from '@/app/(pages)/_components/Loader/Loader';
 
 export default function Landing() {
   const parallaxImages: ParallaxImageProps[] = [
@@ -30,14 +32,27 @@ export default function Landing() {
         </h1>
         <p className="text-base">7 min read</p>
         <div className="flex justify-around pt-20">
-          {parallaxImages.map((image, index) => (
-            <ParallaxImage
-              key={index}
-              speed={image.speed}
-              src={image.src}
-              alt={image.alt}
-            />
-          ))}
+          {parallaxImages.map((image, index) => {
+            if (index === 0) {
+              return (
+                <LoadingParallaxImage
+                  key={index}
+                  speed={image.speed}
+                  src={image.src}
+                  alt={image.alt}
+                />
+              );
+            } else {
+              return (
+                <ParallaxImage
+                  key={index}
+                  speed={image.speed}
+                  src={image.src}
+                  alt={image.alt}
+                />
+              );
+            }
+          })}
         </div>
       </header>
     </Providers>
@@ -61,6 +76,25 @@ function ParallaxImage(props: ParallaxImageProps) {
         width={1000}
         height={1000}
         className="w-[30vw]"
+      ></Image>
+    </Parallax>
+  );
+}
+
+function LoadingParallaxImage(props: ParallaxImageProps) {
+  const { speed, src, alt } = props;
+  const [isLoading, setIsLoading] = useState(true);
+
+  return (
+    <Parallax speed={speed}>
+      {isLoading && <Loader />}
+      <Image
+        src={src}
+        alt={alt}
+        width={1000}
+        height={1000}
+        className="w-[30vw]"
+        onLoadingComplete={() => setIsLoading(false)}
       ></Image>
     </Parallax>
   );
