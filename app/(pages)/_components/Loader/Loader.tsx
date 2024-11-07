@@ -14,7 +14,7 @@ export default function Loader() {
     };
   }, []);
   return (
-    <div className="flex top-0 z-50 items-center justify-center w-[100vw] h-[100vh] mb-20">
+    <div className="flex fixed left-0 top-0 z-50 items-center justify-center w-[100vw] h-[100vh]  bg-white">
       <Image
         src="/loadingStar.svg"
         alt="loading star"

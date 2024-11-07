@@ -1,5 +1,6 @@
 import { contentProps } from '../../../../errorMessaging/page';
 import Image from 'next/image';
+import LoadingImage from './LoadingImage';
 
 export default function Landing(content: contentProps) {
   return (
@@ -22,22 +23,8 @@ export default function Landing(content: contentProps) {
         <h2 className="text-center text-white">{content.h2?.at(0)}</h2>
         <h4 className="text-[#ECF1FC]">7 min read</h4>
       </div>
-      <div className="relative">
-        <Image
-          src={content.images?.at(0)?.url}
-          alt=""
-          width={1000}
-          height={1000}
-          className="w-[1027px]"
-        />
-        <Image
-          src={content.images?.at(1)?.url}
-          alt=""
-          width={1000}
-          height={1000}
-          className="w-[301px] absolute bottom-[0%] right-[-10%]"
-        />
-      </div>
+
+      <LoadingImage images={content.images} />
     </section>
   );
 }
