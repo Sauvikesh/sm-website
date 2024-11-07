@@ -41,7 +41,7 @@ export default async function Home() {
   ];
 
   return (
-    <main className="flex flex-col items-center w-full pl-[15%] pr-[15%] pb-20 overflow-hidden relative font-dm-sans gap-20">
+    <main className="flex flex-col px-[15%] pb-20 overflow-clip relative font-dm-sans gap-20">
       <Landing />
       {caseStudyInformation.map((study, index) => (
         <CaseStudy {...study} key={index} />

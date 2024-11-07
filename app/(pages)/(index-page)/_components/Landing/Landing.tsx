@@ -45,7 +45,7 @@ export default function Landing() {
   // ];
 
   return (
-    <section className="h-[100vh] pt-[268px] pl-[8%] pr-[8%]">
+    <section className="flex flex-col items-center justify-center h-[100vh] -mx-[40%] bg-[#F7F7F8]">
       {floatingImages.map((image, index) => (
         <Image
           src={image.src}
@@ -57,9 +57,9 @@ export default function Landing() {
         />
       ))}
 
-      <div className="flex flex-col gap-4">
-        <div className="flex relative">
-          <h1 className="text-[96px] font-bold animate-slide-header-down w-full text-nowrap tracking-[1.92px]">
+      <div className="flex flex-col gap-4 w-[768px]">
+        <div className="flex relative animate-slide-header-down">
+          <h1 className="text-[96px] font-bold w-full text-nowrap tracking-[1.92px]">
             Hi, I'm Sam!
           </h1>
           <Image
@@ -67,11 +67,11 @@ export default function Landing() {
             width={1000}
             height={1000}
             alt="matcha"
-            className="w-[150px] h-auto absolute right-[9%] top-[-35%]"
+            className="w-[190px] h-auto -mt-16"
           />
         </div>
 
-        <h2 className="text-[25px] font-normal leading-normal tracking-[0.5px] animate-slide-header-down-delayed">
+        <h2 className="text-2xl font-normal leading-normal tracking-[0.48px] animate-slide-header-down-delayed">
           I design with empathy, find joy in creative problem solving, seek to
           understand the intricacies of human beings, and fuel with matcha
         </h2>

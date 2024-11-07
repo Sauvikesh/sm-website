@@ -15,7 +15,11 @@ export default function Navbar() {
   const bgAboutText = pathname === '/about' ? bgColor : '';
 
   const bgWorkText =
-    pathname === '/' || pathname === '/hackdavis' || pathname === '/sage' || pathname === '/paramount/EPG' || pathname === '/paramount/errorMessaging'
+    pathname === '/' ||
+    pathname === '/hackdavis' ||
+    pathname === '/sage' ||
+    pathname === '/paramount/EPG' ||
+    pathname === '/paramount/errorMessaging'
       ? bgColor
       : '';
 
