@@ -5,7 +5,7 @@ import { ImageProps } from 'next/image';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 type ImageWithModalProps = ImageProps & {
-  onLoadingComplete?: () => void;
+  onLoad?: () => void;
 };
 
 export const ImageWithModal = ({
@@ -15,7 +15,7 @@ export const ImageWithModal = ({
   height,
   className,
   loading,
-  onLoadingComplete,
+  onLoad,
 }: ImageWithModalProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -37,7 +37,7 @@ export const ImageWithModal = ({
         loading={loading}
         className={`cursor-zoom-in ${className}`} // Change cursor to indicate it's clickable
         onClick={openModal}
-        onLoadingComplete={onLoadingComplete}
+        onLoad={onLoad}
       />
       {isModalOpen && <ImageModal src={src} alt={alt} onClose={closeModal} />}
     </>

@@ -16,7 +16,7 @@ export default function LoadingImage(props: ImageWithStateProps) {
         {...props}
         alt=""
         loading="eager"
-        onLoadingComplete={() => setIsLoading(false)}
+        onLoad={() => setIsLoading(false)}
       />
     </>
   );
