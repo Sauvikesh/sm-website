@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        perimeter: '0px 2px 40px 0px rgba(0, 0, 0, 0.25)',
+      },
       fontFamily: {
         'dm-sans': ['var(--font-dmSans)', 'sans-serif'],
         'f-w': ['var(--font-fw)', 'sans-serif'],

@@ -27,7 +27,6 @@ export default async function ParamountP1() {
         src: '/caseStudies/paramount.png',
         alt: 'Paramount Logo',
         linkurl: '/paramount',
-        gradient: '',
       },
       {
         org: 'Sage',
@@ -36,7 +35,6 @@ export default async function ParamountP1() {
         src: '/caseStudies/sage.svg',
         alt: 'Sage App',
         linkurl: '/sage',
-        gradient: '',
       },
     ],
   };

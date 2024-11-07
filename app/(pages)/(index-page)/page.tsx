@@ -13,8 +13,6 @@ export default async function Home() {
       src: images?.at(2)?.url || '',
       alt: 'Paramount Logo',
       linkurl: '/paramount/EPG',
-      gradient:
-        'radial-gradient(50% 50% at 50% 50%, #2F6AF2 0%, rgba(47, 106, 242, 0.00) 100%)',
     },
     {
       org: 'Paramount+',
@@ -23,8 +21,6 @@ export default async function Home() {
       src: images?.at(1)?.url || '',
       alt: 'Paramount Logo',
       linkurl: '/paramount/errorMessaging',
-      gradient:
-        'radial-gradient(50% 50% at 50% 50%, #2F6AF2 0%, rgba(47, 106, 242, 0.00) 100%)',
     },
     {
       org: 'HackDavis 2024',
@@ -33,8 +29,6 @@ export default async function Home() {
       src: '/caseStudies/hackdavis.svg',
       alt: 'HackDavis Website',
       linkurl: '/hackdavis',
-      gradient:
-        'radial-gradient(50% 50% at 50% 50%, #9EE7DD 0%, rgba(158, 231, 221, 0.00) 100%)',
     },
     {
       org: 'Sage',
@@ -43,8 +37,6 @@ export default async function Home() {
       src: '/caseStudies/sage.svg',
       alt: 'Sage App',
       linkurl: '/sage',
-      gradient:
-        'radial-gradient(50% 50% at 50% 50%, #9EE7DD 0%, rgba(158, 231, 221, 0.00) 100%)',
     },
   ];
 
