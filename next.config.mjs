@@ -6,7 +6,6 @@ const nextConfig = {
       'stm-website-private-image-storage.s3.us-east-2.amazonaws.com',
       'd1ejtjbpinwbmz.cloudfront.net',
     ],
-    unoptimized: true,
   },
 };
 
