@@ -45,7 +45,7 @@ export default function Landing() {
   // ];
 
   return (
-    <section className="flex flex-col items-center justify-center h-[100vh] -mx-[40%] bg-[#F7F7F8]">
+    <section className="flex flex-col gap-4 items-center justify-center h-[100vh] -mx-[40%] bg-[#F7F7F8]">
       {floatingImages.map((image, index) => (
         <Image
           src={image.src}
@@ -76,6 +76,14 @@ export default function Landing() {
           understand the intricacies of human beings, and fuel with matcha
         </h2>
       </div>
+
+      <Image
+        src="/landing/downArrowSticker.svg"
+        width={1000}
+        height={1000}
+        alt="down arrow"
+        className="w-20 pt-20 animate-hover-up-down"
+      />
 
       {/* <div className="flex justify-between pt-16 relative">
         {statuses.map((status, index) => (

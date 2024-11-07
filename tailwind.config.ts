@@ -60,6 +60,17 @@ const config: Config = {
             transform: 'translateY(200px)',
           },
         },
+        hoverUpDown: {
+          '0%': {
+            transform: 'translateY(0px)',
+          },
+          '50%': {
+            transform: 'translateY(20px)',
+          },
+          '100%': {
+            transform: 'translateY(0px)',
+          },
+        },
       },
       animation: {
         'slide-header-down': 'slide-header-down 0.5s ease-in',
@@ -69,6 +80,7 @@ const config: Config = {
         'load-rotate-full-infinite':
           'load-rotate 1400ms cubic-bezier(0.4, 0, 0.2, 1) infinite',
         grow: 'lineGrow 2s ease-in-out infinite',
+        'hover-up-down': 'hoverUpDown 2s ease-in-out infinite',
       },
     },
   },
