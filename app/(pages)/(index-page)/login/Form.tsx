@@ -7,33 +7,33 @@ import Image from 'next/image';
 
 export type FormProps = {
   callBackURL: string;
-  password? : string;
+  password?: string;
 };
 // TODO: look up how to password placeholder moves up when you start typing
 export default function Form({ callBackURL, password }: FormProps) {
   const router = useRouter();
   const [errorMessage, setErrorMessage] = useState('');
 
-
   useEffect(() => {
-      const checkPassword = async () => {
-        if(password) {
-          const result = await signIn('credentials', {
-            password: password,
-            redirect: false,
-          });
-      
-          if (!result?.ok) {
-            setErrorMessage('Sorry, but that url is incorrect.');
-          } else {
-            router.push('/');
-            router.refresh();
-          }
+    const checkPassword = async () => {
+      if (password) {
+        const result = await signIn('credentials', {
+          password: password,
+          redirect: false,
+        });
+
+        if (!result?.ok) {
+          setErrorMessage('Sorry, but that url is incorrect.');
+        } else {
+          router.push('/');
+          router.refresh();
         }
-      } 
-      checkPassword();
+      }
+    };
+    checkPassword();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);

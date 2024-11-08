@@ -12,7 +12,7 @@ export default async function LoginPage({
     ? searchParams.callbackUrl[0]
     : searchParams?.callbackUrl || '/';
 
-    const password = Array.isArray(searchParams?.password)
+  const password = Array.isArray(searchParams?.password)
     ? searchParams.password[0]
     : searchParams?.password || '';
 
