@@ -25,12 +25,21 @@ export function useDisplayNav() {
       setLastScrollY(currentScrollY);
     };
 
-    // Attach the scroll event listener
+    const handleHover = (event: any) => {
+      const y = event.clientY;
+      if (y <= 100) {
+        setIsVisible(true);
+      }
+    };
+
+    // Attach the scroll and mouse hover event listener
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('mousemove', handleHover);
 
     // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mousemove', handleHover);
     };
   }, [lastScrollY]);
 
