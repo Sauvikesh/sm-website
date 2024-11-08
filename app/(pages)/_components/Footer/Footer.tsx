@@ -81,7 +81,7 @@ export default function Footer() {
           <h3>About</h3>
         </Link>
         <Link
-          href="https://docs.google.com/document/d/1Fegz8HzzS1Cmv8bQi4V_tRu7TuhCL0DnKkqsYi-UU-A/edit?usp=sharing"
+          href="https://drive.google.com/file/d/1iWHeb_M7NPPgxQrANJpO_P6_7xIW5EB-/view"
           className="flex gap-2"
         >
           <h3>Resume</h3>
