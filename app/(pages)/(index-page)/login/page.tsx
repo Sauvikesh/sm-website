@@ -12,12 +12,16 @@ export default async function LoginPage({
     ? searchParams.callbackUrl[0]
     : searchParams?.callbackUrl || '/';
 
+    const password = Array.isArray(searchParams?.password)
+    ? searchParams.password[0]
+    : searchParams?.password || '';
+
   if (session) {
     redirect(callbackUrl);
   }
   return (
     <div className="bg-dark-bg">
-      <Form callBackURL={callbackUrl} />
+      <Form callBackURL={callbackUrl} password={password} />
     </div>
   );
 }
