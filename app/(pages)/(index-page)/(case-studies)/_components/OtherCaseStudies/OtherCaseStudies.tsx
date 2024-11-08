@@ -25,15 +25,15 @@ export default function OtherCaseStudies({
 }
 
 function CaseStudyThumbnail(props: CaseStudyProps) {
-  const { org, purpose, desc, src, alt, linkurl } = props;
+  const { org, purpose, desc, src, alt, linkurl, flip } = props;
 
   return (
     <Link
       href={linkurl}
-      className="flex flex-col items-start pb-12 pt-12 p-10 bg-[#F1F1F1] w-full rounded-3xl border-[#CCC] border"
+      className="flex flex-col w-[488px] h-[442px] py-12 p-10 bg-[#F1F1F1] rounded-3xl border-[#CCC] border overflow-clip relative group hover:shadow-perimeter duration-500"
     >
-      <div className="flex gap-2">
-        <h4 className="font-outfit">{org}</h4>
+      <div className="flex gap-2 w-full">
+        <h4 className="font-outfit text-black">{org}</h4>
         <h4 className="font-outfit">{purpose}</h4>
       </div>
       <h3 className="pt-2 pb-20">{desc}</h3>
@@ -42,7 +42,7 @@ function CaseStudyThumbnail(props: CaseStudyProps) {
         alt={alt}
         height={1000}
         width={1000}
-        className="w-1/2 h-auto transition duration-300 ease-in-out hover:cursor-pointer"
+        className={`w-full h-auto absolute bottom-0 group-hover:scale-105 duration-500 origin-bottom  ${flip ? 'right-[-100px]' : 'left-[-100px]'}`}
       ></Image>
     </Link>
   );

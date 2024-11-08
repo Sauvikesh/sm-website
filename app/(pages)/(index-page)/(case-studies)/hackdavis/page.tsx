@@ -27,7 +27,7 @@ export default async function HackDavis() {
         desc: 'Reimagining the live television experience',
         src: images?.at(2)?.url || '',
         alt: 'Paramount Logo',
-        linkurl: '/paramount',
+        linkurl: '/paramount/EPG',
       },
       {
         org: 'Sage',
@@ -36,6 +36,7 @@ export default async function HackDavis() {
         src: '/caseStudies/sage.svg',
         alt: 'Sage App',
         linkurl: '/sage',
+        flip: true,
       },
     ],
   };

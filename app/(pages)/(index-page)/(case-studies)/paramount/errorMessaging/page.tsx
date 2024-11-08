@@ -26,12 +26,12 @@ export default async function ParamountP2() {
   const caseStudyInformation: OtherCaseStudiesProps = {
     caseStudies: [
       {
-        org: 'Paramount+',
-        purpose: 'INTERNSHIP',
-        desc: 'Reimagining the live television experience',
-        src: '/caseStudies/paramount.png',
-        alt: 'Paramount Logo',
-        linkurl: '/paramount',
+        org: 'HackDavis 2024',
+        purpose: 'FREELANCE PROJECT',
+        desc: 'Empowering students to create for social good',
+        src: '/caseStudies/hackdavis.svg',
+        alt: 'Hackdavis Image',
+        linkurl: '/hackdavis',
       },
       {
         org: 'Sage',
@@ -40,6 +40,7 @@ export default async function ParamountP2() {
         src: '/caseStudies/sage.svg',
         alt: 'Sage App',
         linkurl: '/sage',
+        flip: true,
       },
     ],
   };

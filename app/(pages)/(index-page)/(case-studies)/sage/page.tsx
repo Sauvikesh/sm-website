@@ -15,25 +15,29 @@ import OtherCaseStudies, {
 } from '../_components/OtherCaseStudies/OtherCaseStudies';
 import DividerLine from '../_components/DividerLine/DividerLine';
 import TableOfContents from '../_components/TableOfContents/TableOfContents';
+import getImageData from '@/app/_lib/getImageData';
 
-export default function Sage() {
+export default async function Sage() {
+  const images = await getImageData('landingPage/');
+
   const caseStudyInformation: OtherCaseStudiesProps = {
     caseStudies: [
       {
         org: 'Paramount+',
         purpose: 'INTERNSHIP',
         desc: 'Reimagining the live television experience',
-        src: '/caseStudies/paramount.png',
+        src: images?.at(2)?.url || '',
         alt: 'Paramount Logo',
-        linkurl: '/paramount',
+        linkurl: '/paramount/EPG',
       },
       {
-        org: 'HackDavis 2024',
-        purpose: 'FREELANCE PROJECT',
-        desc: 'Empowering students to create for social good',
-        src: '/caseStudies/hackdavis.png',
-        alt: 'HackDavis Website',
-        linkurl: '/hackdavis',
+        org: 'Paramount+',
+        purpose: 'INTERNSHIP',
+        desc: 'Guiding users towards resolution during video playback error',
+        src: images?.at(1)?.url || '',
+        alt: 'Paramount Logo',
+        linkurl: '/paramount/errorMessaging',
+        flip: true,
       },
     ],
   };

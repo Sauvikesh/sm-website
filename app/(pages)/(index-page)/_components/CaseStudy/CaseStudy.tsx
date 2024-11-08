@@ -8,6 +8,7 @@ export type CaseStudyProps = {
   src: string;
   alt: string;
   linkurl: string;
+  flip?: boolean;
 };
 
 export default function CaseStudy(props: CaseStudyProps) {
