@@ -20,7 +20,7 @@ export default function Intro() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 w-[47%]">
             <h3>The Team</h3>
             <Image
               src="/hackdavis/team.svg"
