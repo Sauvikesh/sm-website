@@ -11,7 +11,7 @@ export default function JumpToFinalDesigns() {
 
   return (
     <button
-      className="bg-[#0064FF] text-white p-4 rounded-lg"
+      className="flex items-center bg-[#0064FF] text-white p-4 h-12 rounded-lg"
       onClick={handleScroll}
     >
       Jump to Final Designs
