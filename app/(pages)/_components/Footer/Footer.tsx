@@ -16,7 +16,7 @@ export default function Footer() {
 
   const linkIconElements: LinkIconProps[] = [
     {
-      linkUrl: '',
+      linkUrl: 'https://www.linkedin.com/in/sam-mah/',
       imgUrl: '/linkedinLogo.svg',
     },
     {
@@ -58,13 +58,37 @@ export default function Footer() {
             Thanks for visiting! Let's stay in touch.
           </h3>
           <div className="flex gap-4">
-            {linkIconElements.map((link, index) => (
+            {/* {linkIconElements.map((link, index) => (
               <LinkIcon
                 linkUrl={link.linkUrl}
                 imgUrl={link.imgUrl}
                 key={index}
               />
-            ))}
+            ))} */}
+
+            <a
+              href={linkIconElements.at(0)?.linkUrl}
+              className="flex justify-center items-center w-[50px] h-[50px] px-[15px] py-[13px] bg-[#E0E0E1] rounded-[25px]"
+            >
+              <Image
+                src={linkIconElements.at(0)?.imgUrl || ''}
+                alt="Link Icon"
+                height={100}
+                width={100}
+              ></Image>
+            </a>
+
+            <a
+              href="mailto: stmah@ucdavis.edu"
+              className="flex justify-center items-center w-[50px] h-[50px] px-[15px] py-[13px] bg-[#E0E0E1] rounded-[25px]"
+            >
+              <Image
+                src={linkIconElements.at(1)?.imgUrl || ''}
+                alt="Link Icon"
+                height={100}
+                width={100}
+              ></Image>
+            </a>
           </div>
         </div>
         <h4 className={`${textColor} justify-self-end`}>
@@ -80,19 +104,19 @@ export default function Footer() {
         <Link href="/about">
           <h3>About</h3>
         </Link>
-        <Link
+        <a
           href="https://drive.google.com/file/d/1iWHeb_M7NPPgxQrANJpO_P6_7xIW5EB-/view"
           className="flex gap-2"
         >
           <h3>Resume</h3>
-          <Image
+          {/* <Image
             src="/navLinkArrow.svg"
             alt="nav link arrow"
             width={1000}
             height={1000}
             className={`w-[13px]`}
-          />
-        </Link>
+          /> */}
+        </a>
       </nav>
 
       <Image
@@ -121,13 +145,13 @@ type LinkIconProps = {
   imgUrl: string;
 };
 
-function LinkIcon({ linkUrl, imgUrl }: LinkIconProps) {
-  return (
-    <Link
-      href={linkUrl}
-      className="flex justify-center items-center w-[50px] h-[50px] px-[15px] py-[13px] bg-[#E0E0E1] rounded-[25px]"
-    >
-      <Image src={imgUrl} alt="Link Icon" height={100} width={100}></Image>
-    </Link>
-  );
-}
+// function LinkIcon({ linkUrl, imgUrl }: LinkIconProps) {
+//   return (
+//     <a
+//       href={linkUrl}
+//       className="flex justify-center items-center w-[50px] h-[50px] px-[15px] py-[13px] bg-[#E0E0E1] rounded-[25px]"
+//     >
+//       <Image src={imgUrl} alt="Link Icon" height={100} width={100}></Image>
+//     </a>
+//   );
+// }

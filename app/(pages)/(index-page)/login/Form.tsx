@@ -101,7 +101,8 @@ export default function Form({ callBackURL, password }: FormProps) {
           Continue
         </button>
         <p className="font-sans text-sm">
-          Can't find it? Reach out to stmah@ucdavis.edu
+          Can't find it? Reach out to{' '}
+          <a href="mailto: stmah@ucdavis.edu">stmah@ucdavis.edu</a>
         </p>
       </form>
     </div>
