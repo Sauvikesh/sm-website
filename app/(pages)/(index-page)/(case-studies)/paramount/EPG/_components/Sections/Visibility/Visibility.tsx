@@ -25,7 +25,7 @@ export default function Visibility(content: contentProps) {
           </div>
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src={content.images?.at(0)?.url}
+              src={content.images?.at(1)?.url}
               alt=""
               width={1000}
               height={1000}
@@ -37,7 +37,7 @@ export default function Visibility(content: contentProps) {
         <p>{content.body?.at(1)}</p>
         <div className="flex flex-col items-center gap-2">
           <ImageWithModal
-            src={content.images?.at(1)?.url}
+            src={content.images?.at(0)?.url}
             alt=""
             width={1000}
             height={1000}
