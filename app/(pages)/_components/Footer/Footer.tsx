@@ -100,7 +100,7 @@ export default function Footer() {
         width={1000}
         height={1000}
         alt="blob"
-        className="w-20 h-20 right-[10%] absolute"
+        className="w-20 h-20 right-[10%] absolute hover:rotate-[360deg] transition-transform duration-700"
       />
       {floatingImages.map((image, index) => (
         <Image
