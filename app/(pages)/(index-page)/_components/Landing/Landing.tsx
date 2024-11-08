@@ -63,11 +63,11 @@ export default function Landing() {
             Hi, I'm Sam!
           </h1>
           <Image
-            src="/landing/matcha.svg"
+            src="/landing/matcha.png"
             width={1000}
             height={1000}
             alt="matcha"
-            className="w-[190px] h-auto -mt-16"
+            className="w-[150px] h-auto -mt-16"
           />
         </div>
 
