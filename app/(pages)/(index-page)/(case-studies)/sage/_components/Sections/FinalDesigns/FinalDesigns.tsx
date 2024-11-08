@@ -1,5 +1,5 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 const finalDesigns: FinalDesignWithTitlesProps[] = [
   {
@@ -66,7 +66,12 @@ function FinalDesignWithTitles({
           <h3 key={index}>{title}</h3>
         ))}
       </div>
-      <Image src={imageSrc} width={1000} height={1000} alt={imageAlt} />
+      <ImageWithModal
+        src={imageSrc}
+        width={1000}
+        height={1000}
+        alt={imageAlt}
+      />
     </div>
   );
 }

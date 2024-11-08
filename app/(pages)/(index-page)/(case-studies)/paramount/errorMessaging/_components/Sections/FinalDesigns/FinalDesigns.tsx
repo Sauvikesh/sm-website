@@ -1,9 +1,9 @@
 'use client';
 import { contentProps } from '../../../page';
-import Image from 'next/image';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import { ToggleButton } from '../../../../../hackdavis/_components/Sections/FinalSolution/FinalSolution';
 import { useState } from 'react';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function FinalDesigns(content: contentProps) {
   const [activeDesignButton, setActiveDesignButton] = useState(0);
@@ -97,7 +97,7 @@ export default function FinalDesigns(content: contentProps) {
         <div className="flex flex-col gap-40">
           {allDesigns.at(activeDesignButton)?.map((design, index) => (
             <div className="flex gap-10" key={index}>
-              <Image
+              <ImageWithModal
                 src={design.img}
                 alt=""
                 width={1000}

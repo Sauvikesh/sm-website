@@ -1,5 +1,5 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 // TODO: remove images of just headspace and calm squares
 const competitiveAnalysisData: CompetitorAnalysisProps[] = [
   {
@@ -61,7 +61,7 @@ function CompetitorAnalysis({
 }: CompetitorAnalysisProps) {
   return (
     <div className="flex flex-col w-1/2 p-8 bg-[#F2F2F2] gap-8 rounded-2xl border border-[#CCCCCC]">
-      <Image
+      <ImageWithModal
         src={logoUrl}
         alt="competitor app logo"
         width={1000}

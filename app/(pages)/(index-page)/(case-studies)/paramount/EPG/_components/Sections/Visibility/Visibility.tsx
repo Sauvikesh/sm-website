@@ -1,7 +1,7 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import HeadingBody from '../../../../../_components/HeadingBody/HeadingBody';
 import { contentProps } from '../../../../errorMessaging/page';
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Visibility(content: contentProps) {
   return (
@@ -14,7 +14,7 @@ export default function Visibility(content: contentProps) {
 
         <div className="flex w-full gap-8 items-center">
           <div className="flex flex-col items-center gap-2">
-            <Image
+            <ImageWithModal
               src={content.images?.at(2)?.url}
               alt=""
               width={1000}
@@ -24,7 +24,7 @@ export default function Visibility(content: contentProps) {
             <h4>{content.h4?.at(1)}</h4>
           </div>
           <div className="flex flex-col items-center gap-2">
-            <Image
+            <ImageWithModal
               src={content.images?.at(0)?.url}
               alt=""
               width={1000}
@@ -36,7 +36,7 @@ export default function Visibility(content: contentProps) {
         </div>
         <p>{content.body?.at(1)}</p>
         <div className="flex flex-col items-center gap-2">
-          <Image
+          <ImageWithModal
             src={content.images?.at(1)?.url}
             alt=""
             width={1000}

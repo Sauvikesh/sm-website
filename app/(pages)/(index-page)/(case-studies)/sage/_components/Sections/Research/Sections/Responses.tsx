@@ -1,5 +1,5 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Responses() {
   return (
@@ -14,7 +14,7 @@ export default function Responses() {
             96%
           </h2>
         </div>
-        <Image
+        <ImageWithModal
           src="/sageImages/research/messageFeedback.jpg"
           alt="messages"
           width={1000}

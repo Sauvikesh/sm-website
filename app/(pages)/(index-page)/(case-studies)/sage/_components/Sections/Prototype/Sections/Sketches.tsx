@@ -1,5 +1,5 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 const sketches = [
   { src: '/sageImages/prototype/sketch1.jpg', alt: 'sketch1' },
@@ -34,7 +34,7 @@ export default function Sketches() {
         <h3>Incorporating opportunity areas into sketches</h3>
         <div className="flex pt-8 pb-16">
           {sketches.map((sketch, index) => (
-            <Image
+            <ImageWithModal
               src={sketch.src}
               alt={sketch.alt}
               width={1000}

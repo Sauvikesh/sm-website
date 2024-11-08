@@ -1,11 +1,11 @@
 'use client';
 
-import Image from 'next/image';
 import { useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import Heading from '../../Heading/Heading';
 import { motion, MotionValue } from 'framer-motion';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Ideation() {
   const sectionRef = useRef(null);
@@ -58,7 +58,7 @@ export default function Ideation() {
     >
       <RevealWrapper>
         <Heading h1="IDEATION & SYNTHESIS" p="Identifying key insights" />
-        <Image
+        <ImageWithModal
           src="/sageImages/ideation/manyNotes.png"
           alt="many notes image"
           width={1000}
@@ -97,7 +97,7 @@ function AnimatedCard(props: AnimatedCardProps) {
         y: y,
       }}
     >
-      <Image src={cardSrc} alt={alt} width={1000} height={1000} />
+      <ImageWithModal src={cardSrc} alt={alt} width={1000} height={1000} />
     </motion.div>
   );
 }

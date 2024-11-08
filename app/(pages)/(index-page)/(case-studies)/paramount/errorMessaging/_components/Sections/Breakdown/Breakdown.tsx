@@ -1,8 +1,8 @@
 import FormattedP from '@/app/(pages)/_components/FormattedP/FormattedP';
 import HeadingBody from '../../../../../_components/HeadingBody/HeadingBody';
 import { contentProps } from '../../../page';
-import Image from 'next/image';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function BreakDown(content: contentProps) {
   return (
@@ -13,7 +13,7 @@ export default function BreakDown(content: contentProps) {
           <FormattedP text={content.body?.at(0)} />
           <div className="flex w-full gap-8">
             <div className="flex flex-col items-center gap-2 flex-grow">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(1)?.url}
                 alt=""
                 width={1000}
@@ -23,7 +23,7 @@ export default function BreakDown(content: contentProps) {
               <h4>{content.h4?.at(0)}</h4>
             </div>
             <div className="flex flex-col items-center gap-2 flex-grow">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(0)?.url}
                 alt=""
                 width={1000}
@@ -41,7 +41,7 @@ export default function BreakDown(content: contentProps) {
 
         <div className="flex w-full gap-8">
           <div className="flex flex-col items-center gap-2 flex-grow">
-            <Image
+            <ImageWithModal
               src={content.images?.at(4)?.url}
               alt=""
               width={1000}
@@ -51,7 +51,7 @@ export default function BreakDown(content: contentProps) {
             <h4>{content.h4?.at(2)}</h4>
           </div>
           <div className="flex flex-col items-center gap-2 flex-grow">
-            <Image
+            <ImageWithModal
               src={content.images?.at(3)?.url}
               alt=""
               width={1000}
@@ -61,7 +61,7 @@ export default function BreakDown(content: contentProps) {
             <h4>{content.h4?.at(3)}</h4>
           </div>
           <div className="flex flex-col items-center gap-2 flex-grow">
-            <Image
+            <ImageWithModal
               src={content.images?.at(2)?.url}
               alt=""
               width={1000}
@@ -77,7 +77,7 @@ export default function BreakDown(content: contentProps) {
 
           <div className="flex w-full gap-8">
             <div className="flex flex-col items-center gap-2 flex-grow">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(5)?.url}
                 alt=""
                 width={1000}
@@ -87,7 +87,7 @@ export default function BreakDown(content: contentProps) {
               <h4>{content.h4?.at(5)}</h4>
             </div>
             <div className="flex flex-col items-center gap-2 flex-grow">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(6)?.url}
                 alt=""
                 width={1000}

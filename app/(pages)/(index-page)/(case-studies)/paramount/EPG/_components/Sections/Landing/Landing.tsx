@@ -1,6 +1,6 @@
 import { contentProps } from '../../../../errorMessaging/page';
-import Image from 'next/image';
 import LoadingImage from '@/app/(pages)/_components/LoadingImage/LoadingImage';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Landing(content: contentProps) {
   return (
@@ -12,7 +12,7 @@ export default function Landing(content: contentProps) {
         backgroundSize: 'cover',
       }}
     >
-      <Image
+      <ImageWithModal
         src="/paramount/logo.svg"
         alt=""
         width={1000}
@@ -32,7 +32,7 @@ export default function Landing(content: contentProps) {
           height={1000}
           className="w-[1027px]"
         />
-        <Image
+        <ImageWithModal
           src={content.images?.at(1)?.url}
           alt=""
           width={1000}

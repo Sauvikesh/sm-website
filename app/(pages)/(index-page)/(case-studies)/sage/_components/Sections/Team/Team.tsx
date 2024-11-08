@@ -1,11 +1,11 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Team() {
   return (
     <RevealWrapper>
       <section className="flex flex-row items-center gap-10 justify-between">
-        <Image
+        <ImageWithModal
           src="/sageImages/sageTeam.png"
           width={1000}
           height={1000}

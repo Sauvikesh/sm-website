@@ -1,7 +1,7 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import HeadingBody from '../../../../../_components/HeadingBody/HeadingBody';
 import { contentProps } from '../../../../errorMessaging/page';
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function MarketBehavior(content: contentProps) {
   return (
@@ -11,7 +11,7 @@ export default function MarketBehavior(content: contentProps) {
 
         <div className="flex justify-between items-end gap-10">
           <div className="flex w-[747px] flex-col items-center gap-2">
-            <Image
+            <ImageWithModal
               src={content.images?.at(0)?.url}
               alt=""
               width={1000}
@@ -21,7 +21,7 @@ export default function MarketBehavior(content: contentProps) {
             <h4>{content.h4?.at(0)}</h4>
           </div>
           <div className="flex w-[213px] flex-col items-center gap-2">
-            <Image
+            <ImageWithModal
               src={content.images?.at(1)?.url}
               alt=""
               width={1000}

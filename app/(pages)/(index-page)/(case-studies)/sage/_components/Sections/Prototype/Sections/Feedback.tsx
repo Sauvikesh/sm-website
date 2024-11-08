@@ -1,5 +1,5 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Feedback() {
   const wireframes = [
@@ -18,7 +18,7 @@ export default function Feedback() {
     <section className="flex flex-col gap-20">
       <RevealWrapper>
         {wireframes.map((frame, index) => (
-          <Image
+          <ImageWithModal
             src={frame.src}
             alt={frame.alt}
             width={1000}

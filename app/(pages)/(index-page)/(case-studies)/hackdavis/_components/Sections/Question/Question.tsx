@@ -1,5 +1,5 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Question() {
   return (
@@ -11,7 +11,7 @@ export default function Question() {
         </h2>
       </RevealWrapper>
 
-      <Image
+      <ImageWithModal
         src="/hackdavis/process/charstack3.svg"
         alt="char stack"
         width={1000}

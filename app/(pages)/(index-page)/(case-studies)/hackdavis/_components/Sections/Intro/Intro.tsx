@@ -1,5 +1,5 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Intro() {
   return (
@@ -22,7 +22,7 @@ export default function Intro() {
 
           <div className="flex flex-col gap-2 w-[47%]">
             <h3>The Team</h3>
-            <Image
+            <ImageWithModal
               src="/hackdavis/team.svg"
               alt="project team"
               width={1000}

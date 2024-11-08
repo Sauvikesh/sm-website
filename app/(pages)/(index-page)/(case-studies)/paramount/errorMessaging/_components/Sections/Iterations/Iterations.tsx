@@ -2,6 +2,7 @@ import HeadingBody from '../../../../../_components/HeadingBody/HeadingBody';
 import { contentProps } from '../../../page';
 import Image from 'next/image';
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Iterations(content: contentProps) {
   return (
@@ -15,7 +16,7 @@ export default function Iterations(content: contentProps) {
 
           <div className="flex w-full items-center">
             <div className="flex flex-col items-center gap-2 flex-grow">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(0)?.url}
                 alt=""
                 width={1000}
@@ -32,7 +33,7 @@ export default function Iterations(content: contentProps) {
               className="w-12"
             />
             <div className="flex flex-col items-center gap-2 flex-grow">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(1)?.url}
                 alt=""
                 width={1000}
@@ -49,7 +50,7 @@ export default function Iterations(content: contentProps) {
 
           <div className="flex w-full gap-8">
             <div className="flex flex-col items-center gap-2 self-end flex-grow">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(1)?.url}
                 alt=""
                 width={1000}
@@ -66,7 +67,7 @@ export default function Iterations(content: contentProps) {
               className="w-10"
             />
             <div className="flex flex-col items-center gap-2 flex-grow">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(2)?.url}
                 alt=""
                 width={1000}
@@ -83,7 +84,7 @@ export default function Iterations(content: contentProps) {
 
           <div className="flex w-full gap-8">
             <div className="flex flex-col items-center gap-2 flex-grow">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(2)?.url}
                 alt=""
                 width={1000}
@@ -100,7 +101,7 @@ export default function Iterations(content: contentProps) {
               className="w-10"
             />
             <div className="flex flex-col items-center gap-2 flex-grow">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(3)?.url}
                 alt=""
                 width={1000}

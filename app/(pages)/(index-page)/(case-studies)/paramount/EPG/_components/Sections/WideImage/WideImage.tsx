@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { contentProps } from '../../../../errorMessaging/page';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function WideImage(content: contentProps) {
   return (
@@ -12,21 +12,21 @@ export default function WideImage(content: contentProps) {
       }}
     >
       <div className="flex justify-center">
-        <Image
+        <ImageWithModal
           src={content.images?.at(0)?.url}
           alt=""
           width={1000}
           height={1000}
           className="w-[363px] h-[600px]"
         />
-        <Image
+        <ImageWithModal
           src={content.images?.at(1)?.url}
           alt=""
           width={1000}
           height={1000}
           className="w-[363px] h-[600px]"
         />
-        <Image
+        <ImageWithModal
           src={content.images?.at(2)?.url}
           alt=""
           width={1000}

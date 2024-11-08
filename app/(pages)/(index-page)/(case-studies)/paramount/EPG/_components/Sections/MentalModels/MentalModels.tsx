@@ -1,6 +1,7 @@
 import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/RevealWrapper';
 import HeadingBody from '../../../../../_components/HeadingBody/HeadingBody';
 import { contentProps } from '../../../../errorMessaging/page';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 import Image from 'next/image';
 
 export default function MentalModels(content: contentProps) {
@@ -15,7 +16,7 @@ export default function MentalModels(content: contentProps) {
 
           <div className="flex justify-between gap-8">
             <div className="flex flex-col items-center gap-2">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(2)?.url}
                 alt=""
                 width={1000}
@@ -25,7 +26,7 @@ export default function MentalModels(content: contentProps) {
               <h4>{content.h4?.at(1)}</h4>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(1)?.url}
                 alt=""
                 width={1000}
@@ -35,7 +36,7 @@ export default function MentalModels(content: contentProps) {
               <h4>{content.h4?.at(2)}</h4>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(0)?.url}
                 alt=""
                 width={1000}
@@ -55,14 +56,14 @@ export default function MentalModels(content: contentProps) {
         <div className="flex w-full gap-8 items-center">
           <div className="flex flex-col items-center gap-2">
             <div className="flex gap-8 w-full">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(3)?.url}
                 alt=""
                 width={1000}
                 height={1000}
                 className="w-[260px]"
               />
-              <Image
+              <ImageWithModal
                 src={content.images?.at(4)?.url}
                 alt=""
                 width={1000}
@@ -80,7 +81,7 @@ export default function MentalModels(content: contentProps) {
             className="w-12"
           />
           <div className="flex flex-col items-center gap-2">
-            <Image
+            <ImageWithModal
               src={content.images?.at(5)?.url}
               alt=""
               width={1000}

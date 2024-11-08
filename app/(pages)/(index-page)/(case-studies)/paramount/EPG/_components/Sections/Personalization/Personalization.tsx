@@ -2,6 +2,7 @@ import { RevealWrapper } from '@/app/(pages)/(index-page)/_components/Reveal/Rev
 import HeadingBody from '../../../../../_components/HeadingBody/HeadingBody';
 import { contentProps } from '../../../../errorMessaging/page';
 import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Personalization(content: contentProps) {
   return (
@@ -15,14 +16,14 @@ export default function Personalization(content: contentProps) {
         <div className="flex w-full gap-8 items-center">
           <div className="flex flex-col items-center gap-2">
             <div className="flex gap-8 w-full">
-              <Image
+              <ImageWithModal
                 src={content.images?.at(0)?.url}
                 alt=""
                 width={1000}
                 height={1000}
                 className="w-[260px]"
               />
-              <Image
+              <ImageWithModal
                 src={content.images?.at(1)?.url}
                 alt=""
                 width={1000}
@@ -40,7 +41,7 @@ export default function Personalization(content: contentProps) {
             className="w-12"
           />
           <div className="flex flex-col items-center gap-2">
-            <Image
+            <ImageWithModal
               src={content.images?.at(2)?.url}
               alt=""
               width={1000}

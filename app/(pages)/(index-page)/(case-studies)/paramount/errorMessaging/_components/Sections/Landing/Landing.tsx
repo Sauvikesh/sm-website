@@ -1,6 +1,6 @@
 import LoadingImage from '@/app/(pages)/_components/LoadingImage/LoadingImage';
 import { contentProps } from '../../../page';
-import Image from 'next/image';
+import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 
 export default function Landing(content: contentProps) {
   return (
@@ -12,7 +12,7 @@ export default function Landing(content: contentProps) {
         backgroundSize: 'cover',
       }}
     >
-      <Image
+      <ImageWithModal
         src="/paramount/logo.svg"
         alt=""
         width={1000}
@@ -31,21 +31,21 @@ export default function Landing(content: contentProps) {
           height={1000}
           className="w-[754px]"
         />
-        <Image
+        <ImageWithModal
           src={content.images?.at(1)?.url}
           alt=""
           width={1000}
           height={1000}
           className="w-[105px] absolute bottom-0 right-[-5%]"
         />
-        <Image
+        <ImageWithModal
           src={content.images?.at(2)?.url}
           alt=""
           width={1000}
           height={1000}
           className="w-[573px] absolute bottom-0 right-[-80%]"
         />
-        <Image
+        <ImageWithModal
           src={content.images?.at(3)?.url}
           alt=""
           width={1000}
