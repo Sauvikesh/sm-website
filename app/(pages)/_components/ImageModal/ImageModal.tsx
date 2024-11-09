@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { ImageProps } from 'next/image';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+// import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 
 type ImageWithModalProps = ImageProps & {
   onLoad?: () => void;
@@ -65,6 +66,8 @@ const ImageModal = ({ src, alt, onClose }: ImageModalProps) => {
       className="fixed inset-0 z-50 flex justify-center bg-black overflow-scroll"
       onClick={onClose} // Close the modal if clicked outside the image
     >
+      {/* <TransformWrapper> */}
+      {/* <TransformComponent> */}
       <div className="relative">
         <Image
           src={src}
@@ -72,9 +75,11 @@ const ImageModal = ({ src, alt, onClose }: ImageModalProps) => {
           width={1000}
           height={1000}
           loading="eager"
-          className="object-contain w-[100vw] pt-20 pb-20 cursor-zoom-out" // Adjust the size of the image inside the modal
+          className="object-contain w-[90vw] pt-20 pb-20 cursor-zoom-out" // Adjust the size of the image inside the modal
         />
       </div>
+      {/* </TransformComponent> */}
+      {/* </TransformWrapper> */}
     </div>
   );
 };

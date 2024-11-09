@@ -13,7 +13,7 @@ export default function Personalization(content: contentProps) {
           <HeadingBody h={content.h3?.at(0)} p={content.body?.at(0)} />
         </div>
 
-        <div className="flex w-full gap-8 items-center">
+        <div className="flex w-full gap-8 items-center justify-between">
           <div className="flex flex-col items-center gap-2">
             <div className="flex gap-8 w-full">
               <ImageWithModal

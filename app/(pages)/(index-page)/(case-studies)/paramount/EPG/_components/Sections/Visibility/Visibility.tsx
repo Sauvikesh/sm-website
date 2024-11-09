@@ -13,23 +13,23 @@ export default function Visibility(content: contentProps) {
         </div>
 
         <div className="flex w-full gap-8 items-center">
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2 flex-grow">
             <ImageWithModal
               src={content.images?.at(2)?.url}
               alt=""
               width={1000}
               height={1000}
-              className="w-[488px]"
+              className="w-full"
             />
             <h4>{content.h4?.at(1)}</h4>
           </div>
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2 flex-grow">
             <ImageWithModal
               src={content.images?.at(1)?.url}
               alt=""
               width={1000}
               height={1000}
-              className="w-[488px]"
+              className="w-full"
             />
             <h4>{content.h4?.at(2)}</h4>
           </div>
