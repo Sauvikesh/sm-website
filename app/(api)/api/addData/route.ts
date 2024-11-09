@@ -2,6 +2,15 @@ import { sql } from '@vercel/postgres';
 
 export async function POST(req: Request) {
   try {
+    const url = new URL(req.url);
+    const apikey = url.searchParams.get('apikey');
+
+    if (!apikey || process.env.API_KEY !== apikey) {
+      return new Response(JSON.stringify({ error: 'Unauthorized' }), {
+        status: 401,
+      });
+    }
+
     // Parse the JSON body from the request
     const { body, h2, h3, h4, misc } = await req.json();
 
