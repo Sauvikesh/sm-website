@@ -22,20 +22,20 @@ export default async function HackDavis() {
   const caseStudyInformation: OtherCaseStudiesProps = {
     caseStudies: [
       {
-        org: 'Paramount+',
-        purpose: 'INTERNSHIP',
-        desc: 'Reimagining the live television experience',
-        src: images?.at(2)?.url || '',
-        alt: 'Paramount Logo',
-        linkurl: '/paramount/EPG',
-      },
-      {
         org: 'Sage',
         purpose: 'PASSION PROJECT',
         desc: "Equipping individuals to navigate life's stressors",
         src: '/caseStudies/sage.svg',
         alt: 'Sage App',
         linkurl: '/sage',
+      },
+      {
+        org: 'Paramount+',
+        purpose: 'INTERNSHIP',
+        desc: 'Reimagining the live television experience',
+        src: images?.at(2)?.url || '',
+        alt: 'Paramount Logo',
+        linkurl: '/paramount/EPG',
         flip: true,
       },
     ],

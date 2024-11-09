@@ -18,15 +18,18 @@ import getImageData from '@/app/_lib/getImageData';
 import getContentData from '@/app/_lib/getContentData';
 
 export default async function ParamountP1() {
+  const imagesCaseStudies = await getImageData('landingPage/');
+
   const caseStudyInformation: OtherCaseStudiesProps = {
     caseStudies: [
       {
-        org: 'Sage',
-        purpose: 'PASSION PROJECT',
-        desc: "Equipping individuals to navigate life's stressors",
-        src: '/caseStudies/sage.svg',
-        alt: 'Sage App',
-        linkurl: '/sage',
+        org: 'Paramount+',
+        purpose: 'INTERNSHIP',
+        desc: 'Guiding users towards resolution during video playback error',
+        src: imagesCaseStudies?.at(1)?.url || '',
+        alt: 'Paramount Logo',
+        linkurl: '/paramount/errorMessaging',
+        flip: true,
       },
       {
         org: 'HackDavis 2024',
