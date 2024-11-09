@@ -173,7 +173,7 @@ function CarouselSlide({ imgUrl, imgCaption }: CarouselSlideProps) {
         alt="photography image"
         width={1000}
         height={1000}
-        className="w-auto h-[300px] z-20 relative"
+        className="w-auto h-[360px] z-20 relative"
       />
       <h4 className="text-center font-outfit pt-2 transition-all opacity-0 -translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 z-10 relative">
         {imgCaption}

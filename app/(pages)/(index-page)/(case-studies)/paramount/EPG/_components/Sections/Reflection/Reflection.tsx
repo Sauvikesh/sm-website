@@ -48,8 +48,16 @@ function CameraRoll() {
       imgCaption: 'intern friends',
     },
     {
+      imgUrl: '/paramount/photoCarousel/show.png',
+      imgCaption: "stephen colbert's late show",
+    },
+    {
+      imgUrl: '/paramount/photoCarousel/park.png',
+      imgCaption: 'concert in bryant park',
+    },
+    {
       imgUrl: '/paramount/photoCarousel/commute.png',
-      imgCaption: 'daily commute',
+      imgCaption: 'daily commute to the office',
     },
     {
       imgUrl: '/paramount/photoCarousel/call.png',
@@ -60,7 +68,7 @@ function CameraRoll() {
   return (
     <div className="flex flex-col items-center gap-10 pt-10">
       <div className="overflow-hidden w-[100vw]" ref={emblaRef}>
-        <div className="flex">
+        <div className="flex pl-20">
           {carouselPhotos.map((slide, index) => (
             <CarouselSlide
               key={index}
@@ -87,7 +95,7 @@ function CarouselSlide({ imgUrl, imgCaption }: CarouselSlideProps) {
         alt="photography image"
         width={1000}
         height={1000}
-        className="w-auto h-[300px] z-20 relative"
+        className="w-auto h-[360px] z-20 relative"
       />
       <h4 className="text-center text-wrap font-outfit pt-2 transition-all opacity-0 -translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 z-10 relative">
         {imgCaption}
