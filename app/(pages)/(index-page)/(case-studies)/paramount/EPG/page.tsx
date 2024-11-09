@@ -54,7 +54,7 @@ export default async function ParamountP1() {
     { sectionName: 'Final Designs', level: 0 },
     { sectionName: 'Reflection', level: 0 },
   ];
-  const [bodyData, h2Data, h3Data, h4Data] = await getContentData('6');
+  const [bodyData, h2Data, h3Data, h4Data] = await getContentData('7');
   const images = await getImageData('EPG/');
 
   return (
