@@ -4,7 +4,7 @@ import LoadingImage from '@/app/(pages)/_components/LoadingImage/LoadingImage';
 export default function Landing() {
   return (
     <section
-      className="bg-[#112636] h-[100vh] overflow-clip text-white flex flex-col justify-center items-center -mx-[40%]"
+      className="bg-[#112636] h-[100vh] overflow-clip text-white flex flex-col justify-end items-center -mx-[40%]"
       id="Overview"
     >
       <ImageWithModal
@@ -23,7 +23,7 @@ export default function Landing() {
         width={1000}
         height={1000}
         alt="hackdavis image"
-        className="w-[1120px]"
+        className="w-[1120px] -mb-28"
       />
     </section>
   );

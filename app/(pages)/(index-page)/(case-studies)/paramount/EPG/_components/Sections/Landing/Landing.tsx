@@ -5,7 +5,7 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 export default function Landing(content: contentProps) {
   return (
     <section
-      className="flex flex-col items-center gap-10 pt-[130px] -mx-[40%]"
+      className="flex flex-col h-[100vh] items-center justify-end gap-10  -mx-[40%]"
       style={{
         backgroundImage:
           'radial-gradient(67.21% 51.52% at 67.71% 57.25%, #0064FF 0%, #000 73.44%)',
