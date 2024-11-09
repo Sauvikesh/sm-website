@@ -42,7 +42,7 @@ export default function FinalDesigns(content: contentProps) {
 
   return (
     <section
-      className="flex flex-col  gap-20 bg-[#F0F0F0] -mx-[40%] py-20"
+      className="flex flex-col gap-20 bg-[#F0F0F0] -mx-[30%] py-20"
       id="Final Designs"
     >
       <RevealWrapper>
@@ -62,7 +62,7 @@ export default function FinalDesigns(content: contentProps) {
         </div>
 
         <div className="flex flex-col items-center gap-10 px-case-study">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 self-start">
             <h4>{content.h4?.at(0)}</h4>
             <HeadingBody h={content.h3?.at(0)} p={content.body?.at(0)} />
           </div>
@@ -91,7 +91,7 @@ export default function FinalDesigns(content: contentProps) {
         </div>
 
         <div className="flex flex-col items-center gap-10 px-case-study">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 self-start">
             <h4>{content.h4?.at(1)}</h4>
             <HeadingBody h={content.h3?.at(1)} p={content.body?.at(1)} />
           </div>
@@ -112,7 +112,7 @@ export default function FinalDesigns(content: contentProps) {
         </div>
 
         <div className="flex flex-col items-center gap-10 px-case-study">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 self-start">
             <h4>{content.h4?.at(2)}</h4>
             <HeadingBody h={content.h3?.at(2)} p={content.body?.at(2)} />
           </div>
@@ -133,7 +133,7 @@ export default function FinalDesigns(content: contentProps) {
         </div>
 
         <div className="flex flex-col items-center gap-10 px-case-study">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 self-start">
             <h4>{content.h4?.at(3)}</h4>
             <HeadingBody h={content.h3?.at(3)} p={content.body?.at(3)} />
           </div>
