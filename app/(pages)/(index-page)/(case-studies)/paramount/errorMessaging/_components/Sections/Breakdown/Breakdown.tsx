@@ -18,7 +18,7 @@ export default function BreakDown(content: contentProps) {
                 alt=""
                 width={1000}
                 height={1000}
-                className="w-full h-[274px]"
+                className="h-full"
               />
               <h4>{content.h4?.at(0)}</h4>
             </div>
@@ -28,7 +28,7 @@ export default function BreakDown(content: contentProps) {
                 alt=""
                 width={1000}
                 height={1000}
-                className="w-full h-[274px]"
+                className="h-full"
               />
               <h4>{content.h4?.at(1)}</h4>
             </div>
@@ -46,7 +46,7 @@ export default function BreakDown(content: contentProps) {
               alt=""
               width={1000}
               height={1000}
-              className="w-full h-[176px]"
+              className="h-full"
             />
             <h4>{content.h4?.at(2)}</h4>
           </div>
@@ -56,7 +56,7 @@ export default function BreakDown(content: contentProps) {
               alt=""
               width={1000}
               height={1000}
-              className="w-full h-[176px]"
+              className="h-full"
             />
             <h4>{content.h4?.at(3)}</h4>
           </div>
@@ -66,7 +66,7 @@ export default function BreakDown(content: contentProps) {
               alt=""
               width={1000}
               height={1000}
-              className="w-full h-[176px]"
+              className="h-full"
             />
             <h4>{content.h4?.at(4)}</h4>
           </div>
@@ -82,7 +82,7 @@ export default function BreakDown(content: contentProps) {
                 alt=""
                 width={1000}
                 height={1000}
-                className="w-full h-[238px]"
+                className="h-full"
               />
               <h4>{content.h4?.at(5)}</h4>
             </div>
@@ -92,7 +92,7 @@ export default function BreakDown(content: contentProps) {
                 alt=""
                 width={1000}
                 height={1000}
-                className="w-full h-[238px]"
+                className="h-full"
               />
               <h4>{content.h4?.at(6)}</h4>
             </div>
