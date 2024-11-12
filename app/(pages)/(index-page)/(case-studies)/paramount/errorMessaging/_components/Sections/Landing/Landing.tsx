@@ -5,7 +5,7 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 export default function Landing(content: contentProps) {
   return (
     <section
-      className="flex flex-col items-center justify-end h-[100vh] gap-10  -mx-[40%]"
+      className="flex flex-col items-center justify-end h-[100vh] gap-10 -mx-[40%]"
       style={{
         backgroundImage:
           "url('/paramount/landingBlur.png'), radial-gradient(circle, #0064FF 0%, #000A3B 100%)",

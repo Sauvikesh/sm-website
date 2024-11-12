@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function MentalModels(content: contentProps) {
   return (
-    <section className="flex flex-col gap-20" id="Mental Models">
+    <section className="flex flex-col gap-20" id="Iterations">
       <RevealWrapper>
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-2">

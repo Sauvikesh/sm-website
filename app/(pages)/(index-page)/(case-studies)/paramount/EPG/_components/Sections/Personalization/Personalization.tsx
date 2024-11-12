@@ -6,7 +6,7 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 
 export default function Personalization(content: contentProps) {
   return (
-    <section className="flex flex-col gap-10" id="Personalization">
+    <section className="flex flex-col gap-10">
       <RevealWrapper>
         <div className="flex flex-col gap-2">
           <h4>{content.h4?.at(0)}</h4>

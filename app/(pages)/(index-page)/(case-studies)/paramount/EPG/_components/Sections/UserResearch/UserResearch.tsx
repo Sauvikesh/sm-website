@@ -5,7 +5,7 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 
 export default function UserResearch(content: contentProps) {
   return (
-    <section className="flex flex-col gap-20" id="User Research">
+    <section className="flex flex-col gap-20" id="Research">
       <RevealWrapper>
         <HeadingBody h={content.h3?.at(0)} p={content.body?.at(0)} />
 

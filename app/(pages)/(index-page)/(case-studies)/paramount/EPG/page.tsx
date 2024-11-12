@@ -42,15 +42,10 @@ export default async function ParamountP1() {
       },
     ],
   };
-
   const pageContents = [
     { sectionName: 'Overview', level: 0 },
-    { sectionName: 'Market Behavior', level: 0 },
-    { sectionName: 'User Research', level: 0 },
-    { sectionName: 'Mental Models', level: 0 },
-    { sectionName: 'Navigation', level: 0 },
-    { sectionName: 'Personalization', level: 0 },
-    { sectionName: 'Visibility', level: 0 },
+    { sectionName: 'Research', level: 0 },
+    { sectionName: 'Iterations', level: 0 },
     { sectionName: 'Final Designs', level: 0 },
     { sectionName: 'Reflection', level: 0 },
   ];
