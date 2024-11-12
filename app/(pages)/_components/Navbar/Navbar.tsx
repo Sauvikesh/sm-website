@@ -44,6 +44,7 @@ export default function Navbar() {
       href: 'https://drive.google.com/file/d/1iWHeb_M7NPPgxQrANJpO_P6_7xIW5EB-/view',
       label: 'Resume',
       bgColor: bgPlayText,
+      newTab: true,
     },
   ];
 

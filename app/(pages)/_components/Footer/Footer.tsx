@@ -107,6 +107,7 @@ export default function Footer() {
         <a
           href="https://drive.google.com/file/d/1iWHeb_M7NPPgxQrANJpO_P6_7xIW5EB-/view"
           className="flex gap-2"
+          target="_blank"
         >
           <h3>Resume</h3>
           {/* <Image

@@ -34,9 +34,7 @@ export default function Landing() {
   return (
     <Providers>
       <header className="flex flex-col h-[100vh] items-center overflow-clip bg-[#e4edeb] mx-[-40%]">
-        <h2 className="pt-28">
-          Sage
-        </h2>
+        <h2 className="pt-28">Sage</h2>
         <p className="text-base">7 min read</p>
         <div className="flex justify-around ">
           {parallaxImages.map((image, index) => {
@@ -71,7 +69,6 @@ export default function Landing() {
     </Providers>
   );
 }
-
 
 type ImageWithStateProps = ImageProps;
 
