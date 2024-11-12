@@ -10,38 +10,11 @@ import Prototype from './_components/Sections/Prototype/Prototype';
 import FinalDesigns from './_components/Sections/FinalDesigns/FinalDesigns';
 import Outcome from './_components/Sections/Outcome/Outcome';
 import Team from './_components/Sections/Team/Team';
-import OtherCaseStudies, {
-  OtherCaseStudiesProps,
-} from '../_components/OtherCaseStudies/OtherCaseStudies';
 import DividerLine from '../_components/DividerLine/DividerLine';
 import TableOfContents from '../_components/TableOfContents/TableOfContents';
-import getImageData from '@/app/_lib/getImageData';
+import NextCaseStudies from './_components/Sections/NextCaseStudies/NextCaseStudies';
 
 export default async function Sage() {
-  const images = await getImageData('landingPage/');
-
-  const caseStudyInformation: OtherCaseStudiesProps = {
-    caseStudies: [
-      {
-        org: 'Paramount+',
-        purpose: 'INTERNSHIP',
-        desc: 'Reimagining the live television experience',
-        src: images?.at(2)?.url || '',
-        alt: 'Paramount Logo',
-        linkurl: '/paramount/EPG',
-      },
-      {
-        org: 'Paramount+',
-        purpose: 'INTERNSHIP',
-        desc: 'Guiding users towards resolution during video playback error',
-        src: images?.at(1)?.url || '',
-        alt: 'Paramount Logo',
-        linkurl: '/paramount/errorMessaging',
-        flip: true,
-      },
-    ],
-  };
-
   const pageContents = [
     { sectionName: 'Overview', level: 0 },
     { sectionName: 'Product Preview', level: 0 },
@@ -66,13 +39,12 @@ export default async function Sage() {
       <Ideation />
       <Prototype />
       <DividerLine />
-
       <FinalDesigns />
       <Outcome />
       <Conclusion />
       <Team />
       <DividerLine />
-      <OtherCaseStudies {...caseStudyInformation} />
+      <NextCaseStudies />
     </main>
   );
 }

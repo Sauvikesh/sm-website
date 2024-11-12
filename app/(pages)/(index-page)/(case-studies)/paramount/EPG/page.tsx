@@ -1,6 +1,3 @@
-import OtherCaseStudies, {
-  OtherCaseStudiesProps,
-} from '../../_components/OtherCaseStudies/OtherCaseStudies';
 import Summary from '../errorMessaging/_components/Sections/Summary/Summary';
 import Landing from './_components/Sections/Landing/Landing';
 import WideImage from './_components/Sections/WideImage/WideImage';
@@ -16,32 +13,9 @@ import Reflection from './_components/Sections/Reflection/Reflection';
 import TableOfContents from '../../_components/TableOfContents/TableOfContents';
 import getImageData from '@/app/_lib/getImageData';
 import getContentData from '@/app/_lib/getContentData';
+import NextCaseStudies from './_components/Sections/NextCaseStudies/NextCaseStudies';
 
 export default async function ParamountP1() {
-  const imagesCaseStudies = await getImageData('landingPage/');
-
-  const caseStudyInformation: OtherCaseStudiesProps = {
-    caseStudies: [
-      {
-        org: 'Paramount+',
-        purpose: 'INTERNSHIP',
-        desc: 'Guiding users towards resolution during video playback error',
-        src: imagesCaseStudies?.at(1)?.url || '',
-        alt: 'Paramount Logo',
-        linkurl: '/paramount/errorMessaging',
-        flip: true,
-      },
-      {
-        org: 'HackDavis 2024',
-        purpose: 'FREELANCE PROJECT',
-        desc: 'Empowering students to create for social good',
-        src: '/caseStudies/hackdavis.svg',
-        alt: 'Hackdavis Image',
-        linkurl: '/hackdavis',
-        flip: true,
-      },
-    ],
-  };
   const pageContents = [
     { sectionName: 'Overview', level: 0 },
     { sectionName: 'Research', level: 0 },
@@ -110,7 +84,7 @@ export default async function ParamountP1() {
       />
 
       <DividerLine />
-      <OtherCaseStudies {...caseStudyInformation} />
+      <NextCaseStudies />
     </main>
   );
 }

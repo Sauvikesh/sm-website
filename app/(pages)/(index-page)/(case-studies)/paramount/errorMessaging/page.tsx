@@ -7,12 +7,10 @@ import Iterations from './_components/Sections/Iterations/Iterations';
 import FinalDesigns from './_components/Sections/FinalDesigns/FinalDesigns';
 import Results from './_components/Sections/Results/Results';
 import Reflection from './_components/Sections/Reflection/Reflection';
-import OtherCaseStudies, {
-  OtherCaseStudiesProps,
-} from '../../_components/OtherCaseStudies/OtherCaseStudies';
 import TableOfContents from '../../_components/TableOfContents/TableOfContents';
 import getImageData from '@/app/_lib/getImageData';
 import getContentData from '@/app/_lib/getContentData';
+import NextCaseStudies from './_components/Sections/NextCaseStudies/NextCaseStudies';
 
 export type contentProps = {
   body?: string[];
@@ -23,28 +21,6 @@ export type contentProps = {
 };
 
 export default async function ParamountP2() {
-  const caseStudyInformation: OtherCaseStudiesProps = {
-    caseStudies: [
-      {
-        org: 'HackDavis 2024',
-        purpose: 'FREELANCE PROJECT',
-        desc: 'Empowering students to create for social good',
-        src: '/caseStudies/hackdavis.svg',
-        alt: 'Hackdavis Image',
-        linkurl: '/hackdavis',
-      },
-      {
-        org: 'Sage',
-        purpose: 'PASSION PROJECT',
-        desc: "Equipping individuals to navigate life's stressors",
-        src: '/caseStudies/sage.svg',
-        alt: 'Sage App',
-        linkurl: '/sage',
-        flip: true,
-      },
-    ],
-  };
-
   const pageContents = [
     { sectionName: 'Context', level: 0 },
     { sectionName: 'Research', level: 0 },
@@ -97,7 +73,7 @@ export default async function ParamountP2() {
         h4={h4Data.slice(18, 19)}
       />
       <DividerLine />
-      <OtherCaseStudies {...caseStudyInformation} />
+      <NextCaseStudies />
     </main>
   );
 }

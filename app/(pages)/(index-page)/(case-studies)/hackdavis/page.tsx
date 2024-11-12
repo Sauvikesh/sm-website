@@ -10,37 +10,10 @@ import Results from './_components/Sections/Results/Results';
 import Venue from './_components/Sections/Venue/Venue';
 import Ending from './_components/Sections/Ending/Ending';
 import DividerLine from '../_components/DividerLine/DividerLine';
-import OtherCaseStudies, {
-  OtherCaseStudiesProps,
-} from '../_components/OtherCaseStudies/OtherCaseStudies';
 import TableOfContents from '../_components/TableOfContents/TableOfContents';
-import getImageData from '@/app/_lib/getImageData';
+import NextCaseStudies from './_components/Sections/NextCaseStudies/NextCaseStudies';
 
 export default async function HackDavis() {
-  const images = await getImageData('landingPage/');
-
-  const caseStudyInformation: OtherCaseStudiesProps = {
-    caseStudies: [
-      {
-        org: 'Sage',
-        purpose: 'PASSION PROJECT',
-        desc: "Equipping individuals to navigate life's stressors",
-        src: '/caseStudies/sage.svg',
-        alt: 'Sage App',
-        linkurl: '/sage',
-      },
-      {
-        org: 'Paramount+',
-        purpose: 'INTERNSHIP',
-        desc: 'Reimagining the live television experience',
-        src: images?.at(2)?.url || '',
-        alt: 'Paramount Logo',
-        linkurl: '/paramount/EPG',
-        flip: true,
-      },
-    ],
-  };
-
   const pageContents = [
     { sectionName: 'Overview', level: 0 },
     { sectionName: 'Product Preview', level: 0 },
@@ -69,7 +42,7 @@ export default async function HackDavis() {
       <FinalSolution />
       <Ending />
       <DividerLine />
-      <OtherCaseStudies {...caseStudyInformation} />
+      <NextCaseStudies />
     </main>
   );
 }
