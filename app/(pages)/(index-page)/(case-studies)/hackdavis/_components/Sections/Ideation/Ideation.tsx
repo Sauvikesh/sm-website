@@ -144,7 +144,7 @@ export default function Ideation() {
             alt="teammate message"
             width={1000}
             height={1000}
-            className="w-[50%]"
+            className="w-[160%]"
           />
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
