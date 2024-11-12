@@ -6,7 +6,7 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 
 export default function BreakDown(content: contentProps) {
   return (
-    <section className="flex flex-col gap-20" id="Product Breakdown">
+    <section className="flex flex-col gap-20" id="Research">
       <RevealWrapper>
         <div className="flex flex-col gap-10">
           <h3>{content.h3?.at(0)}</h3>

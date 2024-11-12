@@ -44,9 +44,10 @@ export default async function ParamountP2() {
       },
     ],
   };
+
   const pageContents = [
-    { sectionName: 'Overview', level: 0 },
-    { sectionName: 'Product Breakdown', level: 0 },
+    { sectionName: 'Context', level: 0 },
+    { sectionName: 'Research', level: 0 },
     { sectionName: 'Iterations', level: 0 },
     { sectionName: 'Final Designs', level: 0 },
     { sectionName: 'Results', level: 0 },

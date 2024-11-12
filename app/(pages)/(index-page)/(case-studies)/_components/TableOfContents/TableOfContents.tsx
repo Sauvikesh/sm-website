@@ -62,7 +62,7 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
         ))}
       </div>
       <div
-        className={`flex flex-col absolute w-max bg-white rounded-lg shadow-lg p-4 ${isHovered ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300 z-0`}
+        className={`flex flex-col absolute w-max bg-white rounded-lg shadow-toc p-4 ${isHovered ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300 z-0`}
       >
         {sections.map((section, index) => (
           <p
