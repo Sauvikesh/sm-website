@@ -51,6 +51,10 @@ export default function Footer() {
   return !invisible ? (
     <footer
       className={`${textColor} ${bgColor} flex justify-between px-case-study pb-[89px] pt-20 relative overflow-x-clip`}
+      style={{
+        backgroundImage: "url('/paperFooter.png')",
+        backgroundSize: 'cover',
+      }}
     >
       <div className="flex flex-col justify-between">
         <div className="flex flex-col gap-4">

@@ -45,7 +45,13 @@ export default function Landing() {
   // ];
 
   return (
-    <section className="flex flex-col gap-4 items-center justify-center h-[100vh] -mx-[40%] bg-[#F7F7F8]">
+    <section
+      className="flex flex-col gap-4 items-center justify-center h-[100vh] -mx-[40%] bg-[#F7F7F8]"
+      style={{
+        backgroundImage: "url('/paperIndex.png')",
+        backgroundSize: 'cover',
+      }}
+    >
       {floatingImages.map((image, index) => (
         <Image
           src={image.src}
