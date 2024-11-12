@@ -12,7 +12,7 @@ export default function Landing() {
         width={1000}
         height={1000}
         alt="hackdavis image"
-        className="w-[40px] pt-[230px]"
+        className="w-[40px]"
       />
       <h2 className="pt-10 text-center">
         Empowering students to<br></br> create for social good
@@ -23,7 +23,7 @@ export default function Landing() {
         width={1000}
         height={1000}
         alt="hackdavis image"
-        className="w-[1120px] -mb-28"
+        className="w-[1120px] -mb-[170px]"
       />
     </section>
   );
