@@ -1,8 +1,10 @@
 'use client';
 import { Providers } from '@/app/_providers';
 import { Parallax } from 'react-scroll-parallax';
+import { useState } from 'react';
+import Loader from '@/app/(pages)/_components/Loader/Loader';
 import Image from 'next/image';
-import LoadingImage from '@/app/(pages)/_components/LoadingImage/LoadingImage';
+import { ImageProps } from 'next/image';
 
 type ParallaxImageProps = {
   speed: number;
@@ -67,5 +69,24 @@ export default function Landing() {
         </div>
       </header>
     </Providers>
+  );
+}
+
+
+type ImageWithStateProps = ImageProps;
+
+function LoadingImage(props: ImageWithStateProps) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  return (
+    <>
+      {isLoading && <Loader />}
+      <Image
+        {...props}
+        alt=""
+        loading="eager"
+        onLoad={() => setIsLoading(false)}
+      />
+    </>
   );
 }
