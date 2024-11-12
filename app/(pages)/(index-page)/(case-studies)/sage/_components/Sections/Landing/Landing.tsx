@@ -34,9 +34,9 @@ export default function Landing() {
   return (
     <Providers>
       <header className="flex flex-col h-[100vh] items-center overflow-clip bg-[#e4edeb] mx-[-40%]">
-        <h1 className="text-[80px] font-semibold lead-[44px] font-f-w pt-28">
+        <h2 className="pt-28">
           Sage
-        </h1>
+        </h2>
         <p className="text-base">7 min read</p>
         <div className="flex justify-around ">
           {parallaxImages.map((image, index) => {
