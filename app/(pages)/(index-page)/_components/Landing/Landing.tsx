@@ -84,11 +84,11 @@ export default function Landing() {
       </div>
 
       <Image
-        src="/landing/downArrowSticker.svg"
+        src="/landing/arrowDown.png"
         width={1000}
         height={1000}
         alt="down arrow"
-        className="w-20 pt-20 animate-hover-up-down"
+        className="w-[50px] animate-hover-up-down"
       />
 
       {/* <div className="flex justify-between pt-16 relative">
