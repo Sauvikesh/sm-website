@@ -5,7 +5,7 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 export default function Landing(content: contentProps) {
   return (
     <section
-      className="flex flex-col items-center justify-end h-[100vh] gap-10 -mx-[40%]"
+      className="flex flex-col items-center justify-end h-[100vh] gap-6 -mx-[40%]"
       style={{
         backgroundImage:
           "url('/paramount/landingBlur.png'), radial-gradient(circle, #0064FF 0%, #000A3B 100%)",
@@ -17,12 +17,10 @@ export default function Landing(content: contentProps) {
         alt=""
         width={1000}
         height={1000}
-        className="w-[168px]"
+        className="h-[40px]"
       />
-      <div className="flex flex-col w-[670px] items-center gap-4">
-        <h2 className="text-center text-white">{content.h2?.at(0)}</h2>
-        <h4 className="text-[#ECF1FC]">7 min read</h4>
-      </div>
+      <h2 className="text-center text-white w-[670px]">{content.h2?.at(0)}</h2>
+      <h4 className="text-[#ECF1FC]">7 min read</h4>
       <div className="relative">
         <LoadingImage
           src={content.images?.at(0)?.url}
