@@ -5,27 +5,27 @@ export default function Landing() {
     {
       src: '/landing/shapes/star.svg',
       className:
-        'w-[100px] h-auto absolute top-[40px] right-[25%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[10%] right-[25%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/cloud.svg',
       className:
-        'w-[100px] h-auto absolute top-[90px] right-[-3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[4.5%] left-[-3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/star2.svg',
       className:
-        'w-[100px] h-auto absolute top-[680px] left-[-3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[2%] left-[11%]  hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/4star.svg',
       className:
-        'w-[100px] h-auto absolute top-[190px] left-[13%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[12%] left-[8%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/spade.svg',
       className:
-        'w-[100px] h-auto absolute top-[-50px] left-[3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[-50px] right-[15%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
   ];
 
@@ -64,10 +64,10 @@ export default function Landing() {
       ))}
 
       <div className="flex flex-col gap-4 max-w-[1008px] w-[70vw]">
-        <div className="flex relative animate-slide-header-down">
-          <h2 className="font-normal z-10">
-            Hi, I'm Sam! I find joy in creative problem solving, seek to
-            understand the intricacies of human beings, and design with empathy
+        <div className="flex relative">
+          <h2 className="font-normal z-10 animate-slide-header-down">
+            Hi, I'm Sam! I design with empathy, find joy in creative problem
+            solving, and seek to understand the intricacies of human beings
             (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
           </h2>
           <Image
@@ -79,22 +79,12 @@ export default function Landing() {
           />
         </div>
 
-        {/*
-
-color: #000;
-font-family: "DM Sans";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.4px;
-*/}
         <div className="flex items-center gap-2 animate-slide-header-down-delayed">
           <p className="text-xl font-normal leading-normal tracking-[0.4px]">
             Previously at{' '}
             <a
               className="underline underline-offset-2"
-              href="https://www.paramountplus.com/?ds_rl=1289065&ftag=PPM-02-10ade4f&vndid=google$null$null$paramount%20+"
+              href="https://www.paramount.com/about"
               target="_blank"
             >
               Paramount+
