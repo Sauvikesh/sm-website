@@ -20,7 +20,7 @@ export default function Landing(content: contentProps) {
         className="h-[40px]"
       />
       <h2 className="text-center text-white w-[670px]">{content.h2?.at(0)}</h2>
-      <h4 className="text-[#ECF1FC]">7 min read</h4>
+      <h4 className="text-[#ECF1FC]">5 min read</h4>
       <div className="relative">
         <LoadingImage
           src={content.images?.at(0)?.url}
