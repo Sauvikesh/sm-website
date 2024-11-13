@@ -79,10 +79,35 @@ export default function Landing() {
           />
         </div>
 
-        {/* <h2 className="text-2xl font-normal leading-normal tracking-[0.48px] animate-slide-header-down-delayed">
-          I design with empathy, find joy in creative problem solving, seek to
-          understand the intricacies of human beings, and fuel with matcha
-        </h2> */}
+        {/*
+
+color: #000;
+font-family: "DM Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.4px;
+*/}
+        <div className="flex items-center gap-2 animate-slide-header-down-delayed">
+          <p className="text-xl font-normal leading-normal tracking-[0.4px]">
+            Previously at{' '}
+            <a
+              className="underline underline-offset-2"
+              href="https://www.paramountplus.com/?ds_rl=1289065&ftag=PPM-02-10ade4f&vndid=google$null$null$paramount%20+"
+              target="_blank"
+            >
+              Paramount+
+            </a>
+          </p>
+          <Image
+            src="/navLinkArrow.svg"
+            width={1000}
+            height={1000}
+            alt="down arrow"
+            className="w-[10px]"
+          />
+        </div>
       </div>
 
       <Image
