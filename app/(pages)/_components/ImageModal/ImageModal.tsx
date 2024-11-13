@@ -7,6 +7,7 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 type ImageWithModalProps = ImageProps & {
   onLoad?: () => void;
+  removeMaxHeight?: boolean;
 };
 
 export const ImageWithModal = ({
@@ -17,6 +18,7 @@ export const ImageWithModal = ({
   className,
   loading,
   onLoad,
+  removeMaxHeight,
 }: ImageWithModalProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -40,7 +42,14 @@ export const ImageWithModal = ({
         onClick={openModal}
         onLoad={onLoad}
       />
-      {isModalOpen && <ImageModal src={src} alt={alt} onClose={closeModal} />}
+      {isModalOpen && (
+        <ImageModal
+          src={src}
+          alt={alt}
+          onClose={closeModal}
+          removeMaxHeight={removeMaxHeight}
+        />
+      )}
     </>
   );
 };
@@ -49,8 +58,14 @@ type ImageModalProps = {
   src: string | StaticImport;
   alt: string;
   onClose: () => void;
+  removeMaxHeight?: boolean;
 };
-const ImageModal = ({ src, alt, onClose }: ImageModalProps) => {
+const ImageModal = ({
+  src,
+  alt,
+  onClose,
+  removeMaxHeight,
+}: ImageModalProps) => {
   useEffect(() => {
     // Lock scroll on the body when the modal opens
     const originalOverflow = document.body.style.overflow;
@@ -63,7 +78,7 @@ const ImageModal = ({ src, alt, onClose }: ImageModalProps) => {
   }, []);
   return (
     <div
-      className="fixed inset-0 z-50 flex justify-center bg-black overflow-scroll"
+      className="fixed inset-0 z-50 flex justify-center bg-white overflow-scroll"
       onClick={onClose} // Close the modal if clicked outside the image
     >
       {/* <TransformWrapper> */}
@@ -75,7 +90,7 @@ const ImageModal = ({ src, alt, onClose }: ImageModalProps) => {
           width={1000}
           height={1000}
           loading="eager"
-          className="object-contain w-[90vw] pt-20 pb-20 cursor-zoom-out" // Adjust the size of the image inside the modal
+          className={`object-contain w-[90vw] ${removeMaxHeight ? '' : 'max-h-[100vh]'} pt-20 pb-20 cursor-zoom-out`} // Adjust the size of the image inside the modal
         />
       </div>
       {/* </TransformComponent> */}

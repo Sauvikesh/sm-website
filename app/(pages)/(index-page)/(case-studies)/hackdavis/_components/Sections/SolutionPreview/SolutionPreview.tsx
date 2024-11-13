@@ -36,6 +36,7 @@ export default function SolutionPreview() {
               alt="about page"
               width={1000}
               height={1000}
+              removeMaxHeight={true}
             />
             <h4> about page on Web</h4>
           </div>
@@ -46,6 +47,7 @@ export default function SolutionPreview() {
               alt="about page"
               width={1000}
               height={1000}
+              removeMaxHeight={true}
             />
             <h4>registration page on Web</h4>
           </div>
@@ -56,6 +58,7 @@ export default function SolutionPreview() {
               alt="about page"
               width={1000}
               height={1000}
+              removeMaxHeight={true}
             />
             <h4>day-of-event page on Web</h4>
           </div>

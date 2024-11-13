@@ -167,6 +167,7 @@ export default function FinalSolution() {
                   alt="about page"
                   width={1000}
                   height={1000}
+                  removeMaxHeight={true}
                 />
               </motion.div>
 
@@ -208,6 +209,7 @@ export default function FinalSolution() {
                   alt="about page"
                   width={1000}
                   height={1000}
+                  removeMaxHeight={true}
                 />
               </motion.div>
 
@@ -244,6 +246,7 @@ export default function FinalSolution() {
                   alt="about page"
                   width={1000}
                   height={1000}
+                  removeMaxHeight={true}
                 />
 
                 {commentsDOE.map((comment, index) => (
