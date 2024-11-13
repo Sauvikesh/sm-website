@@ -53,7 +53,7 @@ export default function Navbar() {
       className={`fixed top-0 z-50 flex w-full justify-center bg-transparent pt-6 transition-all duration-300  ${isVisible ? 'opacity-1 translate-y-0' : 'opacity-0 -translate-y-full'}`}
     >
       <nav
-        className={`flex items-center justify-center ${darkMode ? 'bg-[#38373C] text-white' : 'bg-[#F1F1F1] text-black'} w-fit rounded-[100px] font-dm-sans`}
+        className={`flex items-center justify-center ${darkMode ? 'bg-[#38373C] text-white' : 'bg-[#EBEBEC] text-black'} w-fit rounded-[100px] font-dm-sans`}
       >
         <ul className="flex items-center gap-6 p-3 h-[56px] font-dm-sans text-xl leading-none">
           {navItems.map((item, index) => (

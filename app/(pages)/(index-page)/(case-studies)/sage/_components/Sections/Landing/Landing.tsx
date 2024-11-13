@@ -45,7 +45,7 @@ export default function Landing() {
         <h2 className="w-[668px] text-center text-[#1B454F]">
           Equipping individuals to navigate life's stressors
         </h2>
-        <p className="text-base">6 min read</p>
+        <p className="text-base text-[#1B454F]">6 min read</p>
         <div className="flex -mb-[290px] -translate-y-10">
           {parallaxImages.map((image, index) => {
             if (index === 0) {

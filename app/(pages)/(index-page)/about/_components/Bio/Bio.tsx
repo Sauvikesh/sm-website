@@ -6,7 +6,7 @@ export default function Bio() {
     {
       src: '/landing/shapes/4star.svg',
       className:
-        'w-[100px] h-auto absolute bottom-[-10%] left-[-2%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full z-[11]',
+        'w-[100px] h-auto absolute bottom-[-13%] left-[-2%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full z-[11]',
     },
     {
       src: '/landing/shapes/cloud.svg',

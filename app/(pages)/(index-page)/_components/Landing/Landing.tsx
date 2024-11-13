@@ -5,7 +5,7 @@ export default function Landing() {
     {
       src: '/landing/shapes/star.svg',
       className:
-        'w-[100px] h-auto absolute top-[12%] right-[18%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[12%] right-[17%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/cloud.svg',
@@ -15,17 +15,17 @@ export default function Landing() {
     {
       src: '/landing/shapes/star2.svg',
       className:
-        'w-[100px] h-auto absolute top-[2%] left-[11%]  hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[2%] left-[15%]  hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/4star.svg',
       className:
-        'w-[100px] h-auto absolute top-[14%] left-[8%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[15%] left-[8%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/spade.svg',
       className:
-        'w-[100px] h-auto absolute top-[-50px] right-[15%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[-50px] right-[20%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full z-50',
     },
   ];
 
@@ -68,7 +68,7 @@ export default function Landing() {
           <h2 className="font-normal z-10 animate-slide-header-down">
             Hi, I'm Sam! I design with empathy, find joy in creative problem
             solving, and seek to understand the intricacies of human beings
-            (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+            <span className='text-2xl'> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</span>
           </h2>
           <Image
             src="/landing/matcha.png"
