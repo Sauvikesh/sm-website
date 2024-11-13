@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Landing(content: contentProps) {
   return (
     <section
-      className="flex flex-col h-[100vh] items-center justify-end gap-10 -mx-[40%] relative"
+      className="flex flex-col h-[100vh] items-center justify-end gap-6 -mx-[40%] relative overflow-clip"
       style={{
         backgroundImage:
           'radial-gradient(67.21% 51.52% at 67.71% 57.25%, #0064FF 0%, #000 73.44%)',
@@ -18,7 +18,7 @@ export default function Landing(content: contentProps) {
         alt=""
         width={1000}
         height={1000}
-        className="w-[168px] z-10"
+        className="h-[40px] z-10"
       />
       <Image
         src="/paramount/blueEllipse.png"
@@ -27,12 +27,10 @@ export default function Landing(content: contentProps) {
         height={1000}
         className="w-[30%] absolute left-0 bottom-0 z-0"
       />
-      <div className="flex flex-col w-[670px] items-center gap-4 z-10">
-        <h2 className="text-center text-white">{content.h2?.at(0)}</h2>
-        <h4 className="text-[#ECF1FC]">7 min read</h4>
-      </div>
+      <h2 className="text-center text-white w-[800px]">{content.h2?.at(0)}</h2>
+      <h4 className="text-white text-center">7 min read</h4>
 
-      <div className="relative z-10">
+      <div className="relative z-10 -mb-[10px]">
         <LoadingImage
           src={content.images?.at(0)?.url}
           alt=""

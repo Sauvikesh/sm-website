@@ -29,7 +29,7 @@ export default function Landing() {
         width={1000}
         height={1000}
         alt="hackdavis image"
-        className="w-[1120px] -mb-[130px]"
+        className="w-[1120px] -mb-[100px]"
       />
     </section>
   );

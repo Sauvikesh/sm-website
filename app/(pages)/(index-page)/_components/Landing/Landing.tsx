@@ -5,7 +5,7 @@ export default function Landing() {
     {
       src: '/landing/shapes/star.svg',
       className:
-        'w-[100px] h-auto absolute top-[13%] right-[16%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[12%] right-[18%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/cloud.svg',
@@ -63,7 +63,7 @@ export default function Landing() {
         />
       ))}
 
-      <div className="flex flex-col gap-4 max-w-[1008px] w-[70vw]">
+      <div className="flex flex-col gap-4 max-w-[1008px] w-[70vw] pt-[30px]">
         <div className="flex relative">
           <h2 className="font-normal z-10 animate-slide-header-down">
             Hi, I'm Sam! I design with empathy, find joy in creative problem
