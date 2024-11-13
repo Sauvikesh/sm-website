@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { RevealWrapper } from '../../../_components/Reveal/RevealWrapper';
-import LoadingImage from '@/app/(pages)/_components/LoadingImage/LoadingImage';
 
 export default function Bio() {
   const floatingImages = [
@@ -42,7 +41,7 @@ export default function Bio() {
           ))}
 
         <div className="flex relative w-[40%] h-full -mt-14">
-          <LoadingImage
+          <Image
             src="/about/SamTMah.svg"
             alt="Sam Photo"
             width={1000}
