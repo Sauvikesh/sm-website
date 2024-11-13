@@ -63,15 +63,15 @@ const config: Config = {
         },
         hoverUpDown: {
           '0%': {
-            transform: 'translateY(170px)',
+            transform: 'translateY(200px)',
             opacity: '50%',
           },
           '50%': {
-            transform: 'translateY(200px)',
+            transform: 'translateY(230px)',
             opacity: '100%',
           },
           '100%': {
-            transform: 'translateY(170px)',
+            transform: 'translateY(200px)',
             opacity: '50%',
           },
         },

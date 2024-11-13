@@ -5,7 +5,7 @@ export default function Landing() {
     {
       src: '/landing/shapes/star.svg',
       className:
-        'w-[100px] h-auto absolute top-[12%] right-[16%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[13%] right-[16%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/cloud.svg',
@@ -20,7 +20,7 @@ export default function Landing() {
     {
       src: '/landing/shapes/4star.svg',
       className:
-        'w-[100px] h-auto absolute top-[13%] left-[8%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[14%] left-[8%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/spade.svg',
