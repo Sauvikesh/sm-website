@@ -20,7 +20,7 @@ export default function Landing() {
     {
       src: '/landing/shapes/4star.svg',
       className:
-        'w-[100px] h-auto absolute top-[230px] left-[13%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[190px] left-[13%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/spade.svg',
@@ -63,24 +63,26 @@ export default function Landing() {
         />
       ))}
 
-      <div className="flex flex-col gap-4 w-[768px]">
+      <div className="flex flex-col gap-4 max-w-[1008px] w-[70vw]">
         <div className="flex relative animate-slide-header-down">
-          <h1 className="text-[96px] font-bold w-full text-nowrap tracking-[1.92px]">
-            Hi, I'm Sam!
-          </h1>
+          <h2 className="font-normal z-10">
+            Hi, I'm Sam! I find joy in creative problem solving, seek to
+            understand the intricacies of human beings, and design with empathy
+            (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+          </h2>
           <Image
             src="/landing/matcha.png"
             width={1000}
             height={1000}
             alt="matcha"
-            className="w-[150px] h-auto -mt-16"
+            className="w-[150px] h-auto right-[-15%] top-[-140px] absolute z-0"
           />
         </div>
 
-        <h2 className="text-2xl font-normal leading-normal tracking-[0.48px] animate-slide-header-down-delayed">
+        {/* <h2 className="text-2xl font-normal leading-normal tracking-[0.48px] animate-slide-header-down-delayed">
           I design with empathy, find joy in creative problem solving, seek to
           understand the intricacies of human beings, and fuel with matcha
-        </h2>
+        </h2> */}
       </div>
 
       <Image
