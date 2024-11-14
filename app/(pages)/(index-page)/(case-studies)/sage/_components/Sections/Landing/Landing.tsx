@@ -34,7 +34,13 @@ export default function Landing() {
 
   return (
     <Providers>
-      <header className="flex flex-col gap-6 h-[100vh] items-center justify-end overflow-clip bg-[#E2EDEB] mx-[-40%]">
+      <header
+        className="flex flex-col gap-6 h-[100vh] items-center justify-end overflow-clip bg-[#E2EDEB] mx-[-40%]"
+        style={{
+          backgroundImage: "url('/sageImages/hero/sageHeroBG.png')",
+          backgroundSize: 'cover',
+        }}
+      >
         <ImageWithModal
           src="/sageImages/sageLogo.png"
           alt="Sage Logo"
