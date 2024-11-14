@@ -6,8 +6,8 @@ import { fahkwang, dmSans, outfit } from '../../_fonts';
 import '../../globals.css';
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: "Samantha Mah's portfolio website. ",
+  title: 'Samantha Mah | Portfolio',
+  description: "Samantha Mah's portfolio website.",
 };
 
 export default function RootLayout({
