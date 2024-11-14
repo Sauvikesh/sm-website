@@ -3,27 +3,27 @@ import Image from 'next/image';
 export default function Landing() {
   const floatingImages = [
     {
-      src: '/landing/shapes/star.svg',
+      src: '/landing/shapes/star.png',
       className:
         'w-[100px] h-auto absolute top-[12%] right-[17%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
-      src: '/landing/shapes/cloud.svg',
+      src: '/landing/shapes/cloud.png',
       className:
         'w-[100px] h-auto absolute top-[4.5%] left-[-3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
-      src: '/landing/shapes/star2.svg',
+      src: '/landing/shapes/star2.png',
       className:
         'w-[100px] h-auto absolute top-[2%] left-[15%]  hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
-      src: '/landing/shapes/4star.svg',
+      src: '/landing/shapes/4star.png',
       className:
         'w-[100px] h-auto absolute top-[15%] left-[8%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
-      src: '/landing/shapes/spade.svg',
+      src: '/landing/shapes/spade.png',
       className:
         'w-[100px] h-auto absolute top-[-50px] right-[20%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full z-50',
     },

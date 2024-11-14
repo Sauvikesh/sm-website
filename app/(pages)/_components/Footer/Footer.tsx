@@ -27,17 +27,17 @@ export default function Footer() {
 
   const floatingImages = [
     {
-      src: '/landing/shapes/star2.svg',
+      src: '/landing/shapes/star2.png',
       className:
         'w-[80px] h-auto absolute bottom-[15%] left-[-2.5%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
-      src: '/landing/shapes/4star.svg',
+      src: '/landing/shapes/4star.png',
       className:
         'w-[80px] h-auto absolute top-[-50px] left-[4%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
-      src: '/landing/shapes/spade.svg',
+      src: '/landing/shapes/spade.png',
       className:
         'w-[80px] h-auto absolute bottom-[1%] right-[-3%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
