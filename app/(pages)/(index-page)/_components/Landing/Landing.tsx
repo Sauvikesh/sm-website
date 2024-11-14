@@ -68,7 +68,7 @@ export default function Landing() {
           <h2 className="font-normal z-10 animate-slide-header-down">
             Hi, I'm Sam! I design with empathy, find joy in creative problem
             solving, and seek to understand the intricacies of human beings
-            <span className='text-2xl'> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</span>
+            <span className="text-2xl"> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</span>
           </h2>
           <Image
             src="/landing/matcha.png"
