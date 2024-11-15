@@ -24,7 +24,7 @@ export default function SageCaseStudyThumbnail() {
         alt={alt}
         height={1000}
         width={1000}
-        className={`w-full h-auto absolute bottom-0 left-[15px] group-hover:scale-105 duration-500 origin-bottom`}
+        className={`w-full h-auto absolute bottom-0 right-0 group-hover:scale-105 duration-500 origin-bottom`}
       ></Image>
     </Link>
   );
