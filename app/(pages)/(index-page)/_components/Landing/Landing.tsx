@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import ScrollArrow from './ScrollArrow';
 export default function Landing() {
   const floatingImages = [
     {
@@ -100,13 +100,7 @@ export default function Landing() {
         </div>
       </div>
 
-      <Image
-        src="/landing/arrowDown.png"
-        width={1000}
-        height={1000}
-        alt="down arrow"
-        className="w-[50px] animate-hover-up-down"
-      />
+      <ScrollArrow />
 
       {/* <div className="flex justify-between pt-16 relative">
         {statuses.map((status, index) => (

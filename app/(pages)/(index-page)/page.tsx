@@ -44,13 +44,16 @@ export default async function Home() {
   return (
     <main className="flex flex-col px-[15%] pb-20 overflow-clip relative font-dm-sans gap-20">
       <Landing />
-      {caseStudyInformation.map((study, index) => {
-        if (index === 0) {
-          return <LoadingCaseStudy {...study} key={index} />;
-        } else {
-          return <CaseStudy {...study} key={index} />;
-        }
-      })}
+
+      <div className="flex flex-col gap-20" id="Case Studies">
+        {caseStudyInformation.map((study, index) => {
+          if (index === 0) {
+            return <LoadingCaseStudy {...study} key={index} />;
+          } else {
+            return <CaseStudy {...study} key={index} />;
+          }
+        })}
+      </div>
     </main>
   );
 }
