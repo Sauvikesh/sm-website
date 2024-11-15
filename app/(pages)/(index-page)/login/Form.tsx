@@ -52,7 +52,13 @@ export default function Form({ callBackURL, password }: FormProps) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-light-bg text-black h-[100vh] gap-6 pl-[11%] pr-[11%]">
+    <div
+      className="flex flex-col items-center justify-center bg-[#F7F7F8] text-black h-[100vh] gap-6 pl-[11%] pr-[11%]"
+      style={{
+        backgroundImage: "url('/paperIndex.png')",
+        backgroundSize: 'cover',
+      }}
+    >
       <Image
         src="/blob.svg"
         width={1000}
@@ -62,7 +68,7 @@ export default function Form({ callBackURL, password }: FormProps) {
       />
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-center justify-center gap-6 bg-inherit"
+        className="flex flex-col items-center justify-center gap-6"
       >
         <h1 className="text-2xl text-center leading-9 font-dm-sans font-medium">
           Enter the magic code <br></br>to access this page

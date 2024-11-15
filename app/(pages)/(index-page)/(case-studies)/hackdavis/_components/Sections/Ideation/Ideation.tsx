@@ -16,7 +16,7 @@ export default function Ideation() {
         </section>
 
         <div className="flex gap-6 pt-10 pb-[100px]">
-        <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2">
             <ImageWithModal
               src="/hackdavis/ideation/prize1.svg"
               alt="prize image 1"

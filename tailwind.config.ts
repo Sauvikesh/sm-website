@@ -11,6 +11,7 @@ const config: Config = {
       boxShadow: {
         perimeter: '0px 2px 40px 0px rgba(0, 0, 0, 0.25)',
         toc: '0px 0px 8px 0px rgba(0, 0, 0, 0.25)',
+        navbar: '2px 4px 16px 0px rgba(0, 0, 0, 0.25)',
       },
       fontFamily: {
         'dm-sans': ['var(--font-dmSans)', 'sans-serif'],
