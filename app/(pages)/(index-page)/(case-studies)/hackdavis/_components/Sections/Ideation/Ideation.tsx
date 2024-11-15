@@ -16,20 +16,24 @@ export default function Ideation() {
         </section>
 
         <div className="flex gap-6 pt-10 pb-[100px]">
-          <ImageWithModal
-            src="/hackdavis/ideation/prize1.svg"
-            alt="prize 1"
-            width={1000}
-            height={1000}
-            className="w-[28%]"
-          />
-          <ImageWithModal
-            src="/hackdavis/ideation/prize2.svg"
-            alt="prize 2"
-            width={1000}
-            height={1000}
-            className="w-[28%]"
-          />
+        <div className="flex flex-col items-center gap-2">
+            <ImageWithModal
+              src="/hackdavis/ideation/prize1.svg"
+              alt="prize image 1"
+              width={1000}
+              height={1000}
+            />
+            <h4>initial exploration</h4>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <ImageWithModal
+              src="/hackdavis/ideation/prize2.svg"
+              alt="prize image 2"
+              width={1000}
+              height={1000}
+            />
+            <h4>iteration</h4>
+          </div>
           <Image
             src="/hackdavis/Arrow.svg"
             alt="arrow"
@@ -37,13 +41,15 @@ export default function Ideation() {
             height={1000}
             className="w-10"
           />
-          <ImageWithModal
-            src="/hackdavis/ideation/prize3.svg"
-            alt="prize 4"
-            width={1000}
-            height={1000}
-            className="w-[28%]"
-          />
+          <div className="flex flex-col items-center gap-2">
+            <ImageWithModal
+              src="/hackdavis/ideation/prize3.svg"
+              alt="prize image 3"
+              width={1000}
+              height={1000}
+            />
+            <h4>final design on mobile</h4>
+          </div>
         </div>
 
         <Heading
