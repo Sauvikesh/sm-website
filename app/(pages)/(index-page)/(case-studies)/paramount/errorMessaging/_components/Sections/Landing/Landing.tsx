@@ -17,7 +17,7 @@ export default function Landing(content: contentProps) {
         alt=""
         width={1000}
         height={1000}
-        className="h-[40px]"
+        className="h-[40px] w-auto"
       />
       <h2 className="text-center text-white w-[670px]">{content.h2?.at(0)}</h2>
       <h4 className="text-[#ECF1FC]">5 min read</h4>

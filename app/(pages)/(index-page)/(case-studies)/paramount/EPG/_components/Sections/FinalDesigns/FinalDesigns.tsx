@@ -4,7 +4,6 @@ import HeadingBody from '../../../../../_components/HeadingBody/HeadingBody';
 import { contentProps } from '../../../../errorMessaging/page';
 import { useState } from 'react';
 import { ToggleButton } from '@/app/(pages)/(index-page)/(case-studies)/hackdavis/_components/Sections/FinalSolution/FinalSolution';
-import { useEffect } from 'react';
 export default function FinalDesigns(content: contentProps) {
   const [activeDesignButton, setActiveDesignButton] = useState(false);
 
@@ -35,10 +34,6 @@ export default function FinalDesigns(content: contentProps) {
       ? content.images?.at(0)?.url
       : content.images?.at(4)?.url, // favorites
   ];
-
-  useEffect(() => {
-    console.log(activeDesignButton);
-  }, [activeDesignButton]);
 
   return (
     <section

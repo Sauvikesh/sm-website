@@ -12,7 +12,7 @@ export default function SageCaseStudyThumbnail() {
   return (
     <Link
       href={linkurl}
-      className="flex flex-col w-[488px] h-[529px] flex-grow pt-12 mb-20 px-10 bg-[#F1F1F1] rounded-3xl border-[#CCC] border overflow-clip relative group hover:shadow-perimeter duration-500"
+      className="flex flex-col w-[488px] h-[529px] pt-12 mb-20 px-10 bg-[#F1F1F1] rounded-3xl border-[#CCC] border overflow-clip relative group hover:shadow-perimeter duration-500"
     >
       <div className="flex gap-2 w-full">
         <h4 className="font-outfit text-black">{org}</h4>

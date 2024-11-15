@@ -8,14 +8,14 @@ export default async function EMCaseStudyThumbnail() {
   const org = 'Paramount+';
   const purpose = 'INTERNSHIP';
   const desc = 'Guiding users towards resolution during video playback error';
-  const src = images?.at(1)?.url || '';
+  const src = images?.at(4)?.url || '';
   const alt = 'Paramount Logo';
   const linkurl = '/paramount/errorMessaging';
 
   return (
     <Link
       href={linkurl}
-      className="flex flex-col w-[488px] h-[529px] flex-grow py-12 mb-20 p-10 bg-[#F1F1F1] rounded-3xl border-[#CCC] border overflow-clip relative group hover:shadow-perimeter duration-500"
+      className="flex flex-col w-[488px] h-[529px]  py-12 mb-20 p-10 bg-[#F1F1F1] rounded-3xl border-[#CCC] border overflow-clip relative group hover:shadow-perimeter duration-500"
     >
       <div className="flex gap-2 w-full">
         <h4 className="font-outfit text-black">{org}</h4>
@@ -27,7 +27,7 @@ export default async function EMCaseStudyThumbnail() {
         alt={alt}
         height={1000}
         width={1000}
-        className={`w-full h-auto group-hover:scale-105 duration-500 origin-bottom mt-auto`}
+        className={`w-full h-auto absolute right-0 bottom-0 group-hover:scale-105 duration-500 origin-bottom mt-auto`}
       ></Image>
     </Link>
   );

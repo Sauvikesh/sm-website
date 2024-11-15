@@ -18,7 +18,7 @@ export default function Landing(content: contentProps) {
         alt=""
         width={1000}
         height={1000}
-        className="h-[40px] z-10"
+        className="h-[40px] w-auto z-10"
       />
       <Image
         src="/paramount/blueEllipse.png"

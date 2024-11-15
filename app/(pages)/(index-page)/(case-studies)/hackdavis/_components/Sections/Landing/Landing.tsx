@@ -18,7 +18,7 @@ export default function Landing() {
         width={1000}
         height={1000}
         alt="hackdavis image"
-        className="h-[40px]"
+        className="h-[40px] w-auto"
       />
       <h2 className="text-center">
         Empowering students to<br></br> create for social good
