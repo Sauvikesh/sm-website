@@ -14,8 +14,8 @@ export default function Iterations(content: contentProps) {
             <HeadingBody h={content.h3?.at(0)} p={content.body?.at(0)} />
           </div>
 
-          <div className="flex w-full items-center">
-            <div className="flex flex-col items-center gap-2 flex-grow">
+          <div className="flex w-full items-center gap-8">
+            <div className="flex flex-col items-center gap-2 flex-grow w-[47%] self-end">
               <ImageWithModal
                 src={content.images?.at(0)?.url}
                 alt=""
@@ -30,9 +30,9 @@ export default function Iterations(content: contentProps) {
               alt="arrow"
               width={1000}
               height={1000}
-              className="w-12"
+              className="w-10"
             />
-            <div className="flex flex-col items-center gap-2 flex-grow">
+            <div className="flex flex-col items-center gap-2 flex-grow w-[53%] self-end">
               <ImageWithModal
                 src={content.images?.at(1)?.url}
                 alt=""
@@ -49,13 +49,13 @@ export default function Iterations(content: contentProps) {
           <HeadingBody h={content.h3?.at(1)} p={content.body?.at(1)} />
 
           <div className="flex w-full gap-8">
-            <div className="flex flex-col items-center gap-2 self-end flex-grow">
+            <div className="flex flex-col items-center gap-2 self-end flex-grow w-[47%]">
               <ImageWithModal
                 src={content.images?.at(1)?.url}
                 alt=""
                 width={1000}
                 height={1000}
-                className="w-[410px]"
+                className="w-full"
               />
               <h4>{content.h4?.at(3)}</h4>
             </div>
@@ -66,13 +66,13 @@ export default function Iterations(content: contentProps) {
               height={1000}
               className="w-10"
             />
-            <div className="flex flex-col items-center gap-2 flex-grow">
+            <div className="flex flex-col items-center gap-2 flex-grow w-[53%] self-end">
               <ImageWithModal
                 src={content.images?.at(2)?.url}
                 alt=""
                 width={1000}
                 height={1000}
-                className="w-[478px]"
+                className="w-full"
               />
               <h4>{content.h4?.at(4)}</h4>
             </div>
@@ -83,7 +83,7 @@ export default function Iterations(content: contentProps) {
           <HeadingBody h={content.h3?.at(2)} p={content.body?.at(2)} />
 
           <div className="flex w-full gap-8">
-            <div className="flex flex-col items-center gap-2 flex-grow">
+            <div className="flex flex-col items-center gap-2 flex-grow w-[47%] self-end">
               <ImageWithModal
                 src={content.images?.at(2)?.url}
                 alt=""
@@ -100,7 +100,7 @@ export default function Iterations(content: contentProps) {
               height={1000}
               className="w-10"
             />
-            <div className="flex flex-col items-center gap-2 flex-grow">
+            <div className="flex flex-col items-center gap-2 flex-grow w-[53%] self-end">
               <ImageWithModal
                 src={content.images?.at(3)?.url}
                 alt=""

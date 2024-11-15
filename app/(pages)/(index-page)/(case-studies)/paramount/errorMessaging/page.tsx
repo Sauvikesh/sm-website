@@ -51,7 +51,7 @@ export default async function ParamountP2() {
         body={bodyData.slice(11, 14)}
         h3={h3Data.slice(11, 14)}
         h4={h4Data.slice(7, 14)}
-        images={images.slice(13, 17)}
+        images={images.slice(23, 27)}
       />
       <FinalDesigns
         body={bodyData.slice(14, 20)}
