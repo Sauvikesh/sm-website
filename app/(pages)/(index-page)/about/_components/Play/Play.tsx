@@ -2,6 +2,7 @@ import AutoScroll from 'embla-carousel-auto-scroll';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import { RevealWrapper } from '../../../_components/Reveal/RevealWrapper';
+import FunText from './FunText';
 
 export default function Play() {
   return (
@@ -15,30 +16,6 @@ export default function Play() {
         <CameraRoll />
       </RevealWrapper>
     </section>
-  );
-}
-
-function FunText() {
-  return (
-    <div className="flex flex-col items-center gap-10">
-      <div>
-        <h3>Don't want the fun to end?</h3>
-        <p className="font-f-w text-[80px] tracking-[1.6px] -rotate-[8deg] text-center">
-          play
-        </p>
-      </div>
-      <Line />
-    </div>
-  );
-}
-
-function Line() {
-  return (
-    <div className="h-[200px] w-full mt-16 mb-16">
-      <div className="h-[200px] w-full relative flex justify-center overflow-hidden animate-grow">
-        <div className="h-[200px] w-[1px] bg-white absolute"></div>
-      </div>
-    </div>
   );
 }
 

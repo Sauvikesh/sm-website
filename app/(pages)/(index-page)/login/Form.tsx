@@ -78,7 +78,8 @@ export default function Form({ callBackURL, password }: FormProps) {
             id="password"
             name="password"
             type="password"
-            placeholder=" "
+            autoComplete="new-password"
+            placeholder=""
             className="peer w-full h-10 p-[10px] border rounded-lg focus:ring-0 focus:outline-none border-black"
           />
           <label
