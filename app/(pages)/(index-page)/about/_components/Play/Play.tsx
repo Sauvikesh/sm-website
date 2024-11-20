@@ -100,7 +100,7 @@ function CameraRoll() {
     },
     {
       imgUrl: '/about/photoCarousel/photo4.png',
-      imgCaption: 'santa barbara, ca',
+      imgCaption: 'arashiyama, japan',
     },
     {
       imgUrl: '/about/photoCarousel/photo5.png',
@@ -108,7 +108,7 @@ function CameraRoll() {
     },
     {
       imgUrl: '/about/photoCarousel/photo6.png',
-      imgCaption: 'arashiyama, japan',
+      imgCaption: 'santa barbara, ca',
     },
   ];
 
