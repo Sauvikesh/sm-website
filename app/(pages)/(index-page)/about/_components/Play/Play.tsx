@@ -113,7 +113,7 @@ function CameraRoll() {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-10 pb-[300px]">
+    <div className="flex flex-col items-center gap-10 pb-[80px] -mt-[220px]">
       <div className="flex flex-col items-center gap-4">
         <h3 className="text-4xl tracking-[0.72px]">From my camera roll</h3>
         <p>

@@ -20,7 +20,7 @@ export default function FunText() {
       <div>
         <h3>Don't want the fun to end?</h3>
         <p
-          className="font-f-w text-[80px] tracking-[1.6px] -rotate-[8deg] text-center hover:cursor-pointer"
+          className="text-[80px] tracking-[1.6px] -rotate-[8deg] text-center hover:cursor-pointer"
           onClick={() => scrollToSection('bookshelf')}
         >
           play
