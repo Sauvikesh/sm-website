@@ -74,20 +74,16 @@ export default function Form({ callBackURL, password }: FormProps) {
           Enter the magic code <br></br>to access this page
         </h1>
         <div className="relative w-full">
+          <label htmlFor="password" className="text-gray-500">
+            Password
+          </label>
           <input
             id="password"
             name="password"
             type="password"
-            autoComplete="new-password"
             placeholder=""
             className="peer w-full h-10 p-[10px] border rounded-lg focus:ring-0 focus:outline-none border-black"
           />
-          <label
-            htmlFor="password"
-            className="absolute left-[10px] top-2 text-gray-500 pointer-events-none transform scale-75 origin-[0] transition-all duration-200 ease-in-out peer-placeholder-shown:top-[50%] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500 -translate-y-1/2"
-          >
-            Password
-          </label>
         </div>
         {errorMessage && (
           <div className="flex flex-row items-center w-full gap-1">
