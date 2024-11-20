@@ -48,11 +48,13 @@ export default function Footer() {
   const bgColor = darkMode ? 'bg-dark-bg' : 'bg-white';
   const textColor = darkMode ? 'text-white' : 'text-black';
 
+  const includeBackgroundImage = darkMode ? '' : "url('/paperFooter.png')";
+
   return !invisible ? (
     <footer
       className={`${textColor} ${bgColor} flex justify-between px-case-study pb-[89px] pt-20 relative overflow-x-clip`}
       style={{
-        backgroundImage: "url('/paperFooter.png')",
+        backgroundImage: includeBackgroundImage,
         backgroundSize: 'cover',
       }}
     >
