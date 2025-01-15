@@ -74,9 +74,9 @@ export default function Form({ callBackURL, password }: FormProps) {
           Enter the magic code <br></br>to access this page
         </h1>
         <div className="relative w-full">
-          <label htmlFor="password" className="text-gray-500">
+          {/* <label htmlFor="password" className="text-gray-500">
             Password
-          </label>
+          </label> */}
           <input
             id="password"
             name="password"
