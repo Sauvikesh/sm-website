@@ -20,7 +20,7 @@ export default function NavItem({
   if (newTab) {
     return (
       <li
-        className={`${bgColor} ${textColor} flex items-center py-2 px-6 h-[48px] rounded-xl text-[18px]`}
+        className={`${bgColor} ${textColor} flex items-center py-2 px-6 pl-0 h-[48px] rounded-xl text-[18px]`}
       >
         <a href={href} target="_blank">
           {label}
