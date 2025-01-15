@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <main
-      className={`flex flex-col overflow-x-clip relative gap-40 ${darkMode ? 'text-white bg-dark-bg' : 'text-black bg-white'} font-dm-sans transition-colors duration-500`}
+      className={`flex flex-col overflow-x-clip relative gap-40 pb-10 ${darkMode ? 'text-white bg-dark-bg' : 'text-black bg-white'} font-dm-sans transition-colors duration-500`}
     >
       <Bio />
       <Philosophy />
