@@ -102,6 +102,25 @@ export default function Landing() {
             className="w-[10px]"
           />
         </div>
+        <div className="flex items-center gap-2 animate-slide-header-down-delayed">
+          <p className="text-xl font-normal leading-normal tracking-[0.4px]">
+            Incoming at{' '}
+            <a
+              className="underline underline-offset-2"
+              href="https://www.coinbase.com/about"
+              target="_blank"
+            >
+              Coinbase
+            </a>
+          </p>
+          <Image
+            src="/navLinkArrow.svg"
+            width={1000}
+            height={1000}
+            alt="down arrow"
+            className="w-[10px]"
+          />
+        </div>
       </div>
 
       <ScrollArrow {...scrollArrowProps} />
