@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ScrollArrow from './ScrollArrow';
+import ScrollArrow, { ScrollArrowProps } from './ScrollArrow';
 export default function Landing() {
   const floatingImages = [
     {
@@ -28,6 +28,10 @@ export default function Landing() {
         'w-[100px] h-auto absolute top-[-50px] right-[20%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full z-50',
     },
   ];
+
+  const scrollArrowProps: ScrollArrowProps = {
+    sectionId: 'Case Studies',
+  };
 
   // const statuses: StatusesProps[] = [
   //   {
@@ -100,7 +104,7 @@ export default function Landing() {
         </div>
       </div>
 
-      <ScrollArrow />
+      <ScrollArrow {...scrollArrowProps} />
 
       {/* <div className="flex justify-between pt-16 relative">
         {statuses.map((status, index) => (

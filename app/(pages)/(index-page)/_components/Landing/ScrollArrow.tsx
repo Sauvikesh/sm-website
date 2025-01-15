@@ -1,9 +1,13 @@
 'use client';
 
+export type ScrollArrowProps = {
+  sectionId: string;
+};
+
 import Image from 'next/image';
-export default function ScrollArrow() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
+export default function ScrollArrow({ sectionId }: ScrollArrowProps) {
+  const scrollToSection = (scrollSectionId: string) => {
+    const element = document.getElementById(scrollSectionId);
     if (element) {
       const topOffset = -40; // Adjust this value for the offset (e.g., -20 for 20px above)
       const elementPosition =
@@ -24,7 +28,7 @@ export default function ScrollArrow() {
       height={1000}
       alt="down arrow"
       className="w-[50px] animate-hover-up-down"
-      onClick={() => scrollToSection('Case Studies')}
+      onClick={() => scrollToSection(sectionId)}
     />
   );
 }
