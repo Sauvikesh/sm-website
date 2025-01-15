@@ -25,7 +25,7 @@ export default async function Home() {
     },
     {
       org: 'HackDavis 2024',
-      purpose: 'FREELANCE PROJECT',
+      purpose: 'CLIENT PROJECT',
       desc: 'Empowering students to create for social good',
       src: '/caseStudies/hackdavis.svg',
       alt: 'HackDavis Website',

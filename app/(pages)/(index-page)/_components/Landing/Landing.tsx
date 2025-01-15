@@ -83,43 +83,46 @@ export default function Landing() {
           />
         </div>
 
-        <div className="flex items-center gap-2 animate-slide-header-down-delayed">
-          <p className="text-xl font-normal leading-normal tracking-[0.4px]">
-            Previously at{' '}
-            <a
-              className="underline underline-offset-2"
-              href="https://www.paramount.com/about"
-              target="_blank"
-            >
-              Paramount+
-            </a>
-          </p>
-          <Image
-            src="/navLinkArrow.svg"
-            width={1000}
-            height={1000}
-            alt="down arrow"
-            className="w-[10px]"
-          />
-        </div>
-        <div className="flex items-center gap-2 animate-slide-header-down-delayed">
-          <p className="text-xl font-normal leading-normal tracking-[0.4px]">
-            Incoming at{' '}
-            <a
-              className="underline underline-offset-2"
-              href="https://www.coinbase.com/about"
-              target="_blank"
-            >
-              Coinbase
-            </a>
-          </p>
-          <Image
-            src="/navLinkArrow.svg"
-            width={1000}
-            height={1000}
-            alt="down arrow"
-            className="w-[10px]"
-          />
+        <div className="flex gap-2">
+          <div className="flex items-center gap-1 animate-slide-header-down-delayed">
+            <h4 className="">
+              Previously at{' '}
+              <a
+                className="underline underline-offset-2"
+                href="https://www.paramount.com/about"
+                target="_blank"
+              >
+                Paramount+
+              </a>
+            </h4>
+            <Image
+              src="/navLinkArrow.svg"
+              width={1000}
+              height={1000}
+              alt="down arrow"
+              className="w-[10px] opacity-50"
+            />
+            <h4>,</h4>
+          </div>
+          <div className="flex items-center gap-1 animate-slide-header-down-delayed">
+            <h4 className="">
+              Incoming at{' '}
+              <a
+                className="underline underline-offset-2"
+                href="https://www.coinbase.com/about"
+                target="_blank"
+              >
+                Coinbase
+              </a>
+            </h4>
+            <Image
+              src="/navLinkArrow.svg"
+              width={1000}
+              height={1000}
+              alt="down arrow"
+              className="w-[10px] opacity-50"
+            />
+          </div>
         </div>
       </div>
 
