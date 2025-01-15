@@ -1,8 +1,16 @@
+import ScrollArrow, {
+  ScrollArrowProps,
+} from '@/app/(pages)/(index-page)/_components/Landing/ScrollArrow';
 import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 import LoadingImage from '@/app/(pages)/_components/LoadingImage/LoadingImage';
 
 export default function Landing() {
   //background: radial-gradient(62.5% 100% at 50% 100%, #005271 0%, #112636 100%);
+
+  const scrollArrowProps: ScrollArrowProps = {
+    sectionId: 'Intro',
+  };
+
   return (
     <section
       className="h-[100vh] overflow-clip text-white flex flex-col justify-end items-center gap-6 -mx-[40%]"
@@ -31,6 +39,9 @@ export default function Landing() {
         alt="hackdavis image"
         className="w-[1120px] -mb-[100px]"
       />
+      <div className="absolute top-[85vh]">
+        <ScrollArrow {...scrollArrowProps} />
+      </div>
     </section>
   );
 }

@@ -2,8 +2,15 @@ import { contentProps } from '../../../../errorMessaging/page';
 import LoadingImage from '@/app/(pages)/_components/LoadingImage/LoadingImage';
 import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 import Image from 'next/image';
+import ScrollArrow, {
+  ScrollArrowProps,
+} from '@/app/(pages)/(index-page)/_components/Landing/ScrollArrow';
 
 export default function Landing(content: contentProps) {
+  const scrollArrowProps: ScrollArrowProps = {
+    sectionId: 'Context',
+  };
+
   return (
     <section
       className="flex flex-col h-[100vh] items-center justify-end gap-6 -mx-[40%] relative overflow-clip"
@@ -45,6 +52,9 @@ export default function Landing(content: contentProps) {
           height={1000}
           className="w-[301px] absolute bottom-[0%] right-[-10%]"
         />
+      </div>
+      <div className="absolute top-[85vh] z-50">
+        <ScrollArrow {...scrollArrowProps} />
       </div>
     </section>
   );

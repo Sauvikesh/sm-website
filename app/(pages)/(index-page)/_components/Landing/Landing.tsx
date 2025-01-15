@@ -50,7 +50,7 @@ export default function Landing() {
 
   return (
     <section
-      className="flex flex-col gap-4 items-center justify-center h-[100vh] -mx-[40%] bg-[#F7F7F8]"
+      className="flex flex-col gap-4 items-center justify-center h-screen -mx-[40%] bg-[#F7F7F8]"
       style={{
         backgroundImage: "url('/paperIndex.png')",
         backgroundSize: 'cover',
@@ -123,7 +123,9 @@ export default function Landing() {
         </div>
       </div>
 
-      <ScrollArrow {...scrollArrowProps} />
+      <div className="absolute top-[85vh]">
+        <ScrollArrow {...scrollArrowProps} />
+      </div>
 
       {/* <div className="flex justify-between pt-16 relative">
         {statuses.map((status, index) => (

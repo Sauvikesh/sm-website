@@ -5,7 +5,7 @@ export default function Intro() {
   return (
     <section>
       <RevealWrapper>
-        <div className="flex w-full justify-between pb-10">
+        <div className="flex w-full justify-between pb-10" id="Intro">
           <div className="flex flex-col gap-2">
             <h3>Timeline</h3>
             <p>

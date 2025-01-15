@@ -6,6 +6,9 @@ import Loader from '@/app/(pages)/_components/Loader/Loader';
 import Image from 'next/image';
 import { ImageProps } from 'next/image';
 import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
+import ScrollArrow, {
+  ScrollArrowProps,
+} from '@/app/(pages)/(index-page)/_components/Landing/ScrollArrow';
 
 type ParallaxImageProps = {
   speed: number;
@@ -14,6 +17,10 @@ type ParallaxImageProps = {
 };
 
 export default function Landing() {
+  const scrollArrowProps: ScrollArrowProps = {
+    sectionId: 'Overview',
+  };
+
   const parallaxImages: ParallaxImageProps[] = [
     {
       speed: 15,
@@ -87,6 +94,9 @@ export default function Landing() {
             );
           }
         })}
+      </div>
+      <div className="absolute top-[85vh]">
+        <ScrollArrow {...scrollArrowProps} />
       </div>
     </header>
     // </Providers>
