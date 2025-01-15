@@ -74,7 +74,7 @@ export default function Footer() {
 
             <a
               href={linkIconElements.at(0)?.linkUrl}
-              className="flex justify-center items-center w-[50px] h-[50px] px-[15px] py-[13px] bg-[#E0E0E1] rounded-[25px]"
+              className={`flex justify-center items-center w-[50px] h-[50px] px-[15px] py-[13px] bg-[#E0E0E1] rounded-[25px] ${darkMode ? 'opacity-70' : ''}`}
             >
               <Image
                 src={linkIconElements.at(0)?.imgUrl || ''}
@@ -86,7 +86,7 @@ export default function Footer() {
 
             <a
               href="mailto: stmah@ucdavis.edu"
-              className="flex justify-center items-center w-[50px] h-[50px] px-[15px] py-[13px] bg-[#E0E0E1] rounded-[25px]"
+              className={`flex justify-center items-center w-[50px] h-[50px] px-[15px] py-[13px] bg-[#E0E0E1] rounded-[25px] ${darkMode ? 'opacity-70' : ''}`}
             >
               <Image
                 src={linkIconElements.at(1)?.imgUrl || ''}
