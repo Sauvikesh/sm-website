@@ -8,6 +8,10 @@ import '../../globals.css';
 export const metadata: Metadata = {
   title: 'Samantha Mah | Portfolio',
   description: "Samantha Mah's portfolio website.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
