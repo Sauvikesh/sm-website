@@ -6,20 +6,16 @@ import HeadingWithBody, {
 
 const sageSummary: HeadingWithBodyProps[] = [
   {
-    header: 'Overview',
+    header: 'Context',
     body: 'In my sophomore year of college, I was eager to apply my human-centered design skills from high school and jumpstart my UX design career. I applied to an on campus professional development club, Design Interactive (di), and after completing a design challenge and panel interview, I embarked on a 6 week bootcamp. Out of 5 given prompts, I was immediately drawn to the mental health prompt because of its complexities and impact, and was matched with 4 other designers who were also passionate about the topic. At the end of the 6 weeks, we presented our project to industry judges, and were awarded “Most Innovative UX” and “Best UX Research.”',
   },
   {
-    header: 'The Problem',
+    header: 'The Challenge',
     body: "In today's complex world, maintaining good mental health is a fundamental necessity. Students have a desire to practice self-care. However, they struggle to do so due to lack of resources, busy schedules, and difficulty staying motivated.",
   },
   {
     header: 'The Solution',
     body: ' Sage is a mobile application that advocates for socially accessible mental health and provides users with personalized self-care practices. With the help of Sage, students set big-picture goals that simultaneously venerate familiarity and facilitate discovery.',
-  },
-  {
-    header: 'The Outcome',
-    body: 'Following the conclusion of the bootcamp, I wanted to pursue things further, and continued with the project solo to build out additional features. Sage signifies my humble beginnings in UX design and my passion for mental health. (Psst! Since first joining in 2022, my unwavering belief in the potential of di has allowed me to grow from a member to Co-President and bring opportunities like this to other students and budding designers on campus. Check us out at davisdi.org)',
   },
 ];
 

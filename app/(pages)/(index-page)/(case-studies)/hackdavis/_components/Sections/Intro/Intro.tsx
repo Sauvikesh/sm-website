@@ -41,7 +41,7 @@ export default function Intro() {
 
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-2">
-            <h3>Overview</h3>
+            <h3>Context</h3>
             <p>
               HackDavis is the largest annual collegiate hackathon in
               California. For the 8th year in a row, HackDavis brought together

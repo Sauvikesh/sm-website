@@ -8,7 +8,7 @@ const textCardElements: TextCardProps[] = [
   {
     number: '01',
     header: 'Accessibilty',
-    body: 'Make self-care methods more accessible for users.',
+    body: 'Make self-care accessible for diverse users.',
   },
   {
     number: '02',
@@ -17,7 +17,7 @@ const textCardElements: TextCardProps[] = [
   },
   {
     number: '03',
-    header: 'Accessibilty',
+    header: 'Personalization',
     body: 'Empowers users to be proactive and better their mental health.',
   },
 ];
