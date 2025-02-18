@@ -70,9 +70,8 @@ export default function Landing() {
       <div className="flex flex-col gap-4 max-w-[1008px] w-[70vw] pt-[30px]">
         <div className="flex relative">
           <h2 className="font-normal z-10 animate-slide-header-down">
-            Hi, I'm Sam! I design with empathy, find joy in creative problem
-            solving, and seek to understand the intricacies of human beings
-            <span className="text-2xl"> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</span>
+            Hi, I'm Sam! I’m a product designer who finds joy in collaboration
+            and has a tenacity for creative problem solving.
           </h2>
           <Image
             src="/landing/matcha.png"
@@ -89,7 +88,7 @@ export default function Landing() {
               Previously at{' '}
               <a
                 className="underline underline-offset-2"
-                href="https://www.paramount.com/about"
+                href="https://www.paramountplus.com/"
                 target="_blank"
               >
                 Paramount+
@@ -109,7 +108,7 @@ export default function Landing() {
               Incoming at{' '}
               <a
                 className="underline underline-offset-2"
-                href="https://www.coinbase.com/about"
+                href="https://www.coinbase.com/"
                 target="_blank"
               >
                 Coinbase
