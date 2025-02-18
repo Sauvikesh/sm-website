@@ -4,6 +4,7 @@ import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal'
 import ScrollArrow, {
   ScrollArrowProps,
 } from '@/app/(pages)/(index-page)/_components/Landing/ScrollArrow';
+import Image from 'next/image';
 
 export default function Landing(content: contentProps) {
   const scrollArrowProps: ScrollArrowProps = {
@@ -36,21 +37,21 @@ export default function Landing(content: contentProps) {
           height={1000}
           className="w-[754px]"
         />
-        <ImageWithModal
+        <Image
           src={content.images?.at(1)?.url}
           alt=""
           width={1000}
           height={1000}
           className="w-[105px] absolute bottom-0 right-[-5%]"
         />
-        <ImageWithModal
+        <Image
           src={content.images?.at(2)?.url}
           alt=""
           width={1000}
           height={1000}
           className="w-[573px] absolute bottom-0 right-[-80%]"
         />
-        <ImageWithModal
+        <Image
           src={content.images?.at(3)?.url}
           alt=""
           width={1000}

@@ -45,7 +45,7 @@ export default function Landing(content: contentProps) {
           height={1000}
           className="w-[1027px]"
         />
-        <ImageWithModal
+        <Image
           src={content.images?.at(1)?.url}
           alt=""
           width={1000}

@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
 import Loader from '@/app/(pages)/_components/Loader/Loader';
-import { ImageWithModal } from '@/app/(pages)/_components/ImageModal/ImageModal';
 import { ImageProps } from 'next/image';
+import Image from 'next/image';
 
 type ImageWithStateProps = ImageProps;
 
@@ -12,7 +12,7 @@ export default function LoadingImage(props: ImageWithStateProps) {
   return (
     <>
       {isLoading && <Loader />}
-      <ImageWithModal
+      <Image
         {...props}
         alt=""
         loading="eager"

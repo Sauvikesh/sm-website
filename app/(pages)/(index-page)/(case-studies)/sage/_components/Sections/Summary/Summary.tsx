@@ -29,27 +29,27 @@ export default function Summary() {
       <RevealWrapper>
         <div className="flex justify-between">
           <div className="flex flex-col gap-2">
-            <h3>Timeline</h3>
-            <p>
-              6 weeks <br></br>Oct - Nov 2022
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
             <h3>My Role</h3>
             <p>
               User Research <br></br>Visual Design <br></br> Prototyping
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <h3>Team</h3>
+            <h3>Timeline</h3>
             <p>
-              Erika D. <br></br> Sophia B. <br></br>Huy N. <br></br>Me :)
+              6 weeks <br></br>Oct - Nov 2022
             </p>
           </div>
           <div className="flex flex-col gap-2">
             <h3>Tools</h3>
             <p>
               Figma<br></br>Qualtrics XM
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3>Team</h3>
+            <p>
+              Erika D. <br></br> Sophia B. <br></br>Huy N. <br></br>Me :)
             </p>
           </div>
         </div>

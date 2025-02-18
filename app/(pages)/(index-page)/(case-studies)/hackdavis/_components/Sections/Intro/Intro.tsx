@@ -5,13 +5,7 @@ export default function Intro() {
   return (
     <section>
       <RevealWrapper>
-        <div className="flex w-full justify-between pb-10" id="Intro">
-          <div className="flex flex-col gap-2">
-            <h3>Timeline</h3>
-            <p>
-              6 months <br></br> Nov 2023 - Apr 2024{' '}
-            </p>
-          </div>
+        <div className="flex w-full justify-between pb-10 flex-wrap" id="Intro">
           <div className="flex flex-col gap-2">
             <h3>My Role</h3>
             <p>
@@ -19,8 +13,21 @@ export default function Intro() {
               Handoff & Documentation{' '}
             </p>
           </div>
+          <div className="flex flex-col gap-2">
+            <h3>Timeline</h3>
+            <p>
+              6 months <br></br> Nov 2023 - Apr 2024{' '}
+            </p>
+          </div>
 
-          <div className="flex flex-col gap-2 w-[47%]">
+          <div className="flex flex-col gap-2">
+            <h3>Tools</h3>
+            <p>
+              Figma<br></br>Chrome DevTools
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
             <h3>The Team</h3>
             <ImageWithModal
               src="/hackdavis/team.svg"
