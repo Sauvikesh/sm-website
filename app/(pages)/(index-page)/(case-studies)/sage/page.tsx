@@ -40,6 +40,7 @@ export default async function Sage() {
       <Prototype />
       <DividerLine />
       <FinalDesigns />
+      <DividerLine />
       <Outcome />
       <Conclusion />
       <Team />
