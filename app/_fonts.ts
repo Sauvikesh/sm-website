@@ -1,5 +1,5 @@
 import { DM_Sans } from 'next/font/google';
-import { Fahkwang } from 'next/font/google';
+import { Fraunces } from 'next/font/google';
 import { Outfit } from 'next/font/google';
 
 const dmSans = DM_Sans({
@@ -7,9 +7,9 @@ const dmSans = DM_Sans({
   variable: '--font-dmSans',
 });
 
-const fahkwang = Fahkwang({
+const fraunces = Fraunces({
   subsets: ['latin'],
-  variable: '--font-fw',
+  variable: '--font-fraunces',
   weight: ['200', '300', '400', '500', '600', '700'],
 });
 
@@ -19,4 +19,4 @@ const outfit = Outfit({
   weight: ['200', '300', '400', '500', '600', '700'],
 });
 
-export { dmSans, fahkwang, outfit };
+export { dmSans, fraunces, outfit };

@@ -20,7 +20,7 @@ export default function LoadingCaseStudy(props: CaseStudyProps) {
   return (
     <Link
       href={linkurl}
-      className="flex flex-col relative px-[10%] items-center bg-[#EBEBEB] w-full rounded-3xl group hover:shadow-perimeter duration-500"
+      className="flex flex-col relative px-[10%] items-center bg-[#EBEBEB] w-full rounded-3xl group"
     >
       {isLoading && <Loader />}
       <div className="flex gap-2 pt-12 pb-2 z-10">

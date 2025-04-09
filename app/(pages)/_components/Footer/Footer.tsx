@@ -98,7 +98,7 @@ export default function Footer() {
           </div>
         </div>
         <h4 className={`${textColor} justify-self-end`}>
-          © Samantha Mah 2024
+          © Samantha Mah 2025
         </h4>
       </div>
 
