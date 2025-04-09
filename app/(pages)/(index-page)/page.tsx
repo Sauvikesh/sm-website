@@ -18,7 +18,7 @@ export default async function Home() {
     {
       org: 'Paramount+',
       purpose: 'Internship',
-      desc: 'Guiding users towards resolution during video playback error',
+      desc: 'Guiding users to resolution during video playback error',
       src: images?.at(1)?.url || '',
       alt: 'Paramount Logo',
       linkurl: '/paramount/errorMessaging',
