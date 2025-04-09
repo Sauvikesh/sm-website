@@ -69,9 +69,8 @@ export default function Landing() {
 
       <div className="flex flex-col gap-4 max-w-[1008px] w-[70vw] pt-[30px]">
         <div className="flex relative">
-          <h2 className="font-normal z-10 animate-slide-header-down">
-            Hi, I'm Sam! I’m a product designer who finds joy in collaboration
-            and has a tenacity for creative problem solving.
+          <h2 className="font-normal z-10 animate-slide-header-down text-center">
+            Hi, I’m Sam—a product designer with a tenacity for creative problem solving and a curiosity about the intricacies of human beings.
           </h2>
           <Image
             src="/landing/matcha.png"
