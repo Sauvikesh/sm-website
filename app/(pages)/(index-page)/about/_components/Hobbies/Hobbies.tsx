@@ -70,7 +70,7 @@ export function HobbyImage({ colSpan, src, caption }: HobbyImageProps) {
         height={1000}
         className="relative z-20"
       />
-      <h4 className="text-center font-outfit pt-2 transition-all -translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 relative z-10">
+      <h4 className="text-center font-spaceGrotesk pt-2 transition-all -translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 relative z-10">
         {caption}
       </h4>
     </div>

@@ -5,7 +5,7 @@ export default function Landing() {
     {
       src: '/landing/shapes/star.png',
       className:
-        'w-[100px] h-auto absolute top-[12%] right-[17%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[14%] right-[17%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/cloud.png',
@@ -20,7 +20,7 @@ export default function Landing() {
     {
       src: '/landing/shapes/4star.png',
       className:
-        'w-[100px] h-auto absolute top-[15%] left-[8%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
+        'w-[100px] h-auto absolute top-[17%] left-[8%] hover:rotate-180 transition-transform duration-700 animate-load-rotate-full',
     },
     {
       src: '/landing/shapes/spade.png',
@@ -67,26 +67,44 @@ export default function Landing() {
         />
       ))}
 
-      <div className="flex flex-col items-center gap-4 max-w-[908px] w-[70vw] pt-[30px]">
+      <div className="flex flex-col gap-8 max-w-[1008px] w-[45vw] pt-[30px]">
         <div className="flex relative">
-          <h2 className="font-fraunces z-10 animate-slide-header-down text-center font-[350] tracking-[-0.4px]">
-          Hi, I’m Sam—a product designer with a tenacity for creative problem solving and a curiosity about the intricacies of human beings.
+        <h2 className="font-dmsans z-10 animate-slide-header-down font-[500] tracking-[-0.4px] text-neutral-500">
+        Hi, I’m <span className="text-black">Sam</span>—empathetic product designer, joyful collaborator & creative problem solver.
           </h2>
           <Image
             src="/landing/matcha.png"
             width={1000}
             height={1000}
             alt="matcha"
-            className="w-[150px] h-auto right-[-15%] top-[-140px] absolute z-0"
+            className="w-[150px] h-auto right-[-45%] top-[-140px] absolute z-0"
           />
         </div>
-
-        <div className="flex gap-2">
-          <div className="flex items-center gap-1 animate-slide-header-down-delayed">
+          <div className='flex flex-col gap-4'>
+          <div className="flex items-center gap-0.5 animate-slide-header-down-delayed">
+            <h4 className="">
+              Currently studying Design at{' '}
+              <a
+                className="underline underline-offset-2 text-black"
+                href="https://www.ucdavis.edu/"
+                target="_blank"
+              >
+                UC Davis
+              </a>
+            </h4>
+            <Image
+              src="/navLinkArrow.svg"
+              width={1000}
+              height={1000}
+              alt="down arrow"
+              className="w-[10px] opacity-50"
+            />
+          </div>
+          <div className="flex items-center gap-0.5 animate-slide-header-down-delayed">
             <h4 className="">
               Previously at{' '}
               <a
-                className="underline underline-offset-2"
+                className="underline underline-offset-2 text-black"
                 href="https://www.paramountplus.com/"
                 target="_blank"
               >
@@ -100,13 +118,12 @@ export default function Landing() {
               alt="down arrow"
               className="w-[10px] opacity-50"
             />
-            <h4>,</h4>
           </div>
           <div className="flex items-center gap-1 animate-slide-header-down-delayed">
             <h4 className="">
               Incoming at{' '}
               <a
-                className="underline underline-offset-2"
+                className="underline underline-offset-2 text-black"
                 href="https://www.coinbase.com/"
                 target="_blank"
               >
@@ -121,7 +138,8 @@ export default function Landing() {
               className="w-[10px] opacity-50"
             />
           </div>
-        </div>
+          </div>
+          
       </div>
 
       <div className="absolute top-[85vh]">

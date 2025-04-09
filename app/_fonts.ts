@@ -1,5 +1,5 @@
 import { DM_Sans } from 'next/font/google';
-import { Fraunces } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 import { Outfit } from 'next/font/google';
 
 const dmSans = DM_Sans({
@@ -7,10 +7,10 @@ const dmSans = DM_Sans({
   variable: '--font-dmSans',
 });
 
-const fraunces = Fraunces({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  variable: '--font-fraunces',
-  weight: ['200', '300', '400', '500', '600', '700'],
+  variable: '--font-spaceGrotesk',
+  weight: ['400', '500', '600', '700'],
 });
 
 const outfit = Outfit({
@@ -19,4 +19,4 @@ const outfit = Outfit({
   weight: ['200', '300', '400', '500', '600', '700'],
 });
 
-export { dmSans, fraunces, outfit };
+export { dmSans, spaceGrotesk, outfit };

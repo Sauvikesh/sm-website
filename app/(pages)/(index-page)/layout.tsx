@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import '../.././globals.css';
 import Navbar from '../_components/Navbar/Navbar';
 import Footer from '../_components/Footer/Footer';
-import { fraunces, dmSans, outfit } from '../../_fonts';
+import { spaceGrotesk, dmSans, outfit } from '../../_fonts';
 import '../../globals.css';
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fraunces.variable} ${dmSans.variable} ${outfit.variable} bg-white text-black`}
+        className={`${spaceGrotesk.variable} ${dmSans.variable} ${outfit.variable} bg-white text-black`}
       >
         <Navbar />
         {children}

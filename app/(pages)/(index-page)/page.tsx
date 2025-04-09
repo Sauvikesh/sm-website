@@ -9,7 +9,7 @@ export default async function Home() {
   const caseStudyInformation: CaseStudyProps[] = [
     {
       org: 'Paramount+',
-      purpose: 'INTERNSHIP',
+      purpose: 'Internship',
       desc: 'Reimagining the live television experience',
       src: images?.at(2)?.url || '',
       alt: 'Paramount Logo',
@@ -17,7 +17,7 @@ export default async function Home() {
     },
     {
       org: 'Paramount+',
-      purpose: 'INTERNSHIP',
+      purpose: 'Internship',
       desc: 'Guiding users towards resolution during video playback error',
       src: images?.at(1)?.url || '',
       alt: 'Paramount Logo',
@@ -25,7 +25,7 @@ export default async function Home() {
     },
     {
       org: 'HackDavis 2024',
-      purpose: 'CLIENT PROJECT',
+      purpose: 'Client Project',
       desc: 'Empowering students to create for social good',
       src: '/caseStudies/hackdavis.svg',
       alt: 'HackDavis Website',
@@ -33,7 +33,7 @@ export default async function Home() {
     },
     {
       org: 'Sage',
-      purpose: 'PASSION PROJECT',
+      purpose: 'Passion Project',
       desc: "Equipping individuals to navigate life's stressors",
       src: '/caseStudies/sage.svg',
       alt: 'Sage App',

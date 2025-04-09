@@ -20,10 +20,10 @@ export default function CaseStudy(props: CaseStudyProps) {
       className="flex flex-col relative px-[10%] items-center bg-[#EBEBEB] w-full rounded-3xl group"
     >
       <div className="flex gap-2 pt-12 pb-2 z-10">
-        <h4 className="font-outfit text-black">{org}</h4>
-        <h4 className="font-outfit">{purpose}</h4>
+        <h4 className="font-spaceGrotesk text-black">{org}</h4>
+        <h4 className="font-spaceGrotesk">{purpose}</h4>
       </div>
-      <h3 className="pb-20">{desc}</h3>
+      <h3 className="pb-20 w-[350px] text-center">{desc}</h3>
       <Image
         src={src}
         alt={alt}
