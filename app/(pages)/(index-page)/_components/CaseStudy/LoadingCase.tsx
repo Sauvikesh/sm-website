@@ -27,7 +27,7 @@ export default function LoadingCaseStudy(props: CaseStudyProps) {
         <h4 className="font-spaceGrotesk text-black">{org}</h4>
         <h4 className="font-spaceGrotesk">{purpose}</h4>
       </div>
-      <h3 className="pb-20">{desc}</h3>
+      <h3 className="pb-20  w-[350px] text-center">{desc}</h3>
       <Image
         src={src}
         alt={alt}
