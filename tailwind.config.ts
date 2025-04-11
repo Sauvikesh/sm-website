@@ -15,7 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         'dm-sans': ['var(--font-dmSans)', 'sans-serif'],
-        'spaceGrotesk': ['var(--font-spaceGrotesk)', 'sans-serif'],
+        spaceGrotesk: ['var(--font-spaceGrotesk)', 'sans-serif'],
         outfit: ['var(--font-outfit)', 'sans-serif'],
       },
       margin: {

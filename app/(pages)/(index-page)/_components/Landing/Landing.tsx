@@ -69,8 +69,9 @@ export default function Landing() {
 
       <div className="flex flex-col gap-8 max-w-[1008px] w-[45vw] pt-[30px]">
         <div className="flex relative">
-        <h2 className="font-dmsans z-10 animate-slide-header-down font-[500] tracking-[-0.4px] text-neutral-500">
-        Hi, I’m <span className="text-black">Sam</span>—empathetic product designer, joyful collaborator & creative problem solver.
+          <h2 className="font-dmsans z-10 animate-slide-header-down font-[500] tracking-[-0.4px] text-neutral-500">
+            Hi, I’m <span className="text-black">Sam</span>—empathetic product
+            designer, joyful collaborator & creative problem solver.
           </h2>
           <Image
             src="/landing/matcha.png"
@@ -80,7 +81,7 @@ export default function Landing() {
             className="w-[150px] h-auto right-[-45%] top-[-140px] absolute z-0"
           />
         </div>
-          <div className='flex flex-col gap-4'>
+        <div className="flex flex-col gap-4">
           <div className="flex items-center gap-0.5 animate-slide-header-down-delayed">
             <h4 className="">
               Currently studying Design at{' '}
@@ -138,8 +139,7 @@ export default function Landing() {
               className="w-[10px] opacity-50"
             />
           </div>
-          </div>
-          
+        </div>
       </div>
 
       <div className="absolute top-[85vh]">
