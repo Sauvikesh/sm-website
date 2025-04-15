@@ -18,21 +18,21 @@ export default function Ideation() {
         <div className="flex gap-6 pt-10 pb-[100px]">
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="/hackdavis/ideation/prize1.svg"
+              src="/hackdavis/ideation/prize1.png"
               alt="prize image 1"
               width={1000}
               height={1000}
             />
-            <h4>initial exploration</h4>
+            <h4>Initial exploration</h4>
           </div>
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="/hackdavis/ideation/prize2.svg"
+              src="/hackdavis/ideation/prize2.png"
               alt="prize image 2"
               width={1000}
               height={1000}
             />
-            <h4>iteration</h4>
+            <h4>Iteration</h4>
           </div>
           <Image
             src="/hackdavis/Arrow.svg"
@@ -43,12 +43,12 @@ export default function Ideation() {
           />
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="/hackdavis/ideation/prize3.svg"
+              src="/hackdavis/ideation/prize3.png"
               alt="prize image 3"
               width={1000}
               height={1000}
             />
-            <h4>final design on mobile</h4>
+            <h4>Final design on mobile</h4>
           </div>
         </div>
 
@@ -67,12 +67,12 @@ export default function Ideation() {
         <div className="flex gap-8 pt-10 pb-[100px] justify-center pl-[7%] pr-[7%]">
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="/hackdavis/ideation/teamBefore.svg"
+              src="/hackdavis/ideation/teamBefore.png"
               alt="team section before image"
               width={1000}
               height={1000}
             />
-            <h4>initial exploration</h4>
+            <h4>Initial exploration</h4>
           </div>
           <Image
             src="/hackdavis/Arrow.svg"
@@ -83,13 +83,13 @@ export default function Ideation() {
           />
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="/hackdavis/ideation/teamAfter.svg"
+              src="/hackdavis/ideation/teamAfter.png"
               alt="team section after image"
               width={1000}
               height={1000}
               className="translate-x-7"
             />
-            <h4>final design on mobile</h4>
+            <h4>Final design on mobile</h4>
           </div>
         </div>
 
@@ -106,12 +106,12 @@ export default function Ideation() {
         <div className="flex gap-2 pt-10 pb-[100px] justify-center">
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="/hackdavis/ideation/mbBefore.svg"
+              src="/hackdavis/ideation/mbBefore.png"
               alt="web before image"
               width={1000}
               height={1000}
             />
-            <h4>initial exploration</h4>
+            <h4>Initial exploration</h4>
           </div>
 
           <Image
@@ -123,12 +123,12 @@ export default function Ideation() {
           />
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="/hackdavis/ideation/mbAfter.svg"
+              src="/hackdavis/ideation/mbAfter.png"
               alt="web after image"
               width={1000}
               height={1000}
             />
-            <h4>final design on web</h4>
+            <h4>Final design on desktop</h4>
           </div>
         </div>
 
@@ -154,12 +154,12 @@ export default function Ideation() {
           />
           <div className="flex flex-col items-center gap-2">
             <ImageWithModal
-              src="/hackdavis/ideation/loader.svg"
+              src="/hackdavis/ideation/loader.png"
               alt="loader image"
               width={1000}
               height={1000}
             />
-            <h4>final design on web</h4>
+            <h4>Final design on desktop</h4>
           </div>
         </div>
       </RevealWrapper>

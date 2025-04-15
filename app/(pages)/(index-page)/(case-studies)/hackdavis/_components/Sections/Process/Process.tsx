@@ -47,8 +47,8 @@ export default function Process() {
         <div className="flex flex-col gap-4">
           <h3>Designing for user vs. business needs... why not both?</h3>
           <p>
-            Defining HackDavis' business goals was a vital first step of this
-            project and helped determine key performance indicators (KPIs).
+            Defining HackDavis' business goals was a vital first step and
+            determined key performance indicators (KPIs).
           </p>
 
           <div className="flex gap-8">

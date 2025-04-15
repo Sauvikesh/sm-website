@@ -9,8 +9,8 @@ export default function Intro() {
           <div className="flex flex-col gap-2">
             <h3>My Role</h3>
             <p>
-              Visual Design <br></br>User Research <br></br>
-              Handoff & Documentation{' '}
+              Visual Design <br></br>User Research<br></br>
+              Documentation<br></br>Developer Handoff{' '}
             </p>
           </div>
           <div className="flex flex-col gap-2">
@@ -29,12 +29,16 @@ export default function Intro() {
 
           <div className="flex flex-col gap-2">
             <h3>The Team</h3>
+            <p>
+              Jason (Illustrations)<br></br>Sauv (Engineering)<br></br>Win
+              (Engineering)<br></br>Me! (UX Design)
+            </p>
             <ImageWithModal
-              src="/hackdavis/team.svg"
+              src="/hackdavis/team.png"
               alt="project team"
               width={1000}
               height={1000}
-              className="w-full"
+              className="w-[300px]"
             />
           </div>
         </div>

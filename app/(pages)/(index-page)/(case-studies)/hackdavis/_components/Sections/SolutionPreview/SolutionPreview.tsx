@@ -38,7 +38,7 @@ export default function SolutionPreview() {
               height={1000}
               removeMaxHeight={true}
             />
-            <h4> about page on Web</h4>
+            <h4>About page on desktop</h4>
           </div>
 
           <div className="flex flex-col w-[33%] items-center gap-2 pt-1">
@@ -49,7 +49,7 @@ export default function SolutionPreview() {
               height={1000}
               removeMaxHeight={true}
             />
-            <h4>registration page on Web</h4>
+            <h4>Registration page on desktop</h4>
           </div>
 
           <div className="flex flex-col w-[33%] items-center gap-2">
@@ -60,7 +60,7 @@ export default function SolutionPreview() {
               height={1000}
               removeMaxHeight={true}
             />
-            <h4>day-of-event page on Web</h4>
+            <h4>Day-of-event page on desktop</h4>
           </div>
         </div>
       </RevealWrapper>

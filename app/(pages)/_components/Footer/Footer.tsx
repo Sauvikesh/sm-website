@@ -127,7 +127,7 @@ export default function Footer() {
       </nav>
 
       <Image
-        src="/blob.svg"
+        src="/blob.png"
         width={1000}
         height={1000}
         alt="blob"

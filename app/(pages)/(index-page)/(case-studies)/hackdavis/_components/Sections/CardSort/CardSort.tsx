@@ -48,7 +48,7 @@ export default function CardSort() {
             width={2000}
             height={1000}
           />
-          <h4>site map for the three pages</h4>
+          <h4>Site map for the three pages</h4>
         </div>
       </RevealWrapper>
     </section>
