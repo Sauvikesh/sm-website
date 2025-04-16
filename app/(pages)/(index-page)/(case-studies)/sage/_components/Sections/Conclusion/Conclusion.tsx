@@ -22,7 +22,7 @@ export default function Conclusion() {
   return (
     <section className="flex flex-col gap-4" id="Reflection">
       <RevealWrapper>
-        <h4>Reflection</h4>
+        <h4>Reflection: Lessons Learned</h4>
         <div className="flex flex-col gap-8">
           {reflectionParagraphs.map((para, index) => (
             <HeadingWithBody

@@ -4,8 +4,7 @@ import Heading from '../../../Heading/Heading';
 export default function Description() {
   const testerProfiles = [
     '7 full-time undergraduate students',
-    'Aged 18-22 years old',
-    '3 women, 4 men',
+    'Aged 18-22 years old, 3 women, 4 men',
   ];
 
   const tasks = [
@@ -22,7 +21,7 @@ export default function Description() {
     >
       <RevealWrapper>
         <Heading
-          h1="PROTOTYPE & TEST"
+          h1="Prototype & Test"
           p="Conducting usability testing to inform iterations"
         />
         <div className="flex justify-between gap-12">
@@ -37,7 +36,7 @@ export default function Description() {
             </ul>
           </div>
 
-          <div className="flex flex-col w-[50%] gap-4">
+          <div className="flex flex-col w-[50%] gap-0">
             <h3>Task List</h3>
             <ol className="pl-5 list-decimal">
               {tasks.map((task, index) => (
@@ -49,7 +48,7 @@ export default function Description() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 -mt-20">
+        <div className="flex flex-col gap-2 -mt-32">
           <h3>Metrics</h3>
           <p>Qualitative feedback</p>
         </div>

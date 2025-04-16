@@ -57,7 +57,7 @@ export default function Ideation() {
       id="Ideation"
     >
       <RevealWrapper>
-        <Heading h1="IDEATION & SYNTHESIS" p="Identifying key insights" />
+        <Heading h1="Ideation & Synthesis" p="Identifying key insights" />
         <ImageWithModal
           src="/sageImages/ideation/manyNotes.png"
           alt="many notes image"

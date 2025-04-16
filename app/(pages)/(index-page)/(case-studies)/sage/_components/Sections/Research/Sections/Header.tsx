@@ -14,7 +14,7 @@ export default function Header() {
       <div className="flex items-center justify-between">
         <div className="flex flex-col justify-center gap-3">
           <Heading
-            h1="RESEARCH"
+            h1="Research"
             p="Understanding our user: the overwhelmed student"
           />
           <ul className="pl-5 pt-4 list-disc ">
