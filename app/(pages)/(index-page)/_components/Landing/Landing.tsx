@@ -122,7 +122,7 @@ export default function Landing() {
           </div>
           <div className="flex items-center gap-1 animate-slide-header-down-delayed">
             <h4 className="">
-              Incoming at{' '}
+              Incoming Product Design Intern at{' '}
               <a
                 className="underline underline-offset-2 text-black"
                 href="https://www.coinbase.com/"
