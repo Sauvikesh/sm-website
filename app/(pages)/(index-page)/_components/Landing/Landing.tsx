@@ -101,15 +101,15 @@ export default function Landing() {
               className="w-[10px] opacity-50"
             />
           </div>
-          <div className="flex items-center gap-0.5 animate-slide-header-down-delayed">
+          <div className="flex items-center gap-1 animate-slide-header-down-delayed">
             <h4 className="">
-              Previously at{' '}
+              Incoming Product Design Intern at{' '}
               <a
                 className="underline underline-offset-2 text-black"
-                href="https://www.paramountplus.com/"
+                href="https://www.coinbase.com/"
                 target="_blank"
               >
-                Paramount+
+                Coinbase
               </a>
             </h4>
             <Image
@@ -120,15 +120,15 @@ export default function Landing() {
               className="w-[10px] opacity-50"
             />
           </div>
-          <div className="flex items-center gap-1 animate-slide-header-down-delayed">
+          <div className="flex items-center gap-0.5 animate-slide-header-down-delayed">
             <h4 className="">
-              Incoming Product Design Intern at{' '}
+              Previously at{' '}
               <a
                 className="underline underline-offset-2 text-black"
-                href="https://www.coinbase.com/"
+                href="https://www.paramountplus.com/"
                 target="_blank"
               >
-                Coinbase
+                Paramount+
               </a>
             </h4>
             <Image
