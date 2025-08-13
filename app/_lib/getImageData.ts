@@ -31,7 +31,7 @@ export default async function getImageData(folderName: string) {
   const imageUrls = sortedContents
     .map((item) => {
       if (item.Key) {
-        const publicUrl = `https://d3fgvik0glrwu1.cloudfront.net/${item.Key}`;
+        const publicUrl = `https://${process.env.STM_S3_BUCKET_NAME}.s3.${process.env.STM_AWS_REGION}.amazonaws.com/${item.Key}`;
         return { key: item.Key, url: publicUrl };
       }
     })
