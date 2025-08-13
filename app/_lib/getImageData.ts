@@ -1,4 +1,5 @@
-import { S3Client, ListObjectsV2Command } from '@aws-sdk/client-s3';
+import { S3Client, ListObjectsV2Command, GetObjectCommand } from '@aws-sdk/client-s3';
+import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 
 const s3Client = new S3Client({
   region: process.env.STM_AWS_REGION,
@@ -28,14 +29,20 @@ export default async function getImageData(folderName: string) {
     return dateA - dateB; // Ascending order
   });
 
-  const imageUrls = sortedContents
-    .map((item) => {
+  const imageUrls = await Promise.all(
+    sortedContents.map(async (item) => {
       if (item.Key) {
-        const publicUrl = `https://${process.env.STM_S3_BUCKET_NAME}.s3.${process.env.STM_AWS_REGION}.amazonaws.com/${item.Key}`;
-        return { key: item.Key, url: publicUrl };
+        const getCommand = new GetObjectCommand({
+          Bucket: process.env.STM_S3_BUCKET_NAME,
+          Key: item.Key,
+        });
+
+        const url = await getSignedUrl(s3Client, getCommand, {
+          expiresIn: 3600,
+        });
+        return { key: item.Key, url };
       }
     })
-    .filter(Boolean); // Remove any undefined results
-
+  );
   return imageUrls;
 }
