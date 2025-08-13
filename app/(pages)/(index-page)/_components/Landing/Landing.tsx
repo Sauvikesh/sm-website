@@ -84,13 +84,13 @@ export default function Landing() {
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-0.5 animate-slide-header-down-delayed">
             <h4 className="">
-              Currently studying Design at{' '}
+              Currently designing at{' '}
               <a
                 className="underline underline-offset-2 text-black"
-                href="https://www.ucdavis.edu/"
+                href="https://www.coinbase.com/"
                 target="_blank"
               >
-                UC Davis
+                Coinbase
               </a>
             </h4>
             <Image
@@ -103,13 +103,13 @@ export default function Landing() {
           </div>
           <div className="flex items-center gap-1 animate-slide-header-down-delayed">
             <h4 className="">
-              Incoming Product Design Intern at{' '}
+              Design New Grad at{' '}
               <a
                 className="underline underline-offset-2 text-black"
-                href="https://www.coinbase.com/"
+                href="https://www.ucdavis.edu/"
                 target="_blank"
               >
-                Coinbase
+                UC Davis
               </a>
             </h4>
             <Image
