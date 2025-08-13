@@ -42,7 +42,7 @@ export default function Bio() {
 
         <div className="flex relative w-[40%] h-full -mt-14">
           <Image
-            src="/about/SamTMah.svg"
+            src="/about/SamTMah.jpg"
             alt="Sam Photo"
             width={1000}
             height={1000}
