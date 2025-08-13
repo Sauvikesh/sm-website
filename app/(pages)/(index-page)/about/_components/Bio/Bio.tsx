@@ -46,7 +46,7 @@ export default function Bio() {
             alt="Sam Photo"
             width={1000}
             height={1000}
-            className="w-[720px] h-[566px] z-10"
+            className="w-[371px] h-[458px] z-10"
           />
 
           {floatingImages
