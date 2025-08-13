@@ -84,31 +84,31 @@ function CameraRoll() {
   const carouselPhotos = [
     {
       imgUrl: '/about/photoCarousel/photo0.png',
-      imgCaption: 'half moon bay, ca',
+      imgCaption: 'Half Moon Bay, cA',
     },
     {
       imgUrl: '/about/photoCarousel/photo1.png',
-      imgCaption: 'half moon bay, ca',
+      imgCaption: 'Half Moon Bay, CA',
     },
     {
       imgUrl: '/about/photoCarousel/photo2.png',
-      imgCaption: 'pebble beach, ca',
+      imgCaption: 'Pebble Beach, CA',
     },
     {
       imgUrl: '/about/photoCarousel/photo3.png',
-      imgCaption: 'kamakura, japan',
+      imgCaption: 'Kamakura, Japan',
     },
     {
       imgUrl: '/about/photoCarousel/photo4.png',
-      imgCaption: 'arashiyama, japan',
+      imgCaption: 'Arashiyama, Japan',
     },
     {
       imgUrl: '/about/photoCarousel/photo5.png',
-      imgCaption: 'hiroshima, japan',
+      imgCaption: 'Hiroshima, Japan',
     },
     {
       imgUrl: '/about/photoCarousel/photo6.png',
-      imgCaption: 'santa barbara, ca',
+      imgCaption: 'Santa Barbara, CA',
     },
   ];
 

@@ -6,17 +6,17 @@ export default function Hobbies() {
     {
       colSpan: '1',
       src: '/about/hobbies/ceramic.png',
-      caption: 'having My first ceramics pop up!',
+      caption: 'My first ceramics pop up!',
     },
     {
       colSpan: '1',
       src: '/about/hobbies/film.png',
-      caption: 'exploring & taking film photos',
+      caption: 'Exploring & taking film photos',
     },
     {
       colSpan: '1',
       src: '/about/hobbies/hike.png',
-      caption: 'Hiking the california mountains',
+      caption: 'Hiking the California mountains',
     },
     {
       colSpan: '1',
@@ -26,7 +26,7 @@ export default function Hobbies() {
     {
       colSpan: '2',
       src: '/about/hobbies/designathon.png',
-      caption: 'hosting the first designathon at uc davis',
+      caption: 'Hosting the first designathon at uc davis',
     },
   ];
   return (
@@ -36,11 +36,10 @@ export default function Hobbies() {
           Designer, but also, lifelong learner and adventurer
         </h3>
         <p className="pt-4 pb-8">
-          Jack of all trades, master of some. Of all the hobbies and skills I've
-          set out to learn, some have stuck, and others I definitely need more
+          Jack of all trades, master of some. Some of the hobbies I've tried have stuck, and others I definitely need more
           practice with (driving stick shift, snowboarding, diversifying my
-          cooking), but I'm always eager to try new things. Here's what I've
-          been up to lately:
+          cooking), but I'm always eager to try new things. Lately I've
+          been up to:
         </p>
 
         <div className="grid grid-rows-2 grid-cols-3 gap-8">

@@ -7,6 +7,14 @@ export default async function Home() {
   const images = await getImageData('landingPage/');
 
   const caseStudyInformation: CaseStudyProps[] = [
+    // {
+    //   org: 'Coinbase',
+    //   purpose: 'Internship',
+    //   desc: 'Building a scalable, lean design system',
+    //   src: '/caseStudies/coinbase.png',
+    //   alt: 'Coinbase Logo',
+    //   linkurl: '',
+    // },
     {
       org: 'Paramount+',
       purpose: 'Internship',

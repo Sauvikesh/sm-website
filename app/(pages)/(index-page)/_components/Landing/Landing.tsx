@@ -103,7 +103,7 @@ export default function Landing() {
           </div>
           <div className="flex items-center gap-1 animate-slide-header-down-delayed">
             <h4 className="">
-              Recent Design grad from{' '}
+              Recently graduated from{' '}
               <a
                 className="underline underline-offset-2 text-black"
                 href="https://www.ucdavis.edu/"

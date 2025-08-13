@@ -8,17 +8,17 @@ export default function Philosophy() {
     {
       number: '01',
       header: 'Empathy is like a magical superpower',
-      body: 'I strive to meet people where they are and understand a perspective that might be unfamiliar to my lived experiences',
+      body: 'I strive to listen first and understand perspectives that differ from my lived experiences',
     },
     {
       number: '02',
       header: 'Stay curious and open-minded',
-      body: "I'm thankful to be surrounded by people with diverse skillsets and point of views to challenge and expand my knowledge",
+      body: "I surrounded myself with diverse teammates who help me look at problems from all angles",
     },
     {
       number: '03',
       header: 'Take risks and embrace the unknown',
-      body: 'I value new experiences that challenge me and push me out of my comfort zone; I seek opportunities for growth',
+      body: 'I value new experiences that push me out of my comfort zone and I create opportunities for learning',
     },
   ];
   return (

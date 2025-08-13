@@ -64,19 +64,13 @@ export default function Bio() {
         </div>
 
         <div className="flex flex-col gap-6 w-[60%]">
-          <h3 className="text-4xl tracking-[0.72px]">Nice to meet you</h3>
+          <h3 className="text-4xl tracking-[0.72px]">Nice to meet ya!</h3>
           <p>
-            Throughout my childhood, I turned my ideas into reality through
-            drawing and building furniture for my dolls. My expansive
-            imagination naturally elected me as the consultant for creative
-            problem solving, from designing all of my relative's birthday cards
-            to choosing the paint color of my dad's motorcycles. <br></br>{' '}
+            Throughout my childhood, I had a fierce imagination and a desire to build things. I turned my ideas into reality through writing, drawing, and even building furniture for my dolls. I thoughtfully designed all of my relative's birthday cards
+            and chose the paint color of my dad's motorcycles. <br></br>{' '}
             <br></br>I further fueled my creative endeavors at Design Tech High
             School where I had the opportunity to thrive in a project-based
-            curriculum modeled after Stanford University's d.school. This
-            sparked a passion for the intersection of human-centered design and
-            technology, and opened up a whole new world where I could continue
-            to approach problems with a creative and empathetic mindset.
+            curriculum modeled after Stanford University's d.school. I discovered the intersection of human-centered design and technology, paving the way for my career in UX design, where I could continue to solve problems for people by wielding my creative and analytical skills.
           </p>
         </div>
       </section>
